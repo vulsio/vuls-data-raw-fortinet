@@ -1,0 +1,49 @@
+{
+  "id": "FG-IR-15-021",
+  "title": "FortiOS supports weak ciphers suites when connecting to Fortiguard servers",
+  "description": "When connecting to a FortiGuard server via TLS, FortiOS 5.2.3/5.0.11 and below is supporting multiple weak ciphers including anonymous, export and RC4. Although FortiGuard servers are actually offering back strong ciphers only, an attacker in a \"Man in the Middle\" position may leverage FortiOS' acceptance of weak ciphers to decipher and tamper with the TLS connection.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-15-021",
+      "cve": "CVE-2015-2323",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.0.0, less equal 5.0.11, fixed in [5.0.12, 5.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.11"
+                  },
+                  "fixed_in": [
+                    "5.0.12",
+                    "5.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less equal 5.2.3, fixed in [5.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.3"
+                  },
+                  "fixed_in": [
+                    "5.2.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "MitM that could lead to traffic alteration or decryption"
+        }
+      ]
+    }
+  ],
+  "published": "2015-07-24T00:00:00Z",
+  "updated": "2015-07-24T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-15-021"
+}
+

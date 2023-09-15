@@ -1,0 +1,88 @@
+{
+  "id": "FG-IR-22-223",
+  "title": "FortiOS -- Telnet on the SSL-VPN interface results in information leak",
+  "summary": "An exposure of sensitive information to an unauthorized actor vulnerabiltiy [CWE-200] in FortiOS SSL-VPN may allow a remote unauthenticated attacker to gain information about LDAP and SAML settings configured in FortiOS.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-223",
+      "cve": "CVE-2022-35842",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.2.0, less equal 6.2.12, fixed in [6.2.13, 6.4.10, 7.0.8, 7.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.12"
+                  },
+                  "fixed_in": [
+                    "6.2.13",
+                    "6.4.10",
+                    "7.0.8",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 6.4.9, fixed in [6.4.10, 7.0.8, 7.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.9"
+                  },
+                  "fixed_in": [
+                    "6.4.10",
+                    "7.0.8",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.7, fixed in [7.0.8, 7.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.7"
+                  },
+                  "fixed_in": [
+                    "7.0.8",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 7.2.0, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.2.0"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.7,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N/E:X/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-200"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "Reboot FortiOS or kill the SSL-VPN process or disable DTLS settings [if enabled]",
+      "url": "Reboot FortiOS or kill the SSL-VPN process or disable DTLS settings [if enabled]"
+    }
+  ],
+  "published": "2022-11-01T00:00:00Z",
+  "updated": "2022-11-01T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-223"
+}
+

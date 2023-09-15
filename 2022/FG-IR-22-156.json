@@ -1,0 +1,41 @@
+{
+  "id": "FG-IR-22-156",
+  "title": "FortiSOAR - OS Command Injection in Agent Password Field",
+  "summary": "An improper neutralization of special elements used in an OS command ('OS Command Injection') vulnerability [CWE-78] in FortiSOAR may allow an authenticated attacker to execute unauthorized code or commands via crafted HTTP GET requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-156",
+      "cve": "CVE-2022-29061",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSOAR:",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.8,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:U/RC:C"
+          },
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2022-09-06T00:00:00Z",
+  "updated": "2022-09-06T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-156"
+}
+

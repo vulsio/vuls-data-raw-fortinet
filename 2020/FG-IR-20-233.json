@@ -1,0 +1,67 @@
+{
+  "id": "FG-IR-20-233",
+  "title": "FortiProxy - system file leak through SSL VPN special crafted HTTP resource requests",
+  "summary": "A path traversal vulnerability in the FortiProxy SSL VPN web portal may allow a non-authenticated, remote attacker to download FortiProxy system files through specially crafted HTTP resource requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-20-233",
+      "cve": "CVE-2018-13379",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiProxy:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiProxy:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiproxy-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.9,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H/E:F/RL:X/RC:X"
+          },
+          "impact": "Information Disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2021-06-01T00:00:00Z",
+  "updated": "2021-06-01T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-20-233"
+}
+

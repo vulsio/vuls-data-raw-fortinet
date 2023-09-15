@@ -1,0 +1,30 @@
+{
+  "id": "FG-IR-17-205",
+  "title": "Apache Struts RCE Vulnerability",
+  "summary": "Multiple Remote Code Execution vulnerabilities (CVE-2017-9805, CVE-2017-9804, CVE-2017-9793) are affecting Apache Struts.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-205",
+      "cve": "CVE-2017-9805",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Remote Code Execution (RCE)"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://www.imperva.com/blog/2017/09/cve-2017-9805-analysis-of-apache-struts-rce-vulnerability-in-rest-plugin/",
+      "url": "https://www.imperva.com/blog/2017/09/cve-2017-9805-analysis-of-apache-struts-rce-vulnerability-in-rest-plugin/"
+    }
+  ],
+  "published": "2017-09-29T00:00:00Z",
+  "updated": "2017-09-29T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-205"
+}
+

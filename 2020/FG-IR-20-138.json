@@ -1,0 +1,67 @@
+{
+  "id": "FG-IR-20-138",
+  "title": "FortiWLC -  Improper access control",
+  "summary": "An improper access control (CWE-284) vulnerability in FortiWLC may allow an unauthenticated and remote attacker to access certain areas of the web management CGI functionality by just specifying the correct URL. The vulnerability applies only to limited CGI resources and might allow the unauthorized party to access configuration details.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-20-138",
+      "cve": "CVE-2021-32584",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWLC:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiWLC:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiWLC:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiwlc-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.8,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N/E:P/RL:X/RC:R"
+          },
+          "impact": "Improper access control, Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2021-06-03T00:00:00Z",
+  "updated": "2021-06-03T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-20-138"
+}
+

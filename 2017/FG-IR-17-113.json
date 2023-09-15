@@ -1,0 +1,51 @@
+{
+  "id": "FG-IR-17-113",
+  "title": "FortiOS web GUI logindisclaimer redir parameter XSS vulnerability",
+  "summary": "A reflected XSS vulnerability exists in FortiOS web GUI \"Login Disclaimer\" redir parameter. It is potentially exploitable by a remote unauthenticated attacker, via sending a maliciously crafted URL to a victim who has an open session on the web GUI. Visiting that malicious URL may cause the execution of arbitrary javascript code in the security context of the victim's browser.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-113",
+      "cve": "CVE-2017-7733",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.4.0, less equal 5.4.5, fixed in [5.4.6, 5.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.5"
+                  },
+                  "fixed_in": [
+                    "5.4.6",
+                    "5.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 5.6.0, fixed in [5.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.6.0"
+                  },
+                  "fixed_in": [
+                    "5.6.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Cross-site scripting (XSS)"
+        }
+      ]
+    }
+  ],
+  "published": "2017-10-24T00:00:00Z",
+  "updated": "2017-10-24T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-113"
+}
+

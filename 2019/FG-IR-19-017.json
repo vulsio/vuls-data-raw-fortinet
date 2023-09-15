@@ -1,0 +1,114 @@
+{
+  "id": "FG-IR-19-017",
+  "title": "VM images lack an integrity check of the file system at boot time",
+  "summary": "VM appliance lack of root file system integrity check may allow an attacker with read/write access to the VM image (before it is booted up) to inject malicious implants in the image.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-19-017",
+      "cve": "CVE-2019-5587",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.4.0, less equal 5.4.13, fixed in [6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.13"
+                  },
+                  "fixed_in": [
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.14, fixed in [6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.14"
+                  },
+                  "fixed_in": [
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.4, fixed in [6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.4"
+                  },
+                  "fixed_in": [
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-017",
+      "cve": "CVE-2019-6695",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager:",
+                  "cpe": "cpe:2.3:a:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiManager:",
+                    "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiManager:",
+                      "cpe": "cpe:2.3:h:fortinet:fortimanager-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2019-11-14T00:00:00Z",
+  "updated": "2019-11-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-19-017"
+}
+

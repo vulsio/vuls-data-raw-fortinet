@@ -1,0 +1,25 @@
+{
+  "id": "FG-IR-20-128",
+  "title": "Multiple Apache Vulnerabilties fixed in 2.4.46",
+  "summary": "The Apache project released an advisory on August 7th 2020, which describes the following vulnerabilities:1) CVE-2020-9490 Apache HTTP Server versions 2.4.20 to 2.4.43. A specially crafted value for the 'Cache-Digest' header in a HTTP/2 request would result in a crash when the server actually tries to HTTP/2 PUSH a resource afterwards. Configuring the HTTP/2 feature via \"H2Push off\" will mitigate this vulnerability for unpatched servers. 2) CVE-2020-11984 Apache HTTP server 2.4.32 to 2.4.44 mod_proxy_uwsgi info disclosure and possible RCE. 3) CVE-2020-11993 Apache HTTP Server versions 2.4.20 to 2.4.43 When trace/debug was enabled for the HTTP/2 module and on certain traffic edge patterns, logging statements were made on the wrong connection, causing concurrent use of memory pools. Configuring the LogLevel of mod_http2 above \"info\" will mitigate this vulnerability for unpatched servers.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-20-128",
+      "cve": "CVE-2020-9490",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 7.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Denial of Service"
+        }
+      ]
+    }
+  ],
+  "published": "2020-10-05T00:00:00Z",
+  "updated": "2020-10-05T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-20-128"
+}
+

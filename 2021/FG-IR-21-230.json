@@ -1,0 +1,123 @@
+{
+  "id": "FG-IR-21-230",
+  "title": "FortiProxy & FortiOS - XSS vulnerability in Web Filter Block Override Form",
+  "summary": "An improper neutralization of input during web page generation vulnerability [CWE-79] in FortiProxy and FortiOS web filter override form may allow an unauthenticated attacker to perform an XSS attack via crafted HTTP GET requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-21-230",
+      "cve": "CVE-2021-43081",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.14, fixed in [6.2.11, 6.4.9, 7.0.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.14"
+                  },
+                  "fixed_in": [
+                    "6.2.11",
+                    "6.4.9",
+                    "7.0.4"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.2.0, less equal 6.2.10, fixed in [6.2.11, 6.4.9, 7.0.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.10"
+                  },
+                  "fixed_in": [
+                    "6.2.11",
+                    "6.4.9",
+                    "7.0.4"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 6.4.8, fixed in [6.4.9, 7.0.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.8"
+                  },
+                  "fixed_in": [
+                    "6.4.9",
+                    "7.0.4"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.3, fixed in [7.0.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.3"
+                  },
+                  "fixed_in": [
+                    "7.0.4"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiProxy:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiProxy:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiproxy-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N/E:X/RL:W/RC:X"
+          },
+          "cwe": [
+            "CWE-79"
+          ],
+          "impact": "Unauthorized code execution"
+        }
+      ]
+    }
+  ],
+  "published": "2022-05-03T00:00:00Z",
+  "updated": "2022-05-03T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-21-230"
+}
+

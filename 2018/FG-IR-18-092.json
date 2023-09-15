@@ -1,0 +1,39 @@
+{
+  "id": "FG-IR-18-092",
+  "title": "FortiClient NDIS Miniport Driver Null Pointer Dereference",
+  "summary": "There is a Null pointer dereference in the NDIS Miniport drivers in FortiClient on Windows, which may be leveraged by an unprivileged user to cause a Denial of Service (BSOD).",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-092",
+      "cve": "CVE-2018-9190",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Windows: less equal 6.0.2, fixed in [6.0.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "le": "6.0.2"
+                  },
+                  "fixed_in": [
+                    "6.0.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Denial of service"
+        }
+      ]
+    }
+  ],
+  "published": "2019-01-11T00:00:00Z",
+  "updated": "2019-01-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-092"
+}
+

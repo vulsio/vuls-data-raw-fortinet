@@ -1,0 +1,82 @@
+{
+  "id": "FG-IR-21-065",
+  "title": "FortiWAN - Stack-based buffer overflow in bmstatd",
+  "summary": "Multiple stack-based buffer overflow vulnerabilities [CWE-121] both in network daemons and in the command line interpreter of FortiWAN may allow an unauthenticated attacker to potentially corrupt control data in memory and execute arbitrary code via specifically crafted requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-21-065",
+      "cve": "CVE-2021-26112",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWAN:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiwan:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiWAN:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiwan:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiWAN:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiwan-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiWAN Manager:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiwan_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.7,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:U/RC:C"
+          },
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2022-04-05T00:00:00Z",
+  "updated": "2022-04-05T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-21-065"
+}
+

@@ -1,0 +1,81 @@
+{
+  "id": "FG-IR-16-052",
+  "title": "Multiple vulnerabilities in Linux kernels through 4.6.3",
+  "summary": "Of multiple vulnerabilities released affecting Linux kernels through 4.6.3, FortiOS was found vulnerable to the following two:CVE-2016-3713CVE-2016-5829",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-052",
+      "cve": "CVE-2016-3713",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.4.0, less equal 5.4.1, fixed in [5.4.2, 5.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.2",
+                    "5.6.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Denial of service"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-16-052",
+      "cve": "CVE-2016-5829",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.4.0, less equal 5.4.1, fixed in [5.4.2, 5.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.2",
+                    "5.6.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Denial of service"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://nvd.nist.gov/vuln/detail/CVE-2016-3713\n",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-3713\n"
+    },
+    {
+      "description": "https://nvd.nist.gov/vuln/detail/CVE-2016-5829",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-5829"
+    }
+  ],
+  "published": "2017-04-05T00:00:00Z",
+  "updated": "2017-04-05T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-052"
+}
+

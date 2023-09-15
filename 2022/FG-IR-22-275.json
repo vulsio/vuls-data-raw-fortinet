@@ -1,0 +1,67 @@
+{
+  "id": "FG-IR-22-275",
+  "title": "FortiAuthenticator - Reflected XSS in the password reset page",
+  "summary": "An improper neutralization of script-related HTML tags in a web page vulnerability [CWE-80] in FortiAuthenticator may allow a remote unauthenticated attacker to trigger a reflected cross site scripting (XSS) attack via the \"reset-password\" page.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-275",
+      "cve": "CVE-2022-35850",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAuthenticator:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiAuthenticator:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiAuthenticator:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiauthenticator-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N/E:F/RL:U/RC:C"
+          },
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-04-11T00:00:00Z",
+  "updated": "2023-04-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-275"
+}
+

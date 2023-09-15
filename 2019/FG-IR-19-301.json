@@ -1,0 +1,56 @@
+{
+  "id": "FG-IR-19-301",
+  "title": "FortiOS - Host header injection vulnerability",
+  "summary": "An improper neutralization of input during web page generation vulnerability [CWE-79] in FortiOS may allow a remote unauthenticated attacker to either redirect users to malicious websites via a crafted \"Host\" header or to execute JavaScript code in the victim's browser context.This happens when the FortiGate has web filtering and category override enabled/configured.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-19-301",
+      "cve": "CVE-2019-16151",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.2.0, less equal 6.2.9, fixed in [6.2.10, 6.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.9"
+                  },
+                  "fixed_in": [
+                    "6.2.10",
+                    "6.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 6.4.1, fixed in [6.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.1"
+                  },
+                  "fixed_in": [
+                    "6.4.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.7,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:L/A:N/E:X/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-79"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2021-09-07T00:00:00Z",
+  "updated": "2021-09-07T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-19-301"
+}
+

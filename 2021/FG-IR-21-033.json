@@ -1,0 +1,82 @@
+{
+  "id": "FG-IR-21-033",
+  "title": "FortiAI - OS command injection due to improper input sanitization",
+  "summary": "An improper input validation in FortiAI v1.4.0 may allow an authenticated user to gain system shell access via a malicious payload in the \"diagnose\" command.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-21-033",
+      "cve": "CVE-2021-24023",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAI:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiai:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiAI:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiai:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiAI:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiai-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAIOps:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiaiops:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.4,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:U/RC:C"
+          },
+          "impact": "Execution of arbitrary code"
+        }
+      ]
+    }
+  ],
+  "published": "2021-05-05T00:00:00Z",
+  "updated": "2021-05-05T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-21-033"
+}
+

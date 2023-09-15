@@ -1,0 +1,112 @@
+{
+  "id": "FG-IR-22-362",
+  "title": "FortiOS & FortiProxy - header injection in proxy login page",
+  "summary": "An improper neutralization of CRLF sequences in HTTP headers ('HTTP Response Splitting') vulnerability [CWE-113] in FortiOS and FortiProxy may allow an authenticated and remote attacker to inject arbitrary headers.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-362",
+      "cve": "CVE-2022-42472",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less than 6.4.13, fixed in [6.4.13, 7.0.9, 7.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "lt": "6.4.13"
+                  },
+                  "fixed_in": [
+                    "6.4.13",
+                    "7.0.9",
+                    "7.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less than 7.0.9, fixed in [7.0.9, 7.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "lt": "7.0.9"
+                  },
+                  "fixed_in": [
+                    "7.0.9",
+                    "7.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less than 7.2.3, fixed in [6.4.13, 7.0.9, 7.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "lt": "7.2.3"
+                  },
+                  "fixed_in": [
+                    "6.4.13",
+                    "7.0.9",
+                    "7.2.3"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiProxy:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiProxy:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiproxy-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:N/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-113"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-02-16T00:00:00Z",
+  "updated": "2023-02-16T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-362"
+}
+

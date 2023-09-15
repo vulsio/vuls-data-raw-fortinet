@@ -1,0 +1,513 @@
+{
+  "id": "FG-IR-14-030",
+  "title": "Remote Exploit Vulnerability in Bash - (Shellshock)",
+  "summary": "An exploit has been discovered in GNU Bourne Again Shell (Bash) versions 1.14.0 through 4.3.  This vulnerability may allow an attacker to remotely execute arbitrary code by crafting special code within an environment variable string.  Under certain circumstances, exploitation of this vulnerability can result in unwanted code executing on the vulnerable system. Update: Mon Sep 29 - This advisory has been updated to include the Bash exploits reported in CVE-2014-6277 and CVE-2014-6273. The updates of affected products will include updates that address all four CVE's reported. Additional updates will follow. Update June 1st 2021: The list of impacted products has been updated to include FortiWLC.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-14-030",
+      "cve": "CVE-2014-6277",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: greater equal 4.0.0, less equal 5.0.7, fixed in [5.0.8]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "5.0.7"
+                  },
+                  "fixed_in": [
+                    "5.0.8"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 4.0.0, less equal 5.2.0, fixed in [5.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "5.2.0"
+                  },
+                  "fixed_in": [
+                    "5.2.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAuthenticator: less equal 3.1.1, fixed in [3.1.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "3.1.1"
+                  },
+                  "fixed_in": [
+                    "3.1.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiDB: greater equal 4.0.0, less equal 5.1.1, fixed in [5.1.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortidb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "5.1.1"
+                  },
+                  "fixed_in": [
+                    "5.1.5"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 4.0.0, less equal 5.0.7, fixed in [5.0.8]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "5.0.7"
+                  },
+                  "fixed_in": [
+                    "5.0.8"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 4.0.0, less equal 5.2.0, fixed in [5.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "5.2.0"
+                  },
+                  "fixed_in": [
+                    "5.2.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiWLC: greater equal 8.0.0, less equal 8.5.3, fixed in [8.5.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.5.3"
+                  },
+                  "fixed_in": [
+                    "8.5.4"
+                  ]
+                },
+                {
+                  "description": "FortiWLC: greater equal 8.0.0, less equal 8.6.0, fixed in [8.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.6.0"
+                  },
+                  "fixed_in": [
+                    "8.6.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.8,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:H/RL:U/RC:C"
+          },
+          "impact": "Remote Code Execution"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-14-030",
+      "cve": "CVE-2014-6278",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: greater equal 4.0.0, less equal 5.0.7, fixed in [5.0.8]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "5.0.7"
+                  },
+                  "fixed_in": [
+                    "5.0.8"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 4.0.0, less equal 5.2.0, fixed in [5.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "5.2.0"
+                  },
+                  "fixed_in": [
+                    "5.2.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAuthenticator: less equal 3.1.1, fixed in [3.1.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "3.1.1"
+                  },
+                  "fixed_in": [
+                    "3.1.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiDB: greater equal 4.0.0, less equal 5.1.1, fixed in [5.1.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortidb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "5.1.1"
+                  },
+                  "fixed_in": [
+                    "5.1.5"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 4.0.0, less equal 5.0.7, fixed in [5.0.8]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "5.0.7"
+                  },
+                  "fixed_in": [
+                    "5.0.8"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 4.0.0, less equal 5.2.0, fixed in [5.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "5.2.0"
+                  },
+                  "fixed_in": [
+                    "5.2.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiWLC: greater equal 8.0.0, less equal 8.5.3, fixed in [8.5.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.5.3"
+                  },
+                  "fixed_in": [
+                    "8.5.4"
+                  ]
+                },
+                {
+                  "description": "FortiWLC: greater equal 8.0.0, less equal 8.6.0, fixed in [8.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.6.0"
+                  },
+                  "fixed_in": [
+                    "8.6.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.8,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:H/RL:U/RC:C"
+          },
+          "impact": "Remote Code Execution"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-14-030",
+      "cve": "CVE-2014-7169",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: greater equal 4.0.0, less equal 5.0.7, fixed in [5.0.8]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "5.0.7"
+                  },
+                  "fixed_in": [
+                    "5.0.8"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 4.0.0, less equal 5.2.0, fixed in [5.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "5.2.0"
+                  },
+                  "fixed_in": [
+                    "5.2.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAuthenticator: less equal 3.1.1, fixed in [3.1.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "3.1.1"
+                  },
+                  "fixed_in": [
+                    "3.1.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiDB: greater equal 4.0.0, less equal 5.1.1, fixed in [5.1.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortidb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "5.1.1"
+                  },
+                  "fixed_in": [
+                    "5.1.5"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 4.0.0, less equal 5.0.7, fixed in [5.0.8]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "5.0.7"
+                  },
+                  "fixed_in": [
+                    "5.0.8"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 4.0.0, less equal 5.2.0, fixed in [5.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "5.2.0"
+                  },
+                  "fixed_in": [
+                    "5.2.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiWLC: greater equal 8.0.0, less equal 8.5.3, fixed in [8.5.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.5.3"
+                  },
+                  "fixed_in": [
+                    "8.5.4"
+                  ]
+                },
+                {
+                  "description": "FortiWLC: greater equal 8.0.0, less equal 8.6.0, fixed in [8.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.6.0"
+                  },
+                  "fixed_in": [
+                    "8.6.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.8,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:H/RL:U/RC:C"
+          },
+          "impact": "Remote Code Execution"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-14-030",
+      "cve": "CVE-2014-6271",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: greater equal 4.0.0, less equal 5.0.7, fixed in [5.0.8]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "5.0.7"
+                  },
+                  "fixed_in": [
+                    "5.0.8"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 4.0.0, less equal 5.2.0, fixed in [5.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "5.2.0"
+                  },
+                  "fixed_in": [
+                    "5.2.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAuthenticator: less equal 3.1.1, fixed in [3.1.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "3.1.1"
+                  },
+                  "fixed_in": [
+                    "3.1.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiDB: greater equal 4.0.0, less equal 5.1.1, fixed in [5.1.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortidb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "5.1.1"
+                  },
+                  "fixed_in": [
+                    "5.1.5"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 4.0.0, less equal 5.0.7, fixed in [5.0.8]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "5.0.7"
+                  },
+                  "fixed_in": [
+                    "5.0.8"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 4.0.0, less equal 5.2.0, fixed in [5.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "5.2.0"
+                  },
+                  "fixed_in": [
+                    "5.2.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiWLC: greater equal 8.0.0, less equal 8.5.3, fixed in [8.5.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.5.3"
+                  },
+                  "fixed_in": [
+                    "8.5.4"
+                  ]
+                },
+                {
+                  "description": "FortiWLC: greater equal 8.0.0, less equal 8.6.0, fixed in [8.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.6.0"
+                  },
+                  "fixed_in": [
+                    "8.6.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.8,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:H/RL:U/RC:C"
+          },
+          "impact": "Remote Code Execution"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6271  \n",
+      "url": "http://web.nvd.nist.gov/view/vuln/detail?vulnId=CVE-2014-6271  \n"
+    },
+    {
+      "description": "https://www.us-cert.gov/ncas/alerts/TA14-268A  \n",
+      "url": "https://www.us-cert.gov/ncas/alerts/TA14-268A  \n"
+    },
+    {
+      "description": "https://securityblog.redhat.com/2014/09/24/bash-specially-crafted-environment-variables-code-injection-attack/",
+      "url": "https://securityblog.redhat.com/2014/09/24/bash-specially-crafted-environment-variables-code-injection-attack/"
+    }
+  ],
+  "published": "2014-09-25T00:00:00Z",
+  "updated": "2014-09-25T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-14-030"
+}
+

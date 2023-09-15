@@ -1,0 +1,57 @@
+{
+  "id": "FG-IR-23-028",
+  "title": "FortiOS - Existing websocket connection persists after deleting API admin",
+  "summary": "An insufficient session expiration [CWE-613] vulnerability in FortiOS REST API may allow an attacker to reuse the session of a deleted user, should the attacker manage to obtain the API token.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-028",
+      "cve": "CVE-2023-28001",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.12, fixed in [7.2.5, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.12"
+                  },
+                  "fixed_in": [
+                    "7.2.5",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less equal 7.2.4, fixed in [7.2.5, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.4"
+                  },
+                  "fixed_in": [
+                    "7.2.5",
+                    "7.4.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.1,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:L/I:L/A:L/E:U/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-613"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-07-11T00:00:00Z",
+  "updated": "2023-07-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-028"
+}
+

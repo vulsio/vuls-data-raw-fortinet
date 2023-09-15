@@ -1,0 +1,67 @@
+{
+  "id": "FG-IR-20-226",
+  "title": "XSS vulnerability in FortiProxy SSLVPN Portal",
+  "summary": "An improper neutralization of input during web page generation in the SSL VPN portal of FortiProxy may allow a remote authenticated attacker to perform a stored cross site scripting attack (XSS).",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-20-226",
+      "cve": "CVE-2019-15706",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiProxy:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiProxy:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiproxy-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:N/I:L/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Unauthorized code execution"
+        }
+      ]
+    }
+  ],
+  "published": "2021-05-05T00:00:00Z",
+  "updated": "2021-05-05T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-20-226"
+}
+

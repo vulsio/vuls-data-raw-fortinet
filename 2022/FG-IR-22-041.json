@@ -1,0 +1,74 @@
+{
+  "id": "FG-IR-22-041",
+  "title": "FortiSOAR - Improper access control on gateway API",
+  "summary": "An improper access control vulnerability [CWE-284] in FortiSOAR may allow an unauthenticated attacker to access gateway API data via crafted HTTP GET requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-041",
+      "cve": "CVE-2022-23443",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSOAR: less equal 7.0.2, fixed in [7.2.0]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "7.0.2"
+                  },
+                  "fixed_in": [
+                    "7.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR: less equal 6.4.4, fixed in [7.2.0]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "6.4.4"
+                  },
+                  "fixed_in": [
+                    "7.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR: equal 6.0.0, fixed in [7.2.0]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.0.0"
+                  },
+                  "fixed_in": [
+                    "7.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR: greater equal 5.0.0, less equal 5.2.2, fixed in [7.2.0]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.2.2"
+                  },
+                  "fixed_in": [
+                    "7.2.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.8,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N/E:P/RL:T/RC:C"
+          },
+          "cwe": [
+            "CWE-284"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2022-05-03T00:00:00Z",
+  "updated": "2022-05-03T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-041"
+}
+

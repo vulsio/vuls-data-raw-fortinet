@@ -1,0 +1,82 @@
+{
+  "id": "FG-IR-21-141",
+  "title": "FortiSIEM - Plaintext credentials storage in DB",
+  "summary": "A plaintext storage of a password vulnerability [CWE-256] in FortiSIEM may allow an attacker able to access user DB content to impersonate any admin user on the device GUI.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-21-141",
+      "cve": "CVE-2023-26204",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSIEM:",
+                  "cpe": "cpe:2.3:a:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiSIEM:",
+                    "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiSIEM:",
+                      "cpe": "cpe:2.3:h:fortinet:fortisiem-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSIEMWindowsAgent:",
+                  "cpe": "cpe:2.3:a:fortinet:fortisiem_windows_agent:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.6,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N/E:F/RL:U/RC:C"
+          },
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2023-06-12T00:00:00Z",
+  "updated": "2023-06-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-21-141"
+}
+

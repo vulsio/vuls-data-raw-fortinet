@@ -1,0 +1,78 @@
+{
+  "id": "FG-IR-23-149",
+  "title": "FortiOS - Buffer overflow in execute extender command",
+  "summary": "A stack-based buffer overflow vulnerability [CWE-121] in FortiOS may allow a privileged attacker to execute arbitrary code via specially crafted CLI commands, provided the attacker were able to evade FortiOS stack protections.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-149",
+      "cve": "CVE-2023-29182",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.2.0, less equal 6.2.15, fixed in [7.0.4, 7.2.0, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.15"
+                  },
+                  "fixed_in": [
+                    "7.0.4",
+                    "7.2.0",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 6.4.14, fixed in [7.0.4, 7.2.0, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.14"
+                  },
+                  "fixed_in": [
+                    "7.0.4",
+                    "7.2.0",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.3, fixed in [7.0.4, 7.2.0, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.3"
+                  },
+                  "fixed_in": [
+                    "7.0.4",
+                    "7.2.0",
+                    "7.4.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.4,
+            "vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:U/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-121"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "[1] https://code610.blogspot.com/2023/04/fuzzing-fortigate-7.html",
+      "url": "[1] https://code610.blogspot.com/2023/04/fuzzing-fortigate-7.html"
+    }
+  ],
+  "published": "2023-08-08T00:00:00Z",
+  "updated": "2023-08-08T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-149"
+}
+

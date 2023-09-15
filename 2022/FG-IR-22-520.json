@@ -1,0 +1,67 @@
+{
+  "id": "FG-IR-22-520",
+  "title": "FortiNAC - database harcoded credentials",
+  "summary": "A use of hard-coded credentials vulnerability [CWE-798] in FortiNAC may allow an authenticated attacker to access to the database via shell commands.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-520",
+      "cve": "CVE-2023-26203",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiNAC:",
+                  "cpe": "cpe:2.3:a:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiNAC:",
+                    "cpe": "cpe:2.3:o:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiNAC:",
+                      "cpe": "cpe:2.3:h:fortinet:fortinac-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.1,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:X/RC:R"
+          },
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2023-05-03T00:00:00Z",
+  "updated": "2023-05-03T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-520"
+}
+

@@ -1,0 +1,27 @@
+{
+  "id": "FG-IR-15-013",
+  "title": "CVE-2015-4000 \"Logjam\" attack",
+  "description": "Researchers (from the same group of people who discovered the FREAK Vulnerability in SSL/TLS) have published a paper demonstrating several security weaknesses in how the Diffie-Hellman key exchange protocol has been deployed in TLS. Practically, it means that expectedly \"secured\" (ie, ciphered and authenticated) connections may be eavesdropped on and tampered with by a \"Man-in-the-Middle\" attacker. A TLS connection is insecure under the following condition: The server supports the DHE_EXPORT cipher suite (8.4% of https servers do) and the client accepts Diffie-Hellman keys whose size is 512 bits. In the absence of the condition above, the encryption quality cannot be downgraded and the client/server pair is not vulnerable. The researchers however pointed out that even in that case, servers using 1024 bits long Diffie-Hellman keys may be at risk if the attacker has \"nation-state class computing power\". In the research paper, the latter corresponds to hundreds of millions of core cpu-year (eg: the precomputation needed to break the TLS connections of servers using similar Diffie-Hellman parameters was estimated to require 45 million of core CPUs working in parallel for a year) The following products are confirmed to be not affected (EXPORT cipher suites are disabled and DH keys are 1024 bit at least): * FortiOS * FortiAnalyzer * FortiManager * FortiMail * FortiAuthenticator * FortiWeb * FortiSandbox * FortiCache * FortiAP * AscenLink * FortiDirector * FortiWAN * FortiPrivateCloud * FortiADC * FortiDB * FortiRecorder * FortiTester * FortiWan",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-15-013",
+      "cve": "CVE-2015-4000",
+      "definitions": [
+        {
+          "configurations": [],
+          "impact": "MitM condition"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://weakdh.org/",
+      "url": "https://weakdh.org/"
+    }
+  ],
+  "published": "2015-05-20T00:00:00Z",
+  "updated": "2015-05-20T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-15-013"
+}
+

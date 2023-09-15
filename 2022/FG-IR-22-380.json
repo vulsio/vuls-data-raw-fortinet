@@ -1,0 +1,97 @@
+{
+  "id": "FG-IR-22-380",
+  "title": "FortiOS/FortiProxy - Read Only administrator can intercept sensitive data",
+  "summary": "A cleartext transmission of sensitive information vulnerability [CWE-319] in FortiOS & FortiProxy may allow an authenticated attacker with readonly superadmin privileges to intercept traffic in order to obtain other adminstrators cookies via diagnose CLI commands.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-380",
+      "cve": "CVE-2022-41327",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less than 7.0.9, fixed in [7.0.9, 7.2.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "lt": "7.0.9"
+                  },
+                  "fixed_in": [
+                    "7.0.9",
+                    "7.2.5"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less than 7.2.5, fixed in [7.2.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "lt": "7.2.5"
+                  },
+                  "fixed_in": [
+                    "7.2.5"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiProxy:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiProxy:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiproxy-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.6,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-319"
+          ],
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2023-06-12T00:00:00Z",
+  "updated": "2023-06-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-380"
+}
+

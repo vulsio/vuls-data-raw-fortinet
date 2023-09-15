@@ -1,0 +1,224 @@
+{
+  "id": "FG-IR-21-115",
+  "title": "FortiOS - Heap-based Buffer Overflow in firmware signature verification",
+  "summary": "A heap-based buffer overflow [CWE-122] in the firmware signature verification function of FortiOS may allow an attacker to execute arbitrary code via specially crafted installation images.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-21-115",
+      "cve": "CVE-2021-36173",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.13, fixed in [6.0.14, 6.2.10, 6.4.7, 7.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.13"
+                  },
+                  "fixed_in": [
+                    "6.0.14",
+                    "6.2.10",
+                    "6.4.7",
+                    "7.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.2.0, less equal 6.2.9, fixed in [6.2.10, 6.4.7, 7.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.9"
+                  },
+                  "fixed_in": [
+                    "6.2.10",
+                    "6.4.7",
+                    "7.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 6.4.6, fixed in [6.4.7, 7.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.6"
+                  },
+                  "fixed_in": [
+                    "6.4.7",
+                    "7.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.1, fixed in [7.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.1"
+                  },
+                  "fixed_in": [
+                    "7.0.2"
+                  ]
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiGate: equal FortiGate 40F",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-40f:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 60F",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-60f:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 200F",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-200f:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 400E",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-400e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 600E",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-600e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 1100E",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-110ef:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 1800F",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-1800f:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 2200E",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-2200e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 2600F",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-2600f:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 3300E",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-3300e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 3400E",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-3400e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 3500F",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-3500f:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 3600E",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-3600e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 7121F",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-7121f:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS-6K7K: greater equal 6.0.0, less equal 6.0.10, fixed in [6.2.9, 6.4.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios-6k7k:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.10"
+                  },
+                  "fixed_in": [
+                    "6.2.9",
+                    "6.4.6"
+                  ]
+                },
+                {
+                  "description": "FortiOS-6K7K: greater equal 6.2.0, less equal 6.2.8, fixed in [6.2.9, 6.4.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios-6k7k:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.8"
+                  },
+                  "fixed_in": [
+                    "6.2.9",
+                    "6.4.6"
+                  ]
+                },
+                {
+                  "description": "FortiOS-6K7K: greater equal 6.4.0, less equal 6.4.5, fixed in [6.4.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios-6k7k:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.5"
+                  },
+                  "fixed_in": [
+                    "6.4.6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.3,
+            "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:W/RC:C"
+          },
+          "cwe": [
+            "CWE-122"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2021-12-07T00:00:00Z",
+  "updated": "2021-12-07T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-21-115"
+}
+

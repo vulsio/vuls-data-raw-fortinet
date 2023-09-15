@@ -1,0 +1,82 @@
+{
+  "id": "FG-IR-21-064",
+  "title": "FortiWAN - Use of hardcoded salt for password hashing",
+  "summary": "A use of a one-way hash with a predictable salt vulnerability [CWE-760] in FortiWAN may allow an attacker who has previously come in possession of the password file to potentially guess passwords therein stored.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-21-064",
+      "cve": "CVE-2021-26113",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWAN:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiwan:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiWAN:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiwan:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiWAN:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiwan-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiWAN Manager:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiwan_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.9,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N/E:P/RL:U/RC:C"
+          },
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2022-04-05T00:00:00Z",
+  "updated": "2022-04-05T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-21-064"
+}
+

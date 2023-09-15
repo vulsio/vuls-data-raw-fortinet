@@ -1,0 +1,67 @@
+{
+  "id": "FG-IR-22-304",
+  "title": "FortiNAC - Multiple XML external entity (XXE) injection",
+  "summary": "An improper restriction of XML external entity reference vulnerability [CWE-611] in the parser of XML requests of FortiNAC may allow an unauthenticated attacker to trigger a denial of service or read arbitrary files from the underlying file system via specifically crafted XML documents.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-304",
+      "cve": "CVE-2022-39954",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiNAC:",
+                  "cpe": "cpe:2.3:a:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiNAC:",
+                    "cpe": "cpe:2.3:o:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiNAC:",
+                      "cpe": "cpe:2.3:h:fortinet:fortinac-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.9,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L/E:P/RL:U/RC:C"
+          },
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2023-02-16T00:00:00Z",
+  "updated": "2023-02-16T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-304"
+}
+

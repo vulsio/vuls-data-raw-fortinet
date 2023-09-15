@@ -1,0 +1,129 @@
+{
+  "id": "FG-IR-22-055",
+  "title": "FortiADC - Unverified password change over the GUI",
+  "summary": "An unverified password change vulnerability [CWE-620] in FortiADC may allow an authenticated attacker to bypass the Old Password check in the password change form for the account the attacker is logged into or for others accounts except `admin` when the attacker has Read Write access on System via a crafted HTTP request .",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-055",
+      "cve": "CVE-2022-27484",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "fortiadc: greater equal 5.0.0, less equal 5.0.4, fixed in [6.2.4, 7.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.4"
+                  },
+                  "fixed_in": [
+                    "6.2.4",
+                    "7.0.0"
+                  ]
+                },
+                {
+                  "description": "fortiadc: greater equal 5.1.0, less equal 5.1.7, fixed in [6.2.4, 7.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.1.0",
+                    "le": "5.1.7"
+                  },
+                  "fixed_in": [
+                    "6.2.4",
+                    "7.0.0"
+                  ]
+                },
+                {
+                  "description": "fortiadc: greater equal 5.2.0, less equal 5.2.8, fixed in [6.2.4, 7.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.8"
+                  },
+                  "fixed_in": [
+                    "6.2.4",
+                    "7.0.0"
+                  ]
+                },
+                {
+                  "description": "fortiadc: greater equal 5.3.0, less equal 5.3.7, fixed in [6.2.4, 7.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.3.0",
+                    "le": "5.3.7"
+                  },
+                  "fixed_in": [
+                    "6.2.4",
+                    "7.0.0"
+                  ]
+                },
+                {
+                  "description": "fortiadc: greater equal 5.4.0, less equal 5.4.5, fixed in [6.2.4, 7.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.5"
+                  },
+                  "fixed_in": [
+                    "6.2.4",
+                    "7.0.0"
+                  ]
+                },
+                {
+                  "description": "fortiadc: greater equal 6.0.0, less equal 6.0.4, fixed in [6.2.4, 7.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.4"
+                  },
+                  "fixed_in": [
+                    "6.2.4",
+                    "7.0.0"
+                  ]
+                },
+                {
+                  "description": "fortiadc: greater equal 6.1.0, less equal 6.1.6, fixed in [6.2.4, 7.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.1.0",
+                    "le": "6.1.6"
+                  },
+                  "fixed_in": [
+                    "6.2.4",
+                    "7.0.0"
+                  ]
+                },
+                {
+                  "description": "fortiadc: greater equal 6.2.0, less equal 6.2.3, fixed in [6.2.4, 7.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.3"
+                  },
+                  "fixed_in": [
+                    "6.2.4",
+                    "7.0.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-620"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2022-08-02T00:00:00Z",
+  "updated": "2022-08-02T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-055"
+}
+

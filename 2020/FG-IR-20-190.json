@@ -1,0 +1,82 @@
+{
+  "id": "FG-IR-20-190",
+  "title": "FortiManager - Excel formula injection in P&O IPv4 Policy names Vulnerability",
+  "summary": "An improper neutralization of formula elements vulnerability (CWE 1236) in FortiManager may allow a local authenticated privileged attacker to execute arbitrary shell code on the end-user's host via inserting CSV formula in the policy names. This is achieved once the user downloads and opens the configuration csv/xls* file.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-20-190",
+      "cve": "CVE-2021-24016",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager:",
+                  "cpe": "cpe:2.3:a:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiManager:",
+                    "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiManager:",
+                      "cpe": "cpe:2.3:h:fortinet:fortimanager-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager Cloud:",
+                  "cpe": "cpe:2.3:a:fortinet:fortimanager_cloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.5,
+            "vector": "CVSS:3.1/AV:A/AC:H/PR:H/UI:R/S:C/C:L/I:L/A:N/E:P/RL:X/RC:X"
+          },
+          "impact": "Arbitrary Code Execution"
+        }
+      ]
+    }
+  ],
+  "published": "2021-09-07T00:00:00Z",
+  "updated": "2021-09-07T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-20-190"
+}
+

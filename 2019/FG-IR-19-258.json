@@ -1,0 +1,71 @@
+{
+  "id": "FG-IR-19-258",
+  "title": "Authorizations Bypass in the FortiPresence portal parameters",
+  "summary": "Two authorization bypass through user-controlled key vulnerabilities in the FortiPresence administration interface may allow an attacker to gain access to some user data via portal manager or portal users parameters.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-19-258",
+      "cve": "CVE-2020-6641",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiPresence:",
+                  "cpe": "cpe:2.3:a:fortinet:fortipresence:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:X/RL:X/RC:X"
+          },
+          "impact": "Improper Access Control"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-258",
+      "cve": "CVE-2020-6642",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiPresence:",
+                  "cpe": "cpe:2.3:a:fortinet:fortipresence:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:X/RL:X/RC:X"
+          },
+          "impact": "Improper Access Control"
+        }
+      ]
+    }
+  ],
+  "published": "2020-03-09T00:00:00Z",
+  "updated": "2020-03-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-19-258"
+}
+

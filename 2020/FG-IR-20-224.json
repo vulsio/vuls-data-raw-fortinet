@@ -1,0 +1,67 @@
+{
+  "id": "FG-IR-20-224",
+  "title": "FortiProxy SSL VPN user credential plaintext storage",
+  "summary": "A cleartext storage in a file or on disk (CWE-313) vulnerability in FortiProxy SSL VPN may allow an attacker to retrieve a logged-in SSL VPN user's credentials, should that attacker be able to read the session file stored on the targeted device's system. To successfully exploit this weakness, another unrelated weakness (eg: a system file leaking vulnerability) would need to be exploited first.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-20-224",
+      "cve": "CVE-2019-17655",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiProxy:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiProxy:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiproxy-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.9,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N/E:U/RL:X/RC:X"
+          },
+          "impact": "Information Disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2021-03-02T00:00:00Z",
+  "updated": "2021-03-02T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-20-224"
+}
+

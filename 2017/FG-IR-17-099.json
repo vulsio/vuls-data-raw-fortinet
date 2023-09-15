@@ -1,0 +1,63 @@
+{
+  "id": "FG-IR-17-099",
+  "title": "FortiMail reflected XSS vulnerability under customized webmail login page",
+  "summary": "There exists a reflected cross-site scripting (XSS) vulnerability on FortiMail customized pre-authentication webmail login page, allowing successful attackers to run arbitrary javascript code in the security context of their victim's browser.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-099",
+      "cve": "CVE-2017-7732",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiMail: less equal 5.1.7, fixed in [5.2.10, 5.3.10]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.1.7"
+                  },
+                  "fixed_in": [
+                    "5.2.10",
+                    "5.3.10"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 5.2.0, less equal 5.2.9, fixed in [5.2.10, 5.3.10]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.9"
+                  },
+                  "fixed_in": [
+                    "5.2.10",
+                    "5.3.10"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 5.3.0, less equal 5.3.9, fixed in [5.3.10]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.3.0",
+                    "le": "5.3.9"
+                  },
+                  "fixed_in": [
+                    "5.3.10"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Cross-site scripting (XSS)"
+        }
+      ]
+    }
+  ],
+  "published": "2017-10-13T00:00:00Z",
+  "updated": "2017-10-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-099"
+}
+

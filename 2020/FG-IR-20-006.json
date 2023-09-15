@@ -1,0 +1,67 @@
+{
+  "id": "FG-IR-20-006",
+  "title": "Session ID does not expire after logout in FortiDeceptor",
+  "summary": "An insufficient session expiration vulnerability in FortiDeceptor may allow an attacker to reuse the unexpired admin user session IDs to gain admin privileges, should the attacker be able to obtain that session ID via other, hypothetical attacks.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-20-006",
+      "cve": "CVE-2020-6644",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiDeceptor:",
+                  "cpe": "cpe:2.3:a:fortinet:fortideceptor:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiDeceptor:",
+                    "cpe": "cpe:2.3:o:fortinet:fortideceptor:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiDeceptor:",
+                      "cpe": "cpe:2.3:h:fortinet:fortideceptor-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L/E:F/RL:X/RC:X"
+          },
+          "impact": "Escalation of Privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2020-06-21T00:00:00Z",
+  "updated": "2020-06-21T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-20-006"
+}
+

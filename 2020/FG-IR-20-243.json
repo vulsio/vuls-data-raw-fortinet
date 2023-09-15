@@ -1,0 +1,91 @@
+{
+  "id": "FG-IR-20-243",
+  "title": "FortiOS - Disclosure of other VDOMs information through CLI commands",
+  "summary": "An exposure of sensitive information to an unauthorized actor vulnerability in FortiOS CLI may allow a local and authenticated user assigned to a specific VDOM to retrieve other VDOMs information such as the admin account list and the network interface list.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-20-243",
+      "cve": "CVE-2021-32600",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.14, fixed in [6.2.10, 6.4.7, 7.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.14"
+                  },
+                  "fixed_in": [
+                    "6.2.10",
+                    "6.4.7",
+                    "7.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.17, fixed in [6.2.10, 6.4.7, 7.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.17"
+                  },
+                  "fixed_in": [
+                    "6.2.10",
+                    "6.4.7",
+                    "7.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.2.0, less equal 6.2.9, fixed in [6.2.10, 6.4.7, 7.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.9"
+                  },
+                  "fixed_in": [
+                    "6.2.10",
+                    "6.4.7",
+                    "7.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 6.4.6, fixed in [6.4.7, 7.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.6"
+                  },
+                  "fixed_in": [
+                    "6.4.7",
+                    "7.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 7.0.0, fixed in [7.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.0.0"
+                  },
+                  "fixed_in": [
+                    "7.0.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.9,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2021-09-07T00:00:00Z",
+  "updated": "2021-09-07T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-20-243"
+}
+

@@ -1,0 +1,40 @@
+{
+  "id": "FG-IR-18-059",
+  "title": "Potential XSS in \"CSRF validation failure\" page due to lack of referer sanitization",
+  "summary": "On FortiAuthenticator, a HTML page is returned to the user when the CSRF validation fails on referer mismatch. This page displays the faulty referer without sanitizing it. Therefore, in an attack scenario where the referer could be manipulated, the attacker could inject malicious scripts in the aforementioned HTML-page.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-059",
+      "cve": "CVE-2018-9186",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAuthenticator: greater equal 4.0.0, less than 5.3.0, fixed in [5.3.0]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "lt": "5.3.0"
+                  },
+                  "fixed_in": [
+                    "5.3.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Cross-site Scripting (XSS)"
+        }
+      ]
+    }
+  ],
+  "published": "2018-05-29T00:00:00Z",
+  "updated": "2019-02-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-059"
+}
+

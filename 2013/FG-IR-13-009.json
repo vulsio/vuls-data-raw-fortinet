@@ -1,0 +1,119 @@
+{
+  "id": "FG-IR-13-009",
+  "title": "FortiWeb Multiple Vulnerabilities",
+  "description": "FortiWeb 5.0.2 and lower are vulnerable to cross-site scripting (CVE-2014-1955), HTTP header injection (CVE-2014-1956) and privilege escalation (CVE-2014-1957) issues.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-13-009",
+      "cve": "CVE-2014-1955",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: less equal 4.4.7, fixed in [5.0.3]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "4.4.7"
+                  },
+                  "fixed_in": [
+                    "5.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 5.0.0, less equal 5.0.2, fixed in [5.0.3]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.2"
+                  },
+                  "fixed_in": [
+                    "5.0.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Script execution and privilege elevation."
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-13-009",
+      "cve": "CVE-2014-1956",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: less equal 4.4.7, fixed in [5.0.3]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "4.4.7"
+                  },
+                  "fixed_in": [
+                    "5.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 5.0.0, less equal 5.0.2, fixed in [5.0.3]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.2"
+                  },
+                  "fixed_in": [
+                    "5.0.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Script execution and privilege elevation."
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-13-009",
+      "cve": "CVE-2014-1957",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: less equal 4.4.7, fixed in [5.0.3]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "4.4.7"
+                  },
+                  "fixed_in": [
+                    "5.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 5.0.0, less equal 5.0.2, fixed in [5.0.3]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.2"
+                  },
+                  "fixed_in": [
+                    "5.0.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Script execution and privilege elevation."
+        }
+      ]
+    }
+  ],
+  "published": "2014-02-13T00:00:00Z",
+  "updated": "2014-02-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-13-009"
+}
+

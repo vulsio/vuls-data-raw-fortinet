@@ -1,0 +1,41 @@
+{
+  "id": "FG-IR-21-094",
+  "title": "FortiPortal - Use of a predictable salt and digest-based algorithm for password hashing",
+  "summary": "A use of one-way hash with a predictable salt (CWE-760) vulnerability in the password storing mechanism of FortiPortal may allow an attacker already in possession of the password store to decrypt the passwords by means of precomputed tables.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-21-094",
+      "cve": "CVE-2021-32596",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiPortal:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.5,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N/E:P/RL:W/RC:C"
+          },
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2021-08-03T00:00:00Z",
+  "updated": "2021-08-03T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-21-094"
+}
+

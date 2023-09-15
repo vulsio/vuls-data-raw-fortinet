@@ -1,0 +1,67 @@
+{
+  "id": "FG-IR-21-001",
+  "title": "FortiWLC - Multiple Buffer Overflow vulnerabilities",
+  "summary": "Multiple instances of stack-based buffer overflow vulnerability (CWE-121) in the command line interface of FortiWLC may allow a local, authenticated attacker to crash the access point being managed by the controller and potentially execute unauthorized code via a specifically crafted CLI command.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-21-001",
+      "cve": "CVE-2021-26094",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWLC:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiWLC:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiWLC:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiwlc-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.9,
+            "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H/E:U/RL:X/RC:R"
+          },
+          "impact": "Remote code execution, Denial of Service"
+        }
+      ]
+    }
+  ],
+  "published": "2021-06-01T00:00:00Z",
+  "updated": "2021-06-01T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-21-001"
+}
+

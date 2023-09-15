@@ -1,0 +1,36 @@
+{
+  "id": "FG-IR-16-021",
+  "title": "FortiClient Unencrypted Password Vulnerability",
+  "summary": "One of the processes in FortiClient stores VPN credentials unencrypted in memory. A malicious attacker who compromised the workstation could dump the credentials.",
+  "description": "One of the processes in FortiClient stores VPN credentials unencrypted in memory. A malicious attacker who compromised the workstation could dump the credentials.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-021",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient: less equal 5.4.0, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.0"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Credentials exposure."
+        }
+      ]
+    }
+  ],
+  "published": "2016-09-12T00:00:00Z",
+  "updated": "2016-09-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-021"
+}
+

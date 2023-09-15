@@ -1,0 +1,105 @@
+{
+  "id": "FG-IR-17-302",
+  "title": "The ROBOT Attack - Return of Bleichenbacher's Oracle Threat",
+  "summary": "A plaintext recovery of encrypted messages or a Man-in-the-middle (MiTM) attack on RSA PKCS #1 v1.5 encryption may be possible without knowledge of the server's private key. FortiOS are affected by the following two CVEs: CVE-2018-9192: ROBOT vulnerability reported under SSL Deep Inspection when CPx being used CVE-2018-9194: ROBOT attack under VIP SSL offloading when CPx being used   FortiOS for admin port 443 is NOT vulnerable to the ROBOT attack.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-302",
+      "cve": "CVE-2018-9192",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.4.6, less equal 5.4.9, fixed in [5.4.10, 6.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.6",
+                    "le": "5.4.9"
+                  },
+                  "fixed_in": [
+                    "5.4.10",
+                    "6.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.1, fixed in [6.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.1"
+                  },
+                  "fixed_in": [
+                    "6.0.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N/E:X/RL:X/RC:X"
+          },
+          "impact": "Information Exposure Through Discrepancy"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-302",
+      "cve": "CVE-2018-9194",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.4.6, less equal 5.4.9, fixed in [5.4.10, 6.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.6",
+                    "le": "5.4.9"
+                  },
+                  "fixed_in": [
+                    "5.4.10",
+                    "6.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.1, fixed in [6.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.1"
+                  },
+                  "fixed_in": [
+                    "6.0.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N/E:X/RL:X/RC:X"
+          },
+          "impact": "Information Exposure Through Discrepancy"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://robotattack.org/\n",
+      "url": "https://robotattack.org/\n"
+    },
+    {
+      "description": "https://www.kb.cert.org/vuls/id/144389",
+      "url": "https://www.kb.cert.org/vuls/id/144389"
+    }
+  ],
+  "published": "2018-08-27T00:00:00Z",
+  "updated": "2022-10-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-302"
+}
+

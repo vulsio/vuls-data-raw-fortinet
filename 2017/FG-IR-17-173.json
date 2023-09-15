@@ -1,0 +1,209 @@
+{
+  "id": "FG-IR-17-173",
+  "title": "Sweet32 Birthday attack in TLS",
+  "summary": "The DES and Triple DES ciphers, as used in the TLS, SSH, and IPSec protocols and other protocols and products, have a birthday bound of approximately four billion blocks, which makes it easier for remote attackers to obtain cleartext data via a birthday attack against a long-duration encrypted session, as demonstrated by an HTTPS session using Triple DES in CBC mode, aka a \"Sweet32\" attack.https://nvd.nist.gov/vuln/detail/CVE-2016-2183",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-173",
+      "cve": "CVE-2016-2183",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 5.2.9, fixed in [5.2.10, 5.4.2, 5.6.0, 6.0.0, 6.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.2.9"
+                  },
+                  "fixed_in": [
+                    "5.2.10",
+                    "5.4.2",
+                    "5.6.0",
+                    "6.0.0",
+                    "6.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 5.4.0, less equal 5.4.1, fixed in [5.4.2, 5.6.0, 6.0.0, 6.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.2",
+                    "5.6.0",
+                    "6.0.0",
+                    "6.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 5.4.6, less equal 5.4.7, fixed in [5.6.0, 6.0.0, 6.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.6",
+                    "le": "5.4.7"
+                  },
+                  "fixed_in": [
+                    "5.6.0",
+                    "6.0.0",
+                    "6.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: equal 6.0.2, fixed in [6.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.0.2"
+                  },
+                  "fixed_in": [
+                    "6.0.3"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP: less equal 6.0.0, fixed in [6.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "6.0.0"
+                  },
+                  "fixed_in": [
+                    "6.0.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP-W2: less equal 5.4.5, fixed in [5.4.6, 5.6.4, 6.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-w2:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.5"
+                  },
+                  "fixed_in": [
+                    "5.4.6",
+                    "5.6.4",
+                    "6.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiAP-W2: greater equal 5.6.0, less equal 5.6.3, fixed in [5.6.4, 6.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-w2:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.3"
+                  },
+                  "fixed_in": [
+                    "5.6.4",
+                    "6.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiAP-W2: equal 6.0.0, fixed in [6.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-w2:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.0.0"
+                  },
+                  "fixed_in": [
+                    "6.0.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.4.8",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.8"
+                  }
+                },
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.3",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.3"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch: less equal 3.6.7, fixed in [3.6.8, 6.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "3.6.7"
+                  },
+                  "fixed_in": [
+                    "3.6.8",
+                    "6.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiSwitch: greater equal 6.0.0, less equal 6.0.1, fixed in [6.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.1"
+                  },
+                  "fixed_in": [
+                    "6.0.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiClientEMS: less equal 7.0.8, fixed in [7.0.9, 7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "7.0.8"
+                  },
+                  "fixed_in": [
+                    "7.0.9",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiClientEMS: equal 7.2.0, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.2.0"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N/E:X/RL:X/RC:X"
+          },
+          "impact": "Information Disclosure"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://sweet32.info/",
+      "url": "https://sweet32.info/"
+    }
+  ],
+  "published": "2019-02-07T00:00:00Z",
+  "updated": "2023-08-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-173"
+}
+

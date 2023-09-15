@@ -1,0 +1,231 @@
+{
+  "id": "FG-IR-22-120",
+  "title": "FortiAP's - Arbitrary file read through the CLI",
+  "summary": "An incomplete filtering of one or more instances of special elements vulnerability [CWE-792] in the command line interpreter of FortiAP, FortiAP-W2, FortiAP-U, FortiAP-C may allow an authenticated attacker to read arbitrary files via specially crafted command arguments.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-120",
+      "cve": "CVE-2023-25608",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP: greater equal 6.0.0, less equal 6.0.6, fixed in [7.0.6, 7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.6"
+                  },
+                  "fixed_in": [
+                    "7.0.6",
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiAP: greater equal 6.4.0, less equal 6.4.9, fixed in [7.0.6, 7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.9"
+                  },
+                  "fixed_in": [
+                    "7.0.6",
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiAP: greater equal 7.0.0, less equal 7.0.5, fixed in [7.0.6, 7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.5"
+                  },
+                  "fixed_in": [
+                    "7.0.6",
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiAP: greater equal 7.2.0, less equal 7.2.1, fixed in [7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.1"
+                  },
+                  "fixed_in": [
+                    "7.2.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP-C: greater equal 5.2.0, less equal 5.2.1, fixed in [5.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-c:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.1"
+                  },
+                  "fixed_in": [
+                    "5.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiAP-C: greater equal 5.4.0, less equal 5.4.4, fixed in [5.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-c:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.4"
+                  },
+                  "fixed_in": [
+                    "5.4.5"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP-U: greater equal 5.4.0, less equal 5.4.6, fixed in [6.2.6, 7.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-u:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.6"
+                  },
+                  "fixed_in": [
+                    "6.2.6",
+                    "7.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiAP-U: greater equal 6.0.0, less equal 6.0.4, fixed in [6.2.6, 7.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-u:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.4"
+                  },
+                  "fixed_in": [
+                    "6.2.6",
+                    "7.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiAP-U: greater equal 6.2.0, less equal 6.2.5, fixed in [6.2.6, 7.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-u:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.5"
+                  },
+                  "fixed_in": [
+                    "6.2.6",
+                    "7.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiAP-U: equal 7.0.0, fixed in [7.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-u:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.0.0"
+                  },
+                  "fixed_in": [
+                    "7.0.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP-W2: greater equal 6.0.0, less equal 6.0.6, fixed in [7.0.6, 7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-w2:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.6"
+                  },
+                  "fixed_in": [
+                    "7.0.6",
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiAP-W2: greater equal 6.2.0, less equal 6.2.6, fixed in [7.0.6, 7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-w2:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.6"
+                  },
+                  "fixed_in": [
+                    "7.0.6",
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiAP-W2: greater equal 6.4.0, less equal 6.4.9, fixed in [7.0.6, 7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-w2:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.9"
+                  },
+                  "fixed_in": [
+                    "7.0.6",
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiAP-W2: greater equal 7.0.0, less equal 7.0.1, fixed in [7.0.6, 7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-w2:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.1"
+                  },
+                  "fixed_in": [
+                    "7.0.6",
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiAP-W2: greater equal 7.0.3, less equal 7.0.5, fixed in [7.0.6, 7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-w2:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.3",
+                    "le": "7.0.5"
+                  },
+                  "fixed_in": [
+                    "7.0.6",
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiAP-W2: greater equal 7.2.0, less equal 7.2.1, fixed in [7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-w2:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.1"
+                  },
+                  "fixed_in": [
+                    "7.2.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.2,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-792"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2023-09-07T00:00:00Z",
+  "updated": "2023-09-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-120"
+}
+

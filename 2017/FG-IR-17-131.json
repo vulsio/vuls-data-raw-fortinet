@@ -1,0 +1,50 @@
+{
+  "id": "FG-IR-17-131",
+  "title": "FortiWeb Stored XSS vulnerability on webUI certificate view page",
+  "summary": "There exists a persistent Cross-site Scripting (XSS) vulnerability on FortiWeb's webUI Certificate View page, which can be triggered via malicious certificate import.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-131",
+      "cve": "CVE-2017-7736",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: less equal 5.7.1, fixed in [5.7.2, 5.8.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.7.1"
+                  },
+                  "fixed_in": [
+                    "5.7.2",
+                    "5.8.1"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: equal 5.8.0, fixed in [5.8.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.8.0"
+                  },
+                  "fixed_in": [
+                    "5.8.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Cross-site Scripting (XSS)"
+        }
+      ]
+    }
+  ],
+  "published": "2017-11-17T00:00:00Z",
+  "updated": "2017-11-17T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-131"
+}
+

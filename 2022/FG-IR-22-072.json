@@ -1,0 +1,71 @@
+{
+  "id": "FG-IR-22-072",
+  "title": "CVE-2022-22965 and CVE-2022-22963 vulnerabilities",
+  "summary": "Two distinct spring project vulnerabilities where released recently with critical CVSS score and classified as zero-Day attacks. The two vulnerabilities are currently known as : CVE-2022-22965 or Spring4Shell: A Spring MVC or Spring WebFlux application running on JDK 9+ may be vulnerable to remote code execution (RCE) via data binding. The specific exploit requires the application to run on Tomcat as a WAR deployment. If the application is deployed as a Spring Boot executable jar, i.e. the default, it is not vulnerable to the exploit. However, the nature of the vulnerability is more general, and there may be other ways to exploit it. https://tanzu.vmware.com/security/cve-2022-22965 https://www.cyberkendra.com/2022/03/springshell-rce-0-day-vulnerability.html?fbclid=IwAR2fXxKQjG9vnJiOaXyZ1N_Ypx91TOzO6f48qGZRfKRzinYtD5nUCIptIjg&m=1 CVE-2022-22963: In Spring Cloud Function versions 3.1.6, 3.2.2 and older unsupported versions, when using routing functionality it is possible for a user to provide a specially crafted SpEL as a routing-expression that may result in access to local resources. https://tanzu.vmware.com/security/cve-2022-22963",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-072",
+      "cve": "CVE-2022-22965",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSOAR:",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:U/RC:U"
+          },
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-22-072",
+      "cve": "CVE-2022-22963",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSOAR:",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:U/RC:U"
+          },
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2022-04-01T00:00:00Z",
+  "updated": "2022-04-01T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-072"
+}
+

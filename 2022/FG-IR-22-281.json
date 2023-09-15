@@ -1,0 +1,67 @@
+{
+  "id": "FG-IR-22-281",
+  "title": "FortiNAC - Multiple Reflected XSS",
+  "summary": "An improper neutralization of input during web page generation ('Cross-site Scripting') vulnerability  [CWE-79] in FortiNAC may allow an authenticated user to perform an XSS attack via crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-281",
+      "cve": "CVE-2022-40676",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiNAC:",
+                  "cpe": "cpe:2.3:a:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiNAC:",
+                    "cpe": "cpe:2.3:o:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiNAC:",
+                      "cpe": "cpe:2.3:h:fortinet:fortinac-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.1,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:U/RC:C"
+          },
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-03-07T00:00:00Z",
+  "updated": "2023-03-07T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-281"
+}
+

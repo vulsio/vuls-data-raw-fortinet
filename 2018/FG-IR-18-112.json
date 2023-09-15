@@ -1,0 +1,43 @@
+{
+  "id": "FG-IR-18-112",
+  "title": "ISC BIND vulnerabilities",
+  "summary": "Multiple Denial of Service (DoS) or process crash vulnerabilities (CVE-2018-5737, CVE-2018-5736) are affecting ISC BIND.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-112",
+      "cve": "CVE-2018-5736",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Denial of Service (DoS)"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-18-112",
+      "cve": "CVE-2018-5737",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Denial of Service (DoS)"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://www.isc.org/downloads/software-support-policy/security-advisory/",
+      "url": "https://www.isc.org/downloads/software-support-policy/security-advisory/"
+    }
+  ],
+  "published": "2018-06-05T00:00:00Z",
+  "updated": "2018-06-05T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-112"
+}
+

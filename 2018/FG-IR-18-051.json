@@ -1,0 +1,53 @@
+{
+  "id": "FG-IR-18-051",
+  "title": "FortiManager Unencrypted Password Vulnerability",
+  "summary": "A cleartext transmission of sensitive information vulnerability in FortiManager may allow an unauthenticated attacker in a man in the middle position to retrieve the admin password via intercepting REST API JSON responses.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-051",
+      "cve": "CVE-2018-1360",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 5.2.0, less equal 5.2.7, fixed in [5.2.8, 5.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.7"
+                  },
+                  "fixed_in": [
+                    "5.2.8",
+                    "5.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 5.4.0, less equal 5.4.1, fixed in [5.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:X/RL:X/RC:X"
+          },
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2019-04-23T00:00:00Z",
+  "updated": "2019-04-23T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-051"
+}
+

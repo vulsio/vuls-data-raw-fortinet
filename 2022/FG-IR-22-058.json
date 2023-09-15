@@ -1,0 +1,137 @@
+{
+  "id": "FG-IR-22-058",
+  "title": "FortiNAC -  Unprotected MySQL root account",
+  "summary": "An empty password in configuration file vulnerability [CWE-258] in FortiNAC may allow an authenticated attacker to access the MySQL databases via the CLI.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-058",
+      "cve": "CVE-2022-26117",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiNAC: less equal 8.3.7, fixed in [9.1.6, 9.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "8.3.7"
+                  },
+                  "fixed_in": [
+                    "9.1.6",
+                    "9.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiNAC: greater equal 8.5.0, less equal 8.5.2, fixed in [9.1.6, 9.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.5.0",
+                    "le": "8.5.2"
+                  },
+                  "fixed_in": [
+                    "9.1.6",
+                    "9.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiNAC: equal 8.5.4, fixed in [9.1.6, 9.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "8.5.4"
+                  },
+                  "fixed_in": [
+                    "9.1.6",
+                    "9.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiNAC: equal 8.6.0, fixed in [9.1.6, 9.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "8.6.0"
+                  },
+                  "fixed_in": [
+                    "9.1.6",
+                    "9.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiNAC: greater equal 8.6.2, less equal 8.6.5, fixed in [9.1.6, 9.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.6.2",
+                    "le": "8.6.5"
+                  },
+                  "fixed_in": [
+                    "9.1.6",
+                    "9.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiNAC: greater equal 8.7.0, less equal 8.7.6, fixed in [9.1.6, 9.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.7.0",
+                    "le": "8.7.6"
+                  },
+                  "fixed_in": [
+                    "9.1.6",
+                    "9.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiNAC: greater equal 8.8.0, less equal 8.8.11, fixed in [9.1.6, 9.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.8.0",
+                    "le": "8.8.11"
+                  },
+                  "fixed_in": [
+                    "9.1.6",
+                    "9.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiNAC: greater equal 9.1.0, less equal 9.1.5, fixed in [9.1.6, 9.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "9.1.0",
+                    "le": "9.1.5"
+                  },
+                  "fixed_in": [
+                    "9.1.6",
+                    "9.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiNAC: greater equal 9.2.0, less equal 9.2.3, fixed in [9.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "9.2.0",
+                    "le": "9.2.3"
+                  },
+                  "fixed_in": [
+                    "9.2.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:X/RC:R"
+          },
+          "cwe": [
+            "CWE-258"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2022-07-05T00:00:00Z",
+  "updated": "2022-07-05T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-058"
+}
+

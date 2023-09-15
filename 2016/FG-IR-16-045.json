@@ -1,0 +1,142 @@
+{
+  "id": "FG-IR-16-045",
+  "title": "FortiWAN Multiple Vulnerabilities",
+  "summary": "FortWan 4.2.4 and below is exposed to cross site scripting, information leak and escalation of privilege vulnerabilities.CVE-2016-4965: Non-administrative authenticated user having access privileges to the nslookup functionality can perform OS command injection in the root user contextCVE-2016-4966: Non-administrative authenticated user having access privileges to change the HTTP Get param \"UserName\" to \"Administrator\" may access PCAP filesCVE-2016-4967: Non-administrative authenticated user may access configuration information and/or PCAP files via specific URLsCVE-2016-4968: Non-administrative authenticated user may obtain administrator cookie via specific GET requestsCVE-2016-4969: Persistent XSS",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-045",
+      "cve": "CVE-2016-4965",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWAN: less equal 4.2.4, fixed in [4.2.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwan:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "4.2.4"
+                  },
+                  "fixed_in": [
+                    "4.2.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "XSS, information leak, escalation of privilege"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-16-045",
+      "cve": "CVE-2016-4966",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWAN: less equal 4.2.4, fixed in [4.2.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwan:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "4.2.4"
+                  },
+                  "fixed_in": [
+                    "4.2.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "XSS, information leak, escalation of privilege"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-16-045",
+      "cve": "CVE-2016-4967",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWAN: less equal 4.2.4, fixed in [4.2.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwan:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "4.2.4"
+                  },
+                  "fixed_in": [
+                    "4.2.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "XSS, information leak, escalation of privilege"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-16-045",
+      "cve": "CVE-2016-4968",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWAN: less equal 4.2.4, fixed in [4.2.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwan:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "4.2.4"
+                  },
+                  "fixed_in": [
+                    "4.2.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "XSS, information leak, escalation of privilege"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-16-045",
+      "cve": "CVE-2016-4969",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWAN: less equal 4.2.4, fixed in [4.2.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwan:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "4.2.4"
+                  },
+                  "fixed_in": [
+                    "4.2.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "XSS, information leak, escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "http://www.kb.cert.org/vuls/id/724487",
+      "url": "http://www.kb.cert.org/vuls/id/724487"
+    }
+  ],
+  "published": "2016-09-07T00:00:00Z",
+  "updated": "2016-09-07T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-045"
+}
+

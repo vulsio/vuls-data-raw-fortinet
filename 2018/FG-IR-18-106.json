@@ -1,0 +1,33 @@
+{
+  "id": "FG-IR-18-106",
+  "title": "VPNFilter botnet",
+  "summary": "On May 23, 2018, Talos disclosed in a blog post the discovery of a modular malware system they deemed \"VPNFilter\", affecting multiple network devices wordwide, and embedding Botnet capabilities.As described in Talos' blog post, the devices known to be affected by VPNFilter are Linksys, MikroTik, NETGEAR and TP-Link networking equipment in the small and home office (SOHO) space, as well at QNAP network-attached storage (NAS) devices.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-106",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "[1] https://blog.talosintelligence.com/2018/05/VPNFilter.html\n",
+      "url": "[1] https://blog.talosintelligence.com/2018/05/VPNFilter.html\n"
+    },
+    {
+      "description": "[2] https://www.fortinet.com/blog/threat-research/defending-against-the-new-vpnfilter-botnet.html",
+      "url": "[2] https://www.fortinet.com/blog/threat-research/defending-against-the-new-vpnfilter-botnet.html"
+    }
+  ],
+  "published": "2018-08-27T00:00:00Z",
+  "updated": "2018-08-27T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-106"
+}
+

@@ -1,0 +1,67 @@
+{
+  "id": "FG-IR-22-274",
+  "title": "FortiTester - Multiple command injection vulnerabilities in GUI and API",
+  "summary": "Multiple improper neutralization of special elements used in an OS Command ('OS Command Injection') vulnerabilities [CWE-78] in FortiTester may allow an authenticated attacker to execute arbitrary commands in the underlying shell.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-274",
+      "cve": "CVE-2022-35845",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiTester:",
+                  "cpe": "cpe:2.3:a:fortinet:fortitester:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiTester:",
+                    "cpe": "cpe:2.3:o:fortinet:fortitester:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiTester:",
+                      "cpe": "cpe:2.3:h:fortinet:fortitester-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.6,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:U/RC:C"
+          },
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-01-03T00:00:00Z",
+  "updated": "2023-01-03T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-274"
+}
+

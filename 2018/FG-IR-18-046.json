@@ -1,0 +1,116 @@
+{
+  "id": "FG-IR-18-046",
+  "title": "AMD processors affected by vulnerabilities: Ryzenfall, Fallout, Chimera and Masterkey",
+  "summary": "A collection of AMD vulnerabilities known as \"Ryzenfall, Fallout, Chimera, Masterkey\" has been released. Attackers in possession of these vulnerabilities would receive additional capabilities, like persistence by malware injection, stealth, network credential theft and more. It affects AMD processors: EPYC, Ryzen, Ryzen Pro, Ryzen Mobile. The related CVEs are: 1. CVE-2018-8930: The AMD EPYC Server, Ryzen, Ryzen Pro, and Ryzen Mobile processor chips have insufficient enforcement of Hardware Validated Boot, aka MASTERKEY-1, MASTERKEY-2, and MASTERKEY-3.2. CVE-2018-8931: The AMD Ryzen, Ryzen Pro, and Ryzen Mobile processor chips have insufficient access control for the Secure Processor, aka RYZENFALL-1.3. CVE-2018-8932: The AMD Ryzen and Ryzen Pro processor chips have insufficient access control for the Secure Processor, aka RYZENFALL-2, RYZENFALL-3, and RYZENFALL-4.4. CVE-2018-8933: The AMD EPYC Server processor chips have insufficient access control for protected memory regions, aka FALLOUT-1, FALLOUT-2, and FALLOUT-3.5. CVE-2018-8934: The Promontory chipset, as used in AMD Ryzen and Ryzen Pro platforms, has a backdoor in firmware, aka CHIMERA-FW. 6. CVE-2018-8935: The Promontory chipset, as used in AMD Ryzen and Ryzen Pro platforms, has a backdoor in the ASIC, aka CHIMERA-HW. 7. CVE-2018-8936: The AMD EPYC Server, Ryzen, Ryzen Pro, and Ryzen Mobile processor chips allow Platform Security Processor (PSP) privilege escalation.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-046",
+      "cve": "CVE-2018-8930",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Execute unauthorized code or commands, Escalation of privilege, Information Disclosure"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-18-046",
+      "cve": "CVE-2018-8931",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Execute unauthorized code or commands, Escalation of privilege, Information Disclosure"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-18-046",
+      "cve": "CVE-2018-8932",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Execute unauthorized code or commands, Escalation of privilege, Information Disclosure"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-18-046",
+      "cve": "CVE-2018-8933",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Execute unauthorized code or commands, Escalation of privilege, Information Disclosure"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-18-046",
+      "cve": "CVE-2018-8934",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Execute unauthorized code or commands, Escalation of privilege, Information Disclosure"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-18-046",
+      "cve": "CVE-2018-8935",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Execute unauthorized code or commands, Escalation of privilege, Information Disclosure"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-18-046",
+      "cve": "CVE-2018-8936",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Execute unauthorized code or commands, Escalation of privilege, Information Disclosure"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://safefirmware.com/amdflaws_whitepaper.pdf\n",
+      "url": "https://safefirmware.com/amdflaws_whitepaper.pdf\n"
+    },
+    {
+      "description": "https://safefirmware.com/Whitepaper+Clarification.pdf\n",
+      "url": "https://safefirmware.com/Whitepaper+Clarification.pdf\n"
+    },
+    {
+      "description": "https://community.amd.com/community/amd-corporate/blog/2018/03/21/initial-amd-technical-assessment-of-cts-labs-research",
+      "url": "https://community.amd.com/community/amd-corporate/blog/2018/03/21/initial-amd-technical-assessment-of-cts-labs-research"
+    }
+  ],
+  "published": "2018-04-13T00:00:00Z",
+  "updated": "2018-04-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-046"
+}
+

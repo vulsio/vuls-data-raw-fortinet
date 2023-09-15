@@ -1,0 +1,157 @@
+{
+  "id": "FG-IR-18-292",
+  "title": "Multiple products - Lack of certificate verification when establishing secure connections",
+  "summary": "An improper certificate validation vulnerability [CWE-295] in FortiOS, FortiAnalyzer, FortiManager, and FortiSandbox may allow a network adjacent and unauthenticated attacker to man-in-the-middle the communication between the listed products and some external peers.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-292",
+      "cve": "CVE-2022-22305",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 6.4.7, fixed in [6.4.8, 7.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "6.4.7"
+                  },
+                  "fixed_in": [
+                    "6.4.8",
+                    "7.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 7.0.0, less equal 7.0.2, fixed in [7.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.2"
+                  },
+                  "fixed_in": [
+                    "7.0.3"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: less equal 6.4.6, fixed in [6.4.7, 7.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "6.4.6"
+                  },
+                  "fixed_in": [
+                    "6.4.7",
+                    "7.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.0.0, less equal 7.0.1, fixed in [7.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.1"
+                  },
+                  "fixed_in": [
+                    "7.0.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.14, fixed in [6.4.0, 7.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.14"
+                  },
+                  "fixed_in": [
+                    "6.4.0",
+                    "7.0.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.17, fixed in [6.4.0, 7.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.17"
+                  },
+                  "fixed_in": [
+                    "6.4.0",
+                    "7.0.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.2.0, less equal 6.2.15, fixed in [6.4.0, 7.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.15"
+                  },
+                  "fixed_in": [
+                    "6.4.0",
+                    "7.0.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: less equal 3.1.5, fixed in [4.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "3.1.5"
+                  },
+                  "fixed_in": [
+                    "4.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 3.2.0, less equal 3.2.4, fixed in [4.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.2.0",
+                    "le": "3.2.4"
+                  },
+                  "fixed_in": [
+                    "4.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.0.0, less equal 4.0.2, fixed in [4.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "4.0.2"
+                  },
+                  "fixed_in": [
+                    "4.2.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.8,
+            "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N/E:X/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-295"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2022-06-07T00:00:00Z",
+  "updated": "2022-06-07T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-292"
+}
+

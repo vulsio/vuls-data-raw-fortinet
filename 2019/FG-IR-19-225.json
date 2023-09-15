@@ -1,0 +1,129 @@
+{
+  "id": "FG-IR-19-225",
+  "title": "HTTP/2 Multiple DoS Attacks (VU#605641)",
+  "summary": "Improper implementations of the HTTP/2 protocol can lead to a variety denial-of-service (DoS) attacks.The related CVEs are:CVE-2019-9511, also known as Data DribbleCVE-2019-9512, also known as Ping FloodCVE-2019-9513, also known as Resource LoopCVE-2019-9514, also known as Reset FloodCVE-2019-9515, also known as Settings FloodCVE-2019-9516, also known as 0-Length Headers LeakCVE-2019-9517, also known as Internal Data BufferingCVE-2019-9518, also known as Empty Frame Flooding",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-19-225",
+      "cve": "CVE-2019-9511",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Denial of Service (DoS)"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-225",
+      "cve": "CVE-2019-9512",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Denial of Service (DoS)"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-225",
+      "cve": "CVE-2019-9513",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Denial of Service (DoS)"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-225",
+      "cve": "CVE-2019-9514",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Denial of Service (DoS)"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-225",
+      "cve": "CVE-2019-9515",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Denial of Service (DoS)"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-225",
+      "cve": "CVE-2019-9516",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Denial of Service (DoS)"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-225",
+      "cve": "CVE-2019-9517",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Denial of Service (DoS)"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-225",
+      "cve": "CVE-2019-9518",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Denial of Service (DoS)"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://kb.cert.org/vuls/id/605641/",
+      "url": "https://kb.cert.org/vuls/id/605641/"
+    }
+  ],
+  "published": "2019-09-03T00:00:00Z",
+  "updated": "2019-09-03T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-19-225"
+}
+

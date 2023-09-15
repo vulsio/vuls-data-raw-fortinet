@@ -1,0 +1,596 @@
+{
+  "id": "FG-IR-16-026",
+  "title": "OpenSSL Advisory - May 2016",
+  "summary": "OpenSSL released an update in May 2016 to address two high and four low severity vulnerabilities.",
+  "description": "OpenSSL released an update in May 2016 to address two high and four low severity vulnerabilities.CVE-2016-2108; CVE-2016-2107; CVE-2016-2105; CVE-2016-2106; CVE-2016-2109; CVE-2016-2176",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-026",
+      "cve": "CVE-2016-2108",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 5.2.2, fixed in [5.2.3, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.2.2"
+                  },
+                  "fixed_in": [
+                    "5.2.3",
+                    "5.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.0.12, fixed in [5.0.13, 5.2.4, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.0.12"
+                  },
+                  "fixed_in": [
+                    "5.0.13",
+                    "5.2.4",
+                    "5.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less equal 5.2.3, fixed in [5.2.4, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.3"
+                  },
+                  "fixed_in": [
+                    "5.2.4",
+                    "5.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch: less equal 3.3.3, fixed in [3.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "3.3.3"
+                  },
+                  "fixed_in": [
+                    "3.4.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Memory corruption and padding oracle"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-16-026",
+      "cve": "CVE-2016-2107",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 5.2.7, fixed in [5.2.8, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.2.7"
+                  },
+                  "fixed_in": [
+                    "5.2.8",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: equal 5.4.0, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.4.0"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP: equal 5.4.0, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.4.0"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.0.13, fixed in [5.0.14, 5.2.8, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.0.13"
+                  },
+                  "fixed_in": [
+                    "5.0.14",
+                    "5.2.8",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less equal 5.2.7, fixed in [5.2.8, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.7"
+                  },
+                  "fixed_in": [
+                    "5.2.8",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 5.4.0, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.4.0"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch: less equal 3.4.1, fixed in [3.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "3.4.1"
+                  },
+                  "fixed_in": [
+                    "3.4.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Memory corruption and padding oracle"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-16-026",
+      "cve": "CVE-2016-2105",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 5.2.7, fixed in [5.2.8, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.2.7"
+                  },
+                  "fixed_in": [
+                    "5.2.8",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: equal 5.4.0, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.4.0"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP: equal 5.4.0, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.4.0"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.0.13, fixed in [5.0.14, 5.2.8, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.0.13"
+                  },
+                  "fixed_in": [
+                    "5.0.14",
+                    "5.2.8",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less equal 5.2.7, fixed in [5.2.8, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.7"
+                  },
+                  "fixed_in": [
+                    "5.2.8",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 5.4.0, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.4.0"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch: less equal 3.4.1, fixed in [3.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "3.4.1"
+                  },
+                  "fixed_in": [
+                    "3.4.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Memory corruption and padding oracle"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-16-026",
+      "cve": "CVE-2016-2106",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 5.2.7, fixed in [5.2.8, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.2.7"
+                  },
+                  "fixed_in": [
+                    "5.2.8",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: equal 5.4.0, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.4.0"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP: equal 5.4.0, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.4.0"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.0.13, fixed in [5.0.14, 5.2.8, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.0.13"
+                  },
+                  "fixed_in": [
+                    "5.0.14",
+                    "5.2.8",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less equal 5.2.7, fixed in [5.2.8, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.7"
+                  },
+                  "fixed_in": [
+                    "5.2.8",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 5.4.0, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.4.0"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch: less equal 3.4.1, fixed in [3.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "3.4.1"
+                  },
+                  "fixed_in": [
+                    "3.4.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Memory corruption and padding oracle"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-16-026",
+      "cve": "CVE-2016-2109",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 5.2.7, fixed in [5.2.8, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.2.7"
+                  },
+                  "fixed_in": [
+                    "5.2.8",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: equal 5.4.0, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.4.0"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP: equal 5.4.0, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.4.0"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.0.13, fixed in [5.0.14, 5.2.8, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.0.13"
+                  },
+                  "fixed_in": [
+                    "5.0.14",
+                    "5.2.8",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less equal 5.2.7, fixed in [5.2.8, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.7"
+                  },
+                  "fixed_in": [
+                    "5.2.8",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 5.4.0, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.4.0"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch: less equal 3.4.1, fixed in [3.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "3.4.1"
+                  },
+                  "fixed_in": [
+                    "3.4.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Memory corruption and padding oracle"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-16-026",
+      "cve": "CVE-2016-2176",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 5.2.7, fixed in [5.2.8, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.2.7"
+                  },
+                  "fixed_in": [
+                    "5.2.8",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: equal 5.4.0, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.4.0"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP: equal 5.4.0, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.4.0"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.0.13, fixed in [5.0.14, 5.2.8, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.0.13"
+                  },
+                  "fixed_in": [
+                    "5.0.14",
+                    "5.2.8",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less equal 5.2.7, fixed in [5.2.8, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.7"
+                  },
+                  "fixed_in": [
+                    "5.2.8",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 5.4.0, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.4.0"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch: less equal 3.4.1, fixed in [3.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "3.4.1"
+                  },
+                  "fixed_in": [
+                    "3.4.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Memory corruption and padding oracle"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://www.openssl.org/news/secadv/20160503.txt",
+      "url": "https://www.openssl.org/news/secadv/20160503.txt"
+    }
+  ],
+  "published": "2016-09-22T00:00:00Z",
+  "updated": "2016-09-22T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-026"
+}
+

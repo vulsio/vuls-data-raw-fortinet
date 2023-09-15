@@ -1,0 +1,67 @@
+{
+  "id": "FG-IR-22-309",
+  "title": "FortiNAC - Multiple privilege escalation via sudo command",
+  "summary": "An improper privilege management vulnerability [CWE-269] in FortiNAC may allow a low privilege local user with shell access to execute arbitrary commands as root.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-309",
+      "cve": "CVE-2022-39953",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiNAC:",
+                  "cpe": "cpe:2.3:a:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiNAC:",
+                    "cpe": "cpe:2.3:o:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiNAC:",
+                      "cpe": "cpe:2.3:h:fortinet:fortinac-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.8,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:H/RL:U/RC:C"
+          },
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2023-03-07T00:00:00Z",
+  "updated": "2023-03-07T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-309"
+}
+

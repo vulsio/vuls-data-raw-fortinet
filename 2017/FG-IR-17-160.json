@@ -1,0 +1,56 @@
+{
+  "id": "FG-IR-17-160",
+  "title": "FortiOS SSL Deep-Inspection Proxy Mode badssl.com Compliance",
+  "summary": "US-Cert published a document at https://www.us-cert.gov/ncas/alerts/TA17-075A which outlines some security flaws that may be introduced by the use of SSL Deep-Inspection. FortiOS was flagged as \"potentially vulnerable\" to some of these vulnerabilities by badssl.com under SSL Deep-Inspection Proxy Mode.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-160",
+      "cve": "CVE-2005-4900",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: equal 5.4.0",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.4.0"
+                  }
+                },
+                {
+                  "description": "FortiOS: equal 5.4.8",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.4.8"
+                  }
+                },
+                {
+                  "description": "FortiOS: equal 5.6.0",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.6.0"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Improper Access Control"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://www.us-cert.gov/ncas/alerts/TA17-075A",
+      "url": "https://www.us-cert.gov/ncas/alerts/TA17-075A"
+    }
+  ],
+  "published": "2018-05-16T00:00:00Z",
+  "updated": "2018-05-16T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-160"
+}
+

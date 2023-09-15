@@ -1,0 +1,37 @@
+{
+  "id": "FG-IR-14-012",
+  "title": "FortiWeb Cross-Site Scripting Vulnerabilities",
+  "description": "FortiWeb 5.0, 5.1 and 5.2.0 are vulnerable to multiple reflective cross-site scripting issues. Several parameters in the web management interface URLs /user/ldap_user/check_dlg and /user/radius_user/check_dlg lack sufficient input filtering.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-14-012",
+      "cve": "CVE-2014-4738",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: greater equal 5.0.0, less equal 5.2.0, fixed in [5.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.2.0"
+                  },
+                  "fixed_in": [
+                    "5.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Cross-Site Scripting"
+        }
+      ]
+    }
+  ],
+  "published": "2014-07-10T00:00:00Z",
+  "updated": "2014-07-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-14-012"
+}
+

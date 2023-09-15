@@ -1,0 +1,144 @@
+{
+  "id": "FG-IR-22-475",
+  "title": "FortiOS & FortiProxy - Out-of-bound-write in sslvpnd",
+  "summary": "An out-of-bounds write vulnerability [CWE-787] in sslvpnd of FortiOS and FortiProxy may allow an authenticated attacker to achieve arbitrary code execution via specifically crafted requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-475",
+      "cve": "CVE-2023-22640",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less than 6.0.17, fixed in [6.0.17, 6.2.14, 6.4.12, 7.0.11, 7.2.4, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "lt": "6.0.17"
+                  },
+                  "fixed_in": [
+                    "6.0.17",
+                    "6.2.14",
+                    "6.4.12",
+                    "7.0.11",
+                    "7.2.4",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.2.0, less than 6.2.14, fixed in [6.2.14, 6.4.12, 7.0.11, 7.2.4, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "lt": "6.2.14"
+                  },
+                  "fixed_in": [
+                    "6.2.14",
+                    "6.4.12",
+                    "7.0.11",
+                    "7.2.4",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less than 6.4.12, fixed in [6.4.12, 7.0.11, 7.2.4, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "lt": "6.4.12"
+                  },
+                  "fixed_in": [
+                    "6.4.12",
+                    "7.0.11",
+                    "7.2.4",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less than 7.0.11, fixed in [7.0.11, 7.2.4, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "lt": "7.0.11"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "7.2.4",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less than 7.2.4, fixed in [7.2.4, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "lt": "7.2.4"
+                  },
+                  "fixed_in": [
+                    "7.2.4",
+                    "7.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiProxy:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiProxy:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiproxy-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.1,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-787"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-05-03T00:00:00Z",
+  "updated": "2023-05-03T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-475"
+}
+

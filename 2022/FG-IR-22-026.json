@@ -1,0 +1,157 @@
+{
+  "id": "FG-IR-22-026",
+  "title": "FortiAnalyzer & FortiManager - improper authorization to template image",
+  "summary": "An exposure of resource to wrong sphere vulnerability [CWE-668] in FortiAnalyzer and FortiManager GUI may allow an unauthenticated and remote attacker to access report template images via referencing the name in the URL path.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-026",
+      "cve": "CVE-2022-26121",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 7.0.0, less equal 7.0.3, fixed in [7.0.4, 7.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.3"
+                  },
+                  "fixed_in": [
+                    "7.0.4",
+                    "7.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 6.4.0, less equal 6.4.11, fixed in [7.0.4, 7.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.11"
+                  },
+                  "fixed_in": [
+                    "7.0.4",
+                    "7.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 6.2.0, less equal 6.2.10, fixed in [7.0.4, 7.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.10"
+                  },
+                  "fixed_in": [
+                    "7.0.4",
+                    "7.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 6.0.0, less equal 6.0.11, fixed in [7.0.4, 7.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.11"
+                  },
+                  "fixed_in": [
+                    "7.0.4",
+                    "7.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 5.6.0, less equal 5.6.11, fixed in [7.0.4, 7.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.11"
+                  },
+                  "fixed_in": [
+                    "7.0.4",
+                    "7.2.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: greater equal 7.0.0, less equal 7.0.3, fixed in [7.0.4, 7.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.3"
+                  },
+                  "fixed_in": [
+                    "7.0.4",
+                    "7.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 6.4.0, less equal 6.4.11, fixed in [7.0.4, 7.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.11"
+                  },
+                  "fixed_in": [
+                    "7.0.4",
+                    "7.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 6.2.0, less equal 6.2.10, fixed in [7.0.4, 7.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.10"
+                  },
+                  "fixed_in": [
+                    "7.0.4",
+                    "7.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 6.0.0, less equal 6.0.11, fixed in [7.0.4, 7.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.11"
+                  },
+                  "fixed_in": [
+                    "7.0.4",
+                    "7.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 5.6.0, less equal 5.6.11, fixed in [7.0.4, 7.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.11"
+                  },
+                  "fixed_in": [
+                    "7.0.4",
+                    "7.2.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.4,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-668"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2022-10-10T00:00:00Z",
+  "updated": "2022-10-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-026"
+}
+

@@ -1,0 +1,96 @@
+{
+  "id": "FG-IR-012-006",
+  "title": "Cross Site Scripting Vulnerability in FortiWeb",
+  "summary": "FortiWeb fails to sanitize user input.  The vulnerability allows an attacker to inject script code.",
+  "description": "FortiWeb fails to sanitize user input.  The vulnerability allows an attacker to inject script code.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-012-006",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: equal FortiWeb 4000C",
+                  "cpe": "cpe:2.3:h:fortinet:fortiweb-4000c:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                },
+                {
+                  "description": "FortiWeb: equal FortiWeb 3000C",
+                  "cpe": "cpe:2.3:h:fortinet:fortiweb-3000c:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                },
+                {
+                  "description": "FortiWeb: equal FortiWeb 3000CFsx",
+                  "cpe": "cpe:2.3:h:fortinet:fortiweb-3000cfsx:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                },
+                {
+                  "description": "FortiWeb: equal FortiWeb 1000C",
+                  "cpe": "cpe:2.3:h:fortinet:fortiweb-1000c:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                },
+                {
+                  "description": "FortiWeb: equal FortiWeb 400C",
+                  "cpe": "cpe:2.3:h:fortinet:fortiweb-400c:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                },
+                {
+                  "description": "FortiWeb: equal FortiWeb VM01",
+                  "cpe": "cpe:2.3:h:fortinet:fortiweb-vm01:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                },
+                {
+                  "description": "FortiWeb: equal FortiWeb VM02",
+                  "cpe": "cpe:2.3:h:fortinet:fortiweb-vm02:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                },
+                {
+                  "description": "FortiWeb: equal FortiWeb VM04",
+                  "cpe": "cpe:2.3:h:fortinet:fortiweb-vm04:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                },
+                {
+                  "description": "FortiWeb: equal FortiWeb VM08",
+                  "cpe": "cpe:2.3:h:fortinet:fortiweb-vm08:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                },
+                {
+                  "description": "FortiWeb: equal FortiWeb VM16",
+                  "cpe": "cpe:2.3:h:fortinet:fortiweb-vm16:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                }
+              ]
+            }
+          ],
+          "impact": "Cross Site Scripting"
+        }
+      ]
+    }
+  ],
+  "published": "2012-10-25T00:00:00Z",
+  "updated": "2012-10-25T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-012-006"
+}
+

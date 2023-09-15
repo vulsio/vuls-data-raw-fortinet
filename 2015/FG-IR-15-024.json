@@ -1,0 +1,26 @@
+{
+  "id": "FG-IR-15-024",
+  "title": "FireStorm vulnerability",
+  "description": "Researchers discovered that certain next generation firewalls are designed to permit full TCP handshake with any destination, regardless of firewall rules and client restrictions. They derive from this that they can exfiltrate data to a blacklisted IP (their example is a Botnet C&C Server), by packing data in TCP handshake packets.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-15-024",
+      "definitions": [
+        {
+          "configurations": [],
+          "impact": "Firewall rules bypass"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "http://www.cynet.com/blog/",
+      "url": "http://www.cynet.com/blog/"
+    }
+  ],
+  "published": "2015-12-15T00:00:00Z",
+  "updated": "2015-12-15T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-15-024"
+}
+

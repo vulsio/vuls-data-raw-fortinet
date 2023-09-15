@@ -1,0 +1,80 @@
+{
+  "id": "FG-IR-22-044",
+  "title": "FortiClient (Windows) - Arbitrary file write as SYSTEM",
+  "summary": "An execution with unnecessary privileges vulnerability [CWE-250] in FortiClientWindows may allow a local attacker to perform an arbitrary file write on the system.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-044",
+      "cve": "CVE-2022-26113",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Windows: greater equal 6.0.0, less equal 6.0.10, fixed in [6.4.8, 7.0.4]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.10"
+                  },
+                  "fixed_in": [
+                    "6.4.8",
+                    "7.0.4"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: greater equal 6.2.0, less equal 6.2.9, fixed in [6.4.8, 7.0.4]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.9"
+                  },
+                  "fixed_in": [
+                    "6.4.8",
+                    "7.0.4"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: greater equal 6.4.0, less equal 6.4.7, fixed in [6.4.8, 7.0.4]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.7"
+                  },
+                  "fixed_in": [
+                    "6.4.8",
+                    "7.0.4"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: greater equal 7.0.0, less equal 7.0.3, fixed in [7.0.4]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.3"
+                  },
+                  "fixed_in": [
+                    "7.0.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.5,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:H/E:F/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-250"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2022-06-07T00:00:00Z",
+  "updated": "2022-06-07T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-044"
+}
+

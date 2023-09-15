@@ -1,0 +1,67 @@
+{
+  "id": "FG-IR-19-140",
+  "title": "XSS vulnerability in FortiNAC admin webUI search field",
+  "summary": "Improper Neutralization of Input During Web Page Generation (\"Cross-site Scripting\") in FortiNAC admin webUI may allow an unauthenticated attacker to perform a reflected XSS attack via the search field in the webUI.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-19-140",
+      "cve": "CVE-2019-5594",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiNAC:",
+                  "cpe": "cpe:2.3:a:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiNAC:",
+                    "cpe": "cpe:2.3:o:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiNAC:",
+                      "cpe": "cpe:2.3:h:fortinet:fortinac-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.4,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Cross-site Scripting (XSS)"
+        }
+      ]
+    }
+  ],
+  "published": "2019-07-16T00:00:00Z",
+  "updated": "2019-07-16T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-19-140"
+}
+

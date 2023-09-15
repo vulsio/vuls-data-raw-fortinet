@@ -1,0 +1,59 @@
+{
+  "id": "FG-IR-17-271",
+  "title": "Intel-SA-00086 Security Review Cumulative Update",
+  "summary": "Intel recently released a security update (Intel-SA-00086), regarding Intel ME 11.x, SPS 4.0, and TXE 3.0 intel products.The following Firmware are impacted:Intel® Management Engine (ME) Firmware versions 11.0/11.5/11.6/11.7/11.10/11.20Intel® Server Platform Services (SPS) Firmware version 4.0Intel® Trusted Execution Engine (TXE) version 3.0And the following Intel products are affected:6th, 7th & 8th Generation Intel® Core™ Processor FamilyIntel® Xeon® Processor E3-1200 v5 & v6 Product FamilyIntel® Xeon® Processor Scalable FamilyIntel® Xeon® Processor W FamilyIntel® Atom® C3000 Processor FamilyApollo Lake Intel® Atom Processor E3900 seriesApollo Lake Intel® Pentium™Celeron™ N and J series ProcessorsAn attacker could gain unauthorized access to the platform, the Intel® ME feature, and 3rd party secrets protected by the Intel® Management Engine (ME), the Intel® Server Platform Service (SPS), or the Intel® Trusted Execution Engine (TXE).This includes scenarios where a successful attacker could Impersonate the ME/SPS/TXE, thereby impacting local security feature attestation validity. Concrete impact may be \"load and execute arbitrary code outside the visibility of the user and operating system\", or \"system crash or system instability\".The assigned CVEs are:CVEs:Intel® Manageability Engine Firmware 11.0.x.x/11.5.x.x/11.6.x.x/11.7.x.x/11.10.x.x/11.20.x.xCVE-2017-5705CVE-2017-5708CVE-2017-5711CVE-2017-5712Intel Manageability Engine Firmware 8.x/9.x/10.xCVE-2017-5711CVE-2017-5712Server Platform Service 4.0.x.xCVE-2017-5706CVE-2017-5709IntelTrusted Execution Engine 3.0.x.xCVE-2017-5707CVE-2017-5710",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-271",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiGate: equal FortiGate 500E",
+                  "cpe": "cpe:2.3:h:fortinet:fortigate-500e:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                },
+                {
+                  "description": "FortiGate: equal FortiGate 501E",
+                  "cpe": "cpe:2.3:h:fortinet:fortigate-501e:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: equal FortiWeb 1000E",
+                  "cpe": "cpe:2.3:h:fortinet:fortiweb-1000e:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Privilege Escalation"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://security-center.intel.com/advisory.aspx?intelid=INTEL-SA-00086&languageid=en-fr",
+      "url": "https://security-center.intel.com/advisory.aspx?intelid=INTEL-SA-00086&languageid=en-fr"
+    }
+  ],
+  "published": "2018-01-04T00:00:00Z",
+  "updated": "2018-01-18T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-271"
+}
+

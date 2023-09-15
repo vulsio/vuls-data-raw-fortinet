@@ -1,0 +1,79 @@
+{
+  "id": "FG-IR-16-080",
+  "title": "Fortinet Connect admin able to gain root access",
+  "summary": "A webui administrator may create a new theme that performs arbitrary code execution on the system.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-080",
+      "cve": "CVE-2016-8494",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "Connect: greater equal 14.2.0.0, less than 14.2.0.12, fixed in [14.2.0.12, 14.10.0.5, 15.10.0.3, 16.7.0.1]",
+                  "cpe": "cpe:2.3:a:fortinet:connect:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "14.2.0.0",
+                    "lt": "14.2.0.12"
+                  },
+                  "fixed_in": [
+                    "14.2.0.12",
+                    "14.10.0.5",
+                    "15.10.0.3",
+                    "16.7.0.1"
+                  ]
+                },
+                {
+                  "description": "Connect: greater equal 14.10.0.0, less than 14.10.0.5, fixed in [14.10.0.5, 15.10.0.3, 16.7.0.1]",
+                  "cpe": "cpe:2.3:a:fortinet:connect:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "14.10.0.0",
+                    "lt": "14.10.0.5"
+                  },
+                  "fixed_in": [
+                    "14.10.0.5",
+                    "15.10.0.3",
+                    "16.7.0.1"
+                  ]
+                },
+                {
+                  "description": "Connect: greater equal 15.10.0.0, less than 15.10.0.3, fixed in [15.10.0.3, 16.7.0.1]",
+                  "cpe": "cpe:2.3:a:fortinet:connect:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "15.10.0.0",
+                    "lt": "15.10.0.3"
+                  },
+                  "fixed_in": [
+                    "15.10.0.3",
+                    "16.7.0.1"
+                  ]
+                },
+                {
+                  "description": "Connect: greater equal 16.7.0.0, less than 16.7.0.1, fixed in [16.7.0.1]",
+                  "cpe": "cpe:2.3:a:fortinet:connect:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "16.7.0.0",
+                    "lt": "16.7.0.1"
+                  },
+                  "fixed_in": [
+                    "16.7.0.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Privilege escalation"
+        }
+      ]
+    }
+  ],
+  "published": "2017-02-09T00:00:00Z",
+  "updated": "2017-02-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-080"
+}
+

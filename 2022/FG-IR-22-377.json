@@ -1,0 +1,169 @@
+{
+  "id": "FG-IR-22-377",
+  "title": "FortiOS / FortiProxy / FortiSwitchManager - Authentication bypass on administrative interface",
+  "summary": "An authentication bypass using an alternate path or channel vulnerability [CWE-288] in FortiOS, FortiProxy and FortiSwitchManager may allow an unauthenticated attacker to perform operations on the administrative interface via specially crafted HTTP or HTTPS requests.   Exploitation Status: Fortinet is aware of an instance where this vulnerability was exploited, and recommends immediately validating your systems against the following indicator of compromise in the device's logs: user=\"Local_Process_Access\"  Please contact customer support for assistance.   UPDATE: Fortinet is aware of instances where this vulnerability was exploited to download the config file from the targeted devices, and to add a malicious super_admin account called  \"fortigate-tech-support\": # show system admin edit \"fortigate-tech-support\" set accprofile \"super_admin\" set vdom \"root\" set password ENC [...] next Please contact customer support for assistance.   Workaround: FortiOS: Disable HTTP/HTTPS administrative interface OR Limit IP addresses that can reach the administrative interface: config firewall address edit \"my_allowed_addresses\" set subnet <MY IP> <MY SUBNET> end Then create an Address Group: config firewall addrgrp edit \"MGMT_IPs\" set member \"my_allowed_addresses\" end Create the Local in Policy to restrict access only to the predefined group on management interface (here: port1): config firewall local-in-policy edit 1 set intf port1 set srcaddr \"MGMT_IPs\" set dstaddr \"all\" set action accept set service HTTPS HTTP set schedule \"always\" set status enable next edit 2 set intf \"any\" set srcaddr \"all\" set dstaddr \"all\" set action deny set service HTTPS HTTP set schedule \"always\" set status enable end If using non default ports, create appropriate service object for GUI administrative access: config firewall service custom edit GUI_HTTPS set tcp-portrange <admin-sport> next edit GUI_HTTP set tcp-portrange <admin-port> end Use these objects instead of \"HTTPS HTTP \"in the local-in policy 1 and 2 below. UPDATE: When using an HA reserved management interface, the local in policy needs to be configured slightly differently - please see: https://community.fortinet.com/t5/FortiGate/Technical-Tip-How-to-configure-a-local-in-policy-on-a-HA/ta-p/222005 Please contact customer support for assistance.   FortiProxy: Disable HTTP/HTTPS administrative interface OR For FortiProxy VM all versions or FortiProxy appliance 7.0.6: Limit IP addresses that can reach the administrative interface (here: port1): config system interface edit port1 set dedicated-to management set trust-ip-1 <MY IP> <MY SUBNET> end Please contact customer support for assistance.   FortiSwitchManager: DIsable HTTP/HTTPS administrative interface Please contact customer support for assistance.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-377",
+      "cve": "CVE-2022-40684",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less than 7.0.7, fixed in [7.0.7, 7.2.2]",
+                  "cpe": "cpe:2.3:a:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "lt": "7.0.7"
+                  },
+                  "fixed_in": [
+                    "7.0.7",
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less than 7.2.2, fixed in [7.0.7, 7.2.2]",
+                  "cpe": "cpe:2.3:a:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "lt": "7.2.2"
+                  },
+                  "fixed_in": [
+                    "7.0.7",
+                    "7.2.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiProxy:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiProxy:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiproxy-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiSwitch:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiSwitch:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiswitch-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch Manager:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiswitch_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch Cloud:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiswitch_cloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:F/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-288"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2022-10-10T00:00:00Z",
+  "updated": "2022-10-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-377"
+}
+

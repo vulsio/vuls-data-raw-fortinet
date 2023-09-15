@@ -1,0 +1,65 @@
+{
+  "id": "FG-IR-17-168",
+  "title": "FortiOS Reflected XSS in Web Proxy Disclaimer Response web page",
+  "summary": "A reflected XSS vulnerability exists in FortiOS web proxy disclaimer response web pages, potentially exploitable by an unauthenticated attacker, via sending a maliciously crafted URL to the victim. The victim visiting the malicious URL would then have arbitrary javascript code executed in the security context of her/his browser.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-168",
+      "cve": "CVE-2017-7739",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less equal 5.2.11, fixed in [5.2.12, 5.4.6, 5.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.11"
+                  },
+                  "fixed_in": [
+                    "5.2.12",
+                    "5.4.6",
+                    "5.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.4.0, less equal 5.4.5, fixed in [5.4.6, 5.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.5"
+                  },
+                  "fixed_in": [
+                    "5.4.6",
+                    "5.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 5.6.0, fixed in [5.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.6.0"
+                  },
+                  "fixed_in": [
+                    "5.6.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N/E:X/RL:X/RC:X"
+          },
+          "impact": "Cross-site Scripting (XSS)"
+        }
+      ]
+    }
+  ],
+  "published": "2017-11-03T00:00:00Z",
+  "updated": "2017-11-03T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-168"
+}
+

@@ -1,0 +1,68 @@
+{
+  "id": "FG-IR-21-222",
+  "title": "FortiOS -- XSS vulnerability observed in External Connectors Of Security Fabric",
+  "summary": "An improper neutralization of input during web page generation vulnerability [CWE-79] in FortiOS may allow an authenticated attacker to perform a stored cross site scripting (XSS) attack through the URI parameter via the Threat Feed IP address section of the Security Fabric External connectors.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-21-222",
+      "cve": "CVE-2021-43080",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 6.4.9, fixed in [6.4.10, 7.0.6, 7.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.9"
+                  },
+                  "fixed_in": [
+                    "6.4.10",
+                    "7.0.6",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.5, fixed in [7.0.6, 7.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.5"
+                  },
+                  "fixed_in": [
+                    "7.0.6",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 7.2.0, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.2.0"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.5,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:L/I:L/A:N/E:F/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-79"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2022-09-06T00:00:00Z",
+  "updated": "2022-09-06T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-21-222"
+}
+

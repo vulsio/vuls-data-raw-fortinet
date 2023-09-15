@@ -1,0 +1,116 @@
+{
+  "id": "FG-IR-15-004",
+  "title": "FortiClient Android and iOS multiple vulnerabilities",
+  "description": "FortiClient Android and iOS are affected by two vulnerabilities: Android and iOS FortiClient do not check the validity of server certificates. An attacker may perform a man-in-the-middle attack between the FortiClient and the following services: A remote FortiGate with SSL VPN service running by default on port 443 A remote FortiGate with Endpoint control running by default on port 8010 Android only FortiClient uses a hardcoded encryption key for the following profile preferences settings: Client certificate pkcs12 Client certificate password IPSec pre-shared-key IPSec password SSLpassword The key having been disclosed, these settings could be decrypted by an attacker upon retrieving a FortiClient Android configuration profile from the device.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-15-004",
+      "cve": "CVE-2015-1453",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for iOS: less than 5.2.1, fixed in [5.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:ios:*:*",
+                  "affected": {
+                    "lt": "5.2.1"
+                  },
+                  "fixed_in": [
+                    "5.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Android: less than 5.2.6, fixed in [5.2.6]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:android:*:*",
+                  "affected": {
+                    "lt": "5.2.6"
+                  },
+                  "fixed_in": [
+                    "5.2.6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "MitM condition and potential credential harvesting"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-15-004",
+      "cve": "CVE-2015-1569",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for iOS: less than 5.2.1, fixed in [5.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:ios:*:*",
+                  "affected": {
+                    "lt": "5.2.1"
+                  },
+                  "fixed_in": [
+                    "5.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Android: less than 5.2.6, fixed in [5.2.6]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:android:*:*",
+                  "affected": {
+                    "lt": "5.2.6"
+                  },
+                  "fixed_in": [
+                    "5.2.6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "MitM condition and potential credential harvesting"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-15-004",
+      "cve": "CVE-2015-1570",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for iOS: less than 5.2.1, fixed in [5.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:ios:*:*",
+                  "affected": {
+                    "lt": "5.2.1"
+                  },
+                  "fixed_in": [
+                    "5.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Android: less than 5.2.6, fixed in [5.2.6]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:android:*:*",
+                  "affected": {
+                    "lt": "5.2.6"
+                  },
+                  "fixed_in": [
+                    "5.2.6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "MitM condition and potential credential harvesting"
+        }
+      ]
+    }
+  ],
+  "published": "2015-02-25T00:00:00Z",
+  "updated": "2015-02-25T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-15-004"
+}
+

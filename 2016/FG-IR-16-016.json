@@ -1,0 +1,101 @@
+{
+  "id": "FG-IR-16-016",
+  "title": "FortiManager and FortiAnalyzer Persistent XSS vulnerability",
+  "summary": "An XSS vulnerablity in FortiManager/FortiAnalyzer could allow privileged guest user accounts and restricted user accounts to inject malicious script to the application-side or client-side of the appliance web-application; this potentially enables XSS attacks.",
+  "description": "An XSS vulnerablity in FortiManager/FortiAnalyzer could allow privileged guest user accounts and restricted user accounts to inject malicious script to the application-side or client-side of the appliance web-application; this potentially enables XSS attacks.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-016",
+      "cve": "CVE-2016-3193",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: greater equal 5.0.0, less equal 5.0.12, fixed in [5.0.13, 5.2.6, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.12"
+                  },
+                  "fixed_in": [
+                    "5.0.13",
+                    "5.2.6",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 5.2.0, less equal 5.2.5, fixed in [5.2.6, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.5"
+                  },
+                  "fixed_in": [
+                    "5.2.6",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: equal 5.4.0, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.4.0"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 5.0.0, less equal 5.0.11, fixed in [5.0.12, 5.2.6, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.11"
+                  },
+                  "fixed_in": [
+                    "5.0.12",
+                    "5.2.6",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 5.2.0, less equal 5.2.5, fixed in [5.2.6, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.5"
+                  },
+                  "fixed_in": [
+                    "5.2.6",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: equal 5.4.0, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.4.0"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "XSS attacks"
+        }
+      ]
+    }
+  ],
+  "published": "2016-08-09T00:00:00Z",
+  "updated": "2016-08-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-016"
+}
+

@@ -1,0 +1,173 @@
+{
+  "id": "FG-IR-14-010",
+  "title": "FortiBalancer Remote SSH Vulnerability",
+  "description": "A platform-specific remote access vulnerability has been discovered that may allow a remote user to gain privileged access to affected systems using SSH. The vulnerability is caused by a configuration error, and is not the result of an underlying SSH defect.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-14-010",
+      "cve": "CVE-2014-2721",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiBalancer: equal ANY",
+                  "cpe": "cpe:2.3:o:fortinet:fortibalancer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "ANY"
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiBalancer: equal FortiBalancer 400",
+                    "cpe": "cpe:2.3:h:fortinet:fortibalancer-400:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiBalancer: equal FortiBalancer 1000",
+                    "cpe": "cpe:2.3:h:fortinet:fortibalancer-1000:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiBalancer: equal FortiBalancer 2000",
+                    "cpe": "cpe:2.3:h:fortinet:fortibalancer-2000:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiBalancer: equal FortiBalancer 3000",
+                    "cpe": "cpe:2.3:h:fortinet:fortibalancer-3000:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "impact": "Remote Access"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-14-010",
+      "cve": "CVE-2014-2722",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiBalancer: equal ANY",
+                  "cpe": "cpe:2.3:o:fortinet:fortibalancer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "ANY"
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiBalancer: equal FortiBalancer 400",
+                    "cpe": "cpe:2.3:h:fortinet:fortibalancer-400:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiBalancer: equal FortiBalancer 1000",
+                    "cpe": "cpe:2.3:h:fortinet:fortibalancer-1000:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiBalancer: equal FortiBalancer 2000",
+                    "cpe": "cpe:2.3:h:fortinet:fortibalancer-2000:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiBalancer: equal FortiBalancer 3000",
+                    "cpe": "cpe:2.3:h:fortinet:fortibalancer-3000:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "impact": "Remote Access"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-14-010",
+      "cve": "CVE-2014-2723",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiBalancer: equal ANY",
+                  "cpe": "cpe:2.3:o:fortinet:fortibalancer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "ANY"
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiBalancer: equal FortiBalancer 400",
+                    "cpe": "cpe:2.3:h:fortinet:fortibalancer-400:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiBalancer: equal FortiBalancer 1000",
+                    "cpe": "cpe:2.3:h:fortinet:fortibalancer-1000:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiBalancer: equal FortiBalancer 2000",
+                    "cpe": "cpe:2.3:h:fortinet:fortibalancer-2000:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiBalancer: equal FortiBalancer 3000",
+                    "cpe": "cpe:2.3:h:fortinet:fortibalancer-3000:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "impact": "Remote Access"
+        }
+      ]
+    }
+  ],
+  "published": "2014-04-02T00:00:00Z",
+  "updated": "2014-04-02T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-14-010"
+}
+

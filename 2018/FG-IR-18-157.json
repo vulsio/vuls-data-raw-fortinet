@@ -1,0 +1,80 @@
+{
+  "id": "FG-IR-18-157",
+  "title": "FortiGate & FortiADC - Read-only admins can obtain the LDAP credentials configured in the FortiGate and FortiADC using the LDAP test connectivity feature",
+  "summary": "FortiGate's and FortiADC's read-only admins are able to point an LDAP server connectivity test request to a rogue LDAP server instead of the configured one, in order to obtain the LDAP server login credentials configured in the FortiGate.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-157",
+      "cve": "CVE-2018-13374",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiADC: less equal 5.4.4, fixed in [5.4.5, 6.0.2, 6.1.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.4"
+                  },
+                  "fixed_in": [
+                    "5.4.5",
+                    "6.0.2",
+                    "6.1.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 6.0.0, less equal 6.0.1, fixed in [6.0.2, 6.1.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.1"
+                  },
+                  "fixed_in": [
+                    "6.0.2",
+                    "6.1.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 6.1.0, less equal 6.1.0, fixed in [6.1.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.1.0",
+                    "le": "6.1.0"
+                  },
+                  "fixed_in": [
+                    "6.1.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 6.0.2, fixed in [6.0.3, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "6.0.2"
+                  },
+                  "fixed_in": [
+                    "6.0.3",
+                    "6.2.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Improper Access Control"
+        }
+      ]
+    }
+  ],
+  "published": "2021-06-01T00:00:00Z",
+  "updated": "2021-06-01T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-157"
+}
+

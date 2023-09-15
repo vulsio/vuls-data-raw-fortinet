@@ -1,0 +1,62 @@
+{
+  "id": "FG-IR-012-007",
+  "title": "Potential Cross Site Scripting Vulnerability in FortiDB",
+  "summary": "FortiDB does not sanitize user input properly under limited circumstances.  The vulnerability could allow an attacker to inject malicious script code.",
+  "description": "FortiDB does not sanitize user input properly under limited circumstances.  The vulnerability could allow an attacker to inject malicious script code.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-012-007",
+      "cve": "CVE-2012-6347",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiDB: less than 4.4.2, fixed in [4.4.2]",
+                  "cpe": "cpe:2.3:a:fortinet:fortidb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "4.4.2"
+                  },
+                  "fixed_in": [
+                    "4.4.2"
+                  ]
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiDB: equal FortiDB 2000B",
+                    "cpe": "cpe:2.3:h:fortinet:fortidb-2000b:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiDB: equal FortiDB 1000C",
+                    "cpe": "cpe:2.3:h:fortinet:fortidb-1000c:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiDB: equal FortiDB 400C",
+                    "cpe": "cpe:2.3:h:fortinet:fortidb-400c:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "impact": "Cross Site Scripting"
+        }
+      ]
+    }
+  ],
+  "published": "2012-12-03T00:00:00Z",
+  "updated": "2012-12-03T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-012-007"
+}
+

@@ -1,0 +1,74 @@
+{
+  "id": "FG-IR-18-389",
+  "title": "Unauthenticated SSL VPN users password modification",
+  "summary": "An Improper Authorization vulnerability in the SSL VPN web portal may allow an unauthenticated attacker to change the password of an SSL VPN web portal user via specially crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-389",
+      "cve": "CVE-2018-13382",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.4.1, less equal 5.4.10, fixed in [5.4.11, 5.6.9, 6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.1",
+                    "le": "5.4.10"
+                  },
+                  "fixed_in": [
+                    "5.4.11",
+                    "5.6.9",
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.8, fixed in [5.6.9, 6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.8"
+                  },
+                  "fixed_in": [
+                    "5.6.9",
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.4, fixed in [6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.4"
+                  },
+                  "fixed_in": [
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.9,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:N/E:F/RL:X/RC:X"
+          }
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://blog.orange.tw/2019/08/attacking-ssl-vpn-part-2-breaking-the-fortigate-ssl-vpn.html",
+      "url": "https://blog.orange.tw/2019/08/attacking-ssl-vpn-part-2-breaking-the-fortigate-ssl-vpn.html"
+    }
+  ],
+  "published": "2019-05-24T00:00:00Z",
+  "updated": "2019-08-30T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-389"
+}
+

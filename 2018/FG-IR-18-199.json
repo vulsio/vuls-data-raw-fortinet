@@ -1,0 +1,53 @@
+{
+  "id": "FG-IR-18-199",
+  "title": "PMKID attack on WPA/WPA2 WiFi networks",
+  "summary": "Makers of popular WiFi hacking tool hashcat have discovered a way to improve password brute-forcing of the WPA/WPA2 wifi network security standards. By leveraging the PMKID served by access points in WPA/WPA2 enabled WiFi networks, attackers gain knowledge of a pre-shared key hash, which can be used to brute-force the WPA/WPA2 password.This, however, requires a set of conditions to work:o WPA/WPA2 must be \"Personal security (Pre-shared Key)\". Other types (eg: Enterprise) are not vulnerableo The PMKID must be included in the first EAPOL message of the 4 way handshakeo 802.11r and PMKID caching must be enabled",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-199",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP: equal ANY",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "ANY"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: equal ANY",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "ANY"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L/E:F/RL:X/RC:X"
+          },
+          "impact": "Information Disclosure"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://hashcat.net/forum/thread-7717.html",
+      "url": "https://hashcat.net/forum/thread-7717.html"
+    }
+  ],
+  "published": "2018-09-10T00:00:00Z",
+  "updated": "2020-01-27T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-199"
+}
+

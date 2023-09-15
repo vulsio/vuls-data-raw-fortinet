@@ -1,0 +1,47 @@
+{
+  "id": "FG-IR-16-013",
+  "title": "Linux Kernel tty_ioctl Vulnerability",
+  "summary": "A race condition in the tty_ioctl function in drivers/tty/tty_io.c in the Linux kernel may allow local users to obtain sensitive information from kernel memory or cause a denial of service.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-013",
+      "cve": "CVE-2016-0723",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.4.0, less equal 5.4.3, fixed in [5.4.4, 5.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.3"
+                  },
+                  "fixed_in": [
+                    "5.4.4",
+                    "5.6.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Denial of service, Information disclosure"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://nvd.nist.gov/vuln/detail/CVE-2016-0723",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2016-0723"
+    }
+  ],
+  "published": "2017-04-05T00:00:00Z",
+  "updated": "2017-04-05T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-013"
+}
+

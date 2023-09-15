@@ -1,0 +1,36 @@
+{
+  "id": "FG-IR-14-002",
+  "title": "FortiWeb Cross-Site Scripting Vulnerability",
+  "description": "Fortiweb 5.0.3 and earlier versions contain a cross-site scripting vulnerability. The filter parameter in the URL \"/user/ldap_user/add\" is vulnerable to cross-site scripting attack.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-14-002",
+      "cve": "CVE-2013-7181",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: less equal 5.0.3, fixed in [5.1.0]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.0.3"
+                  },
+                  "fixed_in": [
+                    "5.1.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Cross-site scripting"
+        }
+      ]
+    }
+  ],
+  "published": "2014-02-03T00:00:00Z",
+  "updated": "2014-02-03T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-14-002"
+}
+

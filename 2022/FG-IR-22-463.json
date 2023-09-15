@@ -1,0 +1,112 @@
+{
+  "id": "FG-IR-22-463",
+  "title": "FortiOS & FortiProxy - Format String Bug in fortiguard-resources CLI command",
+  "summary": "A format string vulnerability [CWE-134] in the command line interpreter of FortiOS and FortiProxy may allow an authenticated user to execute unauthorized code or commands via specially crafted command arguments.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-463",
+      "cve": "CVE-2022-43953",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less than 6.4.13, fixed in [6.4.13, 7.0.12, 7.2.5, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "6.4.13"
+                  },
+                  "fixed_in": [
+                    "6.4.13",
+                    "7.0.12",
+                    "7.2.5",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater than 7.0.0, less than 7.0.12, fixed in [7.0.12, 7.2.5, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "gt": "7.0.0",
+                    "lt": "7.0.12"
+                  },
+                  "fixed_in": [
+                    "7.0.12",
+                    "7.2.5",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater than 7.2.0, less than 7.2.5, fixed in [7.2.5, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "gt": "7.2.0",
+                    "lt": "7.2.5"
+                  },
+                  "fixed_in": [
+                    "7.2.5",
+                    "7.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiProxy:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiProxy:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiproxy-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.3,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-134"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-06-12T00:00:00Z",
+  "updated": "2023-06-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-463"
+}
+

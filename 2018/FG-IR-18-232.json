@@ -1,0 +1,193 @@
+{
+  "id": "FG-IR-18-232",
+  "title": "FortiManager, FortiAnalyzer, FortiPortal & FortiSwitch - Information disclosure through diagnose debug commands",
+  "summary": "An exposure of sensitive information to an unauthorized actor vulnerability [CWE-200] in FortiManager, FortiAnalyzer, FortiPortal & FortiSwitch may allow an attacker which has obtained access to a restricted administrative account to obtain sensitive information via `diagnose debug` commands.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-232",
+      "cve": "CVE-2022-27490",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: greater equal 6.0.0, less equal 6.0.4, fixed in [6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.4"
+                  },
+                  "fixed_in": [
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 6.0.0, less equal 6.0.4, fixed in [6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.4"
+                  },
+                  "fixed_in": [
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiPortal: greater equal 4.1.0, less equal 4.1.2, fixed in [6.0.10]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.1.0",
+                    "le": "4.1.2"
+                  },
+                  "fixed_in": [
+                    "6.0.10"
+                  ]
+                },
+                {
+                  "description": "FortiPortal: greater equal 4.2.0, less equal 4.2.2, fixed in [6.0.10]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.2.0",
+                    "le": "4.2.2"
+                  },
+                  "fixed_in": [
+                    "6.0.10"
+                  ]
+                },
+                {
+                  "description": "FortiPortal: greater equal 5.0.0, less equal 5.0.3, fixed in [6.0.10]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.3"
+                  },
+                  "fixed_in": [
+                    "6.0.10"
+                  ]
+                },
+                {
+                  "description": "FortiPortal: greater equal 5.1.0, less equal 5.1.2, fixed in [6.0.10]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.1.0",
+                    "le": "5.1.2"
+                  },
+                  "fixed_in": [
+                    "6.0.10"
+                  ]
+                },
+                {
+                  "description": "FortiPortal: greater equal 5.2.0, less equal 5.2.6, fixed in [6.0.10]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.6"
+                  },
+                  "fixed_in": [
+                    "6.0.10"
+                  ]
+                },
+                {
+                  "description": "FortiPortal: greater equal 5.3.0, less equal 5.3.8, fixed in [6.0.10]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.3.0",
+                    "le": "5.3.8"
+                  },
+                  "fixed_in": [
+                    "6.0.10"
+                  ]
+                },
+                {
+                  "description": "FortiPortal: greater equal 6.0.0, less equal 6.0.9, fixed in [6.0.10]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.9"
+                  },
+                  "fixed_in": [
+                    "6.0.10"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch: greater equal 6.0.0, less equal 6.0.7, fixed in [6.4.11, 7.0.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.7"
+                  },
+                  "fixed_in": [
+                    "6.4.11",
+                    "7.0.5"
+                  ]
+                },
+                {
+                  "description": "FortiSwitch: greater equal 6.2.0, less equal 6.2.7, fixed in [6.4.11, 7.0.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.7"
+                  },
+                  "fixed_in": [
+                    "6.4.11",
+                    "7.0.5"
+                  ]
+                },
+                {
+                  "description": "FortiSwitch: greater equal 6.4.0, less equal 6.4.10, fixed in [6.4.11, 7.0.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.10"
+                  },
+                  "fixed_in": [
+                    "6.4.11",
+                    "7.0.5"
+                  ]
+                },
+                {
+                  "description": "FortiSwitch: greater equal 7.0.0, less equal 7.0.4, fixed in [7.0.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.4"
+                  },
+                  "fixed_in": [
+                    "7.0.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-200"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2023-03-07T00:00:00Z",
+  "updated": "2023-03-07T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-232"
+}
+

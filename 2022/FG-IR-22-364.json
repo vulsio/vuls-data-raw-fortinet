@@ -1,0 +1,110 @@
+{
+  "id": "FG-IR-22-364",
+  "title": "FortiOS / FortiProxy - Unauthenticated access to static files containing logging information",
+  "summary": "An exposure of sensitive information to an unauthorized actor vulnerability [CWE-200] in FortiOS and FortiProxy administrative interface may allow an unauthenticated attacker to obtain sensitive logging information on the device via crafted HTTP or HTTPs GET requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-364",
+      "cve": "CVE-2022-41329",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6,2.3, less than 6.4.12, fixed in [6.4.12, 7.0.10, 7.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6,2.3",
+                    "lt": "6.4.12"
+                  },
+                  "fixed_in": [
+                    "6.4.12",
+                    "7.0.10",
+                    "7.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less than 7.0.10, fixed in [7.0.10, 7.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "lt": "7.0.10"
+                  },
+                  "fixed_in": [
+                    "7.0.10",
+                    "7.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7,2.0, less than 7.2.4, fixed in [7.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7,2.0",
+                    "lt": "7.2.4"
+                  },
+                  "fixed_in": [
+                    "7.2.4"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiProxy:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiProxy:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiproxy-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-200"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2023-03-07T00:00:00Z",
+  "updated": "2023-03-07T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-364"
+}
+

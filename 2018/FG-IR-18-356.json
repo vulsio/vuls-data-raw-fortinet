@@ -1,0 +1,127 @@
+{
+  "id": "FG-IR-18-356",
+  "title": "FortiAP Bleeding Bit Vulnerability",
+  "summary": "Some FortiAP models are vulnerable to the Bleeding Bit Vulnerability (CVE-2018-16986) present in the Texas Instruments WiFi chips.CVE-2018-16986:Texas Instruments BLE-STACK v2.2.1 for SimpleLink CC2640 and CC2650 devices allows remote attackers to execute arbitrary code via a malformed packet that triggers a buffer overflow.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-356",
+      "cve": "CVE-2018-16986",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP-S: less than 5.6.4, fixed in [5.6.4, 6.0.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-s:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.6.4"
+                  },
+                  "fixed_in": [
+                    "5.6.4",
+                    "6.0.4"
+                  ]
+                },
+                {
+                  "description": "FortiAP-S: greater equal 6.0.0, less than 6.0.4, fixed in [6.0.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-s:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "lt": "6.0.4"
+                  },
+                  "fixed_in": [
+                    "6.0.4"
+                  ]
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiAP-S: equal FortiAP S221E",
+                    "cpe": "cpe:2.3:h:fortinet:fortiap-s221e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiAP-S: equal FortiAP S223E",
+                    "cpe": "cpe:2.3:h:fortinet:fortiap-s223e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP-W2: less than 5.6.4, fixed in [5.6.4, 6.0.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-w2:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.6.4"
+                  },
+                  "fixed_in": [
+                    "5.6.4",
+                    "6.0.4"
+                  ]
+                },
+                {
+                  "description": "FortiAP-W2: greater equal 6.0.0, less than 6.0.4, fixed in [6.0.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-w2:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "lt": "6.0.4"
+                  },
+                  "fixed_in": [
+                    "6.0.4"
+                  ]
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiAP-W2: equal FortiAP 221E",
+                    "cpe": "cpe:2.3:h:fortinet:fortiap-221e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiAP-W2: equal FortiAP 222E",
+                    "cpe": "cpe:2.3:h:fortinet:fortiap-222e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiAP-W2: equal FortiAP 223E",
+                    "cpe": "cpe:2.3:h:fortinet:fortiap-223e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://armis.com/bleedingbit/",
+      "url": "https://armis.com/bleedingbit/"
+    }
+  ],
+  "published": "2019-04-10T00:00:00Z",
+  "updated": "2019-04-15T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-356"
+}
+

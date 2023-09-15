@@ -1,0 +1,112 @@
+{
+  "id": "FG-IR-19-283",
+  "title": "FortiOS SSL VPN 2FA bypass by changing username case",
+  "summary": "An improper authentication vulnerability in SSL VPN in FortiOS may result in a user being able to log in successfully without being prompted for the second factor of authentication (FortiToken) if they changed the case of their username.This happens when two-factor authentication is enabled in the \"user local\" setting, and that user authentication type is set to a remote authentication method (eg: ldap).The issue exists because of inconsistent case sensitive matching among the local and remote authentication.A new CLI attribute called \"username-case-sensitivity\" was added in \"user local\" CLI settings, and is now available when remote and two-factor authentication are both enabled:config user localedit [name]set type ldap /* ldap as remote authentication */set two-factor fortitoken /* fortitoken as 2FA auth method */set username-case-sensitivity enable*|disable /* newly added, set to 'enable' by default */nextusername-case-sensitivity is enabled by default; this is consistent with the default behavior on previous versions (local and remote username case must match). To avoid the second factor of authentication bypass issue, administrators must manually disable username-case-sensitivity.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-19-283",
+      "cve": "CVE-2020-12812",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.9, fixed in [6.0.10, 6.2.4, 6.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.9"
+                  },
+                  "fixed_in": [
+                    "6.0.10",
+                    "6.2.4",
+                    "6.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.2.0, less equal 6.2.3, fixed in [6.2.4, 6.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.3"
+                  },
+                  "fixed_in": [
+                    "6.2.4",
+                    "6.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 6.4.0, fixed in [6.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.4.0"
+                  },
+                  "fixed_in": [
+                    "6.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiProxy:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiProxy:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiproxy-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Operational Risk, Improper Authentication"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://kb.fortinet.com/kb/documentLink.do?externalID=FD37033",
+      "url": "https://kb.fortinet.com/kb/documentLink.do?externalID=FD37033"
+    }
+  ],
+  "published": "2020-07-13T00:00:00Z",
+  "updated": "2020-07-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-19-283"
+}
+

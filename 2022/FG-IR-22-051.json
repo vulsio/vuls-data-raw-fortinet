@@ -1,0 +1,150 @@
+{
+  "id": "FG-IR-22-051",
+  "title": "FortiADC - Multiple SQL Injection vulnerabilities in the management interface",
+  "summary": "Multiple improper neutralization of special elements used in an SQL Command ('SQL Injection') vulnerabilities [CWE-89] in FortiADC management interface may allow an authenticated attacker to execute unauthorized code or commands via specifically crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-051",
+      "cve": "CVE-2022-26120",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiADC: greater equal 5.0.0, less equal 5.0.4, fixed in [6.2.3, 7.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.4"
+                  },
+                  "fixed_in": [
+                    "6.2.3",
+                    "7.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 5.1.0, less equal 5.1.7, fixed in [6.2.3, 7.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.1.0",
+                    "le": "5.1.7"
+                  },
+                  "fixed_in": [
+                    "6.2.3",
+                    "7.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 5.2.0, less equal 5.2.8, fixed in [6.2.3, 7.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.8"
+                  },
+                  "fixed_in": [
+                    "6.2.3",
+                    "7.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 5.3.0, less equal 5.3.7, fixed in [6.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.3.0",
+                    "le": "5.3.7"
+                  },
+                  "fixed_in": [
+                    "6.2.3"
+                  ]
+                },
+                {
+                  "description": "fortiadc: greater equal 5.3.0, less equal 5.3.7, fixed in [7.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.3.0",
+                    "le": "5.3.7"
+                  },
+                  "fixed_in": [
+                    "7.0.2"
+                  ]
+                },
+                {
+                  "description": "fortiadc: greater equal 5.4.0, less equal 5.4.5, fixed in [6.2.3, 7.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.5"
+                  },
+                  "fixed_in": [
+                    "6.2.3",
+                    "7.0.2"
+                  ]
+                },
+                {
+                  "description": "fortiadc: greater equal 6.0.0, less equal 6.0.4, fixed in [6.2.3, 7.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.4"
+                  },
+                  "fixed_in": [
+                    "6.2.3",
+                    "7.0.2"
+                  ]
+                },
+                {
+                  "description": "fortiadc: greater equal 6.1.0, less equal 6.1.6, fixed in [6.2.3, 7.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.1.0",
+                    "le": "6.1.6"
+                  },
+                  "fixed_in": [
+                    "6.2.3",
+                    "7.0.2"
+                  ]
+                },
+                {
+                  "description": "fortiadc: greater equal 6.2.0, less equal 6.2.2, fixed in [6.2.3, 7.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.2"
+                  },
+                  "fixed_in": [
+                    "6.2.3",
+                    "7.0.2"
+                  ]
+                },
+                {
+                  "description": "fortiadc: greater equal 7.0.0, less equal 7.0.1, fixed in [7.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.1"
+                  },
+                  "fixed_in": [
+                    "7.0.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-89"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2022-07-05T00:00:00Z",
+  "updated": "2022-07-05T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-051"
+}
+

@@ -1,0 +1,81 @@
+{
+  "id": "FG-IR-18-013",
+  "title": "FortiSwitch multiple XSS vulnerabilities in the jQuery library",
+  "summary": "FortiSwitch is vulnerable to multiple Cross-site Scripting (XSS) attacks present in the jQuery javascript libraryCVE-2015-9251:jQuery before 3.0.0 is vulnerable to Cross-site Scripting (XSS) attacks when a cross-domain Ajax request is performed without the dataType option, causing text/javascript responses to be executed.CVE-2012-6708:jQuery before 1.9.0 is vulnerable to Cross-site Scripting (XSS) attacks. The jQuery(strInput) function does not differentiate selectors from HTML in a reliable fashion. In vulnerable versions, jQuery determined whether the input was HTML by looking for the '",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-013",
+      "cve": "CVE-2015-9251",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch: less equal 3.6.8, fixed in [3.6.9, 6.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "3.6.8"
+                  },
+                  "fixed_in": [
+                    "3.6.9",
+                    "6.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiSwitch: greater equal 6.0.0, less equal 6.0.1, fixed in [6.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.1"
+                  },
+                  "fixed_in": [
+                    "6.0.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.7,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:L/A:N/E:X/RL:X/RC:X"
+          },
+          "impact": "Cross-site Scripting (XSS)"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-18-013",
+      "cve": "CVE-2012-6708",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch: less equal 3.6.8, fixed in [3.6.9]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "3.6.8"
+                  },
+                  "fixed_in": [
+                    "3.6.9"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.7,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:L/A:N/E:X/RL:X/RC:X"
+          },
+          "impact": "Cross-site Scripting (XSS)"
+        }
+      ]
+    }
+  ],
+  "published": "2019-04-10T00:00:00Z",
+  "updated": "2019-04-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-013"
+}
+

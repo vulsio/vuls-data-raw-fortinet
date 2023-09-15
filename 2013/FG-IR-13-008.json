@@ -1,0 +1,82 @@
+{
+  "id": "FG-IR-13-008",
+  "title": "Potential Man-In-The Middle Vulnerability in FortiClient VPN",
+  "summary": "Under certain conditions, FortiClient VPN may be susceptible to a certificate validation vulnerability which would allow an attacker to intercept user credentials in a man-in-the-middle attack.",
+  "description": "Under certain conditions, FortiClient VPN may be susceptible to a certificate validation vulnerability which would allow an attacker to intercept user credentials in a man-in-the-middle attack.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-13-008",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient Lite for Windows: equal 4.3.3.445, fixed in [4.3.4.461]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_lite:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "eq": "4.3.3.445"
+                  },
+                  "fixed_in": [
+                    "4.3.4.461"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: equal 4.3.3.445, fixed in [4.3.5.472]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "eq": "4.3.3.445"
+                  },
+                  "fixed_in": [
+                    "4.3.5.472"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOS: equal 4.0.2, fixed in [4.0.3.134]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "eq": "4.0.2"
+                  },
+                  "fixed_in": [
+                    "4.0.3.134"
+                  ]
+                },
+                {
+                  "description": "FortiClient SSL VPN for Linux: equal 4.0.2012, fixed in [4.0.2258]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_ssl_vpn:*:*:*:*:*:linux:*:*",
+                  "affected": {
+                    "eq": "4.0.2012"
+                  },
+                  "fixed_in": [
+                    "4.0.2258"
+                  ]
+                },
+                {
+                  "description": "FortiClient Lite for Android: equal 2.0, fixed in [cpe:2.3:a:fortinet:forticlient:4.0:*:*:*:*:android:*:*]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_lite:*:*:*:*:*:android:*:*",
+                  "affected": {
+                    "eq": "2.0"
+                  },
+                  "fixed_in": [
+                    "cpe:2.3:a:fortinet:forticlient:4.0:*:*:*:*:android:*:*"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Critical"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "<a href=\"http://archives.neohapsis.com/archives/fulldisclosure/2013-05/0001.html\">Neohapsis</a>",
+      "url": "<a href=\"http://archives.neohapsis.com/archives/fulldisclosure/2013-05/0001.html\">Neohapsis</a>"
+    }
+  ],
+  "published": "2013-05-13T00:00:00Z",
+  "updated": "2013-05-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-13-008"
+}
+

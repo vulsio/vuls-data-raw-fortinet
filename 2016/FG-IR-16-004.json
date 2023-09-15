@@ -1,0 +1,56 @@
+{
+  "id": "FG-IR-16-004",
+  "title": "FortiOS open redirect vulnerability",
+  "summary": "The FortiOS webui accepts a user-controlled input that specifies a link to an external site, and uses that link in a redirect. The redirect input parameter is also prone to a cross site scripting.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-004",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.0.0, less than 5.0.13, fixed in [5.0.13, 5.2.3, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "lt": "5.0.13"
+                  },
+                  "fixed_in": [
+                    "5.0.13",
+                    "5.2.3",
+                    "5.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less than 5.2.3, fixed in [5.2.3, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "lt": "5.2.3"
+                  },
+                  "fixed_in": [
+                    "5.2.3",
+                    "5.4.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Open redirect"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://cwe.mitre.org/data/definitions/601.html",
+      "url": "https://cwe.mitre.org/data/definitions/601.html"
+    }
+  ],
+  "published": "2016-03-16T00:00:00Z",
+  "updated": "2016-03-16T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-004"
+}
+

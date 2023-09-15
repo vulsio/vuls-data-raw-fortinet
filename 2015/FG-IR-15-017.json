@@ -1,0 +1,36 @@
+{
+  "id": "FG-IR-15-017",
+  "title": "FortiClient SSLVPN Linux client  local privilege escalation vulnerability",
+  "description": "Installing Forticlient SSLVPN Linux client build 2312 and lower in a home directory that is world readable-executable yields a privilege escalation vulnerability: Any local user can then exploit the helper/subroc setuid binary to run arbitrary code with root privileges.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-15-017",
+      "cve": "CVE-2015-7362",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient SSL VPN: less equal 2312, fixed in [2313]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_ssl_vpn:*:*:*:*:*:linux:*:*",
+                  "affected": {
+                    "le": "2312"
+                  },
+                  "fixed_in": [
+                    "2313"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Privilege Escalation"
+        }
+      ]
+    }
+  ],
+  "published": "2015-07-24T00:00:00Z",
+  "updated": "2015-07-24T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-15-017"
+}
+

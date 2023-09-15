@@ -1,0 +1,128 @@
+{
+  "id": "FG-IR-14-033",
+  "title": "Multiple XSS vulnerabilities in FortiManager and FortiAnalyzer Web UI",
+  "description": "Prior to version 5.0.7, the Web User Interface of FortiManager and FortiAnalyzer is vulnerable to multiple reflected Cross-Site Scripting vulnerabilities.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-14-033",
+      "cve": "CVE-2014-2334",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less than 5.0.7, fixed in [5.0.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.0.7"
+                  },
+                  "fixed_in": [
+                    "5.0.7"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: less than 5.0.7, fixed in [5.0.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.0.7"
+                  },
+                  "fixed_in": [
+                    "5.0.7"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Cross-Site Scripting (reflected)"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-14-033",
+      "cve": "CVE-2014-2335",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less than 5.0.7, fixed in [5.0.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.0.7"
+                  },
+                  "fixed_in": [
+                    "5.0.7"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: less than 5.0.7, fixed in [5.0.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.0.7"
+                  },
+                  "fixed_in": [
+                    "5.0.7"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Cross-Site Scripting (reflected)"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-14-033",
+      "cve": "CVE-2014-2336",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less than 5.0.7, fixed in [5.0.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.0.7"
+                  },
+                  "fixed_in": [
+                    "5.0.7"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: less than 5.0.7, fixed in [5.0.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.0.7"
+                  },
+                  "fixed_in": [
+                    "5.0.7"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Cross-Site Scripting (reflected)"
+        }
+      ]
+    }
+  ],
+  "published": "2014-10-30T00:00:00Z",
+  "updated": "2014-10-30T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-14-033"
+}
+

@@ -1,0 +1,41 @@
+{
+  "id": "FG-IR-22-306",
+  "title": "FortiSOAR - Server-Side Template Injection in Playbook component",
+  "summary": "An improper neutralization of special elements used in a template engine vulnerability [CWE-1336] in FortiSOAR management interface may allow a remote and authenticated attacker to execute arbitrary code via a crafted payload.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-306",
+      "cve": "CVE-2022-35847",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSOAR:",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.9,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L/E:F/RL:U/RC:R"
+          },
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2022-09-06T00:00:00Z",
+  "updated": "2022-09-06T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-306"
+}
+

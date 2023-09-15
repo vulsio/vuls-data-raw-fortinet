@@ -1,0 +1,120 @@
+{
+  "id": "FG-IR-22-039",
+  "title": "FortiExtender - Path Traversal vulnerability",
+  "summary": "An improper limitation of a pathname to a restricted directory ('Path Traversal') vulnerability [CWE-22] in FortiExtender management interface may allow an unauthenticated and remote attacker to retrieve arbitrary files from the underlying filesystem via specially crafted web requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-039",
+      "cve": "CVE-2022-23447",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiExtender: greater equal 3.2.1, less equal 3.2.3, fixed in [3.2.4, 3.3.3, 4.0.3, 4.1.9, 4.2.5, 7.0.4, 7.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiextender:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.2.1",
+                    "le": "3.2.3"
+                  },
+                  "fixed_in": [
+                    "3.2.4",
+                    "3.3.3",
+                    "4.0.3",
+                    "4.1.9",
+                    "4.2.5",
+                    "7.0.4",
+                    "7.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiExtender: greater equal 3.3.0, less equal 3.3.2, fixed in [3.3.3, 4.0.3, 4.1.9, 4.2.5, 7.0.4, 7.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiextender:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.3.0",
+                    "le": "3.3.2"
+                  },
+                  "fixed_in": [
+                    "3.3.3",
+                    "4.0.3",
+                    "4.1.9",
+                    "4.2.5",
+                    "7.0.4",
+                    "7.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiExtender: greater equal 4.0.0, less equal 4.0.2, fixed in [4.0.3, 4.1.9, 4.2.5, 7.0.4, 7.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiextender:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "4.0.2"
+                  },
+                  "fixed_in": [
+                    "4.0.3",
+                    "4.1.9",
+                    "4.2.5",
+                    "7.0.4",
+                    "7.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiExtender: greater equal 4.1.1, less equal 4.1.8, fixed in [4.1.9, 4.2.5, 7.0.4, 7.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiextender:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.1.1",
+                    "le": "4.1.8"
+                  },
+                  "fixed_in": [
+                    "4.1.9",
+                    "4.2.5",
+                    "7.0.4",
+                    "7.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiExtender: greater equal 4.2.0, less equal 4.2.4, fixed in [4.2.5, 7.0.4, 7.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiextender:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.2.0",
+                    "le": "4.2.4"
+                  },
+                  "fixed_in": [
+                    "4.2.5",
+                    "7.0.4",
+                    "7.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiExtender: greater equal 7.0.0, less equal 7.0.3, fixed in [7.0.4, 7.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiextender:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.3"
+                  },
+                  "fixed_in": [
+                    "7.0.4",
+                    "7.2.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N/E:F/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-22"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2023-07-11T00:00:00Z",
+  "updated": "2023-07-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-039"
+}
+

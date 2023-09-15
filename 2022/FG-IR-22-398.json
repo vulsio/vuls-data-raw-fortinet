@@ -1,0 +1,139 @@
+{
+  "id": "FG-IR-22-398",
+  "title": "FortiOS - heap-based buffer overflow in sslvpnd",
+  "summary": "A heap-based buffer overflow vulnerability [CWE-122] in FortiOS SSL-VPN may allow a remote unauthenticated attacker to execute arbitrary code or commands via specifically crafted requests.   Exploitation status: Fortinet is aware of an instance where this vulnerability was exploited in the wild, and recommends immediately validating your systems against the following indicators of compromise:   Multiple log entries with: Logdesc=\"Application crashed\" and msg=\"[...] application:sslvpnd,[...], Signal 11 received, Backtrace: [...]“   Presence of the following artifacts in the filesystem: /data/lib/libips.bak /data/lib/libgif.so /data/lib/libiptcp.so /data/lib/libipudp.so /data/lib/libjepg.so /var/.sslvpnconfigbk /data/etc/wxd.conf /flash   Connections to suspicious IP addresses from the FortiGate: 188.34.130.40:444 103.131.189.143:30080,30081,30443,20443 193.36.119.61:8443,444 172.247.168.153:8033 139.180.184.197 66.42.91.32 158.247.221.101 107.148.27.117 139.180.128.142 155.138.224.122 185.174.136.20   For more information on how to check for the presence of the indicators of compromise above, please visit this Knowledge Base entry, and contact customer support for assistance.   Workaround: Disable SSL-VPN.   Changelog: 2022-12-12: Added  FOS6k/k  2022-12-22: Added FortiProxy 2022-12-27: Corrected typo in IOCs: 192.36.119.61 => 193.36.119.61",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-398",
+      "cve": "CVE-2022-42475",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less than 6.0.16, fixed in [6.0.16, 6.2.12, 6.4.11, 7.0.9, 7.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "6.0.16"
+                  },
+                  "fixed_in": [
+                    "6.0.16",
+                    "6.2.12",
+                    "6.4.11",
+                    "7.0.9",
+                    "7.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.2.0, less than 6.2.12, fixed in [6.2.12, 6.4.11, 7.0.9, 7.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "lt": "6.2.12"
+                  },
+                  "fixed_in": [
+                    "6.2.12",
+                    "6.4.11",
+                    "7.0.9",
+                    "7.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less than 6.4.11, fixed in [6.4.11, 7.0.9, 7.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "lt": "6.4.11"
+                  },
+                  "fixed_in": [
+                    "6.4.11",
+                    "7.0.9",
+                    "7.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less than 7.0.9, fixed in [7.0.9, 7.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "lt": "7.0.9"
+                  },
+                  "fixed_in": [
+                    "7.0.9",
+                    "7.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less than 7.2.3, fixed in [7.0.9, 7.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "lt": "7.2.3"
+                  },
+                  "fixed_in": [
+                    "7.0.9",
+                    "7.2.3"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiProxy:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiProxy:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiproxy-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-122"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2022-12-12T00:00:00Z",
+  "updated": "2022-12-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-398"
+}
+

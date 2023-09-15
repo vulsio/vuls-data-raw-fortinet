@@ -1,0 +1,75 @@
+{
+  "id": "FG-IR-18-384",
+  "title": "FortiOS system file leak through SSL VPN via specially crafted HTTP resource requests",
+  "summary": "A path traversal vulnerability in the FortiOS SSL VPN web portal may allow an unauthenticated attacker to download FortiOS system files through specially crafted HTTP resource requests.Fortinet is aware that a malicious actor has disclosed SSL-VPN access information to 87,000 FortiGate SSL-VPN devices. These credentials were obtained from systems which were unpatched against FG-IR-18-384 / CVE-2018-13379 at the time of the actors scan, but may since have been patched but the passwords not reset. Please note that a password reset following upgrade is critical to protecting against this vulnerability, in case credentials have already been compromised.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-384",
+      "cve": "CVE-2018-13379",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.4.6, less equal 5.4.12, fixed in [5.4.13, 5.6.8, 6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.6",
+                    "le": "5.4.12"
+                  },
+                  "fixed_in": [
+                    "5.4.13",
+                    "5.6.8",
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.6.3, less equal 5.6.7, fixed in [5.6.8, 6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.3",
+                    "le": "5.6.7"
+                  },
+                  "fixed_in": [
+                    "5.6.8",
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.4, fixed in [6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.4"
+                  },
+                  "fixed_in": [
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.9,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:H/E:F/RL:X/RC:X"
+          },
+          "impact": "Information Disclosure"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://blog.orange.tw/2019/08/attacking-ssl-vpn-part-2-breaking-the-fortigate-ssl-vpn.html",
+      "url": "https://blog.orange.tw/2019/08/attacking-ssl-vpn-part-2-breaking-the-fortigate-ssl-vpn.html"
+    }
+  ],
+  "published": "2019-05-24T00:00:00Z",
+  "updated": "2021-09-08T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-384"
+}
+

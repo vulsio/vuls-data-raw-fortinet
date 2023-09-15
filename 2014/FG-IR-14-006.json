@@ -1,0 +1,85 @@
+{
+  "id": "FG-IR-14-006",
+  "title": "FortiGate Vulnerabilities in FortiManager Service",
+  "description": "A temporary denial of service condition can be created using a specially crafted request sent to the FortiManager protocol service in FortiOS version 5.0.0 to 5.0.7 and FortiOS version 4.3.15 and lower. Code execution has not been demonstrated, but may be possible under certain conditions. (CVE-2014-0352) In addition, an attacker in a privileged network position may be able to perform a man-in-the-middle attack on FortiManager protocol communications through the use of an anonymous cipher suite. (CVE-2014-0351) 2014-08-19, Version 1: Initial Advisory for CVE-2014-2216. 2014-09-08, Version 2: Added CVE-2014-0351. CVE-2014-2216 has been renumbered to CVE-2014-0352 to match CERT-CC advisory.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-14-006",
+      "cve": "CVE-2014-0351",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 4.3.15, fixed in [4.3.16]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "4.3.15"
+                  },
+                  "fixed_in": [
+                    "4.3.16"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.0.0, less equal 5.0.7, fixed in [5.0.8, 5.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.7"
+                  },
+                  "fixed_in": [
+                    "5.0.8",
+                    "5.2.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Denial of Service"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-14-006",
+      "cve": "CVE-2014-0352",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 4.3.15, fixed in [4.3.16]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "4.3.15"
+                  },
+                  "fixed_in": [
+                    "4.3.16"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.0.0, less equal 5.0.7, fixed in [5.0.8, 5.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.7"
+                  },
+                  "fixed_in": [
+                    "5.0.8",
+                    "5.2.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Denial of Service"
+        }
+      ]
+    }
+  ],
+  "published": "2014-08-19T00:00:00Z",
+  "updated": "2014-08-19T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-14-006"
+}
+

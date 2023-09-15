@@ -1,0 +1,102 @@
+{
+  "id": "FG-IR-17-195",
+  "title": "IPMI network LAN interface failover operational risk",
+  "summary": "Some models of FortiAnalyzer and FortiManager have a default setting of \"Failover\", for remote IPMI access; this means that if no cable is plugged in the IPMI port, the IPMI implementation will request an IP address on the regular LAN port of the device, via DHCP requests.Should such a DHCP request succeed, access to the IPMI web GUI is then possible on the granted IP address, via the regular LAN port of the device.This presents an operational risk, as this default behavior may not be known or understood by administrators of the device; the latter risk is more important if the default IPMI admin passwords have not been changed.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-195",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: equal FortiAnalyzer 400E",
+                  "cpe": "cpe:2.3:h:fortinet:fortianalyzer-400e:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                },
+                {
+                  "description": "FortiAnalyzer: equal FortiAnalyzer 1000E",
+                  "cpe": "cpe:2.3:h:fortinet:fortianalyzer-1000e:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                },
+                {
+                  "description": "FortiAnalyzer: equal FortiAnalyzer 2000E",
+                  "cpe": "cpe:2.3:h:fortinet:fortianalyzer-2000e:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                },
+                {
+                  "description": "FortiAnalyzer: equal FortiAnalyzer 3000F",
+                  "cpe": "cpe:2.3:h:fortinet:fortianalyzer-3000f:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                },
+                {
+                  "description": "FortiAnalyzer: equal FortiAnalyzer 3500F",
+                  "cpe": "cpe:2.3:h:fortinet:fortianalyzer-3500f:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                },
+                {
+                  "description": "FortiAnalyzer: equal FortiAnalyzer 3700F",
+                  "cpe": "cpe:2.3:h:fortinet:fortianalyzer-3700f:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: equal FortiManager 300E",
+                  "cpe": "cpe:2.3:h:fortinet:fortimanager-300e:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                },
+                {
+                  "description": "FortiManager: equal FortiManager 400E",
+                  "cpe": "cpe:2.3:h:fortinet:fortimanager-400e:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                },
+                {
+                  "description": "FortiManager: equal FortiManager 2000E",
+                  "cpe": "cpe:2.3:h:fortinet:fortimanager-2000e:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                },
+                {
+                  "description": "FortiManager: equal FortiManager 3000F",
+                  "cpe": "cpe:2.3:h:fortinet:fortimanager-3000f:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Potential Unauthorized Access to the IPMI interface"
+        }
+      ]
+    }
+  ],
+  "published": "2017-11-29T00:00:00Z",
+  "updated": "2019-09-17T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-195"
+}
+

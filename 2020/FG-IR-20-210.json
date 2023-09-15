@@ -1,0 +1,75 @@
+{
+  "id": "FG-IR-20-210",
+  "title": "FortiAP - OS command Injection through kdbg CLI command",
+  "summary": "An instance of improper neutralization of special elements used in an OS Command found in FortiAP's console may allow an authenticated attacker to execute unauthorized commands by running the kdbg CLI command with specifically crafted arguments.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-20-210",
+      "cve": "CVE-2021-26106",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP: greater equal 6.4.1, less equal 6.4.5, fixed in [6.4.6, 7.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.1",
+                    "le": "6.4.5"
+                  },
+                  "fixed_in": [
+                    "6.4.6",
+                    "7.0.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP-S: greater equal 6.2.4, less equal 6.2.5, fixed in [6.2.6, 6.4.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-s:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.4",
+                    "le": "6.2.5"
+                  },
+                  "fixed_in": [
+                    "6.2.6",
+                    "6.4.6"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP-W2: greater equal 6.2.4, less equal 6.2.5, fixed in [6.2.6, 6.4.6, 7.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-w2:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.4",
+                    "le": "6.2.5"
+                  },
+                  "fixed_in": [
+                    "6.2.6",
+                    "6.4.6",
+                    "7.0.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.6,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:U/RC:C"
+          },
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2021-07-07T00:00:00Z",
+  "updated": "2021-07-07T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-20-210"
+}
+

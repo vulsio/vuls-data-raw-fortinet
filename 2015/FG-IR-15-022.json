@@ -1,0 +1,61 @@
+{
+  "id": "FG-IR-15-022",
+  "title": "Multiple XSS vulnerabilities in FortiManager GUI",
+  "description": "The Graphical User Interface (GUI) of FortiManager v5.2.2 is vulnerable to two reflected Cross-Site Scripting (XSS) vulnerabilities. 2 potential XSS vectors were identified: * XSS vulnerability in SOMVpnSSLPortalDialog. * XSS vulnerability in FGDMngUpdHistory. The Graphical User Interface (GUI) of FortiManager v5.2.3 is vulnerable to one reflected XSS vulnerability and one stored XSS vulnerability. 2 potential XSS vectors were identified: * XSS vulnerability in sharedjobmanager. * XSS vulnerability in SOMServiceObjDialog.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-15-022",
+      "cve": "CVE-2015-8037",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: less equal 5.2.2, fixed in [5.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.2.2"
+                  },
+                  "fixed_in": [
+                    "5.2.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "XSS"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-15-022",
+      "cve": "CVE-2015-8038",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: less equal 5.2.3, fixed in [5.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.2.3"
+                  },
+                  "fixed_in": [
+                    "5.2.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "XSS"
+        }
+      ]
+    }
+  ],
+  "published": "2015-09-24T00:00:00Z",
+  "updated": "2015-09-24T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-15-022"
+}
+

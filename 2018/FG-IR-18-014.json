@@ -1,0 +1,75 @@
+{
+  "id": "FG-IR-18-014",
+  "title": "FortiAnalyzer and FortiManager admin user avatar setting improper access control",
+  "summary": "An improper access control vulnerability exists in FortiAnalyzer and FortiManager, whereby a regular user of the GUI can edit the avatar picture of other users (including with higher privileges) with arbitrary content.Modern browsers would however not interpret code in the context of an image, therefore XSS attacks are only feasible if the target is using a legacy browser (I.E. 6 or below).",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-014",
+      "cve": "CVE-2018-1354",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 5.6.5, fixed in [5.6.6, 6.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.6.5"
+                  },
+                  "fixed_in": [
+                    "5.6.6",
+                    "6.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: equal 6.0.0, fixed in [6.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.0.0"
+                  },
+                  "fixed_in": [
+                    "6.0.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: less equal 5.6.5, fixed in [5.6.6, 6.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.6.5"
+                  },
+                  "fixed_in": [
+                    "5.6.6",
+                    "6.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: equal 6.0.0, fixed in [6.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.0.0"
+                  },
+                  "fixed_in": [
+                    "6.0.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Improper Access Control"
+        }
+      ]
+    }
+  ],
+  "published": "2018-06-22T00:00:00Z",
+  "updated": "2018-06-22T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-014"
+}
+

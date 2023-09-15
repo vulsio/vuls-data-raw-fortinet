@@ -1,0 +1,52 @@
+{
+  "id": "FG-IR-18-173",
+  "title": "FortiOS reveals platform information without authentication",
+  "summary": "An information exposure vulnerability in FortiOS WEB UI may allow an unauthenticated attacker to gain platform information such as version, via parsing a JavaScript file.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-173",
+      "cve": "CVE-2018-13367",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 6.2.0, fixed in [6.2.1, 6.2.2, 6.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "6.2.0"
+                  },
+                  "fixed_in": [
+                    "6.2.1",
+                    "6.2.2",
+                    "6.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 6.2.3, fixed in [6.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.2.3"
+                  },
+                  "fixed_in": [
+                    "6.2.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Information Disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2019-08-08T00:00:00Z",
+  "updated": "2020-06-01T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-173"
+}
+

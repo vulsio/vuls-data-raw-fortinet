@@ -1,0 +1,60 @@
+{
+  "id": "FG-IR-15-010",
+  "title": "FortiWeb multiple vulnerabilities",
+  "description": "Older versions of FortiWeb are subject to three vulnerabilities: 1. OS command injection: A WebUI administrator user may run system commands when executing a report 2. Reflected XSS: A WebUI administrator user may perform a reflected XSS attack via an improperly sanitized parameter in the FortiWeb auto update service page 3. Password field with autocomplete enabled: The WebUI FTP backup page contains a password field with HTML form autocomplete enabled",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-15-010",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: greater equal 5.0.0, less equal 5.3.4, fixed in [5.3.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.3.4"
+                  },
+                  "fixed_in": [
+                    "5.3.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "XSS"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-15-010",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: less than 5.3.5, fixed in [5.3.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.3.5"
+                  },
+                  "fixed_in": [
+                    "5.3.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "OS command injection, autocomplete in html form"
+        }
+      ]
+    }
+  ],
+  "published": "2015-04-16T00:00:00Z",
+  "updated": "2015-04-16T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-15-010"
+}
+

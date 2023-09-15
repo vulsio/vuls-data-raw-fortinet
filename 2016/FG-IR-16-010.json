@@ -1,0 +1,37 @@
+{
+  "id": "FG-IR-16-010",
+  "title": "FortiWeb CSRF Vulnerability",
+  "summary": "A CSRF vulnerability could allow attackers to change admin password with crafted forms.",
+  "description": "There is a CSRF vulnerability with FortiWEB console on dashboard. Attackers may submit local forms to change admin password illegally.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-010",
+      "cve": "CVE-2016-4066",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: less than 5.5.3, fixed in [5.5.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.5.3"
+                  },
+                  "fixed_in": [
+                    "5.5.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Illegal change of admin password."
+        }
+      ]
+    }
+  ],
+  "published": "2016-06-23T00:00:00Z",
+  "updated": "2016-06-23T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-010"
+}
+

@@ -1,0 +1,30 @@
+{
+  "id": "FG-IR-16-091",
+  "title": "Blacknurse ICMP DoS attack",
+  "summary": "BlackNurse is a Denial of Service attack consisting in flooding the target with ICMP Type 3 Code 3 packets. The latter type of packets generally consumes more CPU to be processed than the \"traditional\" ICMP packets used in classical ping-flood attacks (Type 8 Code 0). As such, Blacknurse aims at exhausting the target's CPU, rather than its bandwidth (so called \"low-bandwidth attack\").",
+  "description": "BlackNurse is a Denial of Service attack consisting in flooding the target with ICMP Type 3 Code 3 packets. The latter type of packets generally consumes more CPU to be processed than the \"traditional\" ICMP packets used in classical ping-flood attacks (Type 8 Code 0). As such, Blacknurse aims at exhausting the target's CPU, rather than its bandwidth (so called \"low-bandwidth attack\").",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-091",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Denial of service"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "http://blacknurse.dk/",
+      "url": "http://blacknurse.dk/"
+    }
+  ],
+  "published": "2016-11-15T00:00:00Z",
+  "updated": "2016-11-15T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-091"
+}
+

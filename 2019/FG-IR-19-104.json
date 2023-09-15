@@ -1,0 +1,67 @@
+{
+  "id": "FG-IR-19-104",
+  "title": "XSS vulnerability in FortiAuthenticator OWA Agent",
+  "summary": "An improper neutralization of input during web page generation in FortiAuthenticator Agent for Outlook Web Access may allow an unauthenticated user to perform a cross-site scripting attack (XSS) via a parameter of the logon page.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-19-104",
+      "cve": "CVE-2019-16154",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAuthenticator:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiAuthenticator:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiAuthenticator:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiauthenticator-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:L/A:L/E:F/RL:X/RC:X"
+          },
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2020-01-06T00:00:00Z",
+  "updated": "2020-01-06T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-19-104"
+}
+

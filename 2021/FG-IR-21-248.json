@@ -1,0 +1,84 @@
+{
+  "id": "FG-IR-21-248",
+  "title": "FortiOS - Stored cross-site scripting in replacement messages visualization",
+  "summary": "A improper neutralization of input during web page generation ('cross-site scripting') [CWE-79] in FortiOS may allow a privileged attacker to perform a stored XSS attack via storing malicious payloads in replacement messages.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-21-248",
+      "cve": "CVE-2022-40680",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.0.7, less equal 6.0.15, fixed in [6.4.10, 7.0.7, 7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.7",
+                    "le": "6.0.15"
+                  },
+                  "fixed_in": [
+                    "6.4.10",
+                    "7.0.7",
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.2.2, less equal 6.2.12, fixed in [6.4.10, 7.0.7, 7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.2",
+                    "le": "6.2.12"
+                  },
+                  "fixed_in": [
+                    "6.4.10",
+                    "7.0.7",
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 6.4.9, fixed in [6.4.10, 7.0.7, 7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.9"
+                  },
+                  "fixed_in": [
+                    "6.4.10",
+                    "7.0.7",
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.3, fixed in [7.0.7, 7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.3"
+                  },
+                  "fixed_in": [
+                    "7.0.7",
+                    "7.2.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.8,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:C/C:L/I:L/A:N/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-79"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2022-12-06T00:00:00Z",
+  "updated": "2022-12-06T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-21-248"
+}
+

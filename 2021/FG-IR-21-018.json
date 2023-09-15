@@ -1,0 +1,42 @@
+{
+  "id": "FG-IR-21-018",
+  "title": "FortiOS - Improper verification of the user certificate's chain of trust in FortiGate when connecting to SSL-VPN",
+  "summary": "An improper following of a certificate's chain of trust vulnerability in FortiGate SSL-VPN may allow an LDAP user to connect to VPN with any certificate that is signed by a trusted Certificate Authority.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-21-018",
+      "cve": "CVE-2021-24012",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.4.2, less equal 6.4.4, fixed in [6.4.5, 7.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.2",
+                    "le": "6.4.4"
+                  },
+                  "fixed_in": [
+                    "6.4.5",
+                    "7.0.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.4,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:L/I:L/A:L/E:F/RL:X/RC:C"
+          },
+          "impact": "Impersonation"
+        }
+      ]
+    }
+  ],
+  "published": "2021-06-01T00:00:00Z",
+  "updated": "2021-06-01T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-21-018"
+}
+

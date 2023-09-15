@@ -1,0 +1,55 @@
+{
+  "id": "FG-IR-22-174",
+  "title": "FortiOS -- Read-Only users able to modify the Interface fields using the API",
+  "summary": "An improper access control [CWE-284] vulnerability in FortiOS may allow a remote authenticated read-only user to modify the interface settings via the API.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-174",
+      "cve": "CVE-2022-38380",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 7.0.7, fixed in [7.0.8, 7.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "7.0.7"
+                  },
+                  "fixed_in": [
+                    "7.0.8",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 7.2.0, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.2.0"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N/E:F/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-284"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2022-11-01T00:00:00Z",
+  "updated": "2022-11-01T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-174"
+}
+

@@ -1,0 +1,65 @@
+{
+  "id": "FG-IR-17-245",
+  "title": "FortiOS local privilege escalation via malicious use of USB storage devices",
+  "summary": "An admin user with super_admin privileges can execute an arbitrary binary contained on an USB drive plugged to a FortiGate, via linking the aforementioned binary to a command that is allowed to be run by the fnsysctl CLI command.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-245",
+      "cve": "CVE-2017-14187",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less equal 5.2.15, fixed in [5.4.9, 5.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.15"
+                  },
+                  "fixed_in": [
+                    "5.4.9",
+                    "5.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.4.0, less equal 5.4.8, fixed in [5.4.9, 5.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.8"
+                  },
+                  "fixed_in": [
+                    "5.4.9",
+                    "5.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.2, fixed in [5.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.2"
+                  },
+                  "fixed_in": [
+                    "5.6.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.8,
+            "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:X/RL:X/RC:X"
+          },
+          "impact": "Local Privilege Escalation"
+        }
+      ]
+    }
+  ],
+  "published": "2018-05-18T00:00:00Z",
+  "updated": "2018-05-18T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-245"
+}
+

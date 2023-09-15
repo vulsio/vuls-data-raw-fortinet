@@ -1,0 +1,67 @@
+{
+  "id": "FG-IR-20-002",
+  "title": "XSS vulnerability in the UserID of Admin Users in FortiNAC",
+  "summary": "An improper neutralization of input vulnerability in FortiNAC may allow a remote authenticated attacker to perform a stored cross site scripting attack (XSS) via the UserID of Admin Users.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-20-002",
+      "cve": "CVE-2020-12816",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiNAC:",
+                  "cpe": "cpe:2.3:a:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiNAC:",
+                    "cpe": "cpe:2.3:o:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiNAC:",
+                      "cpe": "cpe:2.3:h:fortinet:fortinac-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:N/I:L/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Unauthorized code execution"
+        }
+      ]
+    }
+  ],
+  "published": "2020-09-23T00:00:00Z",
+  "updated": "2020-09-23T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-20-002"
+}
+

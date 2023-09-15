@@ -1,0 +1,37 @@
+{
+  "id": "FG-IR-16-009",
+  "title": "Fortiweb path traversal vulnerability",
+  "summary": "A path traversal vulnerability allows an administrator account with read and write privileges to read arbitrary files using the autolearn feature.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-009",
+      "cve": "CVE-2016-5092",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: greater equal 4.4.6, less equal 5.5.2, fixed in [5.5.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.4.6",
+                    "le": "5.5.2"
+                  },
+                  "fixed_in": [
+                    "5.5.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2016-05-26T00:00:00Z",
+  "updated": "2016-05-26T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-009"
+}
+

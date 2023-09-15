@@ -1,0 +1,111 @@
+{
+  "id": "FG-IR-012-008",
+  "title": "Potential Cross Site Scripting Vulnerability in FortiWeb",
+  "summary": "FortiWeb does not sanitize user input properly under limited circumstances.  The vulnerability could allow an attacker to inject malicious script code.",
+  "description": "FortiWeb does not sanitize user input properly under limited circumstances.  The vulnerability could allow an attacker to inject malicious script code.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-012-008",
+      "cve": "CVE-2012-6346",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: less than 4.4.4, fixed in [4.4.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "4.4.4"
+                  },
+                  "fixed_in": [
+                    "4.4.4"
+                  ]
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiWeb: equal FortiWeb 4000C",
+                    "cpe": "cpe:2.3:h:fortinet:fortiweb-4000c:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiWeb: equal FortiWeb 3000C",
+                    "cpe": "cpe:2.3:h:fortinet:fortiweb-3000c:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiWeb: equal FortiWeb 3000CFsx",
+                    "cpe": "cpe:2.3:h:fortinet:fortiweb-3000cfsx:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiWeb: equal FortiWeb 1000C",
+                    "cpe": "cpe:2.3:h:fortinet:fortiweb-1000c:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiWeb: equal FortiWeb 400C",
+                    "cpe": "cpe:2.3:h:fortinet:fortiweb-400c:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiWeb: equal FortiWeb VM01",
+                    "cpe": "cpe:2.3:h:fortinet:fortiweb-vm01:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiWeb: equal FortiWeb VM02",
+                    "cpe": "cpe:2.3:h:fortinet:fortiweb-vm02:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiWeb: equal FortiWeb VM04",
+                    "cpe": "cpe:2.3:h:fortinet:fortiweb-vm04:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiWeb: equal FortiWeb VM08",
+                    "cpe": "cpe:2.3:h:fortinet:fortiweb-vm08:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiWeb: equal FortiWeb VM16",
+                    "cpe": "cpe:2.3:h:fortinet:fortiweb-vm16:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "impact": "Cross Site Scripting"
+        }
+      ]
+    }
+  ],
+  "published": "2012-12-03T00:00:00Z",
+  "updated": "2012-12-03T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-012-008"
+}
+

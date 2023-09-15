@@ -1,0 +1,497 @@
+{
+  "id": "FG-IR-19-099",
+  "title": "libssh2 integer overflow and out of bounds read/write vulnerabilities",
+  "summary": "Multiple integer overflow and out of bounds read/write vulnerabilities in the SSL VPN web-mode SSH client may allow an unauthenticated attacker to cause the SSL VPN user session to break (Denial of service) and possibly to run arbitrary code via specially crafted packets sent from a malicious SSH server.This concerns the following CVEs on a precaution basis:* CVE-2019-3855 integer overflow when reading a specially crafted packet* CVE-2019-3856 integer overflow if the server sent an extremely large number of keyboard prompts* CVE-2019-3857 integer overflow when receiving a specially crafted exit signal message channel packet* CVE-2019-3858 zero byte allocation when reading a specially crafted SFTP packet* CVE-2019-3859 out of bounds reads in _libssh2_packet_require(v)* CVE-2019-3860 out of bounds reads when processing specially crafted SFTP packets* CVE-2019-3861 out of bounds read when processing a specially crafted packet* CVE-2019-3862 out of bounds read when receiving a specially crafted exit status message channel packet* CVE-2019-3863 integer overflow in userauth_keyboard_interactive with a number of extremely long prompt strings",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-19-099",
+      "cve": "CVE-2019-3855",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.10, fixed in [5.6.11, 6.0.7, 6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.10"
+                  },
+                  "fixed_in": [
+                    "5.6.11",
+                    "6.0.7",
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.6, fixed in [6.0.7, 6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.6"
+                  },
+                  "fixed_in": [
+                    "6.0.7",
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 6.2.0, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.2.0"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.8,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Buffer Overflows"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-099",
+      "cve": "CVE-2019-3856",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.10, fixed in [5.6.11, 6.0.7, 6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.10"
+                  },
+                  "fixed_in": [
+                    "5.6.11",
+                    "6.0.7",
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.6, fixed in [6.0.7, 6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.6"
+                  },
+                  "fixed_in": [
+                    "6.0.7",
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 6.2.0, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.2.0"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.8,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Buffer Overflows"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-099",
+      "cve": "CVE-2019-3857",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.10, fixed in [5.6.11, 6.0.7, 6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.10"
+                  },
+                  "fixed_in": [
+                    "5.6.11",
+                    "6.0.7",
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.6, fixed in [6.0.7, 6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.6"
+                  },
+                  "fixed_in": [
+                    "6.0.7",
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 6.2.0, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.2.0"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.8,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Buffer Overflows"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-099",
+      "cve": "CVE-2019-3858",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.10, fixed in [5.6.11, 6.0.7, 6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.10"
+                  },
+                  "fixed_in": [
+                    "5.6.11",
+                    "6.0.7",
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.6, fixed in [6.0.7, 6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.6"
+                  },
+                  "fixed_in": [
+                    "6.0.7",
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 6.2.0, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.2.0"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.8,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Buffer Overflows"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-099",
+      "cve": "CVE-2019-3859",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.10, fixed in [5.6.11, 6.0.7, 6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.10"
+                  },
+                  "fixed_in": [
+                    "5.6.11",
+                    "6.0.7",
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.6, fixed in [6.0.7, 6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.6"
+                  },
+                  "fixed_in": [
+                    "6.0.7",
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 6.2.0, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.2.0"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.8,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Buffer Overflows"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-099",
+      "cve": "CVE-2019-3860",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.10, fixed in [5.6.11, 6.0.7, 6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.10"
+                  },
+                  "fixed_in": [
+                    "5.6.11",
+                    "6.0.7",
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.6, fixed in [6.0.7, 6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.6"
+                  },
+                  "fixed_in": [
+                    "6.0.7",
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 6.2.0, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.2.0"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.8,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Buffer Overflows"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-099",
+      "cve": "CVE-2019-3861",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.10, fixed in [5.6.11, 6.0.7, 6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.10"
+                  },
+                  "fixed_in": [
+                    "5.6.11",
+                    "6.0.7",
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.6, fixed in [6.0.7, 6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.6"
+                  },
+                  "fixed_in": [
+                    "6.0.7",
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 6.2.0, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.2.0"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.8,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Buffer Overflows"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-099",
+      "cve": "CVE-2019-3862",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.10, fixed in [5.6.11, 6.0.7, 6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.10"
+                  },
+                  "fixed_in": [
+                    "5.6.11",
+                    "6.0.7",
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.6, fixed in [6.0.7, 6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.6"
+                  },
+                  "fixed_in": [
+                    "6.0.7",
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 6.2.0, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.2.0"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.8,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Buffer Overflows"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-099",
+      "cve": "CVE-2019-3863",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.10, fixed in [5.6.11, 6.0.7, 6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.10"
+                  },
+                  "fixed_in": [
+                    "5.6.11",
+                    "6.0.7",
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.6, fixed in [6.0.7, 6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.6"
+                  },
+                  "fixed_in": [
+                    "6.0.7",
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 6.2.0, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.2.0"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.8,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Buffer Overflows"
+        }
+      ]
+    }
+  ],
+  "published": "2019-11-14T00:00:00Z",
+  "updated": "2019-11-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-19-099"
+}
+

@@ -1,0 +1,31 @@
+{
+  "id": "FG-IR-18-336",
+  "title": "CVE-2018-10933 libssh authentication bypass",
+  "summary": "libssh versions 0.6 and above have an authentication bypass vulnerability inthe server code. By presenting the server an SSH2_MSG_USERAUTH_SUCCESS messagein place of the SSH2_MSG_USERAUTH_REQUEST message which the server would expectto initiate authentication, the attacker could successfully authenticatewithout any credentials. [1]",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-336",
+      "cve": "CVE-2018-10933",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 6.4,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "www.libssh.org/security/advisories/CVE-2018-10933.txt",
+      "url": "www.libssh.org/security/advisories/CVE-2018-10933.txt"
+    }
+  ],
+  "published": "2018-11-21T00:00:00Z",
+  "updated": "2018-11-21T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-336"
+}
+

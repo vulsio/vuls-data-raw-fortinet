@@ -1,0 +1,86 @@
+{
+  "id": "FG-IR-19-034",
+  "title": "FortiOS reflected XSS in the SSL VPN web portal error page parameters",
+  "summary": "Failure to sanitize input in the SSL VPN web portal may allow an attacker to perform a reflected Cross-site Scripting (XSS) attack via multiple parameters of the error page HTTP request.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-19-034",
+      "cve": "CVE-2019-5586",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.10, fixed in [5.6.11, 6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.10"
+                  },
+                  "fixed_in": [
+                    "5.6.11",
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.4, fixed in [6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.4"
+                  },
+                  "fixed_in": [
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Cross-site Scripting (XSS)"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-034",
+      "cve": "CVE-2019-5588",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.4, fixed in [6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.4"
+                  },
+                  "fixed_in": [
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Cross-site Scripting (XSS)"
+        }
+      ]
+    }
+  ],
+  "published": "2019-08-21T00:00:00Z",
+  "updated": "2019-08-21T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-19-034"
+}
+

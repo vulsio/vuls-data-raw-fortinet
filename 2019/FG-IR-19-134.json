@@ -1,0 +1,126 @@
+{
+  "id": "FG-IR-19-134",
+  "title": "FortiOS/FortiProxy - local certificate private key improper protection in admin CLI console",
+  "summary": "Improper permission or value checking in the CLI console may allow a non-privileged user to obtain plaint text private keys of system's builtin local certificates via unsetting the keys encryption password or for user uploaded local certificates via setting an empty password. Note that backed up config files can be restored onto a version of FortiOS or FortiProxy vulnerable to this, in order to obtain the plaintext versions of local certificates private keys encrypted in those config files.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-19-134",
+      "cve": "CVE-2019-5593",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.4.0, less equal 5.4.13, fixed in [5.6.11, 6.0.7, 6.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.13"
+                  },
+                  "fixed_in": [
+                    "5.6.11",
+                    "6.0.7",
+                    "6.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.10, fixed in [5.6.11, 6.0.7, 6.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.10"
+                  },
+                  "fixed_in": [
+                    "5.6.11",
+                    "6.0.7",
+                    "6.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.6, fixed in [6.0.7, 6.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.6"
+                  },
+                  "fixed_in": [
+                    "6.0.7",
+                    "6.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.2.0, less equal 6.2.1, fixed in [6.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.1"
+                  },
+                  "fixed_in": [
+                    "6.2.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiProxy:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiProxy:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiproxy-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Information Disclosure"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://stuff.purdon.ca/?page_id=233",
+      "url": "https://stuff.purdon.ca/?page_id=233"
+    }
+  ],
+  "published": "2019-11-14T00:00:00Z",
+  "updated": "2019-11-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-19-134"
+}
+

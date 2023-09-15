@@ -1,0 +1,46 @@
+{
+  "id": "FG-IR-20-091",
+  "title": "FortiOS - Bypassing FortiGate security profiles via SNI in Client Hello",
+  "summary": "An exposure of sensitive information to an unauthorized actor vulnerability [CWE-200] in FortiOS may allow a privileged attacker to disclose sensitive information via SNI Client Hello TLS packets.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-20-091",
+      "cve": "CVE-2020-15936",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: equal ANY",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "ANY"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 2.6,
+            "vector": "CVSS:3.1/AV:A/AC:H/PR:H/UI:N/S:C/C:N/I:L/A:N/E:X/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-200"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://community.fortinet.com/t5/FortiGate/Technical-Tip-Bypassing-FortiGate-web-filter-profile-by-using/ta-p/200212",
+      "url": "https://community.fortinet.com/t5/FortiGate/Technical-Tip-Bypassing-FortiGate-web-filter-profile-by-using/ta-p/200212"
+    }
+  ],
+  "published": "2022-03-01T00:00:00Z",
+  "updated": "2022-03-01T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-20-091"
+}
+

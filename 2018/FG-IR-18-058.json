@@ -1,0 +1,44 @@
+{
+  "id": "FG-IR-18-058",
+  "title": "FortiWeb Recursive URL Decoding is not enabled by default",
+  "summary": "FortiWeb's \"Recursive URL Decoding\" feature can detect URL-based attacks (among which XSS and SQL injection attempts) even when the malicious URL is recursively encoded. However, this feature is not enabled by default in FortiWeb's system settings for FortiWeb version 6.0.0 and below.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-058",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: less equal 6.0.0, fixed in [6.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "6.0.0"
+                  },
+                  "fixed_in": [
+                    "6.0.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "WAF bypass (URL based attack)"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "http://help.fortinet.com/fweb/571/Content/FortiWeb/fortiweb-admin/advanced_settings.htm",
+      "url": "http://help.fortinet.com/fweb/571/Content/FortiWeb/fortiweb-admin/advanced_settings.htm"
+    }
+  ],
+  "published": "2018-05-16T00:00:00Z",
+  "updated": "2018-08-23T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-058"
+}
+

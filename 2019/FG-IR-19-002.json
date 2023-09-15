@@ -1,0 +1,82 @@
+{
+  "id": "FG-IR-19-002",
+  "title": "FortiOS SSL VPN web portal Host Header Redirection",
+  "summary": "A Host Header Redirection vulnerability exists in FortiOS SSL-VPN web portal: when an attacker submits specially crafted HTTP requests, the SSL-VPN web portal may respond with a redirection to websites specified by the attacker.If a web proxy's cache is poisoned with the aforementioned redirection, users of this web proxy may be directed to the attacker's specified websites when trying to access the SSL-VPN web portal.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-19-002",
+      "cve": "CVE-2018-13384",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less equal 5.2.14, fixed in [5.2.15, 5.6.13, 6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.14"
+                  },
+                  "fixed_in": [
+                    "5.2.15",
+                    "5.6.13",
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.4.0, less equal 5.4.13, fixed in [5.6.13, 6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.13"
+                  },
+                  "fixed_in": [
+                    "5.6.13",
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.12, fixed in [5.6.13, 6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.12"
+                  },
+                  "fixed_in": [
+                    "5.6.13",
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.4, fixed in [6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.4"
+                  },
+                  "fixed_in": [
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.6,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:X/RC:X"
+          },
+          "impact": "Improper Access Control"
+        }
+      ]
+    }
+  ],
+  "published": "2020-01-03T00:00:00Z",
+  "updated": "2020-01-03T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-19-002"
+}
+

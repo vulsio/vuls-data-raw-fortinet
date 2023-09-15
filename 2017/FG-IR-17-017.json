@@ -1,0 +1,41 @@
+{
+  "id": "FG-IR-17-017",
+  "title": "FortiOS XSS via srcintf during Firewall Policy Creation",
+  "summary": "An XSS vulnerability caused by the scrintf parameter input during Firewall Policy Creation can be exploited to load and run a remote (malicious) Javascript in a logged in browser.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-017",
+      "cve": "CVE-2017-3127",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less equal 5.2.10, fixed in [5.2.11]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.10"
+                  },
+                  "fixed_in": [
+                    "5.2.11"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N/E:X/RL:X/RC:X"
+          },
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2017-04-19T00:00:00Z",
+  "updated": "2017-04-19T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-017"
+}
+

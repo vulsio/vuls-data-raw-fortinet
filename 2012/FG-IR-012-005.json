@@ -1,0 +1,61 @@
+{
+  "id": "FG-IR-012-005",
+  "title": "Script Code Injection Vulnerability in FortiMail",
+  "summary": "FortiMail fails to sanitize user input. The vulnerability allows an attacker to bypass its input filtering routine, which could result in the execution of the injected script code.",
+  "description": "FortiMail fails to sanitize user input. The vulnerability allows an attacker to bypass its input filtering routine, which could result in the execution of the injected script code.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-012-005",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiMail: equal FortiMail 200D",
+                  "cpe": "cpe:2.3:h:fortinet:fortimail-200d:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                },
+                {
+                  "description": "FortiMail: equal FortiMail 400C",
+                  "cpe": "cpe:2.3:h:fortinet:fortimail-400c:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                },
+                {
+                  "description": "FortiMail: equal FortiMail VM2K",
+                  "cpe": "cpe:2.3:h:fortinet:fortimail-vm2k:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                },
+                {
+                  "description": "FortiMail: equal FortiMail 2000B",
+                  "cpe": "cpe:2.3:h:fortinet:fortimail-2000b:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                },
+                {
+                  "description": "FortiMail: equal FortiMail 5002B",
+                  "cpe": "cpe:2.3:h:fortinet:fortimail-5002b:-:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "NA"
+                  }
+                }
+              ]
+            }
+          ],
+          "impact": "Arbitrary Script Code Injection"
+        }
+      ]
+    }
+  ],
+  "published": "2012-10-25T00:00:00Z",
+  "updated": "2012-10-25T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-012-005"
+}
+

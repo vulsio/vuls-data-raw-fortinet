@@ -1,0 +1,41 @@
+{
+  "id": "FG-IR-22-355",
+  "title": "FortiPresence - Unpassworded remotely accessible Redis & MongoDB",
+  "summary": "A missing authentication for critical function vulnerability [CWE-306] in FortiPresence on-prem infrastructure server may allow a remote, unauthenticated attacker to access the Redis and MongoDB instances via crafted authentication requests. Note: The amount of deployed on-prem instances is minimal. The Cloud instances of FortiPresence are not impacted.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-355",
+      "cve": "CVE-2022-41331",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiPresence:",
+                  "cpe": "cpe:2.3:a:fortinet:fortipresence:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:X/RC:C"
+          },
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2023-04-11T00:00:00Z",
+  "updated": "2023-04-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-355"
+}
+

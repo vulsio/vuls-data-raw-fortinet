@@ -1,0 +1,67 @@
+{
+  "id": "FG-IR-20-236",
+  "title": "Potential sensitive information can be displayed in cleartext in FortiProxy CLI window",
+  "summary": "A cleartext storage of sensitive information vulnerability in FortiProxy command line interface may allow an authenticated attacker to obtain sensitive information such as VPN user's passwords by connecting to FortiProxy CLI and executing the \"diagnose sys ha checksum show\" command.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-20-236",
+      "cve": "CVE-2020-6648",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiProxy:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiProxy:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiproxy-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Information Disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2021-03-02T00:00:00Z",
+  "updated": "2021-03-02T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-20-236"
+}
+

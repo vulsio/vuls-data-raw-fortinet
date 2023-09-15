@@ -1,0 +1,98 @@
+{
+  "id": "FG-IR-22-346",
+  "title": "FortiOS & FortiProxy -  Ability to modify privileges from Custom to Read-Write",
+  "summary": "An improper privilege management vulnerability [CWE-269] in FortiOS & FortiProxy may allow an administrator that has access to the admin profile section (System subsection Administrator Users) to modify their own profile and upgrade their privileges to Read Write via CLI or GUI commands.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-346",
+      "cve": "CVE-2022-38378",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less than 7.0.8, fixed in [7.0.8, 7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "lt": "7.0.8"
+                  },
+                  "fixed_in": [
+                    "7.0.8",
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less than 7.2.2, fixed in [7.0.8, 7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "lt": "7.2.2"
+                  },
+                  "fixed_in": [
+                    "7.0.8",
+                    "7.2.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiProxy:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiProxy:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiproxy-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:L/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-269"
+          ],
+          "impact": "Escalation of Privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2023-02-16T00:00:00Z",
+  "updated": "2023-02-16T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-346"
+}
+

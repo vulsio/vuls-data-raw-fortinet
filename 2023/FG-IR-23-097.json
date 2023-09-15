@@ -1,0 +1,301 @@
+{
+  "id": "FG-IR-23-097",
+  "title": "FortiOS & FortiProxy - Heap buffer overflow in sslvpn pre-authentication",
+  "summary": "A heap-based buffer overflow vulnerability [CWE-122] in FortiOS and FortiProxy SSL-VPN may allow a remote attacker to execute arbitrary code or commands via specifically crafted requests.   Workaround: Disable SSL-VPN.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-097",
+      "cve": "CVE-2023-27997",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less equal 7.2.4, fixed in [7.2.5, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.4"
+                  },
+                  "fixed_in": [
+                    "7.2.5",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.11, fixed in [7.0.12, 7.2.5, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.11"
+                  },
+                  "fixed_in": [
+                    "7.0.12",
+                    "7.2.5",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 6.4.12, fixed in [6.4.13, 7.0.12, 7.2.5, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.12"
+                  },
+                  "fixed_in": [
+                    "6.4.13",
+                    "7.0.12",
+                    "7.2.5",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.2.0, less equal 6.2.13, fixed in [6.2.14, 6.4.13, 7.0.12, 7.2.5, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.13"
+                  },
+                  "fixed_in": [
+                    "6.2.14",
+                    "6.4.13",
+                    "7.0.12",
+                    "7.2.5",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.16, fixed in [6.0.17, 6.2.14, 6.4.13, 7.0.12, 7.2.5, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.16"
+                  },
+                  "fixed_in": [
+                    "6.0.17",
+                    "6.2.14",
+                    "6.4.13",
+                    "7.0.12",
+                    "7.2.5",
+                    "7.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS-6K7K: equal 7.0.10, fixed in [7.0.12]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios-6k7k:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.0.10"
+                  },
+                  "fixed_in": [
+                    "7.0.12"
+                  ]
+                },
+                {
+                  "description": "FortiOS-6K7K: equal 7.0.5, fixed in [7.0.12]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios-6k7k:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.0.5"
+                  },
+                  "fixed_in": [
+                    "7.0.12"
+                  ]
+                },
+                {
+                  "description": "FortiOS-6K7K: equal 6.4.12, fixed in [6.4.13, 7.0.12]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios-6k7k:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.4.12"
+                  },
+                  "fixed_in": [
+                    "6.4.13",
+                    "7.0.12"
+                  ]
+                },
+                {
+                  "description": "FortiOS-6K7K: equal 6.4.10, fixed in [6.4.13, 7.0.12]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios-6k7k:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.4.10"
+                  },
+                  "fixed_in": [
+                    "6.4.13",
+                    "7.0.12"
+                  ]
+                },
+                {
+                  "description": "FortiOS-6K7K: equal 6.4.8, fixed in [6.4.13, 7.0.12]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios-6k7k:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.4.8"
+                  },
+                  "fixed_in": [
+                    "6.4.13",
+                    "7.0.12"
+                  ]
+                },
+                {
+                  "description": "FortiOS-6K7K: equal 6.4.6, fixed in [6.4.13, 7.0.12]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios-6k7k:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.4.6"
+                  },
+                  "fixed_in": [
+                    "6.4.13",
+                    "7.0.12"
+                  ]
+                },
+                {
+                  "description": "FortiOS-6K7K: equal 6.4.2, fixed in [6.4.13, 7.0.12]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios-6k7k:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.4.2"
+                  },
+                  "fixed_in": [
+                    "6.4.13",
+                    "7.0.12"
+                  ]
+                },
+                {
+                  "description": "FortiOS-6K7K: greater equal 6.2.9, less equal 6.2.13, fixed in [6.2.15, 6.4.13, 7.0.12]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios-6k7k:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.9",
+                    "le": "6.2.13"
+                  },
+                  "fixed_in": [
+                    "6.2.15",
+                    "6.4.13",
+                    "7.0.12"
+                  ]
+                },
+                {
+                  "description": "FortiOS-6K7K: greater equal 6.2.6, less equal 6.2.7, fixed in [6.2.15, 6.4.13, 7.0.12]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios-6k7k:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.6",
+                    "le": "6.2.7"
+                  },
+                  "fixed_in": [
+                    "6.2.15",
+                    "6.4.13",
+                    "7.0.12"
+                  ]
+                },
+                {
+                  "description": "FortiOS-6K7K: equal 6.2.4, fixed in [6.2.15, 6.4.13, 7.0.12, 6.0.17, 6.2.15, 6.4.13, 7.0.12]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios-6k7k:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.2.4"
+                  },
+                  "fixed_in": [
+                    "6.2.15",
+                    "6.4.13",
+                    "7.0.12",
+                    "6.0.17",
+                    "6.2.15",
+                    "6.4.13",
+                    "7.0.12"
+                  ]
+                },
+                {
+                  "description": "FortiOS-6K7K: greater equal 6.0.12, less equal 6.0.16, fixed in [6.0.17, 6.2.15, 6.4.13, 7.0.12]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios-6k7k:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.12",
+                    "le": "6.0.16"
+                  },
+                  "fixed_in": [
+                    "6.0.17",
+                    "6.2.15",
+                    "6.4.13",
+                    "7.0.12"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy: greater equal 7.2.0, less equal 7.2.3, fixed in [7.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.3"
+                  },
+                  "fixed_in": [
+                    "7.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.0.0, less equal 7.0.9, fixed in [7.0.10, 7.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.9"
+                  },
+                  "fixed_in": [
+                    "7.0.10",
+                    "7.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 2.0.0, less equal 2.0.12, fixed in [7.0.10, 7.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.0.0",
+                    "le": "2.0.12"
+                  },
+                  "fixed_in": [
+                    "7.0.10",
+                    "7.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 1.2.0, less equal 1.2.13, fixed in [7.0.10, 7.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.2.0",
+                    "le": "1.2.13"
+                  },
+                  "fixed_in": [
+                    "7.0.10",
+                    "7.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 1.1.0, less equal 1.1.6, fixed in [7.0.10, 7.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.1.0",
+                    "le": "1.1.6"
+                  },
+                  "fixed_in": [
+                    "7.0.10",
+                    "7.2.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:R"
+          },
+          "cwe": [
+            "CWE-122"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-06-12T00:00:00Z",
+  "updated": "2023-06-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-097"
+}
+

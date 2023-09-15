@@ -1,0 +1,82 @@
+{
+  "id": "FG-IR-19-273",
+  "title": "FortiExtender OS command injection through execute date CLI command",
+  "summary": "An OS command injection vulnerability in FortiExtender CLI admin console may allow unauthorized administrators to run arbitrary system level commands via specially crafted \"execute date\" commands.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-19-273",
+      "cve": "CVE-2019-15710",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiExtender:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiextender:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiExtender:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiextender:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiExtender:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiextender-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiExtender Cloud:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiextender_cloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.3,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:L/A:H/E:F/RL:X/RC:X"
+          },
+          "impact": "OS command injection"
+        }
+      ]
+    }
+  ],
+  "published": "2019-11-01T00:00:00Z",
+  "updated": "2019-11-01T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-19-273"
+}
+

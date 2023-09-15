@@ -1,0 +1,74 @@
+{
+  "id": "FG-IR-18-067",
+  "title": "BranchScope: New CPU Side-Channel Attack",
+  "summary": "A new side-channel attack that takes advantage of the speculative execution feature of modern processors to recover data from targeted users' CPUs has been disclosed (http://www.cs.ucr.edu/~nael/pubs/asplos18.pdf). It targets the \"branch prediction\" operations —which is the same part of a CPU speculative execution process as the one targeted by \"Spectre variant 2\". However, while \"Spectre 2\" exploits the Branch Target Buffer (BTB), BranchScope exploits the Directional Branch Predictor (DBP).",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-067",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: equal ANY",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "ANY"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP: equal ANY",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "ANY"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: equal ANY",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "ANY"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch: equal ANY",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "ANY"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Information Disclosure, Privilege Escalation"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "http://www.cs.ucr.edu/~nael/pubs/asplos18.pdf",
+      "url": "http://www.cs.ucr.edu/~nael/pubs/asplos18.pdf"
+    }
+  ],
+  "published": "2018-04-03T00:00:00Z",
+  "updated": "2018-04-03T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-067"
+}
+

@@ -1,0 +1,21 @@
+{
+  "id": "FG-IR-16-002",
+  "title": "Glibc getaddrinfo() stack-overflow",
+  "summary": "Since glibc 2.9, the glibc DNS client side resolver is vulnerable to a stack-based buffer overflow when the getaddrinfo() library function is used.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-002",
+      "cve": "CVE-2015-7547",
+      "definitions": [
+        {
+          "configurations": [],
+          "impact": "Software using this function may be exploited with attacker-controlled domain names, attacker-controlled DNS servers, or through a man-in-the-middle attack."
+        }
+      ]
+    }
+  ],
+  "published": "2016-02-25T00:00:00Z",
+  "updated": "2016-02-25T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-002"
+}
+

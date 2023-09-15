@@ -1,0 +1,39 @@
+{
+  "id": "FG-IR-19-111",
+  "title": "FortiOS malformed HTTP or SSL/TLS traffic control",
+  "summary": "FortiOS Explicit Web Proxy by default allows non-standard HTTP traffic. FortiOS SSL/SSH Inspection Profile by default allows non-standard SSL/TLS traffic.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-19-111",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: equal 6.2.0, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.2.0"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Operational Risk, Traffic Bypass"
+        }
+      ]
+    }
+  ],
+  "published": "2019-07-24T00:00:00Z",
+  "updated": "2019-07-24T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-19-111"
+}
+

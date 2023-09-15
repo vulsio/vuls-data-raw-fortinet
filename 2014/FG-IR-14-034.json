@@ -1,0 +1,54 @@
+{
+  "id": "FG-IR-14-034",
+  "title": "CVE-2014-8730 \"Poodle for TLS\" vulnerability",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-14-034",
+      "cve": "CVE-2014-8730",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.0.0, less equal 5.0.10, fixed in [5.0.11, 5.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.10"
+                  },
+                  "fixed_in": [
+                    "5.0.11",
+                    "5.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less equal 5.2.2, fixed in [5.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.2"
+                  },
+                  "fixed_in": [
+                    "5.2.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://www.imperialviolet.org/2014/12/08/poodleagain.html",
+      "url": "https://www.imperialviolet.org/2014/12/08/poodleagain.html"
+    }
+  ],
+  "published": "2014-12-18T00:00:00Z",
+  "updated": "2014-12-18T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-14-034"
+}
+

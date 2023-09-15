@@ -1,0 +1,39 @@
+{
+  "id": "FG-IR-17-115",
+  "title": "FortiWLM upgrade user account hard-coded credentials",
+  "summary": "FortiWLM has a hard-coded password for its \"upgrade\" user account, which it uses to transfer files to and from the FortiWLC controller. Having the upgrade account credentials would allow an attacker to transfer files to any attached or previously attached controllers as an admin user, thus raising potential further security issues.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-115",
+      "cve": "CVE-2017-7336",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWLM: less equal 8.3.0, fixed in [8.3.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlm:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "8.3.0"
+                  },
+                  "fixed_in": [
+                    "8.3.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Hardcoded credentials"
+        }
+      ]
+    }
+  ],
+  "published": "2017-06-30T00:00:00Z",
+  "updated": "2017-06-30T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-115"
+}
+

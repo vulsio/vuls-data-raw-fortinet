@@ -1,0 +1,80 @@
+{
+  "id": "FG-IR-23-068",
+  "title": "FortiWeb - Insufficient protections against XSS and CSRF",
+  "summary": "A protection mechanism failure [CWE-693] vulnerability in FortiWeb may allow an attacker to bypass XSS and CSRF protections.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-068",
+      "cve": "CVE-2023-34984",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: greater equal 6.3.0, less equal 6.3.23, fixed in [7.0.7, 7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.3.0",
+                    "le": "6.3.23"
+                  },
+                  "fixed_in": [
+                    "7.0.7",
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 6.4.0, less equal 6.4.3, fixed in [7.0.7, 7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.3"
+                  },
+                  "fixed_in": [
+                    "7.0.7",
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.0.0, less equal 7.0.6, fixed in [7.0.7, 7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.6"
+                  },
+                  "fixed_in": [
+                    "7.0.7",
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.2.0, less equal 7.2.1, fixed in [7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.1"
+                  },
+                  "fixed_in": [
+                    "7.2.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.1,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-693"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-09-05T00:00:00Z",
+  "updated": "2023-09-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-068"
+}
+

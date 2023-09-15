@@ -1,0 +1,63 @@
+{
+  "id": "FG-IR-18-214",
+  "title": "Bleichenbacher and Dictionary Attacks on IPsec IKE",
+  "summary": "Two new attacks on IPsec IKE (Internet Key Exchange) were recently disclosed [1], involving multiple ways to perform attacks against IKE signature based and PSK (Pre-Shared Key) authentications. The end goal is to crack IPsec VPN encrypted communications.The relevant CVEs are:CVE-2018-5389: Practical Dictionary Attacks on IPsec IKECVE-2018-0131: Bleichenbacher Attacks on IPsec IKE",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-214",
+      "cve": "CVE-2018-5389",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: equal ANY",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "ANY"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Information Disclosure"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-18-214",
+      "cve": "CVE-2018-0131",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Information Disclosure"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "[1] https://www.ei.rub.de/media/nds/veroeffentlichungen/2018/08/13/sec18-felsch.pdf\n",
+      "url": "[1] https://www.ei.rub.de/media/nds/veroeffentlichungen/2018/08/13/sec18-felsch.pdf\n"
+    },
+    {
+      "description": "[2] https://web-in-security.blogspot.com/2018/08/practical-bleichenbacher-attacks-on-ipsec-ike.html\n",
+      "url": "[2] https://web-in-security.blogspot.com/2018/08/practical-bleichenbacher-attacks-on-ipsec-ike.html\n"
+    },
+    {
+      "description": "[3] https://web-in-security.blogspot.com/2018/08/practical-dictionary-attack-on-ipsec-ike.html",
+      "url": "[3] https://web-in-security.blogspot.com/2018/08/practical-dictionary-attack-on-ipsec-ike.html"
+    }
+  ],
+  "published": "2018-08-27T00:00:00Z",
+  "updated": "2018-08-27T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-214"
+}
+

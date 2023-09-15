@@ -1,0 +1,67 @@
+{
+  "id": "FG-IR-20-177",
+  "title": "FortiDeceptor - OS command injection vulnerabilities",
+  "summary": "Multiple OS command injection vulnerabilities in FortiDeceptor management interface may allow an authenticated user to execute arbitrary commands on the system via specifically crafted web requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-20-177",
+      "cve": "CVE-2020-29017",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiDeceptor:",
+                  "cpe": "cpe:2.3:a:fortinet:fortideceptor:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiDeceptor:",
+                    "cpe": "cpe:2.3:o:fortinet:fortideceptor:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiDeceptor:",
+                      "cpe": "cpe:2.3:h:fortinet:fortideceptor-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:H/E:F/RL:X/RC:X"
+          },
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2021-01-04T00:00:00Z",
+  "updated": "2021-01-04T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-20-177"
+}
+

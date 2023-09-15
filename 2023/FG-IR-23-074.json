@@ -1,0 +1,148 @@
+{
+  "id": "FG-IR-23-074",
+  "title": "FortiNAC - java untrusted object deserialization RCE",
+  "summary": "A deserialization of untrusted data vulnerability [CWE-502] in FortiNAC may allow an unauthenticated user to execute unauthorized code or commands via specifically crafted requests to the tcp/1050 service.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-074",
+      "cve": "CVE-2023-33299",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiNAC: greater equal 7.2.0, less equal 7.2.1, fixed in [7.2.2, 9.1.10, 9.2.8, 9.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.1"
+                  },
+                  "fixed_in": [
+                    "7.2.2",
+                    "9.1.10",
+                    "9.2.8",
+                    "9.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiNAC: greater equal 8.3.0, less equal 8.3.7, fixed in [9.1.10, 9.2.8, 9.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.3.0",
+                    "le": "8.3.7"
+                  },
+                  "fixed_in": [
+                    "9.1.10",
+                    "9.2.8",
+                    "9.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiNAC: greater equal 8.5.0, less equal 8.5.4, fixed in [9.1.10, 9.2.8, 9.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.5.0",
+                    "le": "8.5.4"
+                  },
+                  "fixed_in": [
+                    "9.1.10",
+                    "9.2.8",
+                    "9.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiNAC: greater equal 8.6.0, less equal 8.6.5, fixed in [9.1.10, 9.2.8, 9.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.6.0",
+                    "le": "8.6.5"
+                  },
+                  "fixed_in": [
+                    "9.1.10",
+                    "9.2.8",
+                    "9.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiNAC: greater equal 8.7.0, less equal 8.7.6, fixed in [9.1.10, 9.2.8, 9.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.7.0",
+                    "le": "8.7.6"
+                  },
+                  "fixed_in": [
+                    "9.1.10",
+                    "9.2.8",
+                    "9.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiNAC: greater equal 8.8.0, less equal 8.8.11, fixed in [9.1.10, 9.2.8, 9.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.8.0",
+                    "le": "8.8.11"
+                  },
+                  "fixed_in": [
+                    "9.1.10",
+                    "9.2.8",
+                    "9.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiNAC: greater equal 9.1.0, less equal 9.1.9, fixed in [9.1.10, 9.2.8, 9.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "9.1.0",
+                    "le": "9.1.9"
+                  },
+                  "fixed_in": [
+                    "9.1.10",
+                    "9.2.8",
+                    "9.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiNAC: greater equal 9.2.0, less equal 9.2.7, fixed in [9.2.8, 9.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "9.2.0",
+                    "le": "9.2.7"
+                  },
+                  "fixed_in": [
+                    "9.2.8",
+                    "9.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiNAC: greater equal 9.4.0, less equal 9.4.2, fixed in [9.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "9.4.0",
+                    "le": "9.4.2"
+                  },
+                  "fixed_in": [
+                    "9.4.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-502"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-06-23T00:00:00Z",
+  "updated": "2023-06-23T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-074"
+}
+

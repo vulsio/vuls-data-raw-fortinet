@@ -1,0 +1,52 @@
+{
+  "id": "FG-IR-20-172",
+  "title": "FortiOS fails to block malformed HTTP/S traffic when transparent proxy is enabled",
+  "summary": "When traffic other than HTTP/S (eg: SSH traffic, etc...) traverses the FortiOS on port 80/443, it is not redirected to the transparent proxy policy for processing, as it doesn't have a valid HTTP header.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-20-172",
+      "cve": "CVE-2020-15938",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.2.0, less equal 6.2.5, fixed in [6.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.5"
+                  },
+                  "fixed_in": [
+                    "6.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 6.4.2, fixed in [6.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.2"
+                  },
+                  "fixed_in": [
+                    "6.4.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.8,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:N/I:L/A:N/E:X/RL:W/RC:R"
+          },
+          "impact": "Operational Risk, Traffic Bypass"
+        }
+      ]
+    }
+  ],
+  "published": "2021-01-21T00:00:00Z",
+  "updated": "2021-01-21T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-20-172"
+}
+

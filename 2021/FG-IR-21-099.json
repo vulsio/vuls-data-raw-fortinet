@@ -1,0 +1,41 @@
+{
+  "id": "FG-IR-21-099",
+  "title": "FortiPortal - Insecure password generation",
+  "summary": "The use of a cryptographically weak pseudo-random number generator (CWE-338) in the password reset feature of FortiPortal may allow a remote unauthenticated attacker to predict parts of or the whole newly generated password within a given time frame.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-21-099",
+      "cve": "CVE-2021-36171",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiPortal:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.4,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:U/RC:C"
+          },
+          "impact": "Unauthorized access"
+        }
+      ]
+    }
+  ],
+  "published": "2022-03-01T00:00:00Z",
+  "updated": "2022-03-01T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-21-099"
+}
+

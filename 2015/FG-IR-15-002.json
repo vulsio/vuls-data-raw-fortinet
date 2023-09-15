@@ -1,0 +1,88 @@
+{
+  "id": "FG-IR-15-002",
+  "title": "FortiOS CAPWAP server two vulnerabilities",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-15-002",
+      "cve": "CVE-2015-1451",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.0.11, fixed in [5.0.12, 5.2.3, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.0.11"
+                  },
+                  "fixed_in": [
+                    "5.0.12",
+                    "5.2.3",
+                    "5.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less equal 5.2.2, fixed in [5.2.3, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.2"
+                  },
+                  "fixed_in": [
+                    "5.2.3",
+                    "5.4.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Limitation of Capwap service, authenticated XSS"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-15-002",
+      "cve": "CVE-2015-1452",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.0.11, fixed in [5.0.12, 5.2.3, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.0.11"
+                  },
+                  "fixed_in": [
+                    "5.0.12",
+                    "5.2.3",
+                    "5.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less equal 5.2.2, fixed in [5.2.3, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.2"
+                  },
+                  "fixed_in": [
+                    "5.2.3",
+                    "5.4.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Limitation of Capwap service, authenticated XSS"
+        }
+      ]
+    }
+  ],
+  "published": "2015-02-05T00:00:00Z",
+  "updated": "2015-02-05T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-15-002"
+}
+

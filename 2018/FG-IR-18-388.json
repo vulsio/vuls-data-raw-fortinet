@@ -1,0 +1,84 @@
+{
+  "id": "FG-IR-18-388",
+  "title": "SSL VPN buffer overrun when parsing javascript href content",
+  "summary": "A heap buffer overflow vulnerability in the FortiOS SSL VPN web portal may cause the SSL VPN web service termination for logged in users or potential remote code execution on FortiOS; this happens when an authenticated user visits a specifically crafted proxy-ed webpage, and this is due to a failure to handle javascript href content properly. This only affects SSL VPN web-mode (SSL VPN tunnel-mode is not impacted)",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-388",
+      "cve": "CVE-2018-13383",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less equal 5.2.14, fixed in [5.2.15, 5.4.13, 5.6.11, 6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.14"
+                  },
+                  "fixed_in": [
+                    "5.2.15",
+                    "5.4.13",
+                    "5.6.11",
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.4.0, less equal 5.4.12, fixed in [5.4.13, 5.6.11, 6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.12"
+                  },
+                  "fixed_in": [
+                    "5.4.13",
+                    "5.6.11",
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.10, fixed in [5.6.11, 6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.10"
+                  },
+                  "fixed_in": [
+                    "5.6.11",
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.4, fixed in [6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.4"
+                  },
+                  "fixed_in": [
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L/E:F/RL:X/RC:X"
+          },
+          "impact": "Denial of service, Remote Code Execution"
+        }
+      ]
+    }
+  ],
+  "published": "2019-04-02T00:00:00Z",
+  "updated": "2019-11-26T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-388"
+}
+

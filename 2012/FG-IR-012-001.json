@@ -1,0 +1,56 @@
+{
+  "id": "FG-IR-012-001",
+  "title": "Potential Information Disclosure Vulnerability in FortiGate",
+  "summary": "On January 27, 2012, vulnerability-lab.com publicly released news of discovered vulnerabilities discovered in FortiGate UTM WAF Appliances platforms.",
+  "description": "On January 27, 2012, vulnerability-lab.com publicly released news of discovered vulnerabilities discovered in FortiGate UTM WAF Appliances platforms.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-012-001",
+      "cve": "CVE-2012-0941",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 4.3.0, less equal 4.3.5, fixed in [4.3.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.3.0",
+                    "le": "4.3.5"
+                  },
+                  "fixed_in": [
+                    "4.3.6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Information Disclosure"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "<a href=\"http://vulnerability-lab.com/get_content.php?id=144\">Vulnerability Research Laboratory (VL-ID 144)</a>",
+      "url": "<a href=\"http://vulnerability-lab.com/get_content.php?id=144\">Vulnerability Research Laboratory (VL-ID 144)</a>"
+    },
+    {
+      "description": "<a href=\"http://secunia.com/advisories/47693\">Secunia Advisory SA47693</a>",
+      "url": "<a href=\"http://secunia.com/advisories/47693\">Secunia Advisory SA47693</a>"
+    },
+    {
+      "description": "<a href=\"http://www.securityfocus.com/bid/51708\">Security Focus (51708)</a>",
+      "url": "<a href=\"http://www.securityfocus.com/bid/51708\">Security Focus (51708)</a>"
+    },
+    {
+      "description": "<a href=\"http://xforce.iss.net/xforce/xfdb/72761\">IBM ISS (72761)</a>",
+      "url": "<a href=\"http://xforce.iss.net/xforce/xfdb/72761\">IBM ISS (72761)</a>"
+    }
+  ],
+  "published": "2012-02-01T00:00:00Z",
+  "updated": "2012-03-26T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-012-001"
+}
+

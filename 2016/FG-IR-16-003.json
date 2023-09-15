@@ -1,0 +1,57 @@
+{
+  "id": "FG-IR-16-003",
+  "title": "DHCP Hostname HTML Injection",
+  "summary": "It is possible to inject malicious script through the DHCP HOSTNAME option. The malicious script code is injected into the device's \"DHCP Monitor\" page (System->Monitor->DHCP Monitor) on the web-based interface which is accessible by the webui administrators.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-003",
+      "cve": "CVE-2015-3626",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.0.0, less than 5.0.13, fixed in [5.0.13, 5.2.4, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "lt": "5.0.13"
+                  },
+                  "fixed_in": [
+                    "5.0.13",
+                    "5.2.4",
+                    "5.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less than 5.2.4, fixed in [5.2.4, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "lt": "5.2.4"
+                  },
+                  "fixed_in": [
+                    "5.2.4",
+                    "5.4.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Cross Site Scripting"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://cwe.mitre.org/data/definitions/80.html",
+      "url": "https://cwe.mitre.org/data/definitions/80.html"
+    }
+  ],
+  "published": "2016-03-16T00:00:00Z",
+  "updated": "2016-03-16T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-003"
+}
+

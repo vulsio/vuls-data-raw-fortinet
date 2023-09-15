@@ -1,0 +1,65 @@
+{
+  "id": "FG-IR-17-262",
+  "title": "HTTP Host header attacks against web proxy disclaimer response webpage",
+  "summary": "The FortiOS web proxy disclaimer page is potentially vulnerable to an XSS attack, via maliciously crafted \"Host\" headers in user HTTP requests. The latter is possible if an attacker is in a Man-in-the-middle position (i.e. able to modify the HTTP requests of the potential victim before they reach the web proxy), or poisons a web cache used by the potential victim.In the latter attack scenario, the tainted disclaimer web page being cached, the XSS attack can be considered as persistent.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-262",
+      "cve": "CVE-2017-14190",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less equal 5.2.15, fixed in [5.4.8, 5.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.15"
+                  },
+                  "fixed_in": [
+                    "5.4.8",
+                    "5.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.4.0, less equal 5.4.7, fixed in [5.4.8, 5.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.7"
+                  },
+                  "fixed_in": [
+                    "5.4.8",
+                    "5.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.2, fixed in [5.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.2"
+                  },
+                  "fixed_in": [
+                    "5.6.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N/E:X/RL:X/RC:X"
+          },
+          "impact": "Persistent Cross-site Scripting (XSS)"
+        }
+      ]
+    }
+  ],
+  "published": "2018-01-22T00:00:00Z",
+  "updated": "2018-01-22T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-262"
+}
+

@@ -1,0 +1,41 @@
+{
+  "id": "FG-IR-22-216",
+  "title": "FortiSOAR - PostgreSQL DB access to local users",
+  "summary": "A missing authentication for critical function [CWE-306] vulnerabilty in FortiSOAR's Postgres database may allow a local attacker to access sensitive information via logging into the database using a privileged account without a password.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-216",
+      "cve": "CVE-2022-42473",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSOAR:",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.8,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L/E:P/RL:U/RC:R"
+          },
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2022-11-01T00:00:00Z",
+  "updated": "2022-11-01T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-216"
+}
+

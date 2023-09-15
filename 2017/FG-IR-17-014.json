@@ -1,0 +1,55 @@
+{
+  "id": "FG-IR-17-014",
+  "title": "FortiAnalyzer, FortiManager Open Redirect Vulnerability",
+  "summary": "The FortiAnalyzer and FortiManager WebUI accept a user-controlled input that specifies a link to an external site, and uses that link in a redirect.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-014",
+      "cve": "CVE-2017-3126",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: greater equal 5.4.0, less equal 5.4.2, fixed in [5.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.2"
+                  },
+                  "fixed_in": [
+                    "5.4.3"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 5.4.0, less equal 5.4.2, fixed in [5.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.2"
+                  },
+                  "fixed_in": [
+                    "5.4.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Open redirect"
+        }
+      ]
+    }
+  ],
+  "published": "2017-04-26T00:00:00Z",
+  "updated": "2017-04-26T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-014"
+}
+

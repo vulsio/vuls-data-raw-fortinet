@@ -1,0 +1,77 @@
+{
+  "id": "FG-IR-013-001",
+  "title": "Potential Web Vulnerabilities in FortiMail",
+  "summary": "Input filter bypass and exception handling vulnerabilities can be used by an attacker to hijack administrator or customer sessions within certain conditions.",
+  "description": "Input filter bypass and exception handling vulnerabilities can be used by an attacker to hijack administrator or customer sessions within certain conditions.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-013-001",
+      "cve": "CVE-2013-1471",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiMail: less than 4.3.4, fixed in [4.3.4, 5.0.0]",
+                  "cpe": "cpe:2.3:a:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "4.3.4"
+                  },
+                  "fixed_in": [
+                    "4.3.4",
+                    "5.0.0"
+                  ]
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiMail: equal FortiMail 200D",
+                    "cpe": "cpe:2.3:h:fortinet:fortimail-200d:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiMail: equal FortiMail 400C",
+                    "cpe": "cpe:2.3:h:fortinet:fortimail-400c:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiMail: equal FortiMail VM2000",
+                    "cpe": "cpe:2.3:h:fortinet:fortimail-vm2000:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiMail: equal FortiMail 2000B",
+                    "cpe": "cpe:2.3:h:fortinet:fortimail-2000b:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiMail: equal FortiMail 5002B",
+                    "cpe": "cpe:2.3:h:fortinet:fortimail-5002b:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "impact": "Exception Handling and Input Filter Bypass"
+        }
+      ]
+    }
+  ],
+  "published": "2013-01-29T00:00:00Z",
+  "updated": "2013-01-29T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-013-001"
+}
+

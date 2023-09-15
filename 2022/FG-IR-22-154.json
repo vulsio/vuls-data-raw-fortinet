@@ -1,0 +1,41 @@
+{
+  "id": "FG-IR-22-154",
+  "title": "FortiSOAR - Path traversal vulnerabilities in the web API",
+  "summary": "Multiple relative path traversal vulnerabilities [CWE-23] in the web API of FortiSOAR may allow an authenticated attacker to write in the underlying filesystem with nginx permissions via crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-154",
+      "cve": "CVE-2022-29062",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSOAR:",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:L/E:F/RL:X/RC:C"
+          },
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2022-09-06T00:00:00Z",
+  "updated": "2022-09-06T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-154"
+}
+

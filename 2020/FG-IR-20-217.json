@@ -1,0 +1,66 @@
+{
+  "id": "FG-IR-20-217",
+  "title": "FortiAuthenticator - Improper access control in HA service",
+  "summary": "An improper access control vulnerability [CWE-284] in FortiAuthenticator HA service may allow an attacker on the same vlan as the HA management interface to make an unauthenticated direct connection to the FAC's database.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-20-217",
+      "cve": "CVE-2021-36177",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAuthenticator:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiAuthenticator:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiAuthenticator:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiauthenticator-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.1,
+            "vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N/E:F/RL:U/RC:C"
+          }
+        }
+      ]
+    }
+  ],
+  "published": "2022-02-01T00:00:00Z",
+  "updated": "2022-02-01T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-20-217"
+}
+

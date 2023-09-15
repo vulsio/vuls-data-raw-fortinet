@@ -1,0 +1,82 @@
+{
+  "id": "FG-IR-21-148",
+  "title": "FortiExtender - Arbitrary command execution because of missing CLI input sanitization",
+  "summary": "An improper neutralization of special elements used in a command vulnerability ('Command Injection') [CWE-77] in FortiExtender may allow an authenticated user to raise its privileges to admin user via crafted arguments of the `execute` CLI command.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-21-148",
+      "cve": "CVE-2021-41016",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiExtender:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiextender:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiExtender:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiextender:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiExtender:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiextender-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiExtender Cloud:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiextender_cloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.4,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:X/RC:C"
+          },
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2022-02-01T00:00:00Z",
+  "updated": "2022-02-01T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-21-148"
+}
+

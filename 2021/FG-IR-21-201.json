@@ -1,0 +1,84 @@
+{
+  "id": "FG-IR-21-201",
+  "title": "FortiOS - Removal of `restore src-vis` command.",
+  "summary": "A download of code without integrity check vulnerability [CWE-494] in the \"execute restore src-vis\" command of FortiOS may allow a local authenticated attacker to download arbitrary files on the device via specially crafted update packages. Exploitation Status: Fortinet is aware of an instance where this vulnerability was abused and recommends immediately validating your systems for indicators of compromise: Unexpected files on the FortiGate Device (list files with `fnsysctl ls`) /data2/virc.dat /data2/vire /data2/vire.tar.gz /data2/vire.tar /data2/vird /data2/gettd /data2/smartctll /data2/ftar /data2/reportnd /data2/llpdtd /data2/flcfgt /data2/viree/vire/inject /data2/viree/vire/insmod /data2/viree/vire/hack.o /data2/viree/vire/libips.so /bin/lldptd /data/lib/libipsx.so /data2/viree/vire/ld.so.preload /etc/ld.so.preload Unexpected processes running on the FortiGate device The following unexpected processes were found to be running on the device when running `fnsysctl ps`: 30892 0 0 S ash -c /bin/flcfgt>/data2/44.txt 2>&1 30068 0 0:00 {smartctl} ash -c /data2/smartctl ps>/data2/17.txt 2> Unexpected traffic sourced from the FortiGate device Traffic has been observed to the following C&C servers on port 7443 (Plaintext HTTP): 192.46.213.244 172.105.181.67",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-21-201",
+      "cve": "CVE-2021-44168",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.13, fixed in [6.0.14, 6.2.10, 6.4.8, 7.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.13"
+                  },
+                  "fixed_in": [
+                    "6.0.14",
+                    "6.2.10",
+                    "6.4.8",
+                    "7.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.2.0, less equal 6.2.9, fixed in [6.2.10, 6.4.8, 7.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.9"
+                  },
+                  "fixed_in": [
+                    "6.2.10",
+                    "6.4.8",
+                    "7.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 6.4.7, fixed in [6.4.8, 7.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.7"
+                  },
+                  "fixed_in": [
+                    "6.4.8",
+                    "7.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.2, fixed in [7.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.2"
+                  },
+                  "fixed_in": [
+                    "7.0.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.2,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-494"
+          ],
+          "impact": "Execute unauthorized code or commands",
+          "exploit_status": "Fortinet is aware of an instance where this vulnerability was abused and recommends immediately validating your systems for indicators of compromise."
+        }
+      ]
+    }
+  ],
+  "published": "2021-12-07T00:00:00Z",
+  "updated": "2021-12-07T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-21-201"
+}
+

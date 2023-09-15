@@ -1,0 +1,65 @@
+{
+  "id": "FG-IR-17-231",
+  "title": "Firewall information leak to regular SSL VPN web portal users",
+  "summary": "A SSL VPN user logged in via the web portal can access internal FortiOS configuration information (eg: addresses) via specifically crafted URLs.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-231",
+      "cve": "CVE-2017-14185",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less equal 5.2.15, fixed in [5.4.9, 5.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.15"
+                  },
+                  "fixed_in": [
+                    "5.4.9",
+                    "5.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.4.0, less equal 5.4.8, fixed in [5.4.9, 5.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.8"
+                  },
+                  "fixed_in": [
+                    "5.4.9",
+                    "5.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.2, fixed in [5.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.2"
+                  },
+                  "fixed_in": [
+                    "5.6.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N/E:X/RL:X/RC:X"
+          },
+          "impact": "Information Disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2018-05-18T00:00:00Z",
+  "updated": "2018-05-18T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-231"
+}
+

@@ -1,0 +1,75 @@
+{
+  "id": "FG-IR-17-106",
+  "title": "FortiWLC XSS injection via crafted HTTP POST request",
+  "summary": "The FortiWLC admin webUI is affected by XSS vulnerabilities, potentially exploitable by an authenticated user, via non-sanitized parameters \"refresh\" and \"branchtotable\" present in HTTP POST requests. A successful attack would involve getting a targeted victim with an open session on the WebUI to visit a malicious URL crafted by the attacker.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-106",
+      "cve": "CVE-2017-7335",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWLC: equal 6.1.2, fixed in [7.0.11, 8.3.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.1.2"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "8.3.3"
+                  ]
+                },
+                {
+                  "description": "FortiWLC: greater equal 6.1.4, less equal 6.1.5, fixed in [7.0.11, 8.3.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.1.4",
+                    "le": "6.1.5"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "8.3.3"
+                  ]
+                },
+                {
+                  "description": "FortiWLC: greater equal 7.0.7, less equal 7.0.10, fixed in [7.0.11, 8.3.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.7",
+                    "le": "7.0.10"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "8.3.3"
+                  ]
+                },
+                {
+                  "description": "FortiWLC: greater equal 8.0.0, less equal 8.3.2, fixed in [8.3.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.3.2"
+                  },
+                  "fixed_in": [
+                    "8.3.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Cross-site scripting (XSS)"
+        }
+      ]
+    }
+  ],
+  "published": "2017-10-13T00:00:00Z",
+  "updated": "2017-10-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-106"
+}
+

@@ -1,0 +1,34 @@
+{
+  "id": "FG-IR-17-249",
+  "title": "ROCA: Vulnerable RSA key pairs generation (CVE-2017-15361)",
+  "summary": "An old Infineon RSA library does not properly generate RSA key pairs, therefore enabling an attacker to potentially infer a private key from a public key.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-249",
+      "cve": "CVE-2017-15361",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Breaking RSA encryption"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://www.kb.cert.org/vuls/id/307015\n",
+      "url": "https://www.kb.cert.org/vuls/id/307015\n"
+    },
+    {
+      "description": "https://crocs.fi.muni.cz/public/papers/rsa_ccs17",
+      "url": "https://crocs.fi.muni.cz/public/papers/rsa_ccs17"
+    }
+  ],
+  "published": "2017-11-03T00:00:00Z",
+  "updated": "2017-11-03T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-249"
+}
+

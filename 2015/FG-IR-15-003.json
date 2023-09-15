@@ -1,0 +1,110 @@
+{
+  "id": "FG-IR-15-003",
+  "title": "FortiAuthenticator multiple vulnerabilities",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-15-003",
+      "cve": "CVE-2015-1455",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAuthenticator: less than 3.2.0, fixed in [3.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "3.2.0"
+                  },
+                  "fixed_in": [
+                    "3.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Local file disclosure, Local passwords disclosure, reflected XSS"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-15-003",
+      "cve": "CVE-2015-1456",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAuthenticator: less than 3.2.0, fixed in [3.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "3.2.0"
+                  },
+                  "fixed_in": [
+                    "3.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Local file disclosure, Local passwords disclosure, reflected XSS"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-15-003",
+      "cve": "CVE-2015-1457",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAuthenticator: less than 3.2.0, fixed in [3.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "3.2.0"
+                  },
+                  "fixed_in": [
+                    "3.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Local file disclosure, Local passwords disclosure, reflected XSS"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-15-003",
+      "cve": "CVE-2015-1459",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAuthenticator: less than 3.2.1, fixed in [3.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "3.2.1"
+                  },
+                  "fixed_in": [
+                    "3.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Local file disclosure, Local passwords disclosure, reflected XSS"
+        }
+      ]
+    }
+  ],
+  "published": "2015-02-05T00:00:00Z",
+  "updated": "2015-02-05T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-15-003"
+}
+

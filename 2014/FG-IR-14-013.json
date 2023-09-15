@@ -1,0 +1,36 @@
+{
+  "id": "FG-IR-14-013",
+  "title": "FortiWeb Cross-Site Request Forgery Vulnerability",
+  "description": "Multiple CSRF vulnerabilities exist in the FortiWeb web administration console due to lack of CSRF token protection. This could allow remote attackers to perform administrative actions under specific conditions.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-14-013",
+      "cve": "CVE-2014-3115",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: less equal 5.1.4, fixed in [5.2.0]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.1.4"
+                  },
+                  "fixed_in": [
+                    "5.2.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Authorization Bypass"
+        }
+      ]
+    }
+  ],
+  "published": "2014-05-02T00:00:00Z",
+  "updated": "2014-05-02T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-14-013"
+}
+

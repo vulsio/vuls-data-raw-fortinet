@@ -1,0 +1,43 @@
+{
+  "id": "FG-IR-17-251",
+  "title": "Apache Tomcat vulnerabilities",
+  "summary": "Multiple Remote Code Execution (RCE) vulnerabilities (CVE-2017-12615, CVE-2017-12617) are affecting Apache Tomcat.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-251",
+      "cve": "CVE-2017-12615",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Remote Code Execution (RCE)"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-251",
+      "cve": "CVE-2017-12617",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Remote Code Execution (RCE)"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "http://tomcat.apache.org/security.html",
+      "url": "http://tomcat.apache.org/security.html"
+    }
+  ],
+  "published": "2017-10-24T00:00:00Z",
+  "updated": "2017-10-24T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-251"
+}
+

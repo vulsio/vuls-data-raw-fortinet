@@ -1,0 +1,39 @@
+{
+  "id": "FG-IR-17-076",
+  "title": "XSS Vulnerability in FortiWeb Site Publisher",
+  "summary": "The Site Publisher functionality of FortiWeb has been found vulnerable to a Cross-Site Scripting vulnerability via an improperly sanitized parameter in a POST request.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-076",
+      "cve": "CVE-2017-3129",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: less equal 5.7.1, fixed in [5.8.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.7.1"
+                  },
+                  "fixed_in": [
+                    "5.8.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2017-04-19T00:00:00Z",
+  "updated": "2017-04-19T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-076"
+}
+

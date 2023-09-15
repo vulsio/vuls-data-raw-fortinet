@@ -1,0 +1,103 @@
+{
+  "id": "FG-IR-23-111",
+  "title": "FortiOS - Null pointer dereference in sslvnd",
+  "summary": "A NULL pointer dereference vulnerability [CWE-476] in FortiOS may allow a remote unauthenticated attacker to crash the SSL-VPN daemon via specially crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-111",
+      "cve": "CVE-2023-29180",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less equal 7.2.4, fixed in [7.2.5, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.4"
+                  },
+                  "fixed_in": [
+                    "7.2.5",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.11, fixed in [7.0.12, 7.2.5, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.11"
+                  },
+                  "fixed_in": [
+                    "7.0.12",
+                    "7.2.5",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 6.4.12, fixed in [6.4.13, 7.0.12, 7.2.5, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.12"
+                  },
+                  "fixed_in": [
+                    "6.4.13",
+                    "7.0.12",
+                    "7.2.5",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.2.0, less equal 6.2.14, fixed in [6.2.15, 6.4.13, 7.0.12, 7.2.5, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.14"
+                  },
+                  "fixed_in": [
+                    "6.2.15",
+                    "6.4.13",
+                    "7.0.12",
+                    "7.2.5",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.16, fixed in [6.0.17, 6.2.15, 6.4.13, 7.0.12, 7.2.5, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.16"
+                  },
+                  "fixed_in": [
+                    "6.0.17",
+                    "6.2.15",
+                    "6.4.13",
+                    "7.0.12",
+                    "7.2.5",
+                    "7.4.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:F/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-476"
+          ],
+          "impact": "Denial of service"
+        }
+      ]
+    }
+  ],
+  "published": "2023-06-12T00:00:00Z",
+  "updated": "2023-06-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-111"
+}
+

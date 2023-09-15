@@ -1,0 +1,82 @@
+{
+  "id": "FG-IR-22-310",
+  "title": "FortiADC - Command injection in Automation/Webhook module",
+  "summary": "An improper neutralization of special elements used in an OS command vulnerability [CWE-78] in the management interface of FortiADC may allow an authenticated attacker to execute unauthorized commands via specifically crafted arguments to existing commands.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-310",
+      "cve": "CVE-2022-35849",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiADC: greater equal 6.1.0, less equal 6.1.6, fixed in [6.2.6, 7.0.4, 7.1.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.1.0",
+                    "le": "6.1.6"
+                  },
+                  "fixed_in": [
+                    "6.2.6",
+                    "7.0.4",
+                    "7.1.2"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 6.2.0, less equal 6.2.5, fixed in [6.2.6, 7.0.4, 7.1.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.5"
+                  },
+                  "fixed_in": [
+                    "6.2.6",
+                    "7.0.4",
+                    "7.1.2"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 7.0.0, less equal 7.0.3, fixed in [7.0.4, 7.1.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.3"
+                  },
+                  "fixed_in": [
+                    "7.0.4",
+                    "7.1.2"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 7.1.0, less equal 7.1.1, fixed in [7.1.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.1.0",
+                    "le": "7.1.1"
+                  },
+                  "fixed_in": [
+                    "7.1.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.4,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-08-30T00:00:00Z",
+  "updated": "2023-09-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-310"
+}
+

@@ -1,0 +1,118 @@
+{
+  "id": "FG-IR-22-050",
+  "title": "CVE-2022-0847 on Linux Kernel",
+  "summary": "A security advisory was released affecting a version of the Linux Kernel used in FortiAuthenticator, FortiProxy & FortiSIEM: CVE-2022-0847: A flaw was found in the way the \"flags\" member of the new pipe buffer structure was lacking proper initialization in copy_page_to_iter_pipe and push_pipe functions in the Linux kernel and could thus contain stale values. An unprivileged local user could use this flaw to write to pages in the page cache backed by read only files and as such escalate their privileges on the system.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-050",
+      "cve": "CVE-2022-0847",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAuthenticator: greater equal 6.3.0, less equal 6.3.3, fixed in [6.4.2, 6.5.0, 6.3.4, 6.4.2, 6.5.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.3.0",
+                    "le": "6.3.3"
+                  },
+                  "fixed_in": [
+                    "6.4.2",
+                    "6.5.0",
+                    "6.3.4",
+                    "6.4.2",
+                    "6.5.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy: greater equal 7.0.0, less equal 7.0.3, fixed in [7.0.4, 7.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.3"
+                  },
+                  "fixed_in": [
+                    "7.0.4",
+                    "7.2.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSIEM: greater equal 6.1.0, less equal 6.1.2, fixed in [6.4.1, 6.5.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.1.0",
+                    "le": "6.1.2"
+                  },
+                  "fixed_in": [
+                    "6.4.1",
+                    "6.5.0"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.2.0, less equal 6.2.1, fixed in [6.4.1, 6.5.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.1"
+                  },
+                  "fixed_in": [
+                    "6.4.1",
+                    "6.5.0"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.3.0, less equal 6.3.3, fixed in [6.4.1, 6.5.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.3.0",
+                    "le": "6.3.3"
+                  },
+                  "fixed_in": [
+                    "6.4.1",
+                    "6.5.0"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: equal 6.4.0, fixed in [6.4.1, 6.5.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.4.0"
+                  },
+                  "fixed_in": [
+                    "6.4.1",
+                    "6.5.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.1,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:X/RC:C"
+          },
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://dirtypipe.cm4all.com/",
+      "url": "https://dirtypipe.cm4all.com/"
+    }
+  ],
+  "published": "2023-04-11T00:00:00Z",
+  "updated": "2023-04-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-050"
+}
+

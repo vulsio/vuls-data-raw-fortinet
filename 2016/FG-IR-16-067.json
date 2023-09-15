@@ -1,0 +1,44 @@
+{
+  "id": "FG-IR-16-067",
+  "title": "DUHK Attack against Fortinet Products",
+  "summary": "When devices use ANSI X9.31 RNG (which was removed from the list of FIPS-approved random number generation algorithms in January 2016) to generate cryptographic key under a static seed and under use with long-lived security tunnels like SSL/TLS/SSH/IPSec, such devices are vulnerable to the DUHK attack.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-067",
+      "cve": "CVE-2016-8492",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 4.3.0, less equal 4.3.18, fixed in [4.3.19, 5.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.3.0",
+                    "le": "4.3.18"
+                  },
+                  "fixed_in": [
+                    "4.3.19",
+                    "5.0.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Allows unauthorized disclosure of information"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://duhkattack.com/",
+      "url": "https://duhkattack.com/"
+    }
+  ],
+  "published": "2016-11-22T00:00:00Z",
+  "updated": "2016-11-22T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-067"
+}
+

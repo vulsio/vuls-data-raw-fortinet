@@ -1,0 +1,81 @@
+{
+  "id": "FG-IR-14-032",
+  "title": "FortiADC-E remote network access vulnerability",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-14-032",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiADC: greater equal 3.1.1, less equal 4.0.4, fixed in [4.0.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.1.1",
+                    "le": "4.0.4"
+                  },
+                  "fixed_in": [
+                    "4.0.5"
+                  ]
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiADC: equal FortiADC 100E",
+                    "cpe": "cpe:2.3:h:fortinet:fortiadc-100e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiADC: equal FortiADC 200E",
+                    "cpe": "cpe:2.3:h:fortinet:fortiadc-200e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiADC: equal FortiADC 300E",
+                    "cpe": "cpe:2.3:h:fortinet:fortiadc-300e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiADC: equal FortiADC 400E",
+                    "cpe": "cpe:2.3:h:fortinet:fortiadc-400e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiADC: equal FortiADC 600E",
+                    "cpe": "cpe:2.3:h:fortinet:fortiadc-600e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiADC: equal FortiADC 1000E",
+                    "cpe": "cpe:2.3:h:fortinet:fortiadc-1000e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "impact": "Unprivileged network access"
+        }
+      ]
+    }
+  ],
+  "published": "2014-10-21T00:00:00Z",
+  "updated": "2014-10-21T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-14-032"
+}
+

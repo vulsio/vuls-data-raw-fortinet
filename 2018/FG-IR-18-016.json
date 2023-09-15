@@ -1,0 +1,40 @@
+{
+  "id": "FG-IR-18-016",
+  "title": "FortiManager allows unauthorized viewing of vdoms settings by any adom standard users",
+  "summary": "A standard user with adom assignment can read the interface settings of vdoms unrelated to his/her adom.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-016",
+      "cve": "CVE-2018-1353",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: less equal 6.0.1, fixed in [6.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "6.0.1"
+                  },
+                  "fixed_in": [
+                    "6.0.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:X/RL:X/RC:X"
+          },
+          "impact": "Information Disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2018-08-27T00:00:00Z",
+  "updated": "2018-08-27T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-016"
+}
+

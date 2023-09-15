@@ -1,0 +1,764 @@
+{
+  "id": "FG-IR-17-196",
+  "title": "Key Reinstallation Attacks: Cryptographic/protocol attack against WPA2",
+  "summary": "Several vulnerabilities affect the Wi-Fi Protected Access II (WPA2) protocol, potentially enabling Man-in-the-Middle (MitM) attacks between Wifi Clients and Access Points running WPA2 . The impact includes decryption, packet replay, TCP connection hijacking and HTTP content injection.The related CVEs are:1. CVE-2017-13077: reinstallation of the pairwise key in the 4-way handshake2. CVE-2017-13078: reinstallation of the group key in the 4-way handshake3. CVE-2017-13079: reinstallation of the integrity group key in the 4-way handshake4. CVE-2017-13080: reinstallation of the group key in the group key handshake5. CVE-2017-13081: reinstallation of the integrity group key in the group key handshake6. CVE-2017-13082: accepting a retransmitted FT Reassociation Request and reinstalling the pairwise key while processing it7. CVE-2017-13084: Reinstallation of the STK key in the PeerKey handshake.8. CVE-2017-13086: reinstallation of the Tunneled Direct-Link Setup (TDLS) PeerKey (TPK) key in the TDLS handshake.9. CVE-2017-13087: reinstallation of the group key (GTK) when processing a Wireless Network Management (WNM) Sleep Mode Response frame.10. CVE-2017-13088: reinstallation of the integrity group key (IGTK) when processing a Wireless Network Management (WNM) Sleep Mode Response frame.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-196",
+      "cve": "CVE-2017-13082",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWLC: greater equal 8.0.0, less equal 8.0.6",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.0.6"
+                  }
+                },
+                {
+                  "description": "FortiWLC: greater equal 8.2.0, less equal 8.2.7",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.2.0",
+                    "le": "8.2.7"
+                  }
+                },
+                {
+                  "description": "FortiWLC: greater equal 8.3.0, less equal 8.3.3",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.3.0",
+                    "le": "8.3.3"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "Meru AP: greater equal 8.0.0, less equal 8.0.0",
+                  "cpe": "cpe:2.3:o:fortinet:meru:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.0.0"
+                  }
+                },
+                {
+                  "description": "Meru AP: greater equal 8.2.0, less equal 8.2.7",
+                  "cpe": "cpe:2.3:o:fortinet:meru:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.2.0",
+                    "le": "8.2.7"
+                  }
+                },
+                {
+                  "description": "Meru AP: greater equal 8.3.0, less equal 8.3.3",
+                  "cpe": "cpe:2.3:o:fortinet:meru:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.3.0",
+                    "le": "8.3.3"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.9,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L/E:X/RL:X/RC:X"
+          },
+          "impact": "Man-in-the-Middle attacks"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-196",
+      "cve": "CVE-2017-13077",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP: less equal 5.2.6",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.2.6"
+                  }
+                },
+                {
+                  "description": "FortiAP: greater equal 5.4.0, less equal 5.4.3",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.3"
+                  }
+                },
+                {
+                  "description": "FortiAP: equal 5.6.0",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.6.0"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.2.11",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.2.11"
+                  }
+                },
+                {
+                  "description": "FortiOS: greater equal 5.4.0, less equal 5.4.8",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.8"
+                  }
+                },
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.2",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.2"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiWLC: less equal 7.0.11",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "7.0.11"
+                  }
+                },
+                {
+                  "description": "FortiWLC: greater equal 8.0.0, less equal 8.0.6",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.0.6"
+                  }
+                },
+                {
+                  "description": "FortiWLC: greater equal 8.2.0, less equal 8.2.7",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.2.0",
+                    "le": "8.2.7"
+                  }
+                },
+                {
+                  "description": "FortiWLC: greater equal 8.3.0, less equal 8.3.3",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.3.0",
+                    "le": "8.3.3"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "Meru AP: less equal 7.0.11",
+                  "cpe": "cpe:2.3:o:fortinet:meru:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "7.0.11"
+                  }
+                },
+                {
+                  "description": "Meru AP: greater equal 8.0.0, less equal 8.0.0",
+                  "cpe": "cpe:2.3:o:fortinet:meru:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.0.0"
+                  }
+                },
+                {
+                  "description": "Meru AP: greater equal 8.2.0, less equal 8.2.7",
+                  "cpe": "cpe:2.3:o:fortinet:meru:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.2.0",
+                    "le": "8.2.7"
+                  }
+                },
+                {
+                  "description": "Meru AP: greater equal 8.3.0, less equal 8.3.3",
+                  "cpe": "cpe:2.3:o:fortinet:meru:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.3.0",
+                    "le": "8.3.3"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.9,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L/E:X/RL:X/RC:X"
+          },
+          "impact": "Man-in-the-Middle attacks"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-196",
+      "cve": "CVE-2017-13078",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP: less equal 5.2.6",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.2.6"
+                  }
+                },
+                {
+                  "description": "FortiAP: greater equal 5.4.0, less equal 5.4.3",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.3"
+                  }
+                },
+                {
+                  "description": "FortiAP: equal 5.6.0",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.6.0"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.2.11",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.2.11"
+                  }
+                },
+                {
+                  "description": "FortiOS: greater equal 5.4.0, less equal 5.4.8",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.8"
+                  }
+                },
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.2",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.2"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiWLC: less equal 7.0.11",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "7.0.11"
+                  }
+                },
+                {
+                  "description": "FortiWLC: greater equal 8.0.0, less equal 8.0.6",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.0.6"
+                  }
+                },
+                {
+                  "description": "FortiWLC: greater equal 8.2.0, less equal 8.2.7",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.2.0",
+                    "le": "8.2.7"
+                  }
+                },
+                {
+                  "description": "FortiWLC: greater equal 8.3.0, less equal 8.3.3",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.3.0",
+                    "le": "8.3.3"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "Meru AP: less equal 7.0.11",
+                  "cpe": "cpe:2.3:o:fortinet:meru:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "7.0.11"
+                  }
+                },
+                {
+                  "description": "Meru AP: greater equal 8.0.0, less equal 8.0.0",
+                  "cpe": "cpe:2.3:o:fortinet:meru:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.0.0"
+                  }
+                },
+                {
+                  "description": "Meru AP: greater equal 8.2.0, less equal 8.2.7",
+                  "cpe": "cpe:2.3:o:fortinet:meru:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.2.0",
+                    "le": "8.2.7"
+                  }
+                },
+                {
+                  "description": "Meru AP: greater equal 8.3.0, less equal 8.3.3",
+                  "cpe": "cpe:2.3:o:fortinet:meru:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.3.0",
+                    "le": "8.3.3"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.9,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L/E:X/RL:X/RC:X"
+          },
+          "impact": "Man-in-the-Middle attacks"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-196",
+      "cve": "CVE-2017-13079",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP: less equal 5.2.6",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.2.6"
+                  }
+                },
+                {
+                  "description": "FortiAP: greater equal 5.4.0, less equal 5.4.3",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.3"
+                  }
+                },
+                {
+                  "description": "FortiAP: equal 5.6.0",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.6.0"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.2.11",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.2.11"
+                  }
+                },
+                {
+                  "description": "FortiOS: greater equal 5.4.0, less equal 5.4.8",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.8"
+                  }
+                },
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.2",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.2"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiWLC: less equal 7.0.11",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "7.0.11"
+                  }
+                },
+                {
+                  "description": "FortiWLC: greater equal 8.0.0, less equal 8.0.6",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.0.6"
+                  }
+                },
+                {
+                  "description": "FortiWLC: greater equal 8.2.0, less equal 8.2.7",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.2.0",
+                    "le": "8.2.7"
+                  }
+                },
+                {
+                  "description": "FortiWLC: greater equal 8.3.0, less equal 8.3.3",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.3.0",
+                    "le": "8.3.3"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "Meru AP: less equal 7.0.11",
+                  "cpe": "cpe:2.3:o:fortinet:meru:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "7.0.11"
+                  }
+                },
+                {
+                  "description": "Meru AP: greater equal 8.0.0, less equal 8.0.0",
+                  "cpe": "cpe:2.3:o:fortinet:meru:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.0.0"
+                  }
+                },
+                {
+                  "description": "Meru AP: greater equal 8.2.0, less equal 8.2.7",
+                  "cpe": "cpe:2.3:o:fortinet:meru:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.2.0",
+                    "le": "8.2.7"
+                  }
+                },
+                {
+                  "description": "Meru AP: greater equal 8.3.0, less equal 8.3.3",
+                  "cpe": "cpe:2.3:o:fortinet:meru:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.3.0",
+                    "le": "8.3.3"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.9,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L/E:X/RL:X/RC:X"
+          },
+          "impact": "Man-in-the-Middle attacks"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-196",
+      "cve": "CVE-2017-13080",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP: less equal 5.2.6",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.2.6"
+                  }
+                },
+                {
+                  "description": "FortiAP: greater equal 5.4.0, less equal 5.4.3",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.3"
+                  }
+                },
+                {
+                  "description": "FortiAP: equal 5.6.0",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.6.0"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.2.11",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.2.11"
+                  }
+                },
+                {
+                  "description": "FortiOS: greater equal 5.4.0, less equal 5.4.8",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.8"
+                  }
+                },
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.2",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.2"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiWLC: less equal 7.0.11",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "7.0.11"
+                  }
+                },
+                {
+                  "description": "FortiWLC: greater equal 8.0.0, less equal 8.0.6",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.0.6"
+                  }
+                },
+                {
+                  "description": "FortiWLC: greater equal 8.2.0, less equal 8.2.7",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.2.0",
+                    "le": "8.2.7"
+                  }
+                },
+                {
+                  "description": "FortiWLC: greater equal 8.3.0, less equal 8.3.3",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.3.0",
+                    "le": "8.3.3"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "Meru AP: less equal 7.0.11",
+                  "cpe": "cpe:2.3:o:fortinet:meru:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "7.0.11"
+                  }
+                },
+                {
+                  "description": "Meru AP: greater equal 8.0.0, less equal 8.0.0",
+                  "cpe": "cpe:2.3:o:fortinet:meru:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.0.0"
+                  }
+                },
+                {
+                  "description": "Meru AP: greater equal 8.2.0, less equal 8.2.7",
+                  "cpe": "cpe:2.3:o:fortinet:meru:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.2.0",
+                    "le": "8.2.7"
+                  }
+                },
+                {
+                  "description": "Meru AP: greater equal 8.3.0, less equal 8.3.3",
+                  "cpe": "cpe:2.3:o:fortinet:meru:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.3.0",
+                    "le": "8.3.3"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.9,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L/E:X/RL:X/RC:X"
+          },
+          "impact": "Man-in-the-Middle attacks"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-196",
+      "cve": "CVE-2017-13081",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP: less equal 5.2.6",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.2.6"
+                  }
+                },
+                {
+                  "description": "FortiAP: greater equal 5.4.0, less equal 5.4.3",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.3"
+                  }
+                },
+                {
+                  "description": "FortiAP: equal 5.6.0",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.6.0"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.2.11",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.2.11"
+                  }
+                },
+                {
+                  "description": "FortiOS: greater equal 5.4.0, less equal 5.4.8",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.8"
+                  }
+                },
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.2",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.2"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.9,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L/E:X/RL:X/RC:X"
+          },
+          "impact": "Man-in-the-Middle attacks"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-196",
+      "cve": "CVE-2017-13084",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 5.9,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L/E:X/RL:X/RC:X"
+          },
+          "impact": "Man-in-the-Middle attacks"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-196",
+      "cve": "CVE-2017-13086",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 5.9,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L/E:X/RL:X/RC:X"
+          },
+          "impact": "Man-in-the-Middle attacks"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-196",
+      "cve": "CVE-2017-13087",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 5.9,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L/E:X/RL:X/RC:X"
+          },
+          "impact": "Man-in-the-Middle attacks"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-196",
+      "cve": "CVE-2017-13088",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 5.9,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L/E:X/RL:X/RC:X"
+          },
+          "impact": "Man-in-the-Middle attacks"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://www.krackattacks.com/",
+      "url": "https://www.krackattacks.com/"
+    }
+  ],
+  "published": "2017-10-16T00:00:00Z",
+  "updated": "2018-01-19T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-196"
+}
+

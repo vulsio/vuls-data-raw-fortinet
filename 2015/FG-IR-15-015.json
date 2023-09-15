@@ -1,0 +1,27 @@
+{
+  "id": "FG-IR-15-015",
+  "title": "CVE-2015-1793 OpenSSL \"Alternative  Chains Certificate Forgery\"",
+  "description": "OpenSSL released a security advisory in July 2015 to announce a high severity vulnerability affecting any application that verifies certificates with OpenSSL. In certain conditions, an attacker owning a valid certificate (eg: a certificate for her personal website, signed by legitimate Certification Authorities) could leverage this vulnerability to act as a CA and \"issue\" certificates (in other words: sign forged certificates that would then appear legitimate to a vulnerable peer). OpenSSL notes that this concerns SSL clients (when verifying a server's certificates) but also SSL servers when verifying a client's certificate, in the rarer occurrence of client authentication in the SSL handshake.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-15-015",
+      "cve": "CVE-2015-1793",
+      "definitions": [
+        {
+          "configurations": [],
+          "impact": "Certificate Forgery"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://openssl.org/news/secadv_20150611.txt",
+      "url": "https://openssl.org/news/secadv_20150611.txt"
+    }
+  ],
+  "published": "2015-07-09T00:00:00Z",
+  "updated": "2015-07-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-15-015"
+}
+

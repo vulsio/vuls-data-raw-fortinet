@@ -1,0 +1,2002 @@
+{
+  "id": "FG-IR-15-023",
+  "title": "OpenSSL Advisory - December 2015",
+  "description": "OpenSSL released an update in December 2015 to address a small number of vulnerability issues.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-15-023",
+      "cve": "CVE-2015-3193",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less than 5.2.6, fixed in [5.2.6, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.6"
+                  },
+                  "fixed_in": [
+                    "5.2.6",
+                    "5.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: less than 5.2.5, fixed in [5.2.5, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.5"
+                  },
+                  "fixed_in": [
+                    "5.2.5",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 5.4.0, less than 5.4.1, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "lt": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiMail: less than 5.0.9, fixed in [5.0.9, 5.1.6, 5.2.7, 5.3.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.0.9"
+                  },
+                  "fixed_in": [
+                    "5.0.9",
+                    "5.1.6",
+                    "5.2.7",
+                    "5.3.1"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 5.1.0, less than 5.1.6, fixed in [5.1.6, 5.2.7, 5.3.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.1.0",
+                    "lt": "5.1.6"
+                  },
+                  "fixed_in": [
+                    "5.1.6",
+                    "5.2.7",
+                    "5.3.1"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 5.2.0, less than 5.2.7, fixed in [5.2.7, 5.3.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "lt": "5.2.7"
+                  },
+                  "fixed_in": [
+                    "5.2.7",
+                    "5.3.1"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 5.3.0, less than 5.3.1, fixed in [5.3.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.3.0",
+                    "lt": "5.3.1"
+                  },
+                  "fixed_in": [
+                    "5.3.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAuthenticator: less equal 4.1.0, fixed in [4.1.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "4.1.0"
+                  },
+                  "fixed_in": [
+                    "4.1.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less than 5.2.5, fixed in [5.2.5, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.5"
+                  },
+                  "fixed_in": [
+                    "5.2.5",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 5.4.0, less than 5.4.1, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "lt": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiWAN: less than 4.1.2, fixed in [4.1.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwan:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "4.1.2"
+                  },
+                  "fixed_in": [
+                    "4.1.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiADC: less than 4.4.0, fixed in [4.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "4.4.0"
+                  },
+                  "fixed_in": [
+                    "4.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient: less than 5.4.1, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOS: less than 5.4.1, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "lt": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOSX: less than 5.4.1, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:mac_os_x:*:*",
+                  "affected": {
+                    "lt": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for iOS: less than 5.2.3, fixed in [5.2.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:ios:*:*",
+                  "affected": {
+                    "lt": "5.2.3"
+                  },
+                  "fixed_in": [
+                    "5.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Android: less than 5.2.8, fixed in [5.2.8]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:android:*:*",
+                  "affected": {
+                    "lt": "5.2.8"
+                  },
+                  "fixed_in": [
+                    "5.2.8"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP: less than 5.4.0, fixed in [5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.4.0"
+                  },
+                  "fixed_in": [
+                    "5.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiExtender: less than 2.0.3, fixed in [2.0.3, 3.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiextender:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "2.0.3"
+                  },
+                  "fixed_in": [
+                    "2.0.3",
+                    "3.0.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch-EFX: less than 3.4.0, fixed in [3.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch-efx:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "3.4.0"
+                  },
+                  "fixed_in": [
+                    "3.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch: less than 3.4.0, fixed in [3.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "3.4.0"
+                  },
+                  "fixed_in": [
+                    "3.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiCache: less than 5.2.6, fixed in [5.2.6]",
+                  "cpe": "cpe:2.3:o:fortinet:forticache:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.6"
+                  },
+                  "fixed_in": [
+                    "5.2.6"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiDDoS: less than 4.1.11, fixed in [4.1.11, 4.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiddos:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "4.1.11"
+                  },
+                  "fixed_in": [
+                    "4.1.11",
+                    "4.2.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiRecorder: less than 2.3.0, fixed in [2.3.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortirecorder:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "2.3.0"
+                  },
+                  "fixed_in": [
+                    "2.3.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiDB: less than 5.2.0, fixed in [5.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortidb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.0"
+                  },
+                  "fixed_in": [
+                    "5.2.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiExplorer: less than 2.7.0, fixed in [2.7.0]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiexplorer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "2.7.0"
+                  },
+                  "fixed_in": [
+                    "2.7.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: less than 2.2.0, fixed in [2.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "2.2.0"
+                  },
+                  "fixed_in": [
+                    "2.2.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: less than 5.5.2, fixed in [5.5.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.5.2"
+                  },
+                  "fixed_in": [
+                    "5.5.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiVoice: less than 5.2.1.82, fixed in [5.2.1.82]",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.1.82"
+                  },
+                  "fixed_in": [
+                    "5.2.1.82"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Information Disclosure"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-15-023",
+      "cve": "CVE-2015-3194",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less than 5.2.6, fixed in [5.2.6, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.6"
+                  },
+                  "fixed_in": [
+                    "5.2.6",
+                    "5.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: less than 5.2.5, fixed in [5.2.5, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.5"
+                  },
+                  "fixed_in": [
+                    "5.2.5",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 5.4.0, less than 5.4.1, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "lt": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiMail: less than 5.0.9, fixed in [5.0.9, 5.1.6, 5.2.7, 5.3.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.0.9"
+                  },
+                  "fixed_in": [
+                    "5.0.9",
+                    "5.1.6",
+                    "5.2.7",
+                    "5.3.1"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 5.1.0, less than 5.1.6, fixed in [5.1.6, 5.2.7, 5.3.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.1.0",
+                    "lt": "5.1.6"
+                  },
+                  "fixed_in": [
+                    "5.1.6",
+                    "5.2.7",
+                    "5.3.1"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 5.2.0, less than 5.2.7, fixed in [5.2.7, 5.3.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "lt": "5.2.7"
+                  },
+                  "fixed_in": [
+                    "5.2.7",
+                    "5.3.1"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 5.3.0, less than 5.3.1, fixed in [5.3.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.3.0",
+                    "lt": "5.3.1"
+                  },
+                  "fixed_in": [
+                    "5.3.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAuthenticator: less equal 4.1.0, fixed in [4.1.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "4.1.0"
+                  },
+                  "fixed_in": [
+                    "4.1.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less than 5.2.5, fixed in [5.2.5, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.5"
+                  },
+                  "fixed_in": [
+                    "5.2.5",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 5.4.0, less than 5.4.1, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "lt": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiWAN: less than 4.1.2, fixed in [4.1.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwan:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "4.1.2"
+                  },
+                  "fixed_in": [
+                    "4.1.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiADC: less than 4.4.0, fixed in [4.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "4.4.0"
+                  },
+                  "fixed_in": [
+                    "4.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient: less than 5.4.1, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOS: less than 5.4.1, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "lt": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOSX: less than 5.4.1, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:mac_os_x:*:*",
+                  "affected": {
+                    "lt": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for iOS: less than 5.2.3, fixed in [5.2.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:ios:*:*",
+                  "affected": {
+                    "lt": "5.2.3"
+                  },
+                  "fixed_in": [
+                    "5.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Android: less than 5.2.8, fixed in [5.2.8]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:android:*:*",
+                  "affected": {
+                    "lt": "5.2.8"
+                  },
+                  "fixed_in": [
+                    "5.2.8"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP: less than 5.4.0, fixed in [5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.4.0"
+                  },
+                  "fixed_in": [
+                    "5.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiExtender: less than 2.0.3, fixed in [2.0.3, 3.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiextender:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "2.0.3"
+                  },
+                  "fixed_in": [
+                    "2.0.3",
+                    "3.0.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch-EFX: less than 3.4.0, fixed in [3.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch-efx:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "3.4.0"
+                  },
+                  "fixed_in": [
+                    "3.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch: less than 3.4.0, fixed in [3.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "3.4.0"
+                  },
+                  "fixed_in": [
+                    "3.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiCache: less than 5.2.6, fixed in [5.2.6]",
+                  "cpe": "cpe:2.3:o:fortinet:forticache:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.6"
+                  },
+                  "fixed_in": [
+                    "5.2.6"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiDDoS: less than 4.1.11, fixed in [4.1.11, 4.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiddos:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "4.1.11"
+                  },
+                  "fixed_in": [
+                    "4.1.11",
+                    "4.2.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiRecorder: less than 2.3.0, fixed in [2.3.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortirecorder:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "2.3.0"
+                  },
+                  "fixed_in": [
+                    "2.3.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiDB: less than 5.2.0, fixed in [5.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortidb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.0"
+                  },
+                  "fixed_in": [
+                    "5.2.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiExplorer: less than 2.7.0, fixed in [2.7.0]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiexplorer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "2.7.0"
+                  },
+                  "fixed_in": [
+                    "2.7.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: less than 2.2.0, fixed in [2.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "2.2.0"
+                  },
+                  "fixed_in": [
+                    "2.2.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: less than 5.5.2, fixed in [5.5.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.5.2"
+                  },
+                  "fixed_in": [
+                    "5.5.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiVoice: less than 5.2.1.82, fixed in [5.2.1.82]",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.1.82"
+                  },
+                  "fixed_in": [
+                    "5.2.1.82"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Denial of Service"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-15-023",
+      "cve": "CVE-2015-3195",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less than 5.2.6, fixed in [5.2.6, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.6"
+                  },
+                  "fixed_in": [
+                    "5.2.6",
+                    "5.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: less than 5.2.5, fixed in [5.2.5, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.5"
+                  },
+                  "fixed_in": [
+                    "5.2.5",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 5.4.0, less than 5.4.1, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "lt": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiMail: less than 5.0.9, fixed in [5.0.9, 5.1.6, 5.2.7, 5.3.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.0.9"
+                  },
+                  "fixed_in": [
+                    "5.0.9",
+                    "5.1.6",
+                    "5.2.7",
+                    "5.3.1"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 5.1.0, less than 5.1.6, fixed in [5.1.6, 5.2.7, 5.3.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.1.0",
+                    "lt": "5.1.6"
+                  },
+                  "fixed_in": [
+                    "5.1.6",
+                    "5.2.7",
+                    "5.3.1"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 5.2.0, less than 5.2.7, fixed in [5.2.7, 5.3.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "lt": "5.2.7"
+                  },
+                  "fixed_in": [
+                    "5.2.7",
+                    "5.3.1"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 5.3.0, less than 5.3.1, fixed in [5.3.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.3.0",
+                    "lt": "5.3.1"
+                  },
+                  "fixed_in": [
+                    "5.3.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAuthenticator: less equal 4.1.0, fixed in [4.1.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "4.1.0"
+                  },
+                  "fixed_in": [
+                    "4.1.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less than 5.2.5, fixed in [5.2.5, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.5"
+                  },
+                  "fixed_in": [
+                    "5.2.5",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 5.4.0, less than 5.4.1, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "lt": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiWAN: less than 4.1.2, fixed in [4.1.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwan:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "4.1.2"
+                  },
+                  "fixed_in": [
+                    "4.1.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiADC: less than 4.4.0, fixed in [4.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "4.4.0"
+                  },
+                  "fixed_in": [
+                    "4.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient: less than 5.4.1, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOS: less than 5.4.1, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "lt": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOSX: less than 5.4.1, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:mac_os_x:*:*",
+                  "affected": {
+                    "lt": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for iOS: less than 5.2.3, fixed in [5.2.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:ios:*:*",
+                  "affected": {
+                    "lt": "5.2.3"
+                  },
+                  "fixed_in": [
+                    "5.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Android: less than 5.2.8, fixed in [5.2.8]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:android:*:*",
+                  "affected": {
+                    "lt": "5.2.8"
+                  },
+                  "fixed_in": [
+                    "5.2.8"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP: less than 5.4.0, fixed in [5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.4.0"
+                  },
+                  "fixed_in": [
+                    "5.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiExtender: less than 2.0.3, fixed in [2.0.3, 3.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiextender:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "2.0.3"
+                  },
+                  "fixed_in": [
+                    "2.0.3",
+                    "3.0.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch-EFX: less than 3.4.0, fixed in [3.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch-efx:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "3.4.0"
+                  },
+                  "fixed_in": [
+                    "3.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch: less than 3.4.0, fixed in [3.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "3.4.0"
+                  },
+                  "fixed_in": [
+                    "3.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiCache: less than 5.2.6, fixed in [5.2.6]",
+                  "cpe": "cpe:2.3:o:fortinet:forticache:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.6"
+                  },
+                  "fixed_in": [
+                    "5.2.6"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiDDoS: less than 4.1.11, fixed in [4.1.11, 4.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiddos:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "4.1.11"
+                  },
+                  "fixed_in": [
+                    "4.1.11",
+                    "4.2.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiRecorder: less than 2.3.0, fixed in [2.3.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortirecorder:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "2.3.0"
+                  },
+                  "fixed_in": [
+                    "2.3.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiDB: less than 5.2.0, fixed in [5.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortidb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.0"
+                  },
+                  "fixed_in": [
+                    "5.2.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiExplorer: less than 2.7.0, fixed in [2.7.0]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiexplorer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "2.7.0"
+                  },
+                  "fixed_in": [
+                    "2.7.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: less than 2.2.0, fixed in [2.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "2.2.0"
+                  },
+                  "fixed_in": [
+                    "2.2.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: less than 5.5.2, fixed in [5.5.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.5.2"
+                  },
+                  "fixed_in": [
+                    "5.5.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiVoice: less than 5.2.1.82, fixed in [5.2.1.82]",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.1.82"
+                  },
+                  "fixed_in": [
+                    "5.2.1.82"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Information Disclosure"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-15-023",
+      "cve": "CVE-2015-3196",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less than 5.2.6, fixed in [5.2.6, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.6"
+                  },
+                  "fixed_in": [
+                    "5.2.6",
+                    "5.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: less than 5.2.5, fixed in [5.2.5, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.5"
+                  },
+                  "fixed_in": [
+                    "5.2.5",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 5.4.0, less than 5.4.1, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "lt": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiMail: less than 5.0.9, fixed in [5.0.9, 5.1.6, 5.2.7, 5.3.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.0.9"
+                  },
+                  "fixed_in": [
+                    "5.0.9",
+                    "5.1.6",
+                    "5.2.7",
+                    "5.3.1"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 5.1.0, less than 5.1.6, fixed in [5.1.6, 5.2.7, 5.3.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.1.0",
+                    "lt": "5.1.6"
+                  },
+                  "fixed_in": [
+                    "5.1.6",
+                    "5.2.7",
+                    "5.3.1"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 5.2.0, less than 5.2.7, fixed in [5.2.7, 5.3.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "lt": "5.2.7"
+                  },
+                  "fixed_in": [
+                    "5.2.7",
+                    "5.3.1"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 5.3.0, less than 5.3.1, fixed in [5.3.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.3.0",
+                    "lt": "5.3.1"
+                  },
+                  "fixed_in": [
+                    "5.3.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAuthenticator: less equal 4.1.0, fixed in [4.1.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "4.1.0"
+                  },
+                  "fixed_in": [
+                    "4.1.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less than 5.2.5, fixed in [5.2.5, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.5"
+                  },
+                  "fixed_in": [
+                    "5.2.5",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 5.4.0, less than 5.4.1, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "lt": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiWAN: less than 4.1.2, fixed in [4.1.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwan:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "4.1.2"
+                  },
+                  "fixed_in": [
+                    "4.1.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiADC: less than 4.4.0, fixed in [4.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "4.4.0"
+                  },
+                  "fixed_in": [
+                    "4.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient: less than 5.4.1, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOS: less than 5.4.1, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "lt": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOSX: less than 5.4.1, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:mac_os_x:*:*",
+                  "affected": {
+                    "lt": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for iOS: less than 5.2.3, fixed in [5.2.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:ios:*:*",
+                  "affected": {
+                    "lt": "5.2.3"
+                  },
+                  "fixed_in": [
+                    "5.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Android: less than 5.2.8, fixed in [5.2.8]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:android:*:*",
+                  "affected": {
+                    "lt": "5.2.8"
+                  },
+                  "fixed_in": [
+                    "5.2.8"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP: less than 5.4.0, fixed in [5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.4.0"
+                  },
+                  "fixed_in": [
+                    "5.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiExtender: less than 2.0.3, fixed in [2.0.3, 3.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiextender:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "2.0.3"
+                  },
+                  "fixed_in": [
+                    "2.0.3",
+                    "3.0.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch-EFX: less than 3.4.0, fixed in [3.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch-efx:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "3.4.0"
+                  },
+                  "fixed_in": [
+                    "3.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch: less than 3.4.0, fixed in [3.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "3.4.0"
+                  },
+                  "fixed_in": [
+                    "3.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiCache: less than 5.2.6, fixed in [5.2.6]",
+                  "cpe": "cpe:2.3:o:fortinet:forticache:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.6"
+                  },
+                  "fixed_in": [
+                    "5.2.6"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiDDoS: less than 4.1.11, fixed in [4.1.11, 4.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiddos:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "4.1.11"
+                  },
+                  "fixed_in": [
+                    "4.1.11",
+                    "4.2.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiRecorder: less than 2.3.0, fixed in [2.3.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortirecorder:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "2.3.0"
+                  },
+                  "fixed_in": [
+                    "2.3.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiDB: less than 5.2.0, fixed in [5.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortidb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.0"
+                  },
+                  "fixed_in": [
+                    "5.2.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiExplorer: less than 2.7.0, fixed in [2.7.0]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiexplorer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "2.7.0"
+                  },
+                  "fixed_in": [
+                    "2.7.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: less than 2.2.0, fixed in [2.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "2.2.0"
+                  },
+                  "fixed_in": [
+                    "2.2.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: less than 5.5.2, fixed in [5.5.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.5.2"
+                  },
+                  "fixed_in": [
+                    "5.5.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiVoice: less than 5.2.1.82, fixed in [5.2.1.82]",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.1.82"
+                  },
+                  "fixed_in": [
+                    "5.2.1.82"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Denial of Service"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-15-023",
+      "cve": "CVE-2015-1794",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less than 5.2.6, fixed in [5.2.6, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.6"
+                  },
+                  "fixed_in": [
+                    "5.2.6",
+                    "5.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: less than 5.2.5, fixed in [5.2.5, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.5"
+                  },
+                  "fixed_in": [
+                    "5.2.5",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 5.4.0, less than 5.4.1, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "lt": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiMail: less than 5.0.9, fixed in [5.0.9, 5.1.6, 5.2.7, 5.3.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.0.9"
+                  },
+                  "fixed_in": [
+                    "5.0.9",
+                    "5.1.6",
+                    "5.2.7",
+                    "5.3.1"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 5.1.0, less than 5.1.6, fixed in [5.1.6, 5.2.7, 5.3.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.1.0",
+                    "lt": "5.1.6"
+                  },
+                  "fixed_in": [
+                    "5.1.6",
+                    "5.2.7",
+                    "5.3.1"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 5.2.0, less than 5.2.7, fixed in [5.2.7, 5.3.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "lt": "5.2.7"
+                  },
+                  "fixed_in": [
+                    "5.2.7",
+                    "5.3.1"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 5.3.0, less than 5.3.1, fixed in [5.3.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.3.0",
+                    "lt": "5.3.1"
+                  },
+                  "fixed_in": [
+                    "5.3.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAuthenticator: less equal 4.1.0, fixed in [4.1.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "4.1.0"
+                  },
+                  "fixed_in": [
+                    "4.1.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less than 5.2.5, fixed in [5.2.5, 5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.5"
+                  },
+                  "fixed_in": [
+                    "5.2.5",
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 5.4.0, less than 5.4.1, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "lt": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiWAN: less than 4.1.2, fixed in [4.1.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwan:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "4.1.2"
+                  },
+                  "fixed_in": [
+                    "4.1.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiADC: less than 4.4.0, fixed in [4.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "4.4.0"
+                  },
+                  "fixed_in": [
+                    "4.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient: less than 5.4.1, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOS: less than 5.4.1, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "lt": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOSX: less than 5.4.1, fixed in [5.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:mac_os_x:*:*",
+                  "affected": {
+                    "lt": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for iOS: less than 5.2.3, fixed in [5.2.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:ios:*:*",
+                  "affected": {
+                    "lt": "5.2.3"
+                  },
+                  "fixed_in": [
+                    "5.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Android: less than 5.2.8, fixed in [5.2.8]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:android:*:*",
+                  "affected": {
+                    "lt": "5.2.8"
+                  },
+                  "fixed_in": [
+                    "5.2.8"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP: less than 5.4.0, fixed in [5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.4.0"
+                  },
+                  "fixed_in": [
+                    "5.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiExtender: less than 2.0.3, fixed in [2.0.3, 3.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiextender:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "2.0.3"
+                  },
+                  "fixed_in": [
+                    "2.0.3",
+                    "3.0.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch-EFX: less than 3.4.0, fixed in [3.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch-efx:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "3.4.0"
+                  },
+                  "fixed_in": [
+                    "3.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch: less than 3.4.0, fixed in [3.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "3.4.0"
+                  },
+                  "fixed_in": [
+                    "3.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiCache: less than 5.2.6, fixed in [5.2.6]",
+                  "cpe": "cpe:2.3:o:fortinet:forticache:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.6"
+                  },
+                  "fixed_in": [
+                    "5.2.6"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiDDoS: less than 4.1.11, fixed in [4.1.11, 4.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiddos:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "4.1.11"
+                  },
+                  "fixed_in": [
+                    "4.1.11",
+                    "4.2.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiRecorder: less than 2.3.0, fixed in [2.3.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortirecorder:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "2.3.0"
+                  },
+                  "fixed_in": [
+                    "2.3.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiDB: less than 5.2.0, fixed in [5.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortidb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.0"
+                  },
+                  "fixed_in": [
+                    "5.2.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiExplorer: less than 2.7.0, fixed in [2.7.0]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiexplorer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "2.7.0"
+                  },
+                  "fixed_in": [
+                    "2.7.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: less than 2.2.0, fixed in [2.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "2.2.0"
+                  },
+                  "fixed_in": [
+                    "2.2.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: less than 5.5.2, fixed in [5.5.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.5.2"
+                  },
+                  "fixed_in": [
+                    "5.5.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiVoice: less than 5.2.1.82, fixed in [5.2.1.82]",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.2.1.82"
+                  },
+                  "fixed_in": [
+                    "5.2.1.82"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Denial of Service, Information Disclosure"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://www.openssl.org/news/secadv/20151203.txt",
+      "url": "https://www.openssl.org/news/secadv/20151203.txt"
+    }
+  ],
+  "published": "2015-12-10T00:00:00Z",
+  "updated": "2015-12-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-15-023"
+}
+

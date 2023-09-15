@@ -1,0 +1,143 @@
+{
+  "id": "FG-IR-17-118",
+  "title": "CVE-2016-10229 Linux Kernel ipv4/udp.c Remote Code Execution Vulnerability",
+  "summary": "Multiple Fortinet products may be affected by the following Linux Kernel vulnerability:CVE-2016-10229 Linux Kernel ipv4/udp.c Remote Code Execution Vulnerabilityudp.c in the Linux kernel before 4.5 allows remote attackers to execute arbitrary code via UDP traffic that triggers an unsafe second checksum calculation during execution of a recv system call with the MSG_PEEK flagHowever, note there is no recorded successful attack on Fortinet products.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-118",
+      "cve": "CVE-2016-10229",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 5.4.2, fixed in [5.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.2"
+                  },
+                  "fixed_in": [
+                    "5.4.3"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP: less equal 5.4.3, fixed in [5.4.4, 5.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.3"
+                  },
+                  "fixed_in": [
+                    "5.4.4",
+                    "5.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiAP: equal 5.6.0, fixed in [5.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.6.0"
+                  },
+                  "fixed_in": [
+                    "5.6.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP-S: less equal 5.4.3, fixed in [5.4.4, 5.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-s:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.3"
+                  },
+                  "fixed_in": [
+                    "5.4.4",
+                    "5.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiAP-S: equal 5.6.0, fixed in [5.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-s:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.6.0"
+                  },
+                  "fixed_in": [
+                    "5.6.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP-W2: less equal 5.4.3, fixed in [5.4.4, 5.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-w2:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.3"
+                  },
+                  "fixed_in": [
+                    "5.4.4",
+                    "5.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiAP-W2: equal 5.6.0, fixed in [5.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-w2:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.6.0"
+                  },
+                  "fixed_in": [
+                    "5.6.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.6.0, fixed in [5.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.6.0"
+                  },
+                  "fixed_in": [
+                    "5.6.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch: less equal 3.6.2, fixed in [3.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "3.6.2"
+                  },
+                  "fixed_in": [
+                    "3.6.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.8,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:X/RL:X/RC:X"
+          },
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2019-07-24T00:00:00Z",
+  "updated": "2019-07-24T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-118"
+}
+

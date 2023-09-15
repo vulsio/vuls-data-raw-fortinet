@@ -1,0 +1,142 @@
+{
+  "id": "FG-IR-16-001",
+  "title": "Multiple Products SSH Undocumented Login Vulnerability",
+  "summary": "An undocumented account used for communication with authorized FortiManager devices exists on some versions of FortiOS, FortiAnalyzer, FortiSwitch and FortiCache. On vulnerable versions, and provided \"Administrative Access\" is enabled for SSH, this account can be used to log in via SSH in Interactive-Keyboard mode, using a password shared across all devices. It gives access to a CLI console with administrative rights.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-001",
+      "cve": "CVE-2016-1909",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: greater equal 5.0.5, less equal 5.0.11, fixed in [5.0.12, 5.2.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.5",
+                    "le": "5.0.11"
+                  },
+                  "fixed_in": [
+                    "5.0.12",
+                    "5.2.5"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 5.2.0, less equal 5.2.4, fixed in [5.2.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.4"
+                  },
+                  "fixed_in": [
+                    "5.2.5"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiCache: greater equal 3.0.0, less equal 3.0.7, fixed in [3.0.8, 3.1.0]",
+                  "cpe": "cpe:2.3:o:fortinet:forticache:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.0.0",
+                    "le": "3.0.7"
+                  },
+                  "fixed_in": [
+                    "3.0.8",
+                    "3.1.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 4.1.0, less equal 4.1.10, fixed in [4.1.11, 4.2.16, 4.3.17, 5.0.8, 5.2.0, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.1.0",
+                    "le": "4.1.10"
+                  },
+                  "fixed_in": [
+                    "4.1.11",
+                    "4.2.16",
+                    "4.3.17",
+                    "5.0.8",
+                    "5.2.0",
+                    "5.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 4.2.0, less equal 4.2.15, fixed in [4.2.16, 4.3.17, 5.0.8, 5.2.0, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.2.0",
+                    "le": "4.2.15"
+                  },
+                  "fixed_in": [
+                    "4.2.16",
+                    "4.3.17",
+                    "5.0.8",
+                    "5.2.0",
+                    "5.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 4.3.0, less equal 4.3.16, fixed in [4.3.17, 5.0.8, 5.2.0, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.3.0",
+                    "le": "4.3.16"
+                  },
+                  "fixed_in": [
+                    "4.3.17",
+                    "5.0.8",
+                    "5.2.0",
+                    "5.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.0.0, less equal 5.0.7, fixed in [5.0.8, 5.2.0, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.7"
+                  },
+                  "fixed_in": [
+                    "5.0.8",
+                    "5.2.0",
+                    "5.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch: greater equal 3.3.0, less equal 3.3.2, fixed in [3.3.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.3.0",
+                    "le": "3.3.2"
+                  },
+                  "fixed_in": [
+                    "3.3.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Remote console access to vulnerable devices with \"Administrative Access\" enabled for SSH"
+        }
+      ]
+    }
+  ],
+  "published": "2016-01-12T00:00:00Z",
+  "updated": "2016-01-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-001"
+}
+

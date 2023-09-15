@@ -1,0 +1,76 @@
+{
+  "id": "FG-IR-18-100",
+  "title": "Hardcoded cryptographic key in the FortiGuard services communication protocol",
+  "summary": "Use of a hardcoded cryptographic key in the FortiGuard services communication protocol may allow a Man in the middle with knowledge of the key to eavesdrop on and modify information (URL/SPAM services in FortiOS 5.6, and URL/SPAM/AV services in FortiOS 6.0.; URL rating in FortiClient) sent and received from Fortiguard servers by decrypting these messages.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-100",
+      "cve": "CVE-2018-9195",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Windows: less than 6.2.0, fixed in [6.2.0]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "lt": "6.2.0"
+                  },
+                  "fixed_in": [
+                    "6.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOS: less than 6.2.2, fixed in [6.2.2]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "lt": "6.2.2"
+                  },
+                  "fixed_in": [
+                    "6.2.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less than 5.6.12, fixed in [5.6.12, 6.0.8]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.6.12"
+                  },
+                  "fixed_in": [
+                    "5.6.12",
+                    "6.0.8"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less than 6.0.8, fixed in [6.0.8]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "lt": "6.0.8"
+                  },
+                  "fixed_in": [
+                    "6.0.8"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.2,
+            "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L/E:F/RL:X/RC:X"
+          },
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2019-12-05T00:00:00Z",
+  "updated": "2019-12-05T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-100"
+}
+

@@ -1,0 +1,56 @@
+{
+  "id": "FG-IR-17-070",
+  "title": "Gain Windows privileges with FortiClient vpn before logon and untrusted certificate",
+  "summary": "When the \"VPN before logon\" feature of FortiClient Windows is enabled (disabled by default), and when the server certificate is not valid, it is possible for an attacker without a user account on the targeted Windows workstation to obtain SYSTEM level privileges, via exploiting the Windows \"security alert\" dialog thereby popping up.This may be achieved locally or remotely (for instance through RDP, if the logon screen is exposed).",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-070",
+      "cve": "CVE-2017-7344",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Windows: less equal 5.4.3, fixed in [5.4.4, 5.6.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "le": "5.4.3"
+                  },
+                  "fixed_in": [
+                    "5.4.4",
+                    "5.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: equal 5.6.0, fixed in [5.6.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "eq": "5.6.0"
+                  },
+                  "fixed_in": [
+                    "5.6.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://securite.intrinsec.com/2017/12/22/cve-2017-7344-fortinet-forticlient-windows-privilege-escalation-at-logon/",
+      "url": "https://securite.intrinsec.com/2017/12/22/cve-2017-7344-fortinet-forticlient-windows-privilege-escalation-at-logon/"
+    }
+  ],
+  "published": "2017-12-13T00:00:00Z",
+  "updated": "2017-12-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-070"
+}
+

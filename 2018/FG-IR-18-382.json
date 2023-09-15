@@ -1,0 +1,40 @@
+{
+  "id": "FG-IR-18-382",
+  "title": "FortiSIEM LDAP server password reflected in admin portal",
+  "summary": "An information exposure vulnerability in the admin portal of FortiSIEM may allow an authenticated admin to retrieve the LDAP server password via the HTML source code. This could potentially aggravate attacks targeting the authenticated admin session, should they exist (XSS, social engineering, proxy caching...).",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-382",
+      "cve": "CVE-2018-13378",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSIEM: less equal 5.2.0, fixed in [5.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.2.0"
+                  },
+                  "fixed_in": [
+                    "5.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Information Disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2019-03-29T00:00:00Z",
+  "updated": "2019-03-29T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-382"
+}
+

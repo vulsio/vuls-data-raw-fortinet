@@ -1,0 +1,81 @@
+{
+  "id": "FG-IR-16-017",
+  "title": "FortiManager and FortiAnalyzer XSS vulnerability",
+  "summary": "A vulnerablity in FortiManager/FortiAnalyzer address added page could allow malicious script being injected in the input field; this potentially enables XSS attacks.",
+  "description": "A vulnerablity in FortiManager/FortiAnalyzer address added page could allow malicious script being injected in the input field; this potentially enables XSS attacks.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-017",
+      "cve": "CVE-2016-3194",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: greater equal 5.0.0, less equal 5.0.12, fixed in [5.0.13, 5.2.6, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.12"
+                  },
+                  "fixed_in": [
+                    "5.0.13",
+                    "5.2.6",
+                    "5.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 5.2.0, less equal 5.2.5, fixed in [5.2.6, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.5"
+                  },
+                  "fixed_in": [
+                    "5.2.6",
+                    "5.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 5.0.0, less equal 5.0.11, fixed in [5.0.12, 5.2.6, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.11"
+                  },
+                  "fixed_in": [
+                    "5.0.12",
+                    "5.2.6",
+                    "5.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 5.2.0, less equal 5.2.5, fixed in [5.2.6, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.5"
+                  },
+                  "fixed_in": [
+                    "5.2.6",
+                    "5.4.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "XSS attacks"
+        }
+      ]
+    }
+  ],
+  "published": "2016-08-09T00:00:00Z",
+  "updated": "2016-08-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-017"
+}
+

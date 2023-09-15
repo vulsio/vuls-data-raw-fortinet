@@ -1,0 +1,111 @@
+{
+  "id": "FG-IR-15-025",
+  "title": "Mulitple Vulnerabilities in FortiClient",
+  "summary": "FortiClient drivers expose IOCTL that may allow an unprivileged user to get system-level privileges.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-15-025",
+      "cve": "CVE-2015-4077",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient: less equal 5.2.3, fixed in [5.2.4]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.2.3"
+                  },
+                  "fixed_in": [
+                    "5.2.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Escalation of Privilege"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-15-025",
+      "cve": "CVE-2015-5735",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient: less equal 5.2.3, fixed in [5.2.4]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.2.3"
+                  },
+                  "fixed_in": [
+                    "5.2.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Escalation of Privilege"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-15-025",
+      "cve": "CVE-2015-5736",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient: less equal 5.2.3, fixed in [5.2.4]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.2.3"
+                  },
+                  "fixed_in": [
+                    "5.2.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Escalation of Privilege"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-15-025",
+      "cve": "CVE-2015-5737",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient: less equal 5.2.3, fixed in [5.2.4]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.2.3"
+                  },
+                  "fixed_in": [
+                    "5.2.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Escalation of Privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2015-09-01T00:00:00Z",
+  "updated": "2015-09-01T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-15-025"
+}
+

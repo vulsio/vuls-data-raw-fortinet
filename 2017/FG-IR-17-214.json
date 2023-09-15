@@ -1,0 +1,121 @@
+{
+  "id": "FG-IR-17-214",
+  "title": "FortiClient insecure VPN credential storage and encryption",
+  "summary": "In certain conditions, FortiClient users' VPN credentials are stored in improperly secured locations and unsafely encrypted.[CVE-2017-14184]When the FortiClient \"Save Password\" feature is enabled (disabled by default), and when users make use of it, FortiClient for Linux, Mac OSX and Windows stores encrypted VPN authentication credentials in improperly secured locations; users sharing the same workstation may therefore be able to see each other's encrypted credentials.[CVE-2017-17543]Users' VPN authentication credentials are unsafely encrypted in multiple FortiClient distributions, due to the use of a static encryption key and weak encryption algorithms.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-214",
+      "cve": "CVE-2017-14184",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Windows: less equal 5.6.0, fixed in [5.6.11]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "le": "5.6.0"
+                  },
+                  "fixed_in": [
+                    "5.6.11"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOSX: less equal 5.6.0, fixed in [5.6.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:mac_os_x:*:*",
+                  "affected": {
+                    "le": "5.6.0"
+                  },
+                  "fixed_in": [
+                    "5.6.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient SSL VPN for Linux: less equal 4.4.2334, fixed in [4.4.2335]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_ssl_vpn:*:*:*:*:*:linux:*:*",
+                  "affected": {
+                    "le": "4.4.2334"
+                  },
+                  "fixed_in": [
+                    "4.4.2335"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Information Disclosure"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-214",
+      "cve": "CVE-2017-17543",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Windows: less equal 5.6.0, fixed in [5.6.11]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "le": "5.6.0"
+                  },
+                  "fixed_in": [
+                    "5.6.11"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOSX: less equal 5.6.0, fixed in [5.6.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:mac_os_x:*:*",
+                  "affected": {
+                    "le": "5.6.0"
+                  },
+                  "fixed_in": [
+                    "5.6.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient SSL VPN for Linux: less equal 4.4.2335, fixed in [4.4.2336]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_ssl_vpn:*:*:*:*:*:linux:*:*",
+                  "affected": {
+                    "le": "4.4.2335"
+                  },
+                  "fixed_in": [
+                    "4.4.2336"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Information Disclosure"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://www.sec-consult.com/en/blog/advisories/vpn-credentials-disclosure-in-fortinet-forticlient/index.html",
+      "url": "https://www.sec-consult.com/en/blog/advisories/vpn-credentials-disclosure-in-fortinet-forticlient/index.html"
+    }
+  ],
+  "published": "2017-12-07T00:00:00Z",
+  "updated": "2018-04-20T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-214"
+}
+

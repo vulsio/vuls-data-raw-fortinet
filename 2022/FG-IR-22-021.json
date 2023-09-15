@@ -1,0 +1,44 @@
+{
+  "id": "FG-IR-22-021",
+  "title": "FortiAuthenticator - XSS vulnerability in OWA login page",
+  "summary": "An improper neutralization of input during web page generation vulnerability [CWE-79] in FortiAuthenticator OWA Agent may allow an unauthenticated attacker to perform an XSS attack via crafted HTTP GET requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-021",
+      "cve": "CVE-2022-22304",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAuthenticator: greater equal 2.1, less equal 2.2, fixed in [2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.1",
+                    "le": "2.2"
+                  },
+                  "fixed_in": [
+                    "2.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N/E:X/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-79"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2022-06-07T00:00:00Z",
+  "updated": "2022-06-07T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-021"
+}
+

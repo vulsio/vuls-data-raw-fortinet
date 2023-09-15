@@ -1,0 +1,59 @@
+{
+  "id": "FG-IR-16-035",
+  "title": "ntp Security Vulnerability Announcement April 2016",
+  "summary": "ntp released an announcement on 26th April 2016, describing 4 low and 7 medium severity vulnerabilities, as listed below: CVE-2016-1551CVE-2016-1549CVE-2016-2516CVE-2016-2517CVE-2016-2518CVE-2016-2519CVE-2016-1547CVE-2016-1548CVE-2015-7704 CVE-2015-8138 CVE-2015-1550",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-035",
+      "cve": "CVE-2016-1550",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.2.8, fixed in [5.2.9, 5.4.2, 5.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.2.8"
+                  },
+                  "fixed_in": [
+                    "5.2.9",
+                    "5.4.2",
+                    "5.6.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.4.0, less equal 5.4.1, fixed in [5.4.2, 5.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.2",
+                    "5.6.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "http://support.ntp.org/bin/view/Main/SecurityNotice#April_2016_NTP_4_2_8p7_Security",
+      "url": "http://support.ntp.org/bin/view/Main/SecurityNotice#April_2016_NTP_4_2_8p7_Security"
+    }
+  ],
+  "published": "2017-04-03T00:00:00Z",
+  "updated": "2017-04-03T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-035"
+}
+

@@ -1,0 +1,28 @@
+{
+  "id": "FG-IR-16-063",
+  "title": "Linux Kernel Dirty Cow Vulnerability",
+  "summary": "Linux Kernel Dirty Cow Vulnerability Announcement.",
+  "description": "The following products are confirmed to be not affected:FortiGate FortiAnalyzerFortiSwitchFortiAP For questions about other Fortinet products, please contact Fortinet's Technical Assistance Center (TAC).",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-063",
+      "cve": "CVE-2016-5195",
+      "definitions": [
+        {
+          "configurations": [],
+          "impact": "Privilege escalation"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5195",
+      "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2016-5195"
+    }
+  ],
+  "published": "2016-11-09T00:00:00Z",
+  "updated": "2016-11-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-063"
+}
+

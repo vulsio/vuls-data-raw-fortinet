@@ -1,0 +1,67 @@
+{
+  "id": "FG-IR-21-004",
+  "title": "Meru AP - Unrestricted execution of OS commands as root",
+  "summary": "An improper sanitization of commands elements (OS Command Injection) vulnerability [CWE-78] in Meru AP may allow an authenticated attacker to execute unauthorized code or commands via specifically crafted commands in Meru AP's CLI.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-21-004",
+      "cve": "CVE-2021-42759",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "Meru AP:",
+                  "cpe": "cpe:2.3:a:fortinet:meru:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "Meru AP:",
+                    "cpe": "cpe:2.3:o:fortinet:meru:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "Meru AP:",
+                      "cpe": "cpe:2.3:h:fortinet:meru:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.3,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:X/RC:C"
+          },
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2021-12-07T00:00:00Z",
+  "updated": "2021-12-07T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-21-004"
+}
+

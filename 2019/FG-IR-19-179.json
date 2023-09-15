@@ -1,0 +1,77 @@
+{
+  "id": "FG-IR-19-179",
+  "title": "FortiOS URL redirection attack via the admin password change page",
+  "summary": "An improper input validation vulnerability in FortiOS admin webUI may allow an attacker to perform an URL redirect attack via a specifically crafted request to the admin initial password change webpage.An attacker could potentially redirect unsuspecting admin users to a malicious website, should they click on a specifically crafted URL provided by the attacker and pointing to the FortiOS webUI admin password initial change page.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-19-179",
+      "cve": "CVE-2019-6696",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.4.0, less equal 5.4.11, fixed in [6.0.9, 6.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.11"
+                  },
+                  "fixed_in": [
+                    "6.0.9",
+                    "6.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.9, fixed in [6.0.9, 6.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.9"
+                  },
+                  "fixed_in": [
+                    "6.0.9",
+                    "6.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.5, fixed in [6.0.9, 6.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.5"
+                  },
+                  "fixed_in": [
+                    "6.0.9",
+                    "6.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.2.0, less equal 6.2.1, fixed in [6.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.1"
+                  },
+                  "fixed_in": [
+                    "6.2.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.4,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2020-02-18T00:00:00Z",
+  "updated": "2020-02-18T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-19-179"
+}
+

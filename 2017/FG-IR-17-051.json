@@ -1,0 +1,589 @@
+{
+  "id": "FG-IR-17-051",
+  "title": "LibGD security advisory [18 January 2017]",
+  "description": "The LibGD project released advisories on January 18th, 2017, July 22nd, 2016 and June 25th, 2016 describing 12 vulnerabilities, as listed below: * gdImageCreate() doesn't check for oversized images and as such is prone to DoS vulnerabilities. (CVE-2016-9317)* double-free in gdImageWebPtr() (CVE-2016-6912)* potential unsigned underflow in gd_interpolation.c (CVE-2016-10166)* DOS vulnerability in gdImageCreateFromGd2Ctx() (CVE-2016-10167)* Signed Integer Overflow gd_io.c (CVE-2016-10168)* Integer Overflow in _gd2GetHeader (CVE-2016-5766)* Read out-of-bands was found in the parsing of TGA files (CVE-2016-6132)* Buffer over-read issue when parsing crafted TGA file (CVE-2016-6214)* Integer overflow error within _gdContributionsAlloc() (CVE-2016-6207)* Invalid color index not handled, can lead to crash (CVE-2016-6128)* Integer Overflow in gdImagePaletteToTrueColor() resulting in heap overflow (CVE-2016-5767)* Stack overflow with gdImageFillToBorder (CVE-2015-8874, CVE-2016-9933)",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-051",
+      "cve": "CVE-2016-9317",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 5.4.2, fixed in [5.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.2"
+                  },
+                  "fixed_in": [
+                    "5.4.3"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.4.4, fixed in [5.4.5, 5.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.4"
+                  },
+                  "fixed_in": [
+                    "5.4.5",
+                    "5.6.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.5,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:X/RL:X/RC:X"
+          },
+          "impact": "Denial of Service, potential buffer and Integer overflows"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-051",
+      "cve": "CVE-2016-6912",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 5.4.2, fixed in [5.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.2"
+                  },
+                  "fixed_in": [
+                    "5.4.3"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.4.4, fixed in [5.4.5, 5.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.4"
+                  },
+                  "fixed_in": [
+                    "5.4.5",
+                    "5.6.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.5,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:X/RL:X/RC:X"
+          },
+          "impact": "Denial of Service, potential buffer and Integer overflows"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-051",
+      "cve": "CVE-2016-10166",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 5.4.2, fixed in [5.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.2"
+                  },
+                  "fixed_in": [
+                    "5.4.3"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.4.4, fixed in [5.4.5, 5.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.4"
+                  },
+                  "fixed_in": [
+                    "5.4.5",
+                    "5.6.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.5,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:X/RL:X/RC:X"
+          },
+          "impact": "Denial of Service, potential buffer and Integer overflows"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-051",
+      "cve": "CVE-2016-10167",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 5.4.2, fixed in [5.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.2"
+                  },
+                  "fixed_in": [
+                    "5.4.3"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.4.4, fixed in [5.4.5, 5.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.4"
+                  },
+                  "fixed_in": [
+                    "5.4.5",
+                    "5.6.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.5,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:X/RL:X/RC:X"
+          },
+          "impact": "Denial of Service, potential buffer and Integer overflows"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-051",
+      "cve": "CVE-2016-10168",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 5.4.2, fixed in [5.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.2"
+                  },
+                  "fixed_in": [
+                    "5.4.3"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.4.4, fixed in [5.4.5, 5.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.4"
+                  },
+                  "fixed_in": [
+                    "5.4.5",
+                    "5.6.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.5,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:X/RL:X/RC:X"
+          },
+          "impact": "Denial of Service, potential buffer and Integer overflows"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-051",
+      "cve": "CVE-2016-5766",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 5.4.2, fixed in [5.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.2"
+                  },
+                  "fixed_in": [
+                    "5.4.3"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.4.4, fixed in [5.4.5, 5.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.4"
+                  },
+                  "fixed_in": [
+                    "5.4.5",
+                    "5.6.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.5,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:X/RL:X/RC:X"
+          },
+          "impact": "Denial of Service, potential buffer and Integer overflows"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-051",
+      "cve": "CVE-2016-6132",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 5.4.2, fixed in [5.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.2"
+                  },
+                  "fixed_in": [
+                    "5.4.3"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.4.4, fixed in [5.4.5, 5.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.4"
+                  },
+                  "fixed_in": [
+                    "5.4.5",
+                    "5.6.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.5,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:X/RL:X/RC:X"
+          },
+          "impact": "Denial of Service, potential buffer and Integer overflows"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-051",
+      "cve": "CVE-2016-6214",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 5.4.2, fixed in [5.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.2"
+                  },
+                  "fixed_in": [
+                    "5.4.3"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.4.4, fixed in [5.4.5, 5.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.4"
+                  },
+                  "fixed_in": [
+                    "5.4.5",
+                    "5.6.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.5,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:X/RL:X/RC:X"
+          },
+          "impact": "Denial of Service, potential buffer and Integer overflows"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-051",
+      "cve": "CVE-2016-6207",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 5.4.2, fixed in [5.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.2"
+                  },
+                  "fixed_in": [
+                    "5.4.3"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.4.4, fixed in [5.4.5, 5.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.4"
+                  },
+                  "fixed_in": [
+                    "5.4.5",
+                    "5.6.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.5,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:X/RL:X/RC:X"
+          },
+          "impact": "Denial of Service, potential buffer and Integer overflows"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-051",
+      "cve": "CVE-2016-6128",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 5.4.2, fixed in [5.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.2"
+                  },
+                  "fixed_in": [
+                    "5.4.3"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.4.4, fixed in [5.4.5, 5.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.4"
+                  },
+                  "fixed_in": [
+                    "5.4.5",
+                    "5.6.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.5,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:X/RL:X/RC:X"
+          },
+          "impact": "Denial of Service, potential buffer and Integer overflows"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-051",
+      "cve": "CVE-2016-5767",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 5.4.2, fixed in [5.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.2"
+                  },
+                  "fixed_in": [
+                    "5.4.3"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.4.4, fixed in [5.4.5, 5.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.4"
+                  },
+                  "fixed_in": [
+                    "5.4.5",
+                    "5.6.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.5,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:X/RL:X/RC:X"
+          },
+          "impact": "Denial of Service, potential buffer and Integer overflows"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-051",
+      "cve": "CVE-2015-8874",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 5.4.2, fixed in [5.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.2"
+                  },
+                  "fixed_in": [
+                    "5.4.3"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.4.4, fixed in [5.4.5, 5.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.4"
+                  },
+                  "fixed_in": [
+                    "5.4.5",
+                    "5.6.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.5,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:X/RL:X/RC:X"
+          },
+          "impact": "Denial of Service, potential buffer and Integer overflows"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-051",
+      "cve": "CVE-2016-9933",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 5.4.2, fixed in [5.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.2"
+                  },
+                  "fixed_in": [
+                    "5.4.3"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.4.4, fixed in [5.4.5, 5.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.4"
+                  },
+                  "fixed_in": [
+                    "5.4.5",
+                    "5.6.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.5,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:X/RL:X/RC:X"
+          },
+          "impact": "Denial of Service, potential buffer and Integer overflows"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://libgd.github.io/",
+      "url": "https://libgd.github.io/"
+    }
+  ],
+  "published": "2017-07-26T00:00:00Z",
+  "updated": "2017-07-26T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-051"
+}
+

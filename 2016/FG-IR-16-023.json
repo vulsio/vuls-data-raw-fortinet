@@ -1,0 +1,76 @@
+{
+  "id": "FG-IR-16-023",
+  "title": "Cookie Parser Buffer Overflow Vulnerability",
+  "summary": "FortiGate firmware (FortiOS) released before Aug 2012 has a cookie parser buffer overflow vulnerability. This vulnerability, when exploited by a crafted HTTP request, can result in execution control being taken over. Affected firmware versions are lower versions of 4.x firmware release. FortiOS 5.x firmware is NOT affected.Affected FortiSwitch firmware versions are 3.4.2 and below.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-023",
+      "cve": "CVE-2016-6909",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 4.0.0, less equal 4.1.10, fixed in [4.3.9, 5.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "4.1.10"
+                  },
+                  "fixed_in": [
+                    "4.3.9",
+                    "5.0.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 4.2.0, less equal 4.2.12, fixed in [4.3.9, 5.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.2.0",
+                    "le": "4.2.12"
+                  },
+                  "fixed_in": [
+                    "4.3.9",
+                    "5.0.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 4.3.0, less equal 4.3.8, fixed in [4.3.9, 5.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.3.0",
+                    "le": "4.3.8"
+                  },
+                  "fixed_in": [
+                    "4.3.9",
+                    "5.0.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch: less equal 3.4.2, fixed in [3.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "3.4.2"
+                  },
+                  "fixed_in": [
+                    "3.4.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Remote administrative access"
+        }
+      ]
+    }
+  ],
+  "published": "2016-08-17T00:00:00Z",
+  "updated": "2016-08-17T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-023"
+}
+

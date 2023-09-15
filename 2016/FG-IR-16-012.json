@@ -1,0 +1,37 @@
+{
+  "id": "FG-IR-16-012",
+  "title": "OpenSSL Advisory - January 2016",
+  "summary": "OpenSSL released an update in January 2016 to address one high and one low severity vulnerabilities.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-012",
+      "cve": "CVE-2016-0701",
+      "definitions": [
+        {
+          "configurations": [],
+          "impact": "Information Disclosure"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-16-012",
+      "cve": "CVE-2015-3197",
+      "definitions": [
+        {
+          "configurations": [],
+          "impact": "Information Disclosure"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://www.openssl.org/news/secadv/20160128.txt",
+      "url": "https://www.openssl.org/news/secadv/20160128.txt"
+    }
+  ],
+  "published": "2016-07-12T00:00:00Z",
+  "updated": "2016-07-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-012"
+}
+

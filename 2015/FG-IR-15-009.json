@@ -1,0 +1,37 @@
+{
+  "id": "FG-IR-15-009",
+  "title": "Http debug commands in FortiMail exposes users credentials to admins",
+  "description": "FortiMail's \"diag debug application httpd\" set of commands can be used to capture the credentials entered in the admin WebGui and the webmail login page forms. The debug commands can be executed by super_admin users and admin users.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-15-009",
+      "cve": "CVE-2015-3293",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiMail: greater equal 5.0.3, less equal 5.2.3, fixed in [5.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.3",
+                    "le": "5.2.3"
+                  },
+                  "fixed_in": [
+                    "5.2.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Credentials Exposure"
+        }
+      ]
+    }
+  ],
+  "published": "2015-04-10T00:00:00Z",
+  "updated": "2015-04-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-15-009"
+}
+

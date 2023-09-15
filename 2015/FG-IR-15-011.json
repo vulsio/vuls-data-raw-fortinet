@@ -1,0 +1,278 @@
+{
+  "id": "FG-IR-15-011",
+  "title": "Multiple Vulnerabilities in FortiManager",
+  "summary": "Multiple vulnerabilities have been discovered in FortiManager.",
+  "description": "Certain versions of FortiManager are subject to the following vulnerabilities: 1. Escalation of Privileges: under certain circumstances, there exists the possibility for a user to escalate privileges by modifying specific parameters. 2. Cross-Site Scripting Vulnerability: it may be possible for an attacker to manipulate a specific action to inject potentially malicious JavaScript into other user profiles. This vulnerability requires account access and privilege escalation in order to be successful. 3. SQL Injection: a remote attacker may be able to perform an SQL Injection attack on the FortiManager via an improperly sanitized input. 4. Local Privilege Escalation via CLI: certain commands can be exploited to allow the passing of additional code which can allow an escalation of privileges. 5. Arbitrary File Download: an opportunity exists for an attacker to obtain arbitrary files from the FortiManager which can lead to information disclosure. This vulnerability requires an attacker to exploit another vulnerability to escalate their privileges.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-15-011",
+      "cve": "CVE-2015-3611",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 5.0.0, less equal 5.0.10, fixed in [5.0.11, 5.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.10"
+                  },
+                  "fixed_in": [
+                    "5.0.11",
+                    "5.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 5.2.0, less equal 5.2.1, fixed in [5.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.1"
+                  },
+                  "fixed_in": [
+                    "5.2.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Escalation of Privileges, Cross-Site Scripting, SQL Query Execution, SQL Injection, Arbitrary File Download"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-15-011",
+      "cve": "CVE-2015-3612",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 5.0.0, less equal 5.0.10, fixed in [5.0.11, 5.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.10"
+                  },
+                  "fixed_in": [
+                    "5.0.11",
+                    "5.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 5.2.0, less equal 5.2.1, fixed in [5.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.1"
+                  },
+                  "fixed_in": [
+                    "5.2.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Escalation of Privileges, Cross-Site Scripting, SQL Query Execution, SQL Injection, Arbitrary File Download"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-15-011",
+      "cve": "CVE-2015-3613",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 5.0.0, less equal 5.0.10, fixed in [5.0.11, 5.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.10"
+                  },
+                  "fixed_in": [
+                    "5.0.11",
+                    "5.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 5.2.0, less equal 5.2.1, fixed in [5.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.1"
+                  },
+                  "fixed_in": [
+                    "5.2.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Escalation of Privileges, Cross-Site Scripting, SQL Query Execution, SQL Injection, Arbitrary File Download"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-15-011",
+      "cve": "CVE-2015-3614",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 5.0.0, less equal 5.0.10, fixed in [5.0.11, 5.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.10"
+                  },
+                  "fixed_in": [
+                    "5.0.11",
+                    "5.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 5.2.0, less equal 5.2.1, fixed in [5.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.1"
+                  },
+                  "fixed_in": [
+                    "5.2.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Escalation of Privileges, Cross-Site Scripting, SQL Query Execution, SQL Injection, Arbitrary File Download"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-15-011",
+      "cve": "CVE-2015-3615",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 5.0.0, less equal 5.0.10, fixed in [5.0.11, 5.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.10"
+                  },
+                  "fixed_in": [
+                    "5.0.11",
+                    "5.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 5.2.0, less equal 5.2.1, fixed in [5.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.1"
+                  },
+                  "fixed_in": [
+                    "5.2.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Escalation of Privileges, Cross-Site Scripting, SQL Query Execution, SQL Injection, Arbitrary File Download"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-15-011",
+      "cve": "CVE-2015-3616",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 5.0.0, less equal 5.0.10, fixed in [5.0.11, 5.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.10"
+                  },
+                  "fixed_in": [
+                    "5.0.11",
+                    "5.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 5.2.0, less equal 5.2.1, fixed in [5.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.1"
+                  },
+                  "fixed_in": [
+                    "5.2.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Escalation of Privileges, Cross-Site Scripting, SQL Query Execution, SQL Injection, Arbitrary File Download"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-15-011",
+      "cve": "CVE-2015-3617",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 5.0.0, less equal 5.0.10, fixed in [5.0.11, 5.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.10"
+                  },
+                  "fixed_in": [
+                    "5.0.11",
+                    "5.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 5.2.0, less equal 5.2.1, fixed in [5.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.1"
+                  },
+                  "fixed_in": [
+                    "5.2.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Escalation of Privileges, Cross-Site Scripting, SQL Query Execution, SQL Injection, Arbitrary File Download"
+        }
+      ]
+    }
+  ],
+  "published": "2015-04-16T00:00:00Z",
+  "updated": "2015-04-16T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-15-011"
+}
+

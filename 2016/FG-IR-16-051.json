@@ -1,0 +1,80 @@
+{
+  "id": "FG-IR-16-051",
+  "title": "FortiAnalyzer and FortiManager stored XSS vulnerability in report filters",
+  "summary": "A cross-site-scripting vulnerablity in FortiAnalyzer/FortiManager in advanced settings page could allow an administrator to inject scripts in the add filter field.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-051",
+      "cve": "CVE-2015-7363",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: greater equal 5.0.0, less equal 5.0.12, fixed in [5.0.13, 5.2.3, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.12"
+                  },
+                  "fixed_in": [
+                    "5.0.13",
+                    "5.2.3",
+                    "5.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 5.2.0, less equal 5.2.2, fixed in [5.2.3, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.2"
+                  },
+                  "fixed_in": [
+                    "5.2.3",
+                    "5.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 5.0.0, less equal 5.0.11, fixed in [5.0.12, 5.2.3, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.11"
+                  },
+                  "fixed_in": [
+                    "5.0.12",
+                    "5.2.3",
+                    "5.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 5.2.0, less equal 5.2.2, fixed in [5.2.3, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.2"
+                  },
+                  "fixed_in": [
+                    "5.2.3",
+                    "5.4.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Access to another privileged administrator user's data"
+        }
+      ]
+    }
+  ],
+  "published": "2016-10-05T00:00:00Z",
+  "updated": "2016-10-05T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-051"
+}
+

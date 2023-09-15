@@ -1,0 +1,39 @@
+{
+  "id": "FG-IR-19-306",
+  "title": "XSS vulnerability in the URL of the FortiGateCloud Login Page",
+  "summary": "An improper neutralization of input vulnerability in the FortiGateCloud login page may allow a remote unauthenticated attacker to perform a reflected cross site scripting attack (XSS) via a specifically crafted login request.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-19-306",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiGate Cloud: equal 4.4, fixed in [20.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortigate_cloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "4.4"
+                  },
+                  "fixed_in": [
+                    "20.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:N/I:L/A:N/E:X/RL:X/RC:X"
+          },
+          "impact": "Unauthorized code execution"
+        }
+      ]
+    }
+  ],
+  "published": "2020-05-25T00:00:00Z",
+  "updated": "2020-05-25T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-19-306"
+}
+

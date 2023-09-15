@@ -1,0 +1,43 @@
+{
+  "id": "FG-IR-15-016",
+  "title": "\"POODLE has friends\" vulnerability",
+  "description": "The SSL-VPN feature of FortiOS 4.3.12 and lower only checks the first byte of the TLS MAC in the finished message. An attacker may intercept encrypted packets in transit and modifying their contents by changing the middle or the end of the MAC field in the TLS finished message.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-15-016",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 4.3.12, fixed in [4.3.13, 5.0.0, 5.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "4.3.12"
+                  },
+                  "fixed_in": [
+                    "4.3.13",
+                    "5.0.0",
+                    "5.2.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Man in the middle"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://vivaldi.net/en-US/blogs/entry/the-poodle-has-friends",
+      "url": "https://vivaldi.net/en-US/blogs/entry/the-poodle-has-friends"
+    }
+  ],
+  "published": "2015-07-15T00:00:00Z",
+  "updated": "2015-07-15T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-15-016"
+}
+

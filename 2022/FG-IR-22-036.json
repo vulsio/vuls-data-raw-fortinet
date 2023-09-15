@@ -1,0 +1,71 @@
+{
+  "id": "FG-IR-22-036",
+  "title": "FortiOS -- Inter-VDOM information leaking",
+  "summary": "An improper access control vulnerability [CWE-284] in FortiOS may allow an authenticated attacker with a restricted user profile to gather the checksum information about the other VDOMs via CLI commands.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-036",
+      "cve": "CVE-2022-23442",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.5, fixed in [7.0.6, 7.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.5"
+                  },
+                  "fixed_in": [
+                    "7.0.6",
+                    "7.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 6.4.8, fixed in [6.4.9, 7.0.6, 7.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.8"
+                  },
+                  "fixed_in": [
+                    "6.4.9",
+                    "7.0.6",
+                    "7.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.2.0, less equal 6.2.11, fixed in [6.4.9, 7.0.6, 7.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.11"
+                  },
+                  "fixed_in": [
+                    "6.4.9",
+                    "7.0.6",
+                    "7.2.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:X/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-284"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2022-08-02T00:00:00Z",
+  "updated": "2022-08-02T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-036"
+}
+

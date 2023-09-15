@@ -1,0 +1,53 @@
+{
+  "id": "FG-IR-16-050",
+  "title": "FortiOS Local Admin Password Hash Leak Vulnerability",
+  "summary": "A read-only administrator may have access to read-write administrators password hashes (not including super-admins) stored on the appliance via the webui REST API , and may therefore be able to crack them.",
+  "description": "A read-only administrator may have access to read-write administrators password hashes (not including super-admins) stored on the appliance via the webui REST API , and may therefore be able to crack them.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-050",
+      "cve": "CVE-2016-7542",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less equal 5.2.10, fixed in [5.2.11, 5.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.10"
+                  },
+                  "fixed_in": [
+                    "5.2.11",
+                    "5.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 5.4.1, fixed in [5.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.4.1"
+                  },
+                  "fixed_in": [
+                    "5.4.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.7,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:L/E:X/RL:X/RC:X"
+          },
+          "impact": "Information leak"
+        }
+      ]
+    }
+  ],
+  "published": "2016-12-02T00:00:00Z",
+  "updated": "2016-12-02T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-050"
+}
+

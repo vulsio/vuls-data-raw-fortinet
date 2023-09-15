@@ -1,0 +1,51 @@
+{
+  "id": "FG-IR-18-006",
+  "title": "FortiManager XSS vulnerability when view config under Revision History",
+  "summary": "A potential Cross-site Scripting (XSS) vulnerability exists in FortiManager: Displayed data is not sanitized when an administrator views the managed devices configuration, in the installation revision history of the GUI.The risk of successful exploitation is however low, because injection of malicious code needs to happen in the managed device’s CLI configurations, which are generally trusted.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-006",
+      "cve": "CVE-2018-1351",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: less equal 5.6.6, fixed in [5.6.7, 6.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.6.6"
+                  },
+                  "fixed_in": [
+                    "5.6.7",
+                    "6.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: equal 6.0.0, fixed in [6.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.0.0"
+                  },
+                  "fixed_in": [
+                    "6.0.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N/E:X/RL:X/RC:X"
+          },
+          "impact": "Cross-site Scripting (XSS)"
+        }
+      ]
+    }
+  ],
+  "published": "2018-06-22T00:00:00Z",
+  "updated": "2019-11-22T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-006"
+}
+

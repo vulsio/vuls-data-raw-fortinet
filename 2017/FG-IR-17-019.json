@@ -1,0 +1,211 @@
+{
+  "id": "FG-IR-17-019",
+  "title": "OpenSSL Security Advisory [26 Jan 2017]",
+  "summary": "The OpenSSL project released an advisory on Jan 26th, 2017, describing 3 Moderate, 1 Low severity vulnerabilities, as listed below: CVE-2017-3731: Truncated packet could crash via OOB readCVE-2017-3730: Bad (EC)DHE parameters cause a client crashCVE-2017-3732: BN_mod_exp may produce incorrect results on x86_64CVE-2016-7055: Montgomery multiplication may produce incorrect results",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-019",
+      "cve": "CVE-2016-7055",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP: less equal 5.4.2, fixed in [5.4.3, 5.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.2"
+                  },
+                  "fixed_in": [
+                    "5.4.3",
+                    "5.6.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.4.5, fixed in [5.4.6, 5.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.5"
+                  },
+                  "fixed_in": [
+                    "5.4.6",
+                    "5.6.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch: less equal 3.5.2, fixed in [3.5.3, 3.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "3.5.2"
+                  },
+                  "fixed_in": [
+                    "3.5.3",
+                    "3.6.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N/E:X/RL:X/RC:X"
+          },
+          "impact": "Denial of Service"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-019",
+      "cve": "CVE-2017-3730",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 5.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N/E:X/RL:X/RC:X"
+          },
+          "impact": "Denial of Service"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-019",
+      "cve": "CVE-2017-3731",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 5.4.2, fixed in [5.4.3, 5.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.2"
+                  },
+                  "fixed_in": [
+                    "5.4.3",
+                    "5.6.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP: less equal 5.4.2, fixed in [5.4.3, 5.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.2"
+                  },
+                  "fixed_in": [
+                    "5.4.3",
+                    "5.6.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch: less equal 3.5.2, fixed in [3.5.3, 3.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "3.5.2"
+                  },
+                  "fixed_in": [
+                    "3.5.3",
+                    "3.6.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N/E:X/RL:X/RC:X"
+          },
+          "impact": "Denial of Service"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-019",
+      "cve": "CVE-2017-3732",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 5.4.2, fixed in [5.4.3, 5.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.2"
+                  },
+                  "fixed_in": [
+                    "5.4.3",
+                    "5.6.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.4.5, fixed in [5.4.6, 5.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.5"
+                  },
+                  "fixed_in": [
+                    "5.4.6",
+                    "5.6.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch: less equal 3.5.2, fixed in [3.5.3, 3.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "3.5.2"
+                  },
+                  "fixed_in": [
+                    "3.5.3",
+                    "3.6.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N/E:X/RL:X/RC:X"
+          },
+          "impact": "Denial of Service"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://www.openssl.org/news/secadv/20170126.txt",
+      "url": "https://www.openssl.org/news/secadv/20170126.txt"
+    }
+  ],
+  "published": "2018-07-13T00:00:00Z",
+  "updated": "2018-07-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-019"
+}
+

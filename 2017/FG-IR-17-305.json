@@ -1,0 +1,76 @@
+{
+  "id": "FG-IR-17-305",
+  "title": "Stored XSS under CA and CRL certificate view page",
+  "summary": "Javascript code and HTML tags can be injected into the CN value of CA and CRL certificates via the import CA and CRL certificates feature of the GUI. The injected code may be executed when the GUI administrator views the CA certificate details and browses CRL certificates when CN values are rendered.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-305",
+      "cve": "CVE-2017-17541",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 5.6.4, fixed in [5.6.5, 6.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.6.4"
+                  },
+                  "fixed_in": [
+                    "5.6.5",
+                    "6.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: equal 6.0.0, fixed in [6.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.0.0"
+                  },
+                  "fixed_in": [
+                    "6.0.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: less equal 5.6.4, fixed in [5.6.5, 6.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.6.4"
+                  },
+                  "fixed_in": [
+                    "5.6.5",
+                    "6.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: equal 6.0.0, fixed in [6.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.0.0"
+                  },
+                  "fixed_in": [
+                    "6.0.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Cross-site Scripting (XSS)"
+        }
+      ]
+    }
+  ],
+  "published": "2018-07-05T00:00:00Z",
+  "updated": "2018-07-05T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-305"
+}
+

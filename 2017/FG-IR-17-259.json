@@ -1,0 +1,38 @@
+{
+  "id": "FG-IR-17-259",
+  "title": "FortiCloud XSS vulnerability in on-demand sandbox GUI",
+  "summary": "Before Dec 5th, 2017, a Cross-Site-Scripting (XSS) vulnerability in forticloud.com on-demand sandbox GUI may have allowed an authenticated user to inject arbitrary web code or HTML in the context of the victim's browser via the upload of a maliciously crafted file.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-259",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiCloud: less equal 3.2.0, fixed in [3.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "3.2.0"
+                  },
+                  "fixed_in": [
+                    "3.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Cross-site Scripting (XSS)"
+        }
+      ]
+    }
+  ],
+  "published": "2017-12-08T00:00:00Z",
+  "updated": "2017-12-08T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-259"
+}
+

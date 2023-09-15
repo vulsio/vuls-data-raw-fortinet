@@ -1,0 +1,41 @@
+{
+  "id": "FG-IR-21-084",
+  "title": "FortiPortal - Pervasive SQL injections",
+  "summary": "Multiple improper neutralization of special elements used in an SQL command vulnerabilities (CWE-89) in FortiPortal may allow an attacker with regular user's privileges to execute arbitrary commands on the underlying SQL database via specifically crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-21-084",
+      "cve": "CVE-2021-32590",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiPortal:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.4,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:P/RL:U/RC:C"
+          },
+          "impact": "Arbitrary code execution, information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2021-08-03T00:00:00Z",
+  "updated": "2021-08-03T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-21-084"
+}
+

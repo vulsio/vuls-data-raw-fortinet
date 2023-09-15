@@ -1,0 +1,54 @@
+{
+  "id": "FG-IR-22-260",
+  "title": "FortiNAC - Multiple Stored and Reflected XSS",
+  "summary": "Several improper neutralization of inputs during web page generation vulnerability [CWE-79] in FortiNAC may allow an authenticated attacker to perform several XSS attacks via crafted HTTP GET requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-260",
+      "cve": "CVE-2023-22638",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiNAC-F: less than 7.2.0, fixed in [7.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortinac-f:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "7.2.0"
+                  },
+                  "fixed_in": [
+                    "7.2.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiNAC: less than 9.4.2, fixed in [9.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "9.4.2"
+                  },
+                  "fixed_in": [
+                    "9.4.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.7,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:U/RC:C"
+          },
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-02-16T00:00:00Z",
+  "updated": "2023-02-16T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-260"
+}
+

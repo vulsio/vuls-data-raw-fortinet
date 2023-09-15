@@ -1,0 +1,67 @@
+{
+  "id": "FG-IR-20-229",
+  "title": "FortiProxy SSL VPN buffer overflow when parsing javascript href content",
+  "summary": "A heap buffer overflow vulnerability in the FortiProxy SSL VPN web portal may cause the SSL VPN web service termination for logged in users or potential remote code execution on FortiProxy. This happens when an authenticated user visits a specifically crafted proxied webpage and is due to a failure to handle Javascript HREF content properly.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-20-229",
+      "cve": "CVE-2018-13383",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiProxy:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiProxy:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiproxy-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L/E:F/RL:X/RC:X"
+          },
+          "impact": "denial of service, Remote Code Execution"
+        }
+      ]
+    }
+  ],
+  "published": "2021-02-03T00:00:00Z",
+  "updated": "2021-02-03T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-20-229"
+}
+

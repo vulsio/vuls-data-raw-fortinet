@@ -1,0 +1,55 @@
+{
+  "id": "FG-IR-19-248",
+  "title": "FortiOS HTTPD is vulnerable to a Stack-based Buffer Overflow vulnerability",
+  "summary": "A Stack-based Buffer Overflow vulnerability in the HTTPD daemon of FortiOS may allow an authenticated remote attacker to crash the service by sending a malformed PUT request to the server. Fortinet is not aware of any successful exploitation of this vulnerability that would lead to code execution.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-19-248",
+      "cve": "CVE-2019-17656",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.10, fixed in [6.0.11, 6.2.3, 6.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.10"
+                  },
+                  "fixed_in": [
+                    "6.0.11",
+                    "6.2.3",
+                    "6.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.2.0, less equal 6.2.2, fixed in [6.2.3, 6.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.2"
+                  },
+                  "fixed_in": [
+                    "6.2.3",
+                    "6.4.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Crash of the HTTPD service."
+        }
+      ]
+    }
+  ],
+  "published": "2020-10-01T00:00:00Z",
+  "updated": "2020-10-01T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-19-248"
+}
+

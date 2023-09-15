@@ -1,0 +1,44 @@
+{
+  "id": "FG-IR-20-191",
+  "title": "FSSO Windows DC Agent [FSSO] Insecure communication between DC agent and Collector",
+  "summary": "An improper authentication vulnerability [CWE-287] in FSSO Collector may allow an unauthenticated user to bypass any firewall authentication rule and access the protected network via sending specifically crafted UDP login notification packets.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-20-191",
+      "cve": "CVE-2021-26088",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FSSO: equal ANY",
+                  "cpe": "cpe:2.3:a:fortinet:fortinet_single_sign-on:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "ANY"
+                  }
+                },
+                {
+                  "description": "FSSO CA: equal ANY",
+                  "cpe": "cpe:2.3:a:fortinet:fsso_ca:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "ANY"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.7,
+            "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:C/C:L/I:L/A:L/E:P/RL:X/RC:X"
+          },
+          "impact": "Unauthorized Access"
+        }
+      ]
+    }
+  ],
+  "published": "2021-07-07T00:00:00Z",
+  "updated": "2021-07-07T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-20-191"
+}
+

@@ -1,0 +1,193 @@
+{
+  "id": "FG-IR-16-011",
+  "title": "FortiSwitch rest_admin account exposed under specific conditions",
+  "summary": "During an upgrade to version 3.4.1, a FortiSwitch device may let an attacker log in the rest_admin account without a password, if all the conditions below are met: * The FortiSwitch device is in FortiLink managed mode (not the default mode) * The FortiSwitch device does not have a management FortiGate, or is not authorized on its management FortiGate, or cannot reach its management FortiGate (network connectivity issue) * The FortiSwicth device was updated to 3.4.1 * The FortiSwitch device was rebooted at least a second time after having been upgraded Note that as soon as a connection between the FortiSwitch and its management FortiGate is established/authorized, the issue is not present. Note that the issue persists if the device is downgraded after having been upgraded to 3.4.1 (under the conditions above).",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-011",
+      "cve": "CVE-2016-4573",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch: equal 3.4.1, fixed in [3.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "3.4.1"
+                  },
+                  "fixed_in": [
+                    "3.4.2"
+                  ]
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiSwitch: equal FortiSwitch 108D-POE",
+                    "cpe": "cpe:2.3:h:fortinet:fortiswitch-108d-poe:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiSwitch: equal FortiSwitch 124D",
+                    "cpe": "cpe:2.3:h:fortinet:fortiswitch-124d:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiSwitch: equal FortiSwitch 124D-POE",
+                    "cpe": "cpe:2.3:h:fortinet:fortiswitch-124d-poe:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiSwitch: equal FortiSwitch 224D-POE",
+                    "cpe": "cpe:2.3:h:fortinet:fortiswitch-224d-poe:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiSwitch: equal FortiSwitch 224D-FPOE",
+                    "cpe": "cpe:2.3:h:fortinet:fortiswitch-224d-fpoe:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiSwitch: equal FortiSwitch 248D-POE",
+                    "cpe": "cpe:2.3:h:fortinet:fortiswitch-248d-poe:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiSwitch: equal FortiSwitch 248D-FPOE",
+                    "cpe": "cpe:2.3:h:fortinet:fortiswitch-248d-fpoe:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiSwitch: equal FortiSwitch 424D",
+                    "cpe": "cpe:2.3:h:fortinet:fortiswitch-424d:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiSwitch: equal FortiSwitch 424D-POE",
+                    "cpe": "cpe:2.3:h:fortinet:fortiswitch-424d-poe:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiSwitch: equal FortiSwitch 424D-FPOE",
+                    "cpe": "cpe:2.3:h:fortinet:fortiswitch-424d-fpoe:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiSwitch: equal FortiSwitch 448D",
+                    "cpe": "cpe:2.3:h:fortinet:fortiswitch-448d:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiSwitch: equal FortiSwitch 448D-POE",
+                    "cpe": "cpe:2.3:h:fortinet:fortiswitch-448d-poe:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiSwitch: equal FortiSwitch 448D-FPOE",
+                    "cpe": "cpe:2.3:h:fortinet:fortiswitch-448d-fpoe:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiSwitch: equal FortiSwitch 524D",
+                    "cpe": "cpe:2.3:h:fortinet:fortiswitch-524d:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiSwitch: equal FortiSwitch 524D-FPOE",
+                    "cpe": "cpe:2.3:h:fortinet:fortiswitch-524d-fpoe:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiSwitch: equal FortiSwitch 548D",
+                    "cpe": "cpe:2.3:h:fortinet:fortiswitch-548d:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiSwitch: equal FortiSwitch 548D-FPOE",
+                    "cpe": "cpe:2.3:h:fortinet:fortiswitch-548d-fpoe:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiSwitch: equal FortiSwitch 1024D",
+                    "cpe": "cpe:2.3:h:fortinet:fortiswitch-1024d:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiSwitch: equal FortiSwitch 1048D",
+                    "cpe": "cpe:2.3:h:fortinet:fortiswitch-1048d:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiSwitch: equal FortiSwitch 3032D",
+                    "cpe": "cpe:2.3:h:fortinet:fortiswitch-3032d:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiSwitch: equal FortiSwitch R-112D-POE",
+                    "cpe": "cpe:2.3:h:fortinet:fortiswitch-r-112d-poe:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "impact": "Remote administrative access"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://www.themissinglink.com.au/security/advisories/cve-2016-4573",
+      "url": "https://www.themissinglink.com.au/security/advisories/cve-2016-4573"
+    }
+  ],
+  "published": "2016-07-11T00:00:00Z",
+  "updated": "2016-07-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-011"
+}
+

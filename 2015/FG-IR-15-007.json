@@ -1,0 +1,65 @@
+{
+  "id": "FG-IR-15-007",
+  "title": "TLS FREAK Attack",
+  "description": "FREAK is an attack on SSL/TLS, which allows \"Man in the Middle\" attackers to decipher and alter HTTPS connections between a server supporting \"export-grade\" cipher suites and a vulnerable client. It consists in downgrading the connection's encryption from \"strong\" RSA to \"export-grade\" RSA, by leveraging a vulnerability (CVE-2015-0204) on the client side.The \"export-grade\" encryption is weak enough to be broken by the attacker, who can then decipher and alter the connection.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-15-007",
+      "cve": "CVE-2015-0204",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiMail: equal ANY",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "ANY"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less than 5.0.11, fixed in [5.0.11, 5.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.0.11"
+                  },
+                  "fixed_in": [
+                    "5.0.11",
+                    "5.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less than 5.2.3, fixed in [5.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "lt": "5.2.3"
+                  },
+                  "fixed_in": [
+                    "5.2.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://freakattack.com/",
+      "url": "https://freakattack.com/"
+    }
+  ],
+  "published": "2015-03-04T00:00:00Z",
+  "updated": "2015-03-04T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-15-007"
+}
+

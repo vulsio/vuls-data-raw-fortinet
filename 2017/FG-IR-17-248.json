@@ -1,0 +1,39 @@
+{
+  "id": "FG-IR-17-248",
+  "title": "FortiWebManager 5.8.0 improperly handles admin login access",
+  "summary": "FortiWebManager 5.8.0 fails to check the admin password, granting access regardless the provided string.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-248",
+      "cve": "CVE-2017-14189",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb Manager: equal 5.8.0, fixed in [5.8.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.8.0"
+                  },
+                  "fixed_in": [
+                    "5.8.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Improper Access Control"
+        }
+      ]
+    }
+  ],
+  "published": "2017-11-22T00:00:00Z",
+  "updated": "2017-11-22T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-248"
+}
+

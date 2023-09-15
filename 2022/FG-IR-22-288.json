@@ -1,0 +1,66 @@
+{
+  "id": "FG-IR-22-288",
+  "title": "FortiPresence - Traceback on Public Accessible Path",
+  "summary": "A lack of custom error pages vulnerability [CWE-756] in FortiPresence may allow an unauthenticated attacker with the ability to navigate to the login GUI to gain sensitive information via navigating to specfiic HTTP(s) paths.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-288",
+      "cve": "CVE-2023-27998",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiPresence: greater equal 1.0.0, less equal 1.0.0, fixed in [2.0.0]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipresence:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.0.0",
+                    "le": "1.0.0"
+                  },
+                  "fixed_in": [
+                    "2.0.0"
+                  ]
+                },
+                {
+                  "description": "FortiPresence: greater equal 1.1.0, less equal 1.1.1, fixed in [2.0.0]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipresence:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.1.0",
+                    "le": "1.1.1"
+                  },
+                  "fixed_in": [
+                    "2.0.0"
+                  ]
+                },
+                {
+                  "description": "FortiPresence: greater equal 1.2.0, less equal 1.2.1, fixed in [2.0.0]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipresence:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.2.0",
+                    "le": "1.2.1"
+                  },
+                  "fixed_in": [
+                    "2.0.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N/E:U/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-756"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2023-09-07T00:00:00Z",
+  "updated": "2023-09-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-288"
+}
+

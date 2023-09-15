@@ -1,0 +1,53 @@
+{
+  "id": "FG-IR-16-088",
+  "title": "FortiOS flow-mode detection bypass under certain conditions",
+  "summary": "A FortiGate configured to use flow-based protection will stop monitoring network sessions that are active when a scanning engine is reloaded after an update (nearly instantaneous process).This tends to impact long lived network sessions, with chances to be alive during and after an update, such as SMBv3 sessions.",
+  "description": "A FortiGate configured to use flow-based protection will stop monitoring network sessions that are active when a scanning engine is reloaded after an update (nearly instantaneous process).This tends to impact long lived network sessions, with chances to be alive during and after an update, such as SMBv3 sessions.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-088",
+      "cve": "CVE-2016-7541",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.0.0, less equal 5.0.14, fixed in [5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.14"
+                  },
+                  "fixed_in": [
+                    "5.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less equal 5.2.15, fixed in [5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.15"
+                  },
+                  "fixed_in": [
+                    "5.4.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.9,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N/E:U/RL:X/RC:X"
+          },
+          "impact": "Protection bypass"
+        }
+      ]
+    }
+  ],
+  "published": "2016-11-22T00:00:00Z",
+  "updated": "2016-11-22T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-088"
+}
+

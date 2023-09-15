@@ -1,0 +1,54 @@
+{
+  "id": "FG-IR-17-057",
+  "title": "FortiOS stored XSS vulnerability in the policy global-label parameter",
+  "summary": "FortiOS is subject to a Cross-Site Scripting vulnerability, due to an improperly sanitized parameter in a hidden CLI configuration setting named 'global-label' . This can however only be exploited by an administrator with write privileges.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-057",
+      "cve": "CVE-2017-3128",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.0.0, less equal 5.0.14, fixed in [5.2.11, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.14"
+                  },
+                  "fixed_in": [
+                    "5.2.11",
+                    "5.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less equal 5.2.10, fixed in [5.2.11, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.10"
+                  },
+                  "fixed_in": [
+                    "5.2.11",
+                    "5.4.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N/E:X/RL:X/RC:X"
+          },
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2017-05-17T00:00:00Z",
+  "updated": "2017-05-17T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-057"
+}
+

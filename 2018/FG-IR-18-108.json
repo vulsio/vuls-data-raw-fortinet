@@ -1,0 +1,98 @@
+{
+  "id": "FG-IR-18-108",
+  "title": "FortiClient local privilege escalation exploit chain",
+  "summary": "A researcher has disclosed several vulnerabilities against FortiClient for Windows, the combination of these vulnerabilities can turn into an exploit chain, which allows a user to gain system privileges on Microsoft Windows.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-108",
+      "cve": "CVE-2018-9191",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Windows: less equal 6.0.4, fixed in [6.0.5]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "le": "6.0.4"
+                  },
+                  "fixed_in": [
+                    "6.0.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.8,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:X/RL:X/RC:X"
+          },
+          "impact": "Local privilege escalation"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-18-108",
+      "cve": "CVE-2018-13368",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Windows: less equal 6.0.4, fixed in [6.0.5]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "le": "6.0.4"
+                  },
+                  "fixed_in": [
+                    "6.0.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.8,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:X/RL:X/RC:X"
+          },
+          "impact": "Local privilege escalation"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-18-108",
+      "cve": "CVE-2018-9193",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Windows: less equal 6.0.4, fixed in [6.0.5]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "le": "6.0.4"
+                  },
+                  "fixed_in": [
+                    "6.0.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.8,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:X/RL:X/RC:X"
+          },
+          "impact": "Local privilege escalation"
+        }
+      ]
+    }
+  ],
+  "published": "2018-12-22T00:00:00Z",
+  "updated": "2018-12-22T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-108"
+}
+

@@ -1,0 +1,73 @@
+{
+  "id": "FG-IR-17-053",
+  "title": "FortiOS admin privilege escalation via restoring configs",
+  "summary": "A privilege escalation vulnerability in FortiOS may allow admin users to elevate their profile to super_admin, via restoring modified configurations.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-053",
+      "cve": "CVE-2017-17544",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.4.13, fixed in [5.6.11, 6.0.7, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.13"
+                  },
+                  "fixed_in": [
+                    "5.6.11",
+                    "6.0.7",
+                    "6.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.10, fixed in [5.6.11, 6.0.7, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.10"
+                  },
+                  "fixed_in": [
+                    "5.6.11",
+                    "6.0.7",
+                    "6.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.6, fixed in [6.0.7, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.6"
+                  },
+                  "fixed_in": [
+                    "6.0.7",
+                    "6.2.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.3,
+            "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Privilege Escalation"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://kb.fortinet.com/kb/documentLink.do?externalID=FD45563",
+      "url": "https://kb.fortinet.com/kb/documentLink.do?externalID=FD45563"
+    }
+  ],
+  "published": "2019-11-14T00:00:00Z",
+  "updated": "2019-11-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-053"
+}
+

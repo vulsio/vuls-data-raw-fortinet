@@ -1,0 +1,48 @@
+{
+  "id": "FG-IR-13-016",
+  "title": "FortiAuthenticator Privilege Escalation Vulnerability",
+  "description": "Authenticated admin users may be able to obtain access to a system shell from the command line interface.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-13-016",
+      "cve": "CVE-2013-6990",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAuthenticator: greater equal 1.0.0, less equal 1.3.1, fixed in [3.0.0]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.0.0",
+                    "le": "1.3.1"
+                  },
+                  "fixed_in": [
+                    "3.0.0"
+                  ]
+                },
+                {
+                  "description": "FortiAuthenticator: greater equal 2.0.0, less equal 2.2.0, fixed in [3.0.0]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.0.0",
+                    "le": "2.2.0"
+                  },
+                  "fixed_in": [
+                    "3.0.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Privilege Escalation"
+        }
+      ]
+    }
+  ],
+  "published": "2013-12-13T00:00:00Z",
+  "updated": "2013-12-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-13-016"
+}
+

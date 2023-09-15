@@ -1,0 +1,43 @@
+{
+  "id": "FG-IR-16-095",
+  "title": "FortiClient privilege escalation vulnerability",
+  "summary": "A low privileged user may be able to execute arbitrary code by exploiting a FortiClientNamedPipe vulnerability.",
+  "description": "A low privileged user may be able to execute arbitrary code by exploiting a FortiClientNamedPipe vulnerability.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-095",
+      "cve": "CVE-2016-8493",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Windows: greater equal 5.4.1, less equal 5.4.2, fixed in [5.4.3, 5.6.0]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "5.4.1",
+                    "le": "5.4.2"
+                  },
+                  "fixed_in": [
+                    "5.4.3",
+                    "5.6.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.2,
+            "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L/E:F/RL:X/RC:X"
+          },
+          "impact": "Privilege escalation"
+        }
+      ]
+    }
+  ],
+  "published": "2017-10-31T00:00:00Z",
+  "updated": "2017-10-31T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-095"
+}
+

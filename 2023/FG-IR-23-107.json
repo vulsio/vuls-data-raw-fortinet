@@ -1,0 +1,94 @@
+{
+  "id": "FG-IR-23-107",
+  "title": "FortiADC - Command injection in diagnose system df CLI command",
+  "summary": "An improper neutralization of special elements used in an OS command vulnerability [CWE-78] in FortiADC CLI may allow a local and authenticated attacker to execute unauthorized commands via specifically crafted arguments in diagnose system df CLI command.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-107",
+      "cve": "CVE-2023-28000",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiADC: equal 7.1.0, fixed in [7.1.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.1.0"
+                  },
+                  "fixed_in": [
+                    "7.1.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 7.0.0, less equal 7.0.3, fixed in [7.0.4, 7.1.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.3"
+                  },
+                  "fixed_in": [
+                    "7.0.4",
+                    "7.1.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 6.2.0, less equal 6.2.4, fixed in [6.2.5, 7.0.4, 7.1.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.4"
+                  },
+                  "fixed_in": [
+                    "6.2.5",
+                    "7.0.4",
+                    "7.1.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 6.1.0, less equal 6.1.6, fixed in [6.2.5, 7.0.4, 7.1.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.1.0",
+                    "le": "6.1.6"
+                  },
+                  "fixed_in": [
+                    "6.2.5",
+                    "7.0.4",
+                    "7.1.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 6.0.0, less equal 6.0.4, fixed in [6.2.5, 7.0.4, 7.1.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.4"
+                  },
+                  "fixed_in": [
+                    "6.2.5",
+                    "7.0.4",
+                    "7.1.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.3,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:R"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-06-12T00:00:00Z",
+  "updated": "2023-06-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-107"
+}
+

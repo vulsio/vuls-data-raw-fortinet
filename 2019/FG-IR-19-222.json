@@ -1,0 +1,171 @@
+{
+  "id": "FG-IR-19-222",
+  "title": "Wind River VxWorks IPnet TCP/IP Stack Vulnerabilities (aka. URGENT/11)",
+  "summary": "11 zero day vulnerabilities (aka. URGENT/11) were disclosed in VxWorks® TCP/IP stack (IPnet):CVE-2019-12255 - TCP Urgent Pointer = 0 leads to integer underflow.CVE-2019-12256 - Stack overflow in the parsing of IPv4 packets’ IP options.CVE-2019-12257 - Heap overflow in DHCP Offer/Ack parsing inside ipdhcpc.CVE-2019-12258 - DoS of TCP connection via malformed TCP options.CVE-2019-12259 - DoS via NULL dereference in IGMP parsing.CVE-2019-12260 - TCP Urgent Pointer state confusion caused by malformed TCP AO option.CVE-2019-12261 - TCP Urgent Pointer state confusion during connect() to a remote host.CVE-2019-12262 - Handling of unsolicited Reverse ARP replies (logic flaw).CVE-2019-12263 - TCP Urgent Pointer state confusion due to a race condition.CVE-2019-12264 - Logic flaw in IPv4 assignment by ipdhcpc DHCP client.CVE-2019-12265 - IGMP information leak via IGMPv3 specific membership report.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-19-222",
+      "cve": "CVE-2019-12255",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Buffer Overflow, DoS, etc"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-222",
+      "cve": "CVE-2019-12256",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Buffer Overflow, DoS, etc"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-222",
+      "cve": "CVE-2019-12257",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Buffer Overflow, DoS, etc"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-222",
+      "cve": "CVE-2019-12258",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Buffer Overflow, DoS, etc"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-222",
+      "cve": "CVE-2019-12259",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Buffer Overflow, DoS, etc"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-222",
+      "cve": "CVE-2019-12260",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Buffer Overflow, DoS, etc"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-222",
+      "cve": "CVE-2019-12261",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Buffer Overflow, DoS, etc"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-222",
+      "cve": "CVE-2019-12262",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Buffer Overflow, DoS, etc"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-222",
+      "cve": "CVE-2019-12263",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Buffer Overflow, DoS, etc"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-222",
+      "cve": "CVE-2019-12264",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Buffer Overflow, DoS, etc"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-19-222",
+      "cve": "CVE-2019-12265",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Buffer Overflow, DoS, etc"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://armis.com/urgent11/",
+      "url": "https://armis.com/urgent11/"
+    }
+  ],
+  "published": "2019-08-26T00:00:00Z",
+  "updated": "2019-08-26T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-19-222"
+}
+

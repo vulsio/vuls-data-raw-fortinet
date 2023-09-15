@@ -1,0 +1,39 @@
+{
+  "id": "FG-IR-18-074",
+  "title": "Forgot password link doesn't expire after use",
+  "summary": "FortiCloud password reset link requested by the user takes one hour to expire even after password was changed successfully, thus allowing attackers to take over user's account if they somehow gain access to the reset link for the user's password.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-074",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiCloud: less equal 3.2.1, fixed in [3.3.0]",
+                  "cpe": "cpe:2.3:a:fortinet:forticloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "3.2.1"
+                  },
+                  "fixed_in": [
+                    "3.3.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.2,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:L/I:N/A:L/E:X/RL:X/RC:X"
+          },
+          "impact": "Improper Access Control"
+        }
+      ]
+    }
+  ],
+  "published": "2018-08-24T00:00:00Z",
+  "updated": "2018-08-24T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-074"
+}
+

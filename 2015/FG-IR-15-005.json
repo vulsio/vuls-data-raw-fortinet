@@ -1,0 +1,297 @@
+{
+  "id": "FG-IR-15-005",
+  "title": "Multiple products cross-site scripting vulnerabilities",
+  "summary": "The Web User Interface of FortiGate, FortiManager, FortiAnalyzer, FortiMail and FortiADC D models are vulnerable to reflected cross-site scripting vulnerabilities.Starting from FortiOS 5.2.0, three XSS are present in the sslvpn login page (CVE-2015-1880), user group (CVE-2014-8616) and the vpn template menus (CVE-2014-8616).Starting from FortiManager 5.0.3, there is a XSS located in the advanced dataset reports page when the FortiAnalyzer feature is activated (CVE-2015-3620).Starting from FortiAnalyzer 5.0.0 to 5.0.10 and 5.2.0 and 5.2.1, there is a XSS located in the advanced dataset reports page (CVE-2015-3620).All fortimail versions contains one XSS in web action quarantine release feature (CVE-2014-8617).Between versions 5.1.2 and 5.3.4 included, FortiWeb contains two XSS in the autolearn configuration page (CVE-2014-8619).Prior to version 4.2, FortiADC D models contains one XSS in the theme login page (CVE-2014-8618).",
+  "description": "The Web User Interface of FortiGate, FortiManager, FortiAnalyzer, FortiMail and FortiADC D models are vulnerable to reflected cross-site scripting vulnerabilities. Starting from FortiOS 5.2.0, three XSS are present in the sslvpn login page (CVE-2015-1880), user group (CVE-2014-8616) and the vpn template menus (CVE-2014-8616). Starting from FortiManager 5.0.3, there is a XSS located in the advanced dataset reports page when the FortiAnalyzer feature is activated (CVE-2015-3620). Starting from FortiAnalyzer 5.0.0 to 5.0.10 and 5.2.0 and 5.2.1, there is a XSS located in the advanced dataset reports page (CVE-2015-3620). All fortimail versions contains one XSS in web action quarantine release feature (CVE-2014-8617). Between versions 5.1.2 and 5.3.4 included, FortiWeb contains two XSS in the autolearn configuration page (CVE-2014-8619). Prior to version 4.2, FortiADC D models contains one XSS in the theme login page (CVE-2014-8618).",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-15-005",
+      "cve": "CVE-2014-8616",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less than 5.2.3, fixed in [5.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "lt": "5.2.3"
+                  },
+                  "fixed_in": [
+                    "5.2.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Cross-Site Scripting (reflected)"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-15-005",
+      "cve": "CVE-2014-8617",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiMail: less than 4.3.9, fixed in [4.3.9, 5.0.8, 5.1.5, 5.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "4.3.9"
+                  },
+                  "fixed_in": [
+                    "4.3.9",
+                    "5.0.8",
+                    "5.1.5",
+                    "5.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 5.0.0, less than 5.0.8, fixed in [5.0.8, 5.1.5, 5.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "lt": "5.0.8"
+                  },
+                  "fixed_in": [
+                    "5.0.8",
+                    "5.1.5",
+                    "5.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 5.1.0, less than 5.1.5, fixed in [5.1.5, 5.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.1.0",
+                    "lt": "5.1.5"
+                  },
+                  "fixed_in": [
+                    "5.1.5",
+                    "5.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 5.2.0, less than 5.2.3, fixed in [5.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "lt": "5.2.3"
+                  },
+                  "fixed_in": [
+                    "5.2.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Cross-Site Scripting (reflected)"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-15-005",
+      "cve": "CVE-2014-8618",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiADC: less than 4.2.0, fixed in [4.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "4.2.0"
+                  },
+                  "fixed_in": [
+                    "4.2.0"
+                  ]
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiADC: equal FortiADC 200D",
+                    "cpe": "cpe:2.3:h:fortinet:fortiadc-200d:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiADC: equal FortiADC 300D",
+                    "cpe": "cpe:2.3:h:fortinet:fortiadc-300d:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiADC: equal FortiADC 400D",
+                    "cpe": "cpe:2.3:h:fortinet:fortiadc-400d:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiADC: equal FortiADC 700D",
+                    "cpe": "cpe:2.3:h:fortinet:fortiadc-700d:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiADC: equal FortiADC 1500D",
+                    "cpe": "cpe:2.3:h:fortinet:fortiadc-1500d:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiADC: equal FortiADC 2000D",
+                    "cpe": "cpe:2.3:h:fortinet:fortiadc-2000d:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiADC: equal FortiADC 4000D",
+                    "cpe": "cpe:2.3:h:fortinet:fortiadc-4000d:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "impact": "Cross-Site Scripting (reflected)"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-15-005",
+      "cve": "CVE-2014-8619",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: greater equal 5.1.2, less equal 5.3.4, fixed in [5.3.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.1.2",
+                    "le": "5.3.4"
+                  },
+                  "fixed_in": [
+                    "5.3.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Cross-Site Scripting (reflected)"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-15-005",
+      "cve": "CVE-2015-1880",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less than 5.2.3, fixed in [5.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "lt": "5.2.3"
+                  },
+                  "fixed_in": [
+                    "5.2.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Cross-Site Scripting (reflected)"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-15-005",
+      "cve": "CVE-2015-3620",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: greater equal 5.0.0, less equal 5.0.10, fixed in [5.0.11, 5.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.10"
+                  },
+                  "fixed_in": [
+                    "5.0.11",
+                    "5.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 5.2.0, less equal 5.2.1, fixed in [5.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.1"
+                  },
+                  "fixed_in": [
+                    "5.2.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 5.0.3, less equal 5.0.10, fixed in [5.0.11, 5.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.3",
+                    "le": "5.0.10"
+                  },
+                  "fixed_in": [
+                    "5.0.11",
+                    "5.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 5.2.0, less equal 5.2.1, fixed in [5.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.1"
+                  },
+                  "fixed_in": [
+                    "5.2.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Cross-Site Scripting (reflected)"
+        }
+      ]
+    }
+  ],
+  "published": "2015-02-25T00:00:00Z",
+  "updated": "2015-02-25T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-15-005"
+}
+

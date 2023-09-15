@@ -1,0 +1,75 @@
+{
+  "id": "FG-IR-22-052",
+  "title": "FortiEDR - Denial of service due to folder access permission change",
+  "summary": "An improper control of a resource through its lifetime [CWE-664] vulnerability in FortiEDR Collector may allow a privileged attacker to make the application unresponsive via changing its root directory access permission.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-052",
+      "cve": "CVE-2022-23446",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiEDR: equal 4.0.0, fixed in [5.0.3]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiedr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "4.0.0"
+                  },
+                  "fixed_in": [
+                    "5.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiEDR: greater equal 4.1.0, less equal 4.1.1, fixed in [5.0.3]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiedr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.1.0",
+                    "le": "4.1.1"
+                  },
+                  "fixed_in": [
+                    "5.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiEDR: equal 4.2.2, fixed in [5.0.3]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiedr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "4.2.2"
+                  },
+                  "fixed_in": [
+                    "5.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiEDR: greater equal 5.0.0, less equal 5.0.2, fixed in [5.0.3]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiedr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.2"
+                  },
+                  "fixed_in": [
+                    "5.0.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-664"
+          ],
+          "impact": "Denial of service"
+        }
+      ]
+    }
+  ],
+  "published": "2022-04-05T00:00:00Z",
+  "updated": "2022-04-05T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-052"
+}
+

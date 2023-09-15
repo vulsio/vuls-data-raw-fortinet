@@ -1,0 +1,77 @@
+{
+  "id": "FG-IR-17-137",
+  "title": "FortiOS SSL Deep-Inspection possible Insecure Renegotiation",
+  "summary": "FortiOS SSL Deep-Inspection may enable insecure renegotiation between TLS clients and servers that support secure renegotiation, opening the door to potential Man-in-the-Middle attacks (CVE-2009-3555) against the TLS connection, where an attacker could inject arbitrary data in the connection (without however being able to decipher it).The fix enables secure renegotiation on the SSL Deep-Inspection when both the client and server support it.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-137",
+      "cve": "CVE-2009-3555",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.0.14, fixed in [5.2.13, 5.4.6, 5.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.0.14"
+                  },
+                  "fixed_in": [
+                    "5.2.13",
+                    "5.4.6",
+                    "5.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less equal 5.2.12, fixed in [5.2.13, 5.4.6, 5.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.12"
+                  },
+                  "fixed_in": [
+                    "5.2.13",
+                    "5.4.6",
+                    "5.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.4.0, less equal 5.4.5, fixed in [5.4.6, 5.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.5"
+                  },
+                  "fixed_in": [
+                    "5.4.6",
+                    "5.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 5.6.0, fixed in [5.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.6.0"
+                  },
+                  "fixed_in": [
+                    "5.6.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L/E:X/RL:X/RC:X"
+          },
+          "impact": "Man-in-the-Middle (MitM) Attacks"
+        }
+      ]
+    }
+  ],
+  "published": "2017-11-03T00:00:00Z",
+  "updated": "2017-11-03T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-137"
+}
+

@@ -1,0 +1,53 @@
+{
+  "id": "FG-IR-17-073",
+  "title": "FortiOS IKE VendorID version information disclosure",
+  "summary": "The FortiOS IKE packets which include the Vendor ID embed the FortiOS build version number.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-073",
+      "cve": "CVE-2017-3130",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.0.0, less equal 5.4.4, fixed in [5.2.12, 5.4.5, 5.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.4.4"
+                  },
+                  "fixed_in": [
+                    "5.2.12",
+                    "5.4.5",
+                    "5.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 5.6.0, fixed in [5.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.6.0"
+                  },
+                  "fixed_in": [
+                    "5.6.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N/E:X/RL:X/RC:X"
+          },
+          "impact": "Information Disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2017-08-11T00:00:00Z",
+  "updated": "2017-08-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-073"
+}
+

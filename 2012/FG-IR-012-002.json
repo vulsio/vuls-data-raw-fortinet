@@ -1,0 +1,43 @@
+{
+  "id": "FG-IR-012-002",
+  "title": "Potential Policy Bypass in FortiWeb Web Application Firewall",
+  "summary": "On May 2, 2012 a policy bypass vulnerability was publicly disclosed against Fortinet's FortiWeb Web Application Firewall. This vulnerability may exist if the unit is not configured to inspect and drop malformed / oversized requests. FortiWeb units have been protected against this vulnerability if the proper configuration is in place (see workaround).",
+  "description": "On May 2, 2012 a policy bypass vulnerability was publicly disclosed against Fortinet's FortiWeb Web Application Firewall. This vulnerability may exist if the unit is not configured to inspect and drop malformed / oversized requests. FortiWeb units have been protected against this vulnerability if the proper configuration is in place (see workaround).",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-012-002",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: less equal 4.3.6",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "4.3.6"
+                  }
+                }
+              ]
+            }
+          ],
+          "impact": "Policy Bypass"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "Bugtraq: <a href=\"http://seclists.org/bugtraq/2012/May/14\">http://seclists.org/bugtraq/2012/May/14</a>",
+      "url": "Bugtraq: <a href=\"http://seclists.org/bugtraq/2012/May/14\">http://seclists.org/bugtraq/2012/May/14</a>"
+    },
+    {
+      "description": "Discovered By: Geffrey Velasquez at BINAR10 S.A.C.",
+      "url": "Discovered By: Geffrey Velasquez at BINAR10 S.A.C."
+    }
+  ],
+  "published": "2012-05-04T00:00:00Z",
+  "updated": "2012-05-04T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-012-002"
+}
+

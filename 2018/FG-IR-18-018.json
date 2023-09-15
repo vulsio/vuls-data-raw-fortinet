@@ -1,0 +1,40 @@
+{
+  "id": "FG-IR-18-018",
+  "title": "Format String Vulnerability in SSH username",
+  "summary": "There is a format string vulnerability in the SSH username handling when connecting to FortiOS 5.6.0, that may lead to memory corruption.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-018",
+      "cve": "CVE-2018-1352",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: equal 5.6.0, fixed in [5.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.6.0"
+                  },
+                  "fixed_in": [
+                    "5.6.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L/E:X/RL:X/RC:X"
+          },
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2019-01-11T00:00:00Z",
+  "updated": "2019-01-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-018"
+}
+

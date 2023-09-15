@@ -1,0 +1,139 @@
+{
+  "id": "FG-IR-19-037",
+  "title": "FortiGate default configuration does not verify the LDAP server identity.",
+  "summary": "A Default Configuration vulnerability in FortiOS may allow an unauthenticated attacker on the same subnet to intercept sensitive information by impersonating the LDAP server.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-19-037",
+      "cve": "CVE-2019-5591",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 4.0.0, less equal 4.0.4, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "4.0.4"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 4.1.0, less equal 4.1.11, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.1.0",
+                    "le": "4.1.11"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 4.2.0, less equal 4.2.16, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.2.0",
+                    "le": "4.2.16"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 4.3.0, less equal 4.3.19, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.3.0",
+                    "le": "4.3.19"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.0.0, less equal 5.0.14, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.14"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less equal 5.2.15, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.15"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.4.0, less equal 5.4.13, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.13"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.13, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.13"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.14, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.14"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 6.2.0, fixed in [6.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.2.0"
+                  },
+                  "fixed_in": [
+                    "6.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Information Disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2019-07-26T00:00:00Z",
+  "updated": "2019-07-26T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-19-037"
+}
+

@@ -1,0 +1,42 @@
+{
+  "id": "FG-IR-15-012",
+  "title": "CVE-2015-3456 \"VENOM\" vulnerability",
+  "description": "The VENOM (Virtualized Environment Neglected Operations Manipulation) vulnerability impacts popular virtualization platforms, including QEMU, Xen, KVM, and Oracle's VirtualBox. It consists in a buffer overflow condition in the FDC (Floppy Disk Controller) emulation code. Fortinet virtual appliances including FortiOS, FortiManager, FortiAnalyzer and any other product running on Hyper-V, Xen and KVM are not affected.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-15-012",
+      "cve": "CVE-2015-3456",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: less equal 2.0.2, fixed in [2.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "2.0.2"
+                  },
+                  "fixed_in": [
+                    "2.0.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Guest VM DoS and VM escape"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "http://venom.crowdstrike.com",
+      "url": "http://venom.crowdstrike.com"
+    }
+  ],
+  "published": "2015-05-19T00:00:00Z",
+  "updated": "2015-05-19T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-15-012"
+}
+

@@ -1,0 +1,41 @@
+{
+  "id": "FG-IR-22-313",
+  "title": "FortiPortal - XSS observed on policy column settings",
+  "summary": "An improper neutralization of input during web page generation vulnerability [CWE-79] in FortiPortal management interface may allow a remote authenticated attacker to perform a stored cross site scripting (XSS) attack via sending request with specially crafted columnindex parameter.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-313",
+      "cve": "CVE-2022-41336",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiPortal:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H/E:F/RL:X/RC:C"
+          },
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-01-03T00:00:00Z",
+  "updated": "2023-01-03T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-313"
+}
+

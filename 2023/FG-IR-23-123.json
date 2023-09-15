@@ -1,0 +1,79 @@
+{
+  "id": "FG-IR-23-123",
+  "title": "FortiAP-U - Arbitrary file listing and deletion through the  CLI",
+  "summary": "An incomplete filtering of one or more instances of special elements vulnerability [CWE-792] in the command line interpreter of FortiAP-U may allow an authenticated attacker to list and delete arbitrary files and directory via specially crafted command arguments.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-123",
+      "cve": "CVE-2023-36634",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP-U: greater equal 5.4.0, less equal 5.4.6, fixed in [6.2.6, 7.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-u:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.6"
+                  },
+                  "fixed_in": [
+                    "6.2.6",
+                    "7.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiAP-U: greater equal 6.0.0, less equal 6.0.4, fixed in [6.2.6, 7.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-u:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.4"
+                  },
+                  "fixed_in": [
+                    "6.2.6",
+                    "7.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiAP-U: greater equal 6.2.0, less equal 6.2.5, fixed in [6.2.6, 7.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-u:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.5"
+                  },
+                  "fixed_in": [
+                    "6.2.6",
+                    "7.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiAP-U: equal 7.0.0, fixed in [7.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-u:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.0.0"
+                  },
+                  "fixed_in": [
+                    "7.0.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.5,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H/E:P/RL:X/RC:R"
+          },
+          "cwe": [
+            "CWE-792"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2023-09-01T00:00:00Z",
+  "updated": "2023-09-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-123"
+}
+

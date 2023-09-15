@@ -1,0 +1,82 @@
+{
+  "id": "FG-IR-18-383",
+  "title": "FortiOS multiple pre-auth XSS vulnerabilities on SSL VPN",
+  "summary": "Failure to sanitize the error or message handling parameters in the SSL VPN web portal may allow an attacker to perform a Cross-site Scripting (XSS) attack.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-383",
+      "cve": "CVE-2018-13380",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.2.15, fixed in [5.4.13, 5.6.8, 6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.2.15"
+                  },
+                  "fixed_in": [
+                    "5.4.13",
+                    "5.6.8",
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.4.0, less equal 5.4.12, fixed in [5.4.13, 5.6.8, 6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.12"
+                  },
+                  "fixed_in": [
+                    "5.4.13",
+                    "5.6.8",
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.7, fixed in [5.6.8, 6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.7"
+                  },
+                  "fixed_in": [
+                    "5.6.8",
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.4, fixed in [6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.4"
+                  },
+                  "fixed_in": [
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Cross-site scripting (XSS)"
+        }
+      ]
+    }
+  ],
+  "published": "2019-05-24T00:00:00Z",
+  "updated": "2019-11-26T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-383"
+}
+

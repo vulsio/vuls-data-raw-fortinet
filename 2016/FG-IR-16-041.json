@@ -1,0 +1,50 @@
+{
+  "id": "FG-IR-16-041",
+  "title": "FortiClient SSLVPN Linux - Root privilege escalation with subproc",
+  "summary": "The first run of the FortiClient SSLVPN script results in the subproc file becoming suid & root owned binary. The issue lays in the lack of any check if this is the right file that the ownership and suid flag should be granted to. Replacement of this file with another appropriate file could result in its execution with root privilege.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-041",
+      "cve": "CVE-2016-8497",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient SSL VPN for Linux: equal ANY",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_ssl_vpn:*:*:*:*:*:linux:*:*",
+                  "affected": {
+                    "eq": "ANY"
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiOS: less equal 5.4.3, fixed in [5.4.4]",
+                    "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "le": "5.4.3"
+                    },
+                    "fixed_in": [
+                      "5.4.4"
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2017-04-05T00:00:00Z",
+  "updated": "2017-04-05T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-041"
+}
+

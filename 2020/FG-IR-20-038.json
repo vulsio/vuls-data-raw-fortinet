@@ -1,0 +1,67 @@
+{
+  "id": "FG-IR-20-038",
+  "title": "Privilege Escalation observed in FortiNAC by exploiting the SUDO privileges",
+  "summary": "A privilege escalation vulnerability in FortiNAC may allow an admin user to escalate the privileges to root by abusing the sudo privileges.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-20-038",
+      "cve": "CVE-2021-24011",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiNAC:",
+                  "cpe": "cpe:2.3:a:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiNAC:",
+                    "cpe": "cpe:2.3:o:fortinet:fortinac:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiNAC:",
+                      "cpe": "cpe:2.3:h:fortinet:fortinac-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.2,
+            "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L/E:F/RL:X/RC:X"
+          },
+          "impact": "Escalation of Privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2021-05-05T00:00:00Z",
+  "updated": "2021-05-05T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-20-038"
+}
+

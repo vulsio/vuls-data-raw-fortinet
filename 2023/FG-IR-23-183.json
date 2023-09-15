@@ -1,0 +1,85 @@
+{
+  "id": "FG-IR-23-183",
+  "title": "FortiOS/FortiProxy - Proxy mode with deep inspection - Stack-based buffer overflow",
+  "summary": "A stack-based overflow vulnerability [CWE-124] in FortiOS & FortiProxy may allow a remote attacker to execute arbitrary code or command via crafted packets reaching proxy policies or firewall policies with proxy mode alongside SSL deep packet inspection.   Workaround: Disable HTTP/2 support on SSL inspection profiles used by proxy policies or firewall policies with proxy mode. Example with custom-deep-inspection profile: config firewall ssl-ssh-profile    edit \"custom-deep-inspection\"       set supported-alpn http1-1    next end https://docs.fortinet.com/document/fortigate/7.0.0/new-features/710924/http-2-support-in-proxy-mode-ssl-inspection",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-183",
+      "cve": "CVE-2023-33308",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.10, fixed in [7.0.11, 7.2.4, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.10"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "7.2.4",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less equal 7.2.3, fixed in [7.2.4, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.3"
+                  },
+                  "fixed_in": [
+                    "7.2.4",
+                    "7.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy: greater equal 7.0.0, less equal 7.0.9, fixed in [7.0.10, 7.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.9"
+                  },
+                  "fixed_in": [
+                    "7.0.10",
+                    "7.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.2.0, less equal 7.2.2, fixed in [7.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.2"
+                  },
+                  "fixed_in": [
+                    "7.2.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.8,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-124"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-07-11T00:00:00Z",
+  "updated": "2023-07-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-183"
+}
+

@@ -1,0 +1,41 @@
+{
+  "id": "FG-IR-17-279",
+  "title": "FortiWeb's cookie tampering protection can be bypassed by erasing the FortiWeb session cookie",
+  "summary": "An improper access control vulnerability in FortiWeb's Signed Security mode may allow an attacker to disable the cookie tampering protection offered by FortiWeb (to sites FortiWeb protects), via deleting FortiWeb's session cookie.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-279",
+      "cve": "CVE-2017-14191",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: greater equal 5.6.0, less than 6.1.0, fixed in [6.1.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "lt": "6.1.0"
+                  },
+                  "fixed_in": [
+                    "6.1.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Improper Access Control"
+        }
+      ]
+    }
+  ],
+  "published": "2018-03-06T00:00:00Z",
+  "updated": "2019-04-01T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-279"
+}
+

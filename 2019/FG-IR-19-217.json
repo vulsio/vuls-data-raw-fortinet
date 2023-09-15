@@ -1,0 +1,101 @@
+{
+  "id": "FG-IR-19-217",
+  "title": "FortiOS SSL VPN user credential plaintext storage",
+  "summary": "A cleartext storage in a file or on disk (CWE-313) vulnerability in FortiOS SSL VPN may allow an attacker to retrieve a logged-in SSL VPN user's credentials should that attacker be able to read the session file stored on the targeted device's system.To successfully exploit this weakness, another unrelated weakness (eg: a system file leaking vulnerability) would therefore need to be exploited first.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-19-217",
+      "cve": "CVE-2019-17655",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less equal 5.2.15, fixed in [5.6.14, 6.0.10, 6.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.15"
+                  },
+                  "fixed_in": [
+                    "5.6.14",
+                    "6.0.10",
+                    "6.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.4.0, less equal 5.4.13, fixed in [5.6.14, 6.0.10, 6.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.13"
+                  },
+                  "fixed_in": [
+                    "5.6.14",
+                    "6.0.10",
+                    "6.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.13, fixed in [5.6.14, 6.0.10, 6.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.13"
+                  },
+                  "fixed_in": [
+                    "5.6.14",
+                    "6.0.10",
+                    "6.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.9, fixed in [6.0.10, 6.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.9"
+                  },
+                  "fixed_in": [
+                    "6.0.10",
+                    "6.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.2.0, less equal 6.2.2, fixed in [6.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.2"
+                  },
+                  "fixed_in": [
+                    "6.2.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-313"
+          ],
+          "impact": "Information Disclosure"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://blog.orange.tw/2019/08/attacking-ssl-vpn-part-2-breaking-the-fortigate-ssl-vpn.html",
+      "url": "https://blog.orange.tw/2019/08/attacking-ssl-vpn-part-2-breaking-the-fortigate-ssl-vpn.html"
+    }
+  ],
+  "published": "2021-09-07T00:00:00Z",
+  "updated": "2021-09-07T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-19-217"
+}
+

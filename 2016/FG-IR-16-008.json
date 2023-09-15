@@ -1,0 +1,56 @@
+{
+  "id": "FG-IR-16-008",
+  "title": "RSA-CRT key leak under certain conditions",
+  "summary": "FortiOS now includes for all SSL libraries a countermeasure against Lenstra's fault attack on RSA-CRT optimization when a RSA signature is corrupted.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-008",
+      "cve": "CVE-2015-5738",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less than 5.0.13, fixed in [5.0.13, 5.2.6, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "5.0.13"
+                  },
+                  "fixed_in": [
+                    "5.0.13",
+                    "5.2.6",
+                    "5.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less than 5.2.6, fixed in [5.2.6, 5.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "lt": "5.2.6"
+                  },
+                  "fixed_in": [
+                    "5.2.6",
+                    "5.4.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Man in the middle"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://people.redhat.com/~fweimer/rsa-crt-leaks.pdf",
+      "url": "https://people.redhat.com/~fweimer/rsa-crt-leaks.pdf"
+    }
+  ],
+  "published": "2016-05-16T00:00:00Z",
+  "updated": "2016-05-16T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-008"
+}
+

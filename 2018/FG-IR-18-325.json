@@ -1,0 +1,68 @@
+{
+  "id": "FG-IR-18-325",
+  "title": "Uninitialized memory buffer leak in FortiOS explicit web proxy",
+  "summary": "An uninitialized memory buffer leak exists in FortiOS web proxy's disclaimer response web pages, potentially causing sensitive data to be displayed in the HTTP response.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-325",
+      "cve": "CVE-2018-13376",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.2.12, less equal 5.2.15, fixed in [5.4.8, 5.6.4, 6.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.12",
+                    "le": "5.2.15"
+                  },
+                  "fixed_in": [
+                    "5.4.8",
+                    "5.6.4",
+                    "6.0.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.4.6, less equal 5.4.7, fixed in [5.4.8, 5.6.4, 6.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.6",
+                    "le": "5.4.7"
+                  },
+                  "fixed_in": [
+                    "5.4.8",
+                    "5.6.4",
+                    "6.0.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.6.1, less equal 5.6.3, fixed in [5.6.4, 6.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.1",
+                    "le": "5.6.3"
+                  },
+                  "fixed_in": [
+                    "5.6.4",
+                    "6.0.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Information Disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2018-11-22T00:00:00Z",
+  "updated": "2018-11-22T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-325"
+}
+

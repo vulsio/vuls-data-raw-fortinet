@@ -1,0 +1,50 @@
+{
+  "id": "FG-IR-16-069",
+  "title": "FortiClient SSLVPN Linux - Arbitrary write to log file",
+  "summary": "The first launch of FortiClient SSLVPN Linux creates a log file without any prior check. By previously creating a symbolic or hard link with the name of the log file to any file in the filesystem, an attacker may smash the latter existing file. This is due to the fact that the first launch of FortiClient SSLVPN Linux will then add log content to the said file.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-069",
+      "cve": "CVE-2016-8496",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient SSL VPN for Linux: equal ANY",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_ssl_vpn:*:*:*:*:*:linux:*:*",
+                  "affected": {
+                    "eq": "ANY"
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiOS: less equal 5.4.2, fixed in [5.4.3]",
+                    "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "le": "5.4.2"
+                    },
+                    "fixed_in": [
+                      "5.4.3"
+                    ]
+                  }
+                ]
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Potential execution of unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2017-04-05T00:00:00Z",
+  "updated": "2017-04-05T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-069"
+}
+

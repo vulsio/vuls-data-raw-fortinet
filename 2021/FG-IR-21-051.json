@@ -1,0 +1,112 @@
+{
+  "id": "FG-IR-21-051",
+  "title": "FortiOS - Hardcoded SSLVPN cookie encryption key",
+  "summary": "A use of hard-coded cryptographic key vulnerability [CWE 321] in FortiOS SSLVPN may allow an attacker to retrieve the key by reverse engineering.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-21-051",
+      "cve": "CVE-2021-26108",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.13, fixed in [5.6.14, 6.0.13, 6.2.10, 6.4.6, 7.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.13"
+                  },
+                  "fixed_in": [
+                    "5.6.14",
+                    "6.0.13",
+                    "6.2.10",
+                    "6.4.6",
+                    "7.0.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.12, fixed in [6.0.13, 6.2.10, 6.4.6, 7.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.12"
+                  },
+                  "fixed_in": [
+                    "6.0.13",
+                    "6.2.10",
+                    "6.4.6",
+                    "7.0.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.2.0, less equal 6.2.8, fixed in [6.2.10, 6.4.6, 7.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.8"
+                  },
+                  "fixed_in": [
+                    "6.2.10",
+                    "6.4.6",
+                    "7.0.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 6.4.5, fixed in [6.4.6, 7.0.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.5"
+                  },
+                  "fixed_in": [
+                    "6.4.6",
+                    "7.0.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS-6K7K: greater equal 6.2.0, less equal 6.2.6, fixed in [6.2.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios-6k7k:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.6"
+                  },
+                  "fixed_in": [
+                    "6.2.7"
+                  ]
+                },
+                {
+                  "description": "FortiOS-6K7K: equal 6.4.2, fixed in [6.2.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios-6k7k:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.4.2"
+                  },
+                  "fixed_in": [
+                    "6.2.7"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N/E:F/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-321"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2021-12-07T00:00:00Z",
+  "updated": "2021-12-07T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-21-051"
+}
+

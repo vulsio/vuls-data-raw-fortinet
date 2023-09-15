@@ -1,0 +1,47 @@
+{
+  "id": "FG-IR-19-186",
+  "title": "FortiOS DRBG insufficient entropy",
+  "summary": "FortiGate models which do not contain and embedded TRNG may suffer from insufficient entropy (\"seed\") in the CTR DRBG random data software generator, in their default configuration.Insufficient randomness of the software source used to seed FortiOS' random number generator enables theoretical and experimental attacks. When FortiOS acts as a TLS client with an RSA handshake and mutual ECDSA authentication, it may be possible to recover the long term ECDSA secret via the help of flush+reload side channel attacks, henceforth breaking the TLS connection's confidentiality.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-19-186",
+      "cve": "CVE-2019-15703",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.0.3, less equal 5.0.5, fixed in [5.0.10]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.3",
+                    "le": "5.0.5"
+                  },
+                  "fixed_in": [
+                    "5.0.10"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Insufficient Entropy"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://security.cohney.info/blackswans/",
+      "url": "https://security.cohney.info/blackswans/"
+    }
+  ],
+  "published": "2020-02-13T00:00:00Z",
+  "updated": "2020-02-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-19-186"
+}
+

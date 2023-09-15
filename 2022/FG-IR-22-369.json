@@ -1,0 +1,83 @@
+{
+  "id": "FG-IR-22-369",
+  "title": "FortiOS - Path traversal in execute command",
+  "summary": "A improper limitation of a pathname to a restricted directory vulnerability ('path traversal') [CWE-22] in FortiOS may allow a privileged attacker to read and write arbitrary files via crafted CLI commands.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-369",
+      "cve": "CVE-2022-41328",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less than 6.2.14, fixed in [6.2.14, 6.4.12, 7.0.10, 7.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "lt": "6.2.14"
+                  },
+                  "fixed_in": [
+                    "6.2.14",
+                    "6.4.12",
+                    "7.0.10",
+                    "7.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less than 6.4.12, fixed in [6.4.12, 7.0.10, 7.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "lt": "6.4.12"
+                  },
+                  "fixed_in": [
+                    "6.4.12",
+                    "7.0.10",
+                    "7.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less than 7.0.10, fixed in [7.0.10, 7.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "lt": "7.0.10"
+                  },
+                  "fixed_in": [
+                    "7.0.10",
+                    "7.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less than 7.2.4, fixed in [7.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "lt": "7.2.4"
+                  },
+                  "fixed_in": [
+                    "7.2.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.5,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-22"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-03-07T00:00:00Z",
+  "updated": "2023-03-07T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-369"
+}
+

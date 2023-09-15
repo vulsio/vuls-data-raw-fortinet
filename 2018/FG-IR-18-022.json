@@ -1,0 +1,75 @@
+{
+  "id": "FG-IR-18-022",
+  "title": "OpenRedirect in Malicious Generated PDF Document on FortiAnalyzer and FortiManager",
+  "summary": "An open redirect vulnerability exists in FortiAnalyzer and FortiManager when a user of the GUI is converting an HTML table to a PDF document via the FortiView feature, due to lack of user input sanitization.An attacker may be able to social engineer a user of the FortiAnalyzer/FortiManager GUI into generating a PDF file containing malicious URLs.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-022",
+      "cve": "CVE-2018-1355",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 5.6.5, fixed in [5.6.6, 6.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.6.5"
+                  },
+                  "fixed_in": [
+                    "5.6.6",
+                    "6.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: equal 6.0.0, fixed in [6.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.0.0"
+                  },
+                  "fixed_in": [
+                    "6.0.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: less equal 5.6.5, fixed in [5.6.6, 6.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.6.5"
+                  },
+                  "fixed_in": [
+                    "5.6.6",
+                    "6.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: equal 6.0.0, fixed in [6.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.0.0"
+                  },
+                  "fixed_in": [
+                    "6.0.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Open redirection"
+        }
+      ]
+    }
+  ],
+  "published": "2018-06-22T00:00:00Z",
+  "updated": "2018-09-26T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-022"
+}
+

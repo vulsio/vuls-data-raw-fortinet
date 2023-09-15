@@ -1,0 +1,54 @@
+{
+  "id": "FG-IR-22-018",
+  "title": "FortiEDR - Hardcoded AES key enable disabling local Collector",
+  "summary": "A use of hard-coded cryptographic key vulnerability [CWE-321] in the registration mechanism of FortiEDR collectors may allow a local attacker to disable and uninstall the collectors from the end-points within the same deployment.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-018",
+      "cve": "CVE-2022-23440",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiEDR: equal 4.0.0, fixed in [5.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiedr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "4.0.0"
+                  },
+                  "fixed_in": [
+                    "5.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiEDR: greater equal 5.0.0, less equal 5.0.2, fixed in [5.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiedr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.2"
+                  },
+                  "fixed_in": [
+                    "5.0.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.4,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-321"
+          ],
+          "impact": "Denial of service"
+        }
+      ]
+    }
+  ],
+  "published": "2022-04-05T00:00:00Z",
+  "updated": "2022-04-05T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-018"
+}
+

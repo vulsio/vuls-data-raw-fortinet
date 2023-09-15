@@ -1,0 +1,36 @@
+{
+  "id": "FG-IR-14-001",
+  "title": "FortiWeb Stored Cross-Site Scripting Vulnerability",
+  "description": "Authenticated administrative users can store injected Javascript content into a specific field on the web management interface. This Javascript may be evaluated in the context of another administrative user browsing to the affected web page.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-14-001",
+      "cve": "CVE-2014-1458",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: less equal 5.0.3, fixed in [5.0.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.0.3"
+                  },
+                  "fixed_in": [
+                    "5.0.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Privilege Elevation"
+        }
+      ]
+    }
+  ],
+  "published": "2014-01-17T00:00:00Z",
+  "updated": "2014-01-17T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-14-001"
+}
+

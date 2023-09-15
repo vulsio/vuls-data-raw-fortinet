@@ -1,0 +1,110 @@
+{
+  "id": "FG-IR-012-003",
+  "title": "Potential Buffer Overflow During HTTP Session Authentication",
+  "summary": "Fortinet has verified a potential issue during HTTP session authentication that could lead to a buffer overflow condition on the FortiGate unit when properly exploited. An attacker may craft a malicious HTTP request which exploits a variable in the HTTP header causing the buffer overflow condition when parsed by the FortiGate unit. When properly crafted, it may result in control of code flow execution.",
+  "description": "Fortinet has verified a potential issue during HTTP session authentication that could lead to a buffer overflow condition on the FortiGate unit when properly exploited. An attacker may craft a malicious HTTP request which exploits a variable in the HTTP header causing the buffer overflow condition when parsed by the FortiGate unit. When properly crafted, it may result in control of code flow execution.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-012-003",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 4.2.0, less equal 4.2.16",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.2.0",
+                    "le": "4.2.16"
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiGate: equal FortiGate 60C",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-60c:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 4.3.0, less than 4.3.8, fixed in [4.3.9]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.3.0",
+                    "lt": "4.3.8"
+                  },
+                  "fixed_in": [
+                    "4.3.9"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 5.0.0:beta1, fixed in [5.0.0:beta6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.0.0:beta1"
+                  },
+                  "fixed_in": [
+                    "5.0.0:beta6"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 5.0.0:beta2, fixed in [5.0.0:beta6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.0.0:beta2"
+                  },
+                  "fixed_in": [
+                    "5.0.0:beta6"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 5.0.0:beta3, fixed in [5.0.0:beta6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.0.0:beta3"
+                  },
+                  "fixed_in": [
+                    "5.0.0:beta6"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 5.0.0:beta4, fixed in [5.0.0:beta6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.0.0:beta4"
+                  },
+                  "fixed_in": [
+                    "5.0.0:beta6"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 5.0.0:beta5, fixed in [5.0.0:beta6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.0.0:beta5"
+                  },
+                  "fixed_in": [
+                    "5.0.0:beta6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Remote Code Execution"
+        }
+      ]
+    }
+  ],
+  "published": "2012-08-20T00:00:00Z",
+  "updated": "2012-08-20T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-012-003"
+}
+

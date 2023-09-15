@@ -1,0 +1,53 @@
+{
+  "id": "FG-IR-17-011",
+  "title": "Unauthenticated XSS (Cross Site Scripting) in FortiMail",
+  "summary": "An unauthenticated XSS vulnerability could allow an attacker to execute arbitrary scripts in the security context of the browser of a victim logged in FortiMail, assuming the victim is social engineered into clicking an URL crafted by the attacker.",
+  "description": "An unauthenticated XSS vulnerability could allow an attacker to execute arbitrary scripts in the security context of the browser of a victim logged in FortiMail, assuming the victim is social engineered into clicking an URL crafted by the attacker.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-011",
+      "cve": "CVE-2017-3125",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiMail: greater equal 5.0.0, less equal 5.2.9, fixed in [5.3.9]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.2.9"
+                  },
+                  "fixed_in": [
+                    "5.3.9"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 5.3.0, less equal 5.3.8, fixed in [5.3.9]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.3.0",
+                    "le": "5.3.8"
+                  },
+                  "fixed_in": [
+                    "5.3.9"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N/E:X/RL:X/RC:X"
+          },
+          "impact": "Information leak"
+        }
+      ]
+    }
+  ],
+  "published": "2017-04-04T00:00:00Z",
+  "updated": "2017-04-04T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-011"
+}
+

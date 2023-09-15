@@ -1,0 +1,73 @@
+{
+  "id": "FG-IR-19-185",
+  "title": "FortiRecorder sets credentials of FortiCameras to static values",
+  "summary": "An Use of Hard-coded Credentials vulnerability in FortiRecorder may allow an unauthenticated attacker with knowledge of the aforementioned credentials and network access to FortiCameras to take control of those, provided they are managed by a FortiRecorder device.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-19-185",
+      "cve": "CVE-2019-6698",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiRecorder:",
+                  "cpe": "cpe:2.3:a:fortinet:fortirecorder:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiRecorder:",
+                    "cpe": "cpe:2.3:o:fortinet:fortirecorder:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiRecorder:",
+                      "cpe": "cpe:2.3:h:fortinet:fortirecorder-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:L/E:F/RL:X/RC:X"
+          },
+          "impact": "Authentication Controls Bypass"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://xor.cat/2019/08/05/fortinet-fortirecorder-hardcoded-password/",
+      "url": "https://xor.cat/2019/08/05/fortinet-fortirecorder-hardcoded-password/"
+    }
+  ],
+  "published": "2019-08-12T00:00:00Z",
+  "updated": "2019-08-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-19-185"
+}
+

@@ -1,0 +1,125 @@
+{
+  "id": "FG-IR-17-212",
+  "title": "BlueBorne vulnerabilities and security flaws in Bluetooth stacks",
+  "summary": "A collection of Bluetooth implementation vulnerabilities known as \"BlueBorne\" has been released. These vulnerabilities collectively affect Windows, iOS, and Linux-kernel-based operating systems including Android and Tizen, and may in the worst case allow an unauthenticated attacker to perform unauthorized commands on the device.The related CVEs are:1. Linux Kernel Remote Denial of Service in Bluetooth subsystem - CVE-2017-10002512. Linux Bluetooth stack (BlueZ) information Leak vulnerability - CVE-2017-10002503. Android information Leak vulnerability - CVE-2017-07854. Android RCE vulnerability 1 - CVE-2017-07815. Android RCE vulnerability 0000002 - CVE-2017-07826. The Bluetooth Pineapple in Android - Logical Flaw CVE-2017-07837. The Bluetooth Pineapple in Windows - Logical Flaw CVE-2017-86288. Apple Low Energy Audio Protocol RCE vulnerability - CVE-2017-14315",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-212",
+      "cve": "CVE-2017-1000251",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Denial of Service (DoS), RCE, Information Leak"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-212",
+      "cve": "CVE-2017-1000250",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Denial of Service (DoS), RCE, Information Leak"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-212",
+      "cve": "CVE-2017-0785",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Denial of Service (DoS), RCE, Information Leak"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-212",
+      "cve": "CVE-2017-0781",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Denial of Service (DoS), RCE, Information Leak"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-212",
+      "cve": "CVE-2017-0782",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Denial of Service (DoS), RCE, Information Leak"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-212",
+      "cve": "CVE-2017-0783",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Denial of Service (DoS), RCE, Information Leak"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-212",
+      "cve": "CVE-2017-8628",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Denial of Service (DoS), RCE, Information Leak"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-212",
+      "cve": "CVE-2017-14315",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Denial of Service (DoS), RCE, Information Leak"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "http://www.kb.cert.org/vuls/id/240311\n",
+      "url": "http://www.kb.cert.org/vuls/id/240311\n"
+    },
+    {
+      "description": "https://www.armis.com/blueborne/",
+      "url": "https://www.armis.com/blueborne/"
+    }
+  ],
+  "published": "2017-11-03T00:00:00Z",
+  "updated": "2017-11-03T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-212"
+}
+

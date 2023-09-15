@@ -1,0 +1,80 @@
+{
+  "id": "FG-IR-20-082",
+  "title": "FortiOS is potentially vulnerable to a Heap buffer overflow.",
+  "summary": "A heap-based buffer overflow vulnerability in the processing of Link Control Protocol messages in FortiOS may allow a remote attacker with valid SSL VPN credentials to crash the SSL VPN daemon by sending a large LCP packet, when tunnel mode is enabled. Arbitrary code execution may be theoretically possible, albeit practically very difficult to achieve in this context.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-20-082",
+      "cve": "CVE-2020-12819",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.12, fixed in [5.6.13, 6.0.11, 6.2.5, 6.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.12"
+                  },
+                  "fixed_in": [
+                    "5.6.13",
+                    "6.0.11",
+                    "6.2.5",
+                    "6.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.11, fixed in [6.0.11, 6.2.5, 6.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.11"
+                  },
+                  "fixed_in": [
+                    "6.0.11",
+                    "6.2.5",
+                    "6.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.2.0, less equal 6.2.4, fixed in [6.2.5, 6.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.4"
+                  },
+                  "fixed_in": [
+                    "6.2.5",
+                    "6.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 6.4.1, fixed in [6.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.1"
+                  },
+                  "fixed_in": [
+                    "6.4.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.4,
+            "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:X"
+          },
+          "impact": "Denial of Service"
+        }
+      ]
+    }
+  ],
+  "published": "2020-09-24T00:00:00Z",
+  "updated": "2020-09-24T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-20-082"
+}
+

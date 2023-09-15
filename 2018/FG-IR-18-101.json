@@ -1,0 +1,54 @@
+{
+  "id": "FG-IR-18-101",
+  "title": "Serial number disclosure in the FortiOS PPTP server hostname protocol field",
+  "summary": "Fortigate PPTP service reveals serial number of FortiGate in the hostname field defined in connection control setup packets of PPTP protocol.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-101",
+      "cve": "CVE-2018-13366",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.6.7, fixed in [5.6.8, 6.0.2, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.6.7"
+                  },
+                  "fixed_in": [
+                    "5.6.8",
+                    "6.0.2",
+                    "6.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.1, fixed in [6.0.2, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.1"
+                  },
+                  "fixed_in": [
+                    "6.0.2",
+                    "6.2.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Information Disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2018-11-16T00:00:00Z",
+  "updated": "2018-11-16T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-101"
+}
+

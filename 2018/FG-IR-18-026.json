@@ -1,0 +1,38 @@
+{
+  "id": "FG-IR-18-026",
+  "title": "Multiple Cross Site Scripting on FortiCloud Web Interface Login",
+  "summary": "Before August, 2018, parameters at /loginmgrlogin in forticloud.com were vulnerable to a Cross-Site-Scripting (XSS) attack.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-026",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiCloud: less equal 3.2.1, fixed in [3.3.0]",
+                  "cpe": "cpe:2.3:a:fortinet:forticloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "3.2.1"
+                  },
+                  "fixed_in": [
+                    "3.3.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Cross-site Scripting (XSS)"
+        }
+      ]
+    }
+  ],
+  "published": "2018-08-24T00:00:00Z",
+  "updated": "2018-08-24T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-026"
+}
+

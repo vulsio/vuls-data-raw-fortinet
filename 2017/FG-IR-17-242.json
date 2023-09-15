@@ -1,0 +1,73 @@
+{
+  "id": "FG-IR-17-242",
+  "title": "FortiGate SSL VPN web portal login redir XSS vulnerability",
+  "summary": "Failure to sanitize the login redir parameter in the SSL-VPN web portal may allow an attacker to perform a Cross-site Scripting (XSS) or an URL Redirection attack.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-242",
+      "cve": "CVE-2017-14186",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: less equal 5.4.9, fixed in [5.6.8, 6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.4.9"
+                  },
+                  "fixed_in": [
+                    "5.6.8",
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.7, fixed in [5.6.8, 6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.7"
+                  },
+                  "fixed_in": [
+                    "5.6.8",
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.4, fixed in [6.0.5, 6.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.4"
+                  },
+                  "fixed_in": [
+                    "6.0.5",
+                    "6.2.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.4,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Cross-site Scripting (XSS), URL Redirection Attack"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://www.sec-consult.com/en/blog/advisories/fortigate-ssl-vpn-portal-xss-vulnerability/index.html",
+      "url": "https://www.sec-consult.com/en/blog/advisories/fortigate-ssl-vpn-portal-xss-vulnerability/index.html"
+    }
+  ],
+  "published": "2019-05-24T00:00:00Z",
+  "updated": "2019-05-24T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-242"
+}
+

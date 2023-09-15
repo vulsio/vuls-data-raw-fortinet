@@ -1,0 +1,39 @@
+{
+  "id": "FG-IR-17-097",
+  "title": "FortiWLC-SD Privilege escalation vulnerability using copy running-config",
+  "summary": "The lack of input sanitisation for CLI command 'copy running-config' allows a user with 'admin' or 'superuser' privilege level to gain shell on the FortiWLC-SD with root privilege.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-097",
+      "cve": "CVE-2017-3134",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWLC-SD: less equal 8.2.4, fixed in [8.3.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlc-sd:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "8.2.4"
+                  },
+                  "fixed_in": [
+                    "8.3.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Escalation of Privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2017-04-12T00:00:00Z",
+  "updated": "2017-04-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-097"
+}
+

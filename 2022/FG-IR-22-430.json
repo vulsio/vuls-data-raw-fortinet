@@ -1,0 +1,41 @@
+{
+  "id": "FG-IR-22-430",
+  "title": "FortiPortal - Device password exposure in audit log",
+  "summary": "An insertion of sensitive information into log file vulnerability [CWE-532] in the FortiPortal management interface may allow a remote authenticated attacker to read other devices' passwords in the audit log page.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-430",
+      "cve": "CVE-2022-43954",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiPortal:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:R"
+          },
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2023-02-16T00:00:00Z",
+  "updated": "2023-02-16T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-430"
+}
+

@@ -1,0 +1,86 @@
+{
+  "id": "FG-IR-17-127",
+  "title": "FortiOS XSS vulnerabilities via User Groups & Config Revision Comments",
+  "summary": "Two XSS vulnerabilities were reported to us affecting FortiOS that can be exploited to load and run a remote (malicious) Javascript in a logged in browser.The vulnerable input fields are the \"Comments\" input while saving Configuration Revisions (CVE-2017-7734)the \"Groups\" input while creating or editing User Groups (CVE-2017-7735)",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-127",
+      "cve": "CVE-2017-7734",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.4.0, less equal 5.4.4, fixed in [5.4.5, 5.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.4"
+                  },
+                  "fixed_in": [
+                    "5.4.5",
+                    "5.6.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-17-127",
+      "cve": "CVE-2017-7735",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.2.0, less equal 5.2.11, fixed in [5.2.12, 5.4.5, 5.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.11"
+                  },
+                  "fixed_in": [
+                    "5.2.12",
+                    "5.4.5",
+                    "5.6.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 5.4.0, less equal 5.4.4, fixed in [5.4.5, 5.6.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.4"
+                  },
+                  "fixed_in": [
+                    "5.4.5",
+                    "5.6.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2017-06-15T00:00:00Z",
+  "updated": "2017-06-15T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-127"
+}
+

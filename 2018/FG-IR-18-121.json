@@ -1,0 +1,54 @@
+{
+  "id": "FG-IR-18-121",
+  "title": "Cross-site scripting (XSS) vulnerability via DHCP Hostname parameter",
+  "summary": "An attacker could send DHCP request containing malicious scripts in the HOSTNAME parameter. The malicious script code is executed while viewing the logs in FortiAnalyzer and FortiManager (with FortiAnalyzer feature enabled).",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-18-121",
+      "cve": "CVE-2018-13375",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: less equal 5.6.0, fixed in [5.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.6.0"
+                  },
+                  "fixed_in": [
+                    "5.6.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: less equal 5.6.0, fixed in [5.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "5.6.0"
+                  },
+                  "fixed_in": [
+                    "5.6.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Cross-site Scripting (XSS)"
+        }
+      ]
+    }
+  ],
+  "published": "2018-11-16T00:00:00Z",
+  "updated": "2018-11-16T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-18-121"
+}
+

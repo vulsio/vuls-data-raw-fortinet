@@ -1,0 +1,36 @@
+{
+  "id": "FG-IR-16-090",
+  "title": "FortiOS TCP timestamp response",
+  "summary": "FortiOS by default enables TCP timestamp response, which may lead to information disclosure.The TCP timestamp response can be used to approximate the FortiOS device uptime, potentially aiding in further attacks. This may be used by an attacker to estimate if FortiOS has not been upgraded to the latest version, because upgrading resets the device's uptime.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-16-090",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: equal ANY",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "ANY"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Information Disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2019-07-24T00:00:00Z",
+  "updated": "2019-07-24T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-16-090"
+}
+

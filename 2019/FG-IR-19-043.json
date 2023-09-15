@@ -1,0 +1,77 @@
+{
+  "id": "FG-IR-19-043",
+  "title": "FortiOS multiple pre-authentication Information Disclosure",
+  "summary": "Multiple information exposure vulnerabilities in FortiOS may allow an unauthenticated attacker to perform some information gathering via parsing the HTTP headers, web portal certificate, and error messages. The exposed information includes the FortiGate's model, serial number and internal IP address.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-19-043",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 5.6.0, less equal 5.6.5, fixed in [5.6.6, 6.0.2, 6.0.4, 6.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.5"
+                  },
+                  "fixed_in": [
+                    "5.6.6",
+                    "6.0.2",
+                    "6.0.4",
+                    "6.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 6.0.1, fixed in [6.0.2, 6.0.4, 6.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.0.1"
+                  },
+                  "fixed_in": [
+                    "6.0.2",
+                    "6.0.4",
+                    "6.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 6.0.3, fixed in [6.0.4, 6.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.0.3"
+                  },
+                  "fixed_in": [
+                    "6.0.4",
+                    "6.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.2.0, less equal 6.2.2, fixed in [6.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.2"
+                  },
+                  "fixed_in": [
+                    "6.2.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "impact": "Information Disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2019-10-18T00:00:00Z",
+  "updated": "2019-10-18T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-19-043"
+}
+

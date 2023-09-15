@@ -1,0 +1,67 @@
+{
+  "id": "FG-IR-20-232",
+  "title": "Buffer overflow vulnerability in FortiProxy SSL VPN through a crafted POST request",
+  "summary": "A buffer overflow vulnerability in the SSL VPN portal of FortiProxy may allow an unauthenticated, remote attacker to perform a Denial of Service attack by sending a specifically crafted POST request with a large msg value.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-20-232",
+      "cve": "CVE-2018-13381",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy:",
+                  "cpe": "cpe:2.3:a:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "",
+                    "gt": "",
+                    "ge": "",
+                    "lt": "",
+                    "le": ""
+                  }
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiProxy:",
+                    "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "",
+                      "gt": "",
+                      "ge": "",
+                      "lt": "",
+                      "le": ""
+                    }
+                  }
+                ],
+                "children": {
+                  "nodes": [
+                    {
+                      "description": "FortiProxy:",
+                      "cpe": "cpe:2.3:h:fortinet:fortiproxy-:-:*:*:*:*:*:*:*",
+                      "affected": {
+                        "eq": "NA"
+                      }
+                    }
+                  ]
+                }
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:L/E:F/RL:X/RC:X"
+          },
+          "impact": "denial of service"
+        }
+      ]
+    }
+  ],
+  "published": "2021-02-03T00:00:00Z",
+  "updated": "2021-02-03T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-20-232"
+}
+

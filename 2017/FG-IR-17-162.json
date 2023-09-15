@@ -1,0 +1,40 @@
+{
+  "id": "FG-IR-17-162",
+  "title": "FortiWeb SNMPv3 user password viewable in HTML source code",
+  "summary": "The HTML source code of the FortiWeb SNMPv3 user edit webui page includes the user's password in cleartext.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-17-162",
+      "cve": "CVE-2017-7737",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: greater equal 5.4.1, less equal 5.8.2, fixed in [5.8.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.1",
+                    "le": "5.8.2"
+                  },
+                  "fixed_in": [
+                    "5.8.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 0
+          },
+          "impact": "Information Disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2017-08-11T00:00:00Z",
+  "updated": "2017-08-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-17-162"
+}
+

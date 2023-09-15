@@ -1,0 +1,26 @@
+{
+  "id": "FG-IR-15-001",
+  "title": "CVE-2015-0235 \"GHOST\" vulnerability",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-15-001",
+      "cve": "CVE-2015-0235",
+      "definitions": [
+        {
+          "configurations": [],
+          "impact": "Remote Code Execution"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://www.qualys.com/research/security-advisories/GHOST-CVE-2015-0235.txt",
+      "url": "https://www.qualys.com/research/security-advisories/GHOST-CVE-2015-0235.txt"
+    }
+  ],
+  "published": "2015-01-28T00:00:00Z",
+  "updated": "2015-01-28T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-15-001"
+}
+

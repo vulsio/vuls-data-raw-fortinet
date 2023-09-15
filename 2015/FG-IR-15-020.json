@@ -1,0 +1,36 @@
+{
+  "id": "FG-IR-15-020",
+  "title": "ZebOS routing remote shell service enabled",
+  "description": "A remote attacker may access the internal ZebOS shell of FortiOS 5.2.3 without authentication on the HA (\"High Availability\") dedicated management interface only. Only FortiGates configured with HA *and* with an enabled HA dedicated management interface are vulnerable. Note: when a FortiGate is configured to use HA, the dedicated management interface is disabled by default .",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-15-020",
+      "cve": "CVE-2015-7361",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: equal 5.2.3, fixed in [5.2.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.2.3"
+                  },
+                  "fixed_in": [
+                    "5.2.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "impact": "Remote shell access"
+        }
+      ]
+    }
+  ],
+  "published": "2015-07-24T00:00:00Z",
+  "updated": "2015-07-24T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-15-020"
+}
+
