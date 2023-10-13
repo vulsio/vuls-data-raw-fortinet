@@ -1,0 +1,97 @@
+{
+  "id": "FG-IR-23-085",
+  "title": "FortiSIEM - multiple path traversal vulnerabilities",
+  "summary": "A relative path traversal vulnerability [CWE-23] in FortiSIEM file upload components may allow an authenticated, low privileged user of the FortiSIEM GUI to escalate their privilege and replace arbitrary files on the underlying filesystem via specifically crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-085",
+      "cve": "CVE-2023-40714",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSIEM: greater equal 6.4.0, less equal 6.4.2, fixed in [6.4.3, 6.5.2, 6.6.4, 6.7.4, 7.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.2"
+                  },
+                  "fixed_in": [
+                    "6.4.3",
+                    "6.5.2",
+                    "6.6.4",
+                    "6.7.4",
+                    "7.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.5.0, less equal 6.5.1, fixed in [6.5.2, 6.6.4, 6.7.4, 7.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.5.0",
+                    "le": "6.5.1"
+                  },
+                  "fixed_in": [
+                    "6.5.2",
+                    "6.6.4",
+                    "6.7.4",
+                    "7.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.6.0, less equal 6.6.3, fixed in [6.6.4, 6.7.4, 7.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.6.0",
+                    "le": "6.6.3"
+                  },
+                  "fixed_in": [
+                    "6.6.4",
+                    "6.7.4",
+                    "7.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.7.0, less equal 6.7.3, fixed in [6.7.4, 7.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.7.0",
+                    "le": "6.7.3"
+                  },
+                  "fixed_in": [
+                    "6.7.4",
+                    "7.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: equal 7.0.0, fixed in [7.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.0.0"
+                  },
+                  "fixed_in": [
+                    "7.0.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.7,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-23"
+          ],
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2023-10-11T00:00:00Z",
+  "updated": "2023-10-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-085"
+}
+
