@@ -1,0 +1,107 @@
+{
+  "id": "FG-IR-23-280",
+  "title": "FortiSandbox - Arbitrary file delete",
+  "summary": "An improper limitation of a pathname to a restricted directory ('Path Traversal') vulnerability [CWE-22] in FortiSandbox may allow a low privileged attacker to delete arbitrary files via crafted http requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-280",
+      "cve": "CVE-2023-41682",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: greater equal 2.4.0, less equal 2.4.1, fixed in [4.0.4, 4.2.6, 4.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.4.0",
+                    "le": "2.4.1"
+                  },
+                  "fixed_in": [
+                    "4.0.4",
+                    "4.2.6",
+                    "4.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 2.5.0, less equal 2.5.2, fixed in [4.0.4, 4.2.6, 4.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.5.0",
+                    "le": "2.5.2"
+                  },
+                  "fixed_in": [
+                    "4.0.4",
+                    "4.2.6",
+                    "4.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 3.2.0, less equal 3.2.4, fixed in [4.0.4, 4.2.6, 4.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.2.0",
+                    "le": "3.2.4"
+                  },
+                  "fixed_in": [
+                    "4.0.4",
+                    "4.2.6",
+                    "4.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.0.0, less equal 4.0.3, fixed in [4.0.4, 4.2.6, 4.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "4.0.3"
+                  },
+                  "fixed_in": [
+                    "4.0.4",
+                    "4.2.6",
+                    "4.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.2.0, less equal 4.2.5, fixed in [4.2.6, 4.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.2.0",
+                    "le": "4.2.5"
+                  },
+                  "fixed_in": [
+                    "4.2.6",
+                    "4.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: equal 4.4.0, fixed in [4.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "4.4.0"
+                  },
+                  "fixed_in": [
+                    "4.4.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.9,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-22"
+          ],
+          "impact": "Denial of service"
+        }
+      ]
+    }
+  ],
+  "published": "2023-10-13T00:00:00Z",
+  "updated": "2023-10-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-280"
+}
+
