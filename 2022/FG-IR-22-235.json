@@ -1,0 +1,163 @@
+{
+  "id": "FG-IR-22-235",
+  "title": "FortiClient - Information disclosure of folders to exclude from scanning",
+  "summary": "An exposure of sensitive information to an unauthorized actor vulnerability [CWE-200] in FortiClient for Windows, Linux and Mac, may allow a local authenticated attacker with no Administrative privileges to retrieve the list of files or folders excluded from malware scanning.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-235",
+      "cve": "CVE-2023-37939",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Windows: greater equal 6.2.0, less equal 6.2.9, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.9"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: greater equal 6.4.0, less equal 6.4.10, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.10"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: greater equal 7.0.0, less equal 7.0.9, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.9"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: equal 7.2.0, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "eq": "7.2.0"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOS: greater equal 6.2.0, less equal 6.2.9, fixed in [7.2.2]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.9"
+                  },
+                  "fixed_in": [
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOS: greater equal 6.4.0, less equal 6.4.10, fixed in [7.2.2]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.10"
+                  },
+                  "fixed_in": [
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOS: greater equal 7.0.0, less equal 7.0.9, fixed in [7.2.2]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.9"
+                  },
+                  "fixed_in": [
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOS: greater equal 7.2.0, less equal 7.2.1, fixed in [7.2.2]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.1"
+                  },
+                  "fixed_in": [
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Linux: greater equal 6.2.0, less equal 6.2.9, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:linux:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.9"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Linux: greater equal 6.4.0, less equal 6.4.9, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:linux:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.9"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Linux: greater equal 7.0.0, less equal 7.0.9, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:linux:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.9"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Linux: equal 7.2.0, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:linux:*:*",
+                  "affected": {
+                    "eq": "7.2.0"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:P/RL:U/RC:R"
+          },
+          "cwe": [
+            "CWE-200"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2023-10-05T00:00:00Z",
+  "updated": "2023-10-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-235"
+}
+

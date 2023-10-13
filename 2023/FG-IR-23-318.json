@@ -1,0 +1,58 @@
+{
+  "id": "FG-IR-23-318",
+  "title": "FortiOS - Improper authorization via prof-admin profile",
+  "summary": "An improper authorization vulnerability [CWE-285] in FortiOS's WEB UI component may allow an authenticated attacker belonging to the prof-admin profile to perform elevated actions.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-318",
+      "cve": "CVE-2023-41841",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.11, fixed in [7.0.12, 7.2.5, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.11"
+                  },
+                  "fixed_in": [
+                    "7.0.12",
+                    "7.2.5",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less equal 7.2.4, fixed in [7.2.5, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.4"
+                  },
+                  "fixed_in": [
+                    "7.2.5",
+                    "7.4.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.4,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H/E:U/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-285"
+          ],
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2023-09-15T00:00:00Z",
+  "updated": "2023-10-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-318"
+}
+

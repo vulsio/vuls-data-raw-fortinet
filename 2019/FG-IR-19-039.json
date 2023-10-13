@@ -1,0 +1,139 @@
+{
+  "id": "FG-IR-19-039",
+  "title": "FortiAnalyzer & FortiManager - Server side request forgery on fortiview top threats report generation feature.",
+  "summary": "A server-side request forgery vulnerability [CWE-918] in FortiAnalyzer and FortiManager may allow a remote attacker with low privileges to view sensitive data from internal servers or perform a local port scan via a crafted HTTP request.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-19-039",
+      "cve": "CVE-2023-44256",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: greater equal 6.4.8, less equal 6.4.13, fixed in [7.0.9, 7.2.4, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.8",
+                    "le": "6.4.13"
+                  },
+                  "fixed_in": [
+                    "7.0.9",
+                    "7.2.4",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 7.0.2, less equal 7.0.8, fixed in [7.0.9, 7.2.4, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.2",
+                    "le": "7.0.8"
+                  },
+                  "fixed_in": [
+                    "7.0.9",
+                    "7.2.4",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 7.2.0, less equal 7.2.3, fixed in [7.2.4, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.3"
+                  },
+                  "fixed_in": [
+                    "7.2.4",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: equal 7.4.0, fixed in [7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 6.4.8, less equal 6.4.13, fixed in [7.0.9, 7.2.4, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.8",
+                    "le": "6.4.13"
+                  },
+                  "fixed_in": [
+                    "7.0.9",
+                    "7.2.4",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.0.0, less equal 7.0.8, fixed in [7.0.9, 7.2.4, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.8"
+                  },
+                  "fixed_in": [
+                    "7.0.9",
+                    "7.2.4",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.2.0, less equal 7.2.3, fixed in [7.2.4, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.3"
+                  },
+                  "fixed_in": [
+                    "7.2.4",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: equal 7.4.0, fixed in [7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.4,
+            "vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-918"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://github.com/orangecertcc/security-research/security/advisories/GHSA-2hc5-p5mc-8vrh",
+      "url": "https://github.com/orangecertcc/security-research/security/advisories/GHSA-2hc5-p5mc-8vrh"
+    }
+  ],
+  "published": "2023-10-10T00:00:00Z",
+  "updated": "2023-10-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-19-039"
+}
+

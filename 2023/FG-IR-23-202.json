@@ -1,0 +1,100 @@
+{
+  "id": "FG-IR-23-202",
+  "title": "FortiMail - Email account takeover in same web domain",
+  "summary": "An incorrect authorization vulnerability [CWE-863] in FortiMail webmail may allow an authenticated attacker to login to other users accounts from the same web domain via crafted HTTP or HTTPs requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-202",
+      "cve": "CVE-2023-36556",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiMail: greater equal 6.0.0, less equal 6.0.12, fixed in [6.4.8, 7.0.6, 7.2.3, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.12"
+                  },
+                  "fixed_in": [
+                    "6.4.8",
+                    "7.0.6",
+                    "7.2.3",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 6.2.0, less equal 6.2.9, fixed in [6.4.8, 7.0.6, 7.2.3, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.9"
+                  },
+                  "fixed_in": [
+                    "6.4.8",
+                    "7.0.6",
+                    "7.2.3",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 6.4.0, less equal 6.4.7, fixed in [6.4.8, 7.0.6, 7.2.3, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.7"
+                  },
+                  "fixed_in": [
+                    "6.4.8",
+                    "7.0.6",
+                    "7.2.3",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 7.0.0, less equal 7.0.5, fixed in [7.0.6, 7.2.3, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.5"
+                  },
+                  "fixed_in": [
+                    "7.0.6",
+                    "7.2.3",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 7.2.0, less equal 7.2.2, fixed in [7.2.3, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.2"
+                  },
+                  "fixed_in": [
+                    "7.2.3",
+                    "7.4.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-863"
+          ],
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2023-10-09T00:00:00Z",
+  "updated": "2023-10-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-202"
+}
+

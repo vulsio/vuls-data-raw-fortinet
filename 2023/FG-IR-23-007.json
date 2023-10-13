@@ -1,0 +1,56 @@
+{
+  "id": "FG-IR-23-007",
+  "title": "FortiEDR - Session API token does not expires after a renewal",
+  "summary": "An insufficient session expiration vulnerability [CWE-613] in FortiEDR may allow an attacker to reuse the unexpired user API access token to gain privileges, should the attacker be able to obtain that API access token (via other, hypothetical attacks).",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-007",
+      "cve": "CVE-2023-33303",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiEDR: greater equal 5.0.0, less than 5.0.3.873, fixed in [5.0.3.873, 5.2.0.2501]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiedr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "lt": "5.0.3.873"
+                  },
+                  "fixed_in": [
+                    "5.0.3.873",
+                    "5.2.0.2501"
+                  ]
+                },
+                {
+                  "description": "FortiEDR: greater equal 5.2.0, less equal 5.2.0.2500, fixed in [5.2.0.2501]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiedr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.0.2500"
+                  },
+                  "fixed_in": [
+                    "5.2.0.2501"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.7,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-613"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-09-29T00:00:00Z",
+  "updated": "2023-10-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-007"
+}
+

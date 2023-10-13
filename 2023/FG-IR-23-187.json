@@ -1,0 +1,159 @@
+{
+  "id": "FG-IR-23-187",
+  "title": "FortiManager / FortiAnalyzer - Unprivileged user can access web console and run some unauthorized commands",
+  "summary": "A client-side enforcement of server-side security [CWE-602] vulnerability in FortiManager and FortiAnalyzer may allow a remote attacker with low privileges to access a privileged web console via client side code execution.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-187",
+      "cve": "CVE-2023-42787",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: greater equal 6.2.0, less equal 6.2.12, fixed in [7.2.4, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.12"
+                  },
+                  "fixed_in": [
+                    "7.2.4",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 6.4.0, less equal 6.4.13, fixed in [7.2.4, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.13"
+                  },
+                  "fixed_in": [
+                    "7.2.4",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 7.0.0, less equal 7.0.9, fixed in [7.2.4, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.9"
+                  },
+                  "fixed_in": [
+                    "7.2.4",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 7.2.0, less equal 7.2.3, fixed in [7.2.4, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.3"
+                  },
+                  "fixed_in": [
+                    "7.2.4",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: equal 7.4.0, fixed in [7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 6.2.0, less equal 6.2.12, fixed in [7.2.4, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.12"
+                  },
+                  "fixed_in": [
+                    "7.2.4",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 6.4.0, less equal 6.4.13, fixed in [7.2.4, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.13"
+                  },
+                  "fixed_in": [
+                    "7.2.4",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.0.0, less equal 7.0.9, fixed in [7.2.4, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.9"
+                  },
+                  "fixed_in": [
+                    "7.2.4",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.2.0, less equal 7.2.3, fixed in [7.2.4, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.3"
+                  },
+                  "fixed_in": [
+                    "7.2.4",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: equal 7.4.0, fixed in [7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N/E:P/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-602"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "https://github.com/orangecertcc/security-research/security/advisories/GHSA-q5pq-8666-j8fr",
+      "url": "https://github.com/orangecertcc/security-research/security/advisories/GHSA-q5pq-8666-j8fr"
+    }
+  ],
+  "published": "2023-10-10T00:00:00Z",
+  "updated": "2023-10-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-187"
+}
+

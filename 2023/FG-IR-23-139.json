@@ -1,0 +1,55 @@
+{
+  "id": "FG-IR-23-139",
+  "title": "FortiOS - REST API trusted host bypass",
+  "summary": "An improper access control vulnerability [CWE-284] in the FortiOS REST API component may allow an authenticated attacker to access a restricted resource from a non trusted host.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-139",
+      "cve": "CVE-2023-33301",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less equal 7.2.4, fixed in [7.2.5, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.4"
+                  },
+                  "fixed_in": [
+                    "7.2.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 7.4.0, fixed in [7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.5,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:L/A:N/E:U/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-284"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2023-10-10T00:00:00Z",
+  "updated": "2023-10-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-139"
+}
+

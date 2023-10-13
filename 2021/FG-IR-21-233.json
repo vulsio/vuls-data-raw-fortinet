@@ -1,0 +1,107 @@
+{
+  "id": "FG-IR-21-233",
+  "title": "FortiIsolator - OS command injection in CLI commands",
+  "summary": "An improper neutralization of special elements used in an os command ('OS Command Injection') vulnerability [CWE-78] in FortiIsolator may allow a privileged attacker to execute arbitrary OS commands in the underlying shell via specially crafted input parameters.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-21-233",
+      "cve": "CVE-2022-22298",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiIsolator: equal 1.0.0, fixed in [2.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiisolator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "1.0.0"
+                  },
+                  "fixed_in": [
+                    "2.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiIsolator: equal 1.1.0, fixed in [2.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiisolator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "1.1.0"
+                  },
+                  "fixed_in": [
+                    "2.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiIsolator: greater equal 1.2.0, less equal 1.2.2, fixed in [2.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiisolator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.2.0",
+                    "le": "1.2.2"
+                  },
+                  "fixed_in": [
+                    "2.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiIsolator: greater equal 2.0.0, less equal 2.0.1, fixed in [2.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiisolator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.0.0",
+                    "le": "2.0.1"
+                  },
+                  "fixed_in": [
+                    "2.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiIsolator: greater equal 2.1.0, less equal 2.1.2, fixed in [2.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiisolator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.1.0",
+                    "le": "2.1.2"
+                  },
+                  "fixed_in": [
+                    "2.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiIsolator: equal 2.2.0, fixed in [2.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiisolator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "2.2.0"
+                  },
+                  "fixed_in": [
+                    "2.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiIsolator: greater equal 2.3.0, less equal 2.3.4, fixed in [2.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiisolator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.3.0",
+                    "le": "2.3.4"
+                  },
+                  "fixed_in": [
+                    "2.4.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.7,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:H/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-10-10T00:00:00Z",
+  "updated": "2023-10-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-21-233"
+}
+

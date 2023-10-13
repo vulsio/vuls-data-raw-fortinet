@@ -1,0 +1,44 @@
+{
+  "id": "FG-IR-23-052",
+  "title": "FortiGuest - Password in clear text in RADIUS log",
+  "summary": "An insertion of sensitive information into log file [CWE-532] in the FortiGuest RADIUS logs may allow a local attacker to access plaintext passwords.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-052",
+      "cve": "CVE-2023-25604",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiGuest: greater equal 1.0.0, less equal 1.0.0, fixed in [1.1.0]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiguest:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.0.0",
+                    "le": "1.0.0"
+                  },
+                  "fixed_in": [
+                    "1.1.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.5,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N/E:U/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-532"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2023-10-10T00:00:00Z",
+  "updated": "2023-10-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-052"
+}
+

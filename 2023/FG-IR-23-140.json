@@ -1,0 +1,241 @@
+{
+  "id": "FG-IR-23-140",
+  "title": "FortiWLM - Unauthenticated command injection vulnerability",
+  "summary": "Multiple improper neutralization of special elements used in an os command (\"OS command injection\") vulnerabilities [CWE-78] in FortiWLM may allow a remote unauthenticated attacker to execute unauthorized commands via specifically crafted http get request parameters.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-140",
+      "cve": "CVE-2023-34993",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWLM: greater equal 8.5.0, less equal 8.5.4, fixed in [8.5.5, 8.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlm:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.5.0",
+                    "le": "8.5.4"
+                  },
+                  "fixed_in": [
+                    "8.5.5",
+                    "8.6.6"
+                  ]
+                },
+                {
+                  "description": "FortiWLM: greater equal 8.6.0, less equal 8.6.5, fixed in [8.5.5, 8.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlm:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.6.0",
+                    "le": "8.6.5"
+                  },
+                  "fixed_in": [
+                    "8.5.5",
+                    "8.6.6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-23-140",
+      "cve": "CVE-2023-36547",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWLM: greater equal 8.5.0, less equal 8.5.4, fixed in [8.5.5, 8.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlm:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.5.0",
+                    "le": "8.5.4"
+                  },
+                  "fixed_in": [
+                    "8.5.5",
+                    "8.6.6"
+                  ]
+                },
+                {
+                  "description": "FortiWLM: greater equal 8.6.0, less equal 8.6.5, fixed in [8.5.5, 8.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlm:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.6.0",
+                    "le": "8.6.5"
+                  },
+                  "fixed_in": [
+                    "8.5.5",
+                    "8.6.6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-23-140",
+      "cve": "CVE-2023-36548",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWLM: greater equal 8.5.0, less equal 8.5.4, fixed in [8.5.5, 8.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlm:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.5.0",
+                    "le": "8.5.4"
+                  },
+                  "fixed_in": [
+                    "8.5.5",
+                    "8.6.6"
+                  ]
+                },
+                {
+                  "description": "FortiWLM: greater equal 8.6.0, less equal 8.6.5, fixed in [8.5.5, 8.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlm:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.6.0",
+                    "le": "8.6.5"
+                  },
+                  "fixed_in": [
+                    "8.5.5",
+                    "8.6.6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-23-140",
+      "cve": "CVE-2023-36549",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWLM: greater equal 8.5.0, less equal 8.5.4, fixed in [8.5.5, 8.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlm:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.5.0",
+                    "le": "8.5.4"
+                  },
+                  "fixed_in": [
+                    "8.5.5",
+                    "8.6.6"
+                  ]
+                },
+                {
+                  "description": "FortiWLM: greater equal 8.6.0, less equal 8.6.5, fixed in [8.5.5, 8.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlm:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.6.0",
+                    "le": "8.6.5"
+                  },
+                  "fixed_in": [
+                    "8.5.5",
+                    "8.6.6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-23-140",
+      "cve": "CVE-2023-36550",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWLM: greater equal 8.5.0, less equal 8.5.4, fixed in [8.5.5, 8.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlm:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.5.0",
+                    "le": "8.5.4"
+                  },
+                  "fixed_in": [
+                    "8.5.5",
+                    "8.6.6"
+                  ]
+                },
+                {
+                  "description": "FortiWLM: greater equal 8.6.0, less equal 8.6.5, fixed in [8.5.5, 8.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlm:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.6.0",
+                    "le": "8.6.5"
+                  },
+                  "fixed_in": [
+                    "8.5.5",
+                    "8.6.6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-09-29T00:00:00Z",
+  "updated": "2023-10-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-140"
+}
+

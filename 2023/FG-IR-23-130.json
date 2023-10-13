@@ -1,0 +1,97 @@
+{
+  "id": "FG-IR-23-130",
+  "title": "FortiSIEM - Remote unauthenticated os command injection",
+  "summary": "An improper neutralization of special elements used in an OS Command vulnerability [CWE-78] in FortiSIEM supervisor may allow a remote unauthenticated attacker to execute unauthorized commands via crafted API requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-130",
+      "cve": "CVE-2023-34992",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSIEM: greater equal 6.4.0, less equal 6.4.2, fixed in [6.4.3, 6.5.2, 6.6.4, 6.7.6, 7.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.2"
+                  },
+                  "fixed_in": [
+                    "6.4.3",
+                    "6.5.2",
+                    "6.6.4",
+                    "6.7.6",
+                    "7.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.5.0, less equal 6.5.1, fixed in [6.5.2, 6.6.4, 6.7.6, 7.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.5.0",
+                    "le": "6.5.1"
+                  },
+                  "fixed_in": [
+                    "6.5.2",
+                    "6.6.4",
+                    "6.7.6",
+                    "7.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.6.0, less equal 6.6.3, fixed in [6.6.4, 6.7.6, 7.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.6.0",
+                    "le": "6.6.3"
+                  },
+                  "fixed_in": [
+                    "6.6.4",
+                    "6.7.6",
+                    "7.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.7.0, less equal 6.7.5, fixed in [6.7.6, 7.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.7.0",
+                    "le": "6.7.5"
+                  },
+                  "fixed_in": [
+                    "6.7.6",
+                    "7.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: equal 7.0.0, fixed in [7.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.0.0"
+                  },
+                  "fixed_in": [
+                    "7.0.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-10-02T00:00:00Z",
+  "updated": "2023-10-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-130"
+}
+

@@ -1,0 +1,45 @@
+{
+  "id": "FG-IR-23-104",
+  "title": "FortiOS - HTML injection in SAML and Security Fabric components",
+  "summary": "An improper neutralization of script-related HTML tags in a web page vulnerability [CWE-80] in FortiOS may allow a remote authenticated attacker to inject script related HTML tags via the SAML and Security Fabric components.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-104",
+      "cve": "CVE-2023-36555",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less equal 7.2.5, fixed in [7.2.6, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.5"
+                  },
+                  "fixed_in": [
+                    "7.2.6",
+                    "7.4.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.9,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:L/I:L/A:L/E:U/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-80"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-10-10T00:00:00Z",
+  "updated": "2023-10-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-104"
+}
+

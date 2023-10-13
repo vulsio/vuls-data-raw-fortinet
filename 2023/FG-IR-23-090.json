@@ -1,0 +1,107 @@
+{
+  "id": "FG-IR-23-090",
+  "title": "FortiOS - IPS Engine evasion using custom TCP flags",
+  "summary": "An interpretation conflict vulnerability [CWE-436] in FortiOS IPS Engine may allow an unauthenticated remote attacker to evade NGFW policies or IPS Engine protection via crafted TCP packets.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-090",
+      "cve": "CVE-2023-40718",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "IPS Engine: less equal 6.158, fixed in [6.0159]",
+                  "cpe": "cpe:2.3:a:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "6.158"
+                  },
+                  "fixed_in": [
+                    "6.0159"
+                  ]
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiOS: greater equal 6.4.0, less equal 6.4.12",
+                    "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "ge": "6.4.0",
+                      "le": "6.4.12"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "nodes": [
+                {
+                  "description": "IPS Engine: less equal 7.165, fixed in [7.0.166]",
+                  "cpe": "cpe:2.3:a:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "7.165"
+                  },
+                  "fixed_in": [
+                    "7.0.166"
+                  ]
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiOS: greater equal 7.0.0, less equal 7.0.11",
+                    "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "ge": "7.0.0",
+                      "le": "7.0.11"
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "nodes": [
+                {
+                  "description": "IPS Engine: less equal 7.312, fixed in [7.0313]",
+                  "cpe": "cpe:2.3:a:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "le": "7.312"
+                  },
+                  "fixed_in": [
+                    "7.0313"
+                  ]
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiOS: greater equal 7.2.0, less equal 7.2.4",
+                    "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                    "affected": {
+                      "ge": "7.2.0",
+                      "le": "7.2.4"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.7,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N/E:F/RL:O/RC:R"
+          },
+          "cwe": [
+            "CWE-436"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2023-10-10T00:00:00Z",
+  "updated": "2023-10-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-090"
+}
+
