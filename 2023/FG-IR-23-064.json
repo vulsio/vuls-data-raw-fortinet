@@ -1,0 +1,201 @@
+{
+  "id": "FG-IR-23-064",
+  "title": "FortiADC & FortiDDoS-F - Buffer overflows in CLI commands",
+  "summary": "Multiple buffer copy without checking size of input ('classic buffer overflow') vulnerabilities [CWE-120] in FortiADC & FortiDDoS-F may allow a privileged attacker to execute arbitrary code or commands via specifically crafted CLI requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-064",
+      "cve": "CVE-2023-29177",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiADC: greater equal 5.2.0, less equal 5.2.8, fixed in [7.1.3, 7.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.8"
+                  },
+                  "fixed_in": [
+                    "7.1.3",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 5.3.0, less equal 5.3.7, fixed in [7.1.3, 7.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.3.0",
+                    "le": "5.3.7"
+                  },
+                  "fixed_in": [
+                    "7.1.3",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 5.4.0, less equal 5.4.5, fixed in [7.1.3, 7.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.5"
+                  },
+                  "fixed_in": [
+                    "7.1.3",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 6.0.0, less equal 6.0.4, fixed in [7.1.3, 7.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.4"
+                  },
+                  "fixed_in": [
+                    "7.1.3",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 6.1.0, less equal 6.1.6, fixed in [7.1.3, 7.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.1.0",
+                    "le": "6.1.6"
+                  },
+                  "fixed_in": [
+                    "7.1.3",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 6.2.0, less equal 6.2.6, fixed in [7.1.3, 7.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.6"
+                  },
+                  "fixed_in": [
+                    "7.1.3",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 7.0.0, less equal 7.0.5, fixed in [7.1.3, 7.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.5"
+                  },
+                  "fixed_in": [
+                    "7.1.3",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 7.1.0, less equal 7.1.2, fixed in [7.1.3, 7.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.1.0",
+                    "le": "7.1.2"
+                  },
+                  "fixed_in": [
+                    "7.1.3",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: equal 7.2.0, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.2.0"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiDDoS-F: greater equal 6.1.0, less equal 6.1.4, fixed in [6.4.2, 6.5.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiddos-f:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.1.0",
+                    "le": "6.1.4"
+                  },
+                  "fixed_in": [
+                    "6.4.2",
+                    "6.5.1"
+                  ]
+                },
+                {
+                  "description": "FortiDDoS-F: greater equal 6.2.0, less equal 6.2.3, fixed in [6.4.2, 6.5.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiddos-f:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.3"
+                  },
+                  "fixed_in": [
+                    "6.4.2",
+                    "6.5.1"
+                  ]
+                },
+                {
+                  "description": "FortiDDoS-F: greater equal 6.3.0, less equal 6.3.4, fixed in [6.4.2, 6.5.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiddos-f:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.3.0",
+                    "le": "6.3.4"
+                  },
+                  "fixed_in": [
+                    "6.4.2",
+                    "6.5.1"
+                  ]
+                },
+                {
+                  "description": "FortiDDoS-F: greater equal 6.4.0, less equal 6.4.1, fixed in [6.4.2, 6.5.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiddos-f:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.1"
+                  },
+                  "fixed_in": [
+                    "6.4.2",
+                    "6.5.1"
+                  ]
+                },
+                {
+                  "description": "FortiDDoS-F: equal 6.5.0, fixed in [6.5.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiddos-f:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.5.0"
+                  },
+                  "fixed_in": [
+                    "6.5.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.2,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-120"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-11-02T00:00:00Z",
+  "updated": "2023-11-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-064"
+}
+

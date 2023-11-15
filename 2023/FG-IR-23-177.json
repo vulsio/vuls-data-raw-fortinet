@@ -1,0 +1,105 @@
+{
+  "id": "FG-IR-23-177",
+  "title": "FortiManager & FortiAnalyzer - Use of hardcoded credentials in fmgsvrd",
+  "summary": "A use of hard-coded credentials [CWE-798] in FortiManager and FortiAnalyzer may allow an attacker to access Fortinet dummy testing data via the use of static credentials. Those credentials have been revoked.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-177",
+      "cve": "CVE-2023-40719",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: greater equal 7.0.0, less equal 7.0.10, fixed in [7.2.4, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.10"
+                  },
+                  "fixed_in": [
+                    "7.2.4",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 7.2.0, less equal 7.2.3, fixed in [7.2.4, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.3"
+                  },
+                  "fixed_in": [
+                    "7.2.4",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: equal 7.4.0, fixed in [7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 7.0.0, less equal 7.0.10, fixed in [7.2.4, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.10"
+                  },
+                  "fixed_in": [
+                    "7.2.4",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.2.0, less equal 7.2.3, fixed in [7.2.4, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.3"
+                  },
+                  "fixed_in": [
+                    "7.2.4",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: equal 7.4.0, fixed in [7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.1,
+            "vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:N/A:N/E:U/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-798"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2023-10-28T00:00:00Z",
+  "updated": "2023-11-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-177"
+}
+

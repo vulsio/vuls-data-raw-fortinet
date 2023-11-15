@@ -1,0 +1,49 @@
+{
+  "id": "FG-IR-23-265",
+  "title": "FortiWAN - Path traversal vulnerability",
+  "summary": "*PRODUCT OUT OF SUPPORT* A improper limitation of a pathname to a restricted directory ('path traversal') vulnerability [CWE-22] in FortiWAN may allow an authenticated attacker to read and delete arbitrary file of the system via crafted HTTP or HTTPs requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-265",
+      "cve": "CVE-2023-44251",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWAN: greater equal 5.1.1, less equal 5.1.2",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwan:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.1.1",
+                    "le": "5.1.2"
+                  }
+                },
+                {
+                  "description": "FortiWAN: greater equal 5.2.0, less equal 5.2.1",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwan:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.1"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:H/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-22"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-11-02T00:00:00Z",
+  "updated": "2023-11-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-265"
+}
+

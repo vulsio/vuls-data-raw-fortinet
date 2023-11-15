@@ -1,0 +1,57 @@
+{
+  "id": "FG-IR-23-290",
+  "title": "FortiSIEM - Windows agent password is visible in the logs",
+  "summary": "An exposure of sensitive information to an unauthorized actor [CWE-200] in FortiSIEM may allow an attacker with access to windows agent logs to obtain the windows agent password via searching through the logs.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-290",
+      "cve": "CVE-2023-41676",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSIEM: greater equal 6.7.0, less equal 6.7.5, fixed in [6.7.6, 7.0.1, 7.1.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.7.0",
+                    "le": "6.7.5"
+                  },
+                  "fixed_in": [
+                    "6.7.6",
+                    "7.0.1",
+                    "7.1.0"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: equal 7.0.0, fixed in [7.0.1, 7.1.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.0.0"
+                  },
+                  "fixed_in": [
+                    "7.0.1",
+                    "7.1.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-200"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2023-11-13T00:00:00Z",
+  "updated": "2023-11-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-290"
+}
+

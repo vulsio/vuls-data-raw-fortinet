@@ -1,0 +1,47 @@
+{
+  "id": "FG-IR-23-383",
+  "title": "TunnelCrack VPN vulnerabilities",
+  "summary": "Fortinet is aware of a research article named TunnelCrack, published at Usenix [1], which describe the LocalNet and ServerIP attacks. These attacks aim to leak VPN client traffic outside of the protected VPN tunnel when clients connect via untrusted networks, such as rogue Wi-Fi access points.  The LocalNet attack allows an attacker to force the usage of local network access features of the VPN to access unencrypted traffic. The ServerIP attack allows an attacker to intercept traffic sent to a spoofed VPN gateway via DNS spoofing attacks. These attacks do not enable the attacker to decrypt the encrypted traffic but rather will try to redirect the traffic through attacker controlled channels before the traffic is encrypted by the VPN.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-383",
+      "cve": "CVE-2023-36671",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 6,
+            "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:N/E:P/RL:X/RC:C"
+          },
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "TunnelCrack VPN vulnerabilities",
+      "url": "https://fortiguard.fortinet.com/psirt/FG-IR-23-383"
+    },
+    {
+      "description": "[1] Bypassing Tunnels: Leaking VPN Client Traffic by Abusing Routing Tables\n",
+      "url": "[1] Bypassing Tunnels: Leaking VPN Client Traffic by Abusing Routing Tables\n"
+    },
+    {
+      "description": "https://papers.mathyvanhoef.com/usenix2023-tunnelcrack.pdf\n",
+      "url": "https://papers.mathyvanhoef.com/usenix2023-tunnelcrack.pdf\n"
+    },
+    {
+      "description": "[2] TunnelCrack by KU Leuven, NYU, and NYU Abu Dhabi\n",
+      "url": "[2] TunnelCrack by KU Leuven, NYU, and NYU Abu Dhabi\n"
+    },
+    {
+      "description": "https://tunnelcrack.mathyvanhoef.com/",
+      "url": "https://tunnelcrack.mathyvanhoef.com/"
+    }
+  ],
+  "published": "2023-11-02T00:00:00Z",
+  "updated": "2023-11-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-383"
+}
+

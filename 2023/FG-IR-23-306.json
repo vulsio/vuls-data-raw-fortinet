@@ -1,0 +1,68 @@
+{
+  "id": "FG-IR-23-306",
+  "title": "FortiEDRCollector (Windows) - Protection may be disabled by local attacker",
+  "summary": "An improper access control vulnerabilty [CWE-284] in FortiEDRCollectorWindows may allow a local attacker to prevent the collector service to start in the next system reboot by tampering with some registry keys of the service.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-306",
+      "cve": "CVE-2023-44248",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiEDR: greater equal 4.0.0, less equal 4.0.0, fixed in [5.0.3.1016, 5.2.0.4581]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiedr:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "4.0.0"
+                  },
+                  "fixed_in": [
+                    "5.0.3.1016",
+                    "5.2.0.4581"
+                  ]
+                },
+                {
+                  "description": "FortiEDR: greater equal 5.0.0.0, less equal 5.0.3.1007, fixed in [5.0.3.1016, 5.2.0.4581]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiedr:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "5.0.0.0",
+                    "le": "5.0.3.1007"
+                  },
+                  "fixed_in": [
+                    "5.0.3.1016",
+                    "5.2.0.4581"
+                  ]
+                },
+                {
+                  "description": "FortiEDR: greater equal 5.2.0.0, less equal 5.2.0.4549, fixed in [5.2.0.4581]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiedr:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "5.2.0.0",
+                    "le": "5.2.0.4549"
+                  },
+                  "fixed_in": [
+                    "5.2.0.4581"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:H/E:P/RL:X/RC:R"
+          },
+          "cwe": [
+            "CWE-284"
+          ],
+          "impact": "Denial of service"
+        }
+      ]
+    }
+  ],
+  "published": "2023-11-14T00:00:00Z",
+  "updated": "2023-11-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-306"
+}
+

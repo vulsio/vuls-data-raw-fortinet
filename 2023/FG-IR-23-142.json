@@ -1,0 +1,55 @@
+{
+  "id": "FG-IR-23-142",
+  "title": "FortiWLM - Unauthenticated SQL Injection Vulnerability",
+  "summary": "An improper neutralization of special elements used in an sql command [CWE-89] in FortiWLM may allow a remote unauthenticated attacker to execute unauthorized sql queries via a crafted http request.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-142",
+      "cve": "CVE-2023-34991",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWLM: less than 8.5.5, fixed in [8.5.5, 8.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlm:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "lt": "8.5.5"
+                  },
+                  "fixed_in": [
+                    "8.5.5",
+                    "8.6.6"
+                  ]
+                },
+                {
+                  "description": "FortiWLM: greater equal 8.6.0, less than 8.6.6, fixed in [8.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlm:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.6.0",
+                    "lt": "8.6.6"
+                  },
+                  "fixed_in": [
+                    "8.6.6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-89"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-11-06T00:00:00Z",
+  "updated": "2023-11-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-142"
+}
+

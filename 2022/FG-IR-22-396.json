@@ -1,0 +1,125 @@
+{
+  "id": "FG-IR-22-396",
+  "title": "FortiOS & FortiProxy VM - Bypass of root file system integrity checks at boot time on VM",
+  "summary": "An improper validation of integrity check value vulnerability [CWE-354] in FortiOS and FortiProxy VMs may allow a local attacker with admin privileges to boot a malicious image on the device and bypass the filesytem integrity check in place.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-396",
+      "cve": "CVE-2023-28002",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.17, fixed in [7.0.13, 7.2.4, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.17"
+                  },
+                  "fixed_in": [
+                    "7.0.13",
+                    "7.2.4",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.2.0, less equal 6.2.15, fixed in [7.0.13, 7.2.4, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.15"
+                  },
+                  "fixed_in": [
+                    "7.0.13",
+                    "7.2.4",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 6.4.14, fixed in [7.0.13, 7.2.4, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.14"
+                  },
+                  "fixed_in": [
+                    "7.0.13",
+                    "7.2.4",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.12, fixed in [7.0.13, 7.2.4, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.12"
+                  },
+                  "fixed_in": [
+                    "7.0.13",
+                    "7.2.4",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less equal 7.2.3, fixed in [7.2.4, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.3"
+                  },
+                  "fixed_in": [
+                    "7.2.4",
+                    "7.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy: greater equal 2.0.0, less equal 2.0.13",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.0.0",
+                    "le": "2.0.13"
+                  }
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.0.0, less equal 7.0.13",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.13"
+                  }
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.2.0, less equal 7.2.7",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.7"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.8,
+            "vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:X/RC:R"
+          },
+          "cwe": [
+            "CWE-354"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-11-02T00:00:00Z",
+  "updated": "2023-11-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-396"
+}
+

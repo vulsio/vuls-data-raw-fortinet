@@ -1,0 +1,120 @@
+{
+  "id": "FG-IR-23-392",
+  "title": "FortiSIEM - Encrypted password stored in logs",
+  "summary": "An insertion of sensitive information into log file vulnerability [CWE-532] in FortiSIEM may allow an authenticated user to view an encrypted ElasticSearch password via debug log files generated when FortiSIEM is configured with ElasticSearch Event Storage.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-392",
+      "cve": "CVE-2023-45585",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSIEM: greater equal 5.3.0, less equal 5.3.3",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.3.0",
+                    "le": "5.3.3"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: greater equal 5.4.0, less equal 5.4.0",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.0"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.1.0, less equal 6.1.2",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.1.0",
+                    "le": "6.1.2"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.2.0, less equal 6.2.1",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.1"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.2.0, less equal 6.2.1",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.1"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.3.0, less equal 6.3.3",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.3.0",
+                    "le": "6.3.3"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.4.0, less equal 6.4.2",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.2"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.5.0, less equal 6.5.1",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.5.0",
+                    "le": "6.5.1"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.6.0, less equal 6.6.3",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.6.0",
+                    "le": "6.6.3"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.7.0, less equal 6.7.6",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.7.0",
+                    "le": "6.7.6"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: equal 7.0.0",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.0.0"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 2.1,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-532"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2023-11-07T00:00:00Z",
+  "updated": "2023-11-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-392"
+}
+

@@ -1,0 +1,84 @@
+{
+  "id": "FG-IR-22-299",
+  "title": "FortiClient (Windows) - Arbitrary file deletion from unprivileged users",
+  "summary": "An incorrect authorization [CWE-863] vulnerability in FortiClient (Windows) may allow a local low privileged attacker to perform arbitrary file deletion in the device filesystem.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-299",
+      "cve": "CVE-2022-40681",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Windows: greater equal 6.0.0, less equal 6.0.10, fixed in [6.4.9, 7.0.8, 7.2.0]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.10"
+                  },
+                  "fixed_in": [
+                    "6.4.9",
+                    "7.0.8",
+                    "7.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: greater equal 6.2.0, less equal 6.2.9, fixed in [6.4.9, 7.0.8, 7.2.0]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.9"
+                  },
+                  "fixed_in": [
+                    "6.4.9",
+                    "7.0.8",
+                    "7.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: greater equal 6.4.0, less equal 6.4.8, fixed in [6.4.9, 7.0.8, 7.2.0]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.8"
+                  },
+                  "fixed_in": [
+                    "6.4.9",
+                    "7.0.8",
+                    "7.2.0"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: greater equal 7.0.0, less equal 7.0.7, fixed in [7.0.8, 7.2.0]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.7"
+                  },
+                  "fixed_in": [
+                    "7.0.8",
+                    "7.2.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.1,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H/E:H/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-863"
+          ],
+          "impact": "Denial of service"
+        }
+      ]
+    }
+  ],
+  "published": "2023-10-10T00:00:00Z",
+  "updated": "2023-11-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-299"
+}
+

@@ -1,0 +1,73 @@
+{
+  "id": "FG-IR-22-518",
+  "title": "FortiADC & FortiDDoS-F - CORS: arbitrary origin trusted",
+  "summary": "A permissive cross-domain policy with untrusted domains (CWE-942) vulnerability in the API of FortiADC / FortiDDoS-F may allow an unauthorized attacker to carry out privileged actions and retrieve sensitive information via crafted web requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-518",
+      "cve": "CVE-2023-25603",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiADC: greater equal 7.1.0, less equal 7.1.1, fixed in [7.1.2, 7.2.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.1.0",
+                    "le": "7.1.1"
+                  },
+                  "fixed_in": [
+                    "7.1.2",
+                    "7.2.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiDDoS-F: greater equal 6.3.0, less equal 6.3.4, fixed in [6.4.2, 6.5.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiddos-f:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.3.0",
+                    "le": "6.3.4"
+                  },
+                  "fixed_in": [
+                    "6.4.2",
+                    "6.5.0"
+                  ]
+                },
+                {
+                  "description": "FortiDDoS-F: greater equal 6.4.0, less equal 6.4.1, fixed in [6.4.2, 6.5.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiddos-f:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.1"
+                  },
+                  "fixed_in": [
+                    "6.4.2",
+                    "6.5.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.4,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N/E:U/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-942"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2023-10-17T00:00:00Z",
+  "updated": "2023-11-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-518"
+}
+

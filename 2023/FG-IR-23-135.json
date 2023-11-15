@@ -1,0 +1,161 @@
+{
+  "id": "FG-IR-23-135",
+  "title": "FortiSIEM - OS command injection in Report Server",
+  "summary": "An improper neutralization of special elements used in an OS Command vulnerability [CWE-78] in FortiSIEM report server may allow a remote unauthenticated attacker to execute unauthorized commands via crafted API requests. This vulnerability was internally discovered as a variant of FG-IR-23-130.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-135",
+      "cve": "CVE-2023-36553",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSIEM: greater equal 4.7.0, less equal 4.7.2, fixed in [6.4.3, 6.5.2, 6.6.4, 6.7.6, 7.0.1, 7.1.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.7.0",
+                    "le": "4.7.2"
+                  },
+                  "fixed_in": [
+                    "6.4.3",
+                    "6.5.2",
+                    "6.6.4",
+                    "6.7.6",
+                    "7.0.1",
+                    "7.1.0"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 4.9.0, less equal 4.9.0, fixed in [6.4.3, 6.5.2, 6.6.4, 6.7.6, 7.0.1, 7.1.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.9.0",
+                    "le": "4.9.0"
+                  },
+                  "fixed_in": [
+                    "6.4.3",
+                    "6.5.2",
+                    "6.6.4",
+                    "6.7.6",
+                    "7.0.1",
+                    "7.1.0"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 4.10.0, less equal 4.10.0, fixed in [6.4.3, 6.5.2, 6.6.4, 6.7.6, 7.0.1, 7.1.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.10.0",
+                    "le": "4.10.0"
+                  },
+                  "fixed_in": [
+                    "6.4.3",
+                    "6.5.2",
+                    "6.6.4",
+                    "6.7.6",
+                    "7.0.1",
+                    "7.1.0"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 5.0.0, less equal 5.0.1, fixed in [6.4.3, 6.5.2, 6.6.4, 6.7.6, 7.0.1, 7.1.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.1"
+                  },
+                  "fixed_in": [
+                    "6.4.3",
+                    "6.5.2",
+                    "6.6.4",
+                    "6.7.6",
+                    "7.0.1",
+                    "7.1.0"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 5.1.0, less equal 5.1.3, fixed in [6.4.3, 6.5.2, 6.6.4, 6.7.6, 7.0.1, 7.1.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.1.0",
+                    "le": "5.1.3"
+                  },
+                  "fixed_in": [
+                    "6.4.3",
+                    "6.5.2",
+                    "6.6.4",
+                    "6.7.6",
+                    "7.0.1",
+                    "7.1.0"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 5.2.0, less equal 5.2.8, fixed in [6.4.3, 6.5.2, 6.6.4, 6.7.6, 7.0.1, 7.1.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.8"
+                  },
+                  "fixed_in": [
+                    "6.4.3",
+                    "6.5.2",
+                    "6.6.4",
+                    "6.7.6",
+                    "7.0.1",
+                    "7.1.0"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 5.3.0, less equal 5.3.3, fixed in [6.4.3, 6.5.2, 6.6.4, 6.7.6, 7.0.1, 7.1.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.3.0",
+                    "le": "5.3.3"
+                  },
+                  "fixed_in": [
+                    "6.4.3",
+                    "6.5.2",
+                    "6.6.4",
+                    "6.7.6",
+                    "7.0.1",
+                    "7.1.0"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 5.4.0, less equal 5.4.0, fixed in [6.4.3, 6.5.2, 6.6.4, 6.7.6, 7.0.1, 7.1.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.0"
+                  },
+                  "fixed_in": [
+                    "6.4.3",
+                    "6.5.2",
+                    "6.6.4",
+                    "6.7.6",
+                    "7.0.1",
+                    "7.1.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-11-13T00:00:00Z",
+  "updated": "2023-11-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-135"
+}
+

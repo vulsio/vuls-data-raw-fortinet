@@ -1,0 +1,49 @@
+{
+  "id": "FG-IR-23-061",
+  "title": "FortiWAN - Guessable static JSON web token secret",
+  "summary": "*PRODUCT OUT OF SUPPORT* An improper authentication vulnerability [CWE-287] in FortWAN may allow an authenticated attacker to escalate his privileges via HTTP or HTTPs requests with crafted JWT token values.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-061",
+      "cve": "CVE-2023-44252",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWAN: greater equal 5.1.1, less equal 5.1.2",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwan:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.1.1",
+                    "le": "5.1.2"
+                  }
+                },
+                {
+                  "description": "FortiWAN: greater equal 5.2.0, less equal 5.2.1",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwan:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.1"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-287"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2023-11-13T00:00:00Z",
+  "updated": "2023-11-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-061"
+}
+

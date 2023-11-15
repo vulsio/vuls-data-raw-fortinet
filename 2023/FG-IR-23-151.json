@@ -1,0 +1,182 @@
+{
+  "id": "FG-IR-23-151",
+  "title": "FortiOS & FortiProxy - DOS in headers management",
+  "summary": "A null pointer dereference [CWE-476] in FortiOS and FortiProxy SSL VPN may allow an authenticated attacker to perform a DoS attack on the device via specifically crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-151",
+      "cve": "CVE-2023-36641",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.17, fixed in [7.0.13, 7.2.6, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.17"
+                  },
+                  "fixed_in": [
+                    "7.0.13",
+                    "7.2.6",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.2.0, less equal 6.2.15, fixed in [7.0.13, 7.2.6, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.15"
+                  },
+                  "fixed_in": [
+                    "7.0.13",
+                    "7.2.6",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 6.4.14, fixed in [7.0.13, 7.2.6, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.14"
+                  },
+                  "fixed_in": [
+                    "7.0.13",
+                    "7.2.6",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.12, fixed in [7.0.13, 7.2.6, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.12"
+                  },
+                  "fixed_in": [
+                    "7.0.13",
+                    "7.2.6",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less equal 7.2.5, fixed in [7.2.6, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.5"
+                  },
+                  "fixed_in": [
+                    "7.2.6",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 7.4.0, fixed in [7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy: greater equal 1.0.0, less equal 1.0.7, fixed in [7.0.11, 7.2.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.0.0",
+                    "le": "1.0.7"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "7.2.5"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 1.1.0, less equal 1.1.6, fixed in [7.0.11, 7.2.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.1.0",
+                    "le": "1.1.6"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "7.2.5"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 1.2.0, less equal 1.2.13, fixed in [7.0.11, 7.2.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.2.0",
+                    "le": "1.2.13"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "7.2.5"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 2.0.0, less equal 2.0.13, fixed in [7.0.11, 7.2.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.0.0",
+                    "le": "2.0.13"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "7.2.5"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.0.0, less equal 7.0.10, fixed in [7.0.11, 7.2.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.10"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "7.2.5"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.2.0, less equal 7.2.4, fixed in [7.2.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.4"
+                  },
+                  "fixed_in": [
+                    "7.2.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-476"
+          ],
+          "impact": "Denial of service"
+        }
+      ]
+    }
+  ],
+  "published": "2023-11-09T00:00:00Z",
+  "updated": "2023-11-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-151"
+}
+

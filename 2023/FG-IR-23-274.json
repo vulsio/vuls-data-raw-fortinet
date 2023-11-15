@@ -1,0 +1,55 @@
+{
+  "id": "FG-IR-23-274",
+  "title": "FortiClient (Windows) - DLL Hijacking via openssl.cnf",
+  "summary": "An untrusted search path vulnerability [CWE-426] in FortiClient Windows OpenSSL component may allow an attacker to perform a DLL Hijack attack via a malicious OpenSSL engine library in the search path.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-274",
+      "cve": "CVE-2023-41840",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Windows: equal 7.0.9, fixed in [7.0.10, 7.2.2]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "eq": "7.0.9"
+                  },
+                  "fixed_in": [
+                    "7.0.10",
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: greater equal 7.2.0, less equal 7.2.1, fixed in [7.2.2]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.1"
+                  },
+                  "fixed_in": [
+                    "7.2.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.4,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-426"
+          ],
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2023-11-06T00:00:00Z",
+  "updated": "2023-11-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-274"
+}
+

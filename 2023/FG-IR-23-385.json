@@ -1,0 +1,141 @@
+{
+  "id": "FG-IR-23-385",
+  "title": "curl and libcurl CVE-2023-38545 and CVE-2023-38546 vulnerabilities",
+  "summary": "CVE-2023-38545: severity HIGH (affects both libcurl and the curl tool) A heap-based buffer overflow flaw was found in the SOCKS5 proxy handshake in the Curl package. If Curl is unable to resolve the address itself, it passes the hostname to the SOCKS5 proxy. However, the maximum length of the hostname that can be passed is 255 bytes. If the hostname is longer, then Curl switches to the local name resolving and passes the resolved address only to the proxy. The local variable that instructs Curl to \"let the host resolve the name\" could obtain the wrong value during a slow SOCKS5 handshake, resulting in the too-long hostname being copied to the target buffer instead of the resolved address, which was not the intended behavior. https://curl.se/docs/CVE-2023-38545.html CVE-2023-38546: severity LOW (affects libcurl only, not the tool) A flaw was found in the Curl package. This flaw allows an attacker to insert cookies into a running program using libcurl if the specific series of conditions are met. https://curl.se/docs/CVE-2023-38546.html",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-385",
+      "cve": "CVE-2023-38545",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 7.0.1, less equal 7.0.13, fixed in [7.2.7, 7.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.1",
+                    "le": "7.0.13"
+                  },
+                  "fixed_in": [
+                    "7.2.7",
+                    "7.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less equal 7.2.6, fixed in [7.2.7, 7.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.6"
+                  },
+                  "fixed_in": [
+                    "7.2.7",
+                    "7.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.4.0, less equal 7.4.1, fixed in [7.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.1"
+                  },
+                  "fixed_in": [
+                    "7.4.2"
+                  ]
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiGate: equal FortiGate VM64 KVM",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-vm64:-:*:*:*:*:kvm:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:X/RC:X"
+          },
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-23-385",
+      "cve": "CVE-2023-38546",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 7.0.1, less equal 7.0.13, fixed in [7.2.7, 7.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.1",
+                    "le": "7.0.13"
+                  },
+                  "fixed_in": [
+                    "7.2.7",
+                    "7.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less equal 7.2.6, fixed in [7.2.7, 7.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.6"
+                  },
+                  "fixed_in": [
+                    "7.2.7",
+                    "7.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.4.0, less equal 7.4.1, fixed in [7.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.1"
+                  },
+                  "fixed_in": [
+                    "7.4.2"
+                  ]
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiGate: equal FortiGate VM64 KVM",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-vm64:-:*:*:*:*:kvm:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:U/RL:X/RC:X"
+          },
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-11-07T00:00:00Z",
+  "updated": "2023-11-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-385"
+}
+

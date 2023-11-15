@@ -1,0 +1,56 @@
+{
+  "id": "FG-IR-23-108",
+  "title": "FortiClient for Windows - Hardcoded credentials in vcm2.exe",
+  "summary": "A use of hard-coded credentials vulnerability [CWE-798] in FortiClient for Windows may allow an attacker to bypass system protections via the use of static credentials.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-108",
+      "cve": "CVE-2023-33304",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Windows: greater equal 7.0.0, less equal 7.0.9, fixed in [7.0.9, 7.2.2]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.9"
+                  },
+                  "fixed_in": [
+                    "7.0.9",
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: greater equal 7.2.0, less equal 7.2.1, fixed in [7.2.2]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.1"
+                  },
+                  "fixed_in": [
+                    "7.2.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.4,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:N/E:U/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-798"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2023-11-06T00:00:00Z",
+  "updated": "2023-11-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-108"
+}
+
