@@ -1,0 +1,217 @@
+{
+  "id": "FG-IR-22-345",
+  "title": "FortiTester - command injection in \"execute restore/backup\" CLI commands",
+  "summary": "An improper neutralization of special elements used in an OS command vulnerability [CWE-78] in the command line interpreter of FortiTester may allow an authenticated attacker to execute unauthorized commands via specifically crafted arguments when running execute restore/backup .",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-345",
+      "cve": "CVE-2023-40716",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiTester: greater equal 2.3.0, less equal 2.3.0",
+                  "cpe": "cpe:2.3:o:fortinet:fortitester:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.3.0",
+                    "le": "2.3.0"
+                  }
+                },
+                {
+                  "description": "FortiTester: greater equal 2.4.0, less equal 2.4.1",
+                  "cpe": "cpe:2.3:o:fortinet:fortitester:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.4.0",
+                    "le": "2.4.1"
+                  }
+                },
+                {
+                  "description": "FortiTester: greater equal 2.5.0, less equal 2.5.0",
+                  "cpe": "cpe:2.3:o:fortinet:fortitester:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.5.0",
+                    "le": "2.5.0"
+                  }
+                },
+                {
+                  "description": "FortiTester: greater equal 2.6.0, less equal 2.6.0",
+                  "cpe": "cpe:2.3:o:fortinet:fortitester:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.6.0",
+                    "le": "2.6.0"
+                  }
+                },
+                {
+                  "description": "FortiTester: greater equal 2.7.0, less equal 2.7.0",
+                  "cpe": "cpe:2.3:o:fortinet:fortitester:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.7.0",
+                    "le": "2.7.0"
+                  }
+                },
+                {
+                  "description": "FortiTester: greater equal 2.8.0, less equal 2.8.0",
+                  "cpe": "cpe:2.3:o:fortinet:fortitester:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.8.0",
+                    "le": "2.8.0"
+                  }
+                },
+                {
+                  "description": "FortiTester: greater equal 2.9.0, less equal 2.9.0",
+                  "cpe": "cpe:2.3:o:fortinet:fortitester:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.9.0",
+                    "le": "2.9.0"
+                  }
+                },
+                {
+                  "description": "FortiTester: greater equal 3.0.0, less equal 3.0.0",
+                  "cpe": "cpe:2.3:o:fortinet:fortitester:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.0.0",
+                    "le": "3.0.0"
+                  }
+                },
+                {
+                  "description": "FortiTester: greater equal 3.1.0, less equal 3.1.0",
+                  "cpe": "cpe:2.3:o:fortinet:fortitester:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.1.0",
+                    "le": "3.1.0"
+                  }
+                },
+                {
+                  "description": "FortiTester: greater equal 3.2.0, less equal 3.2.0",
+                  "cpe": "cpe:2.3:o:fortinet:fortitester:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.2.0",
+                    "le": "3.2.0"
+                  }
+                },
+                {
+                  "description": "FortiTester: greater equal 3.3.0, less equal 3.3.1",
+                  "cpe": "cpe:2.3:o:fortinet:fortitester:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.3.0",
+                    "le": "3.3.1"
+                  }
+                },
+                {
+                  "description": "FortiTester: greater equal 3.4.0, less equal 3.4.0",
+                  "cpe": "cpe:2.3:o:fortinet:fortitester:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.4.0",
+                    "le": "3.4.0"
+                  }
+                },
+                {
+                  "description": "FortiTester: greater equal 3.5.0, less equal 3.5.1",
+                  "cpe": "cpe:2.3:o:fortinet:fortitester:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.5.0",
+                    "le": "3.5.1"
+                  }
+                },
+                {
+                  "description": "FortiTester: greater equal 3.6.0, less equal 3.6.0",
+                  "cpe": "cpe:2.3:o:fortinet:fortitester:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.6.0",
+                    "le": "3.6.0"
+                  }
+                },
+                {
+                  "description": "FortiTester: greater equal 3.7.0, less equal 3.7.1",
+                  "cpe": "cpe:2.3:o:fortinet:fortitester:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.7.0",
+                    "le": "3.7.1"
+                  }
+                },
+                {
+                  "description": "FortiTester: greater equal 3.8.0, less equal 3.8.0",
+                  "cpe": "cpe:2.3:o:fortinet:fortitester:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.8.0",
+                    "le": "3.8.0"
+                  }
+                },
+                {
+                  "description": "FortiTester: greater equal 3.9.0, less equal 3.9.2",
+                  "cpe": "cpe:2.3:o:fortinet:fortitester:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.9.0",
+                    "le": "3.9.2"
+                  }
+                },
+                {
+                  "description": "FortiTester: greater equal 4.0.0, less equal 4.0.0",
+                  "cpe": "cpe:2.3:o:fortinet:fortitester:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "4.0.0"
+                  }
+                },
+                {
+                  "description": "FortiTester: greater equal 4.1.0, less equal 4.1.1",
+                  "cpe": "cpe:2.3:o:fortinet:fortitester:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.1.0",
+                    "le": "4.1.1"
+                  }
+                },
+                {
+                  "description": "FortiTester: greater equal 4.2.0, less equal 4.2.1",
+                  "cpe": "cpe:2.3:o:fortinet:fortitester:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.2.0",
+                    "le": "4.2.1"
+                  }
+                },
+                {
+                  "description": "FortiTester: greater equal 7.0.0, less equal 7.0.0",
+                  "cpe": "cpe:2.3:o:fortinet:fortitester:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.0"
+                  }
+                },
+                {
+                  "description": "FortiTester: greater equal 7.1.0, less equal 7.1.1",
+                  "cpe": "cpe:2.3:o:fortinet:fortitester:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.1.0",
+                    "le": "7.1.1"
+                  }
+                },
+                {
+                  "description": "FortiTester: greater equal 7.2.0, less equal 7.2.3",
+                  "cpe": "cpe:2.3:o:fortinet:fortitester:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.3"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.5,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-12-01T00:00:00Z",
+  "updated": "2023-12-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-345"
+}
+

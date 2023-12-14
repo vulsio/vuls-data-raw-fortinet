@@ -1,0 +1,115 @@
+{
+  "id": "FG-IR-23-270",
+  "title": "FortiADC - Read-only administrator can read or backup the system configuration",
+  "summary": "An improper authorization vulnerability [CWE-285] in FortiADC may allow a low privileged user to read or backup the full system configuration via HTTP or HTTPS requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-270",
+      "cve": "CVE-2023-41673",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiADC: greater equal 6.0.0, less equal 6.0.4, fixed in [7.2.3, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.4"
+                  },
+                  "fixed_in": [
+                    "7.2.3",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 6.1.0, less equal 6.1.6, fixed in [7.2.3, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.1.0",
+                    "le": "6.1.6"
+                  },
+                  "fixed_in": [
+                    "7.2.3",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 6.2.0, less equal 6.2.6, fixed in [7.2.3, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.6"
+                  },
+                  "fixed_in": [
+                    "7.2.3",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 7.0.0, less equal 7.0.5, fixed in [7.2.3, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.5"
+                  },
+                  "fixed_in": [
+                    "7.2.3",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 7.1.0, less equal 7.1.4, fixed in [7.2.3, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.1.0",
+                    "le": "7.1.4"
+                  },
+                  "fixed_in": [
+                    "7.2.3",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 7.2.0, less equal 7.2.2, fixed in [7.2.3, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.2"
+                  },
+                  "fixed_in": [
+                    "7.2.3",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: equal 7.4.0, fixed in [7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.9,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:L/A:N/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-285"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2023-12-12T00:00:00Z",
+  "updated": "2023-12-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-270"
+}
+

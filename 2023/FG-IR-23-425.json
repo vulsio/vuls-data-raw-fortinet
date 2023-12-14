@@ -1,0 +1,55 @@
+{
+  "id": "FG-IR-23-425",
+  "title": "FortiPortal - Schedule System Backup Page OS Command Injection",
+  "summary": "An improper neutralization of special elements used in a command ('Command Injection') vulnerability [CWE-77] in FortiPortal may allow a remote authenticated attacker with at least R/W permission to execute unauthorized commands via specifically crafted arguments in the Schedule System Backup page field.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-425",
+      "cve": "CVE-2023-48791",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiPortal: greater equal 7.0.0, less equal 7.0.6, fixed in [7.0.7, 7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.6"
+                  },
+                  "fixed_in": [
+                    "7.0.7",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiPortal: equal 7.2.0, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.2.0"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.9,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-77"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2023-12-11T00:00:00Z",
+  "updated": "2023-12-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-425"
+}
+

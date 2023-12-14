@@ -1,0 +1,44 @@
+{
+  "id": "FG-IR-23-450",
+  "title": "FortiWLM - authenticated command injection vulnerability",
+  "summary": "An Improper neutralization of special elements used in an os command vulnerabilities [CWE-78] in FortiWLM may allow a remote authenticated attacker with low privilege to execute unauthorized commands via specifically crafted http get request parameters.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-450",
+      "cve": "CVE-2023-48782",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWLM: greater equal 8.6.0, less equal 8.6.5, fixed in [8.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlm:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.6.0",
+                    "le": "8.6.5"
+                  },
+                  "fixed_in": [
+                    "8.6.6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2023-12-07T00:00:00Z",
+  "updated": "2023-12-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-450"
+}
+

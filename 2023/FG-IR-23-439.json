@@ -1,0 +1,43 @@
+{
+  "id": "FG-IR-23-439",
+  "title": "FortiMail - Potential Remote_wildcard RADIUS login bypass in FotiMail 7.4.0",
+  "summary": "An improper access control vulnerability [CWE-284] in FortiMail configured with RADIUS authentication and remote_wildcard enabled may allow a remote unauthenticated attacker to bypass admin login via a crafted HTTP request.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-439",
+      "cve": "CVE-2023-47539",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiMail: equal 7.4.0, fixed in [7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:U/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-284"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2023-12-12T00:00:00Z",
+  "updated": "2023-12-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-439"
+}
+
