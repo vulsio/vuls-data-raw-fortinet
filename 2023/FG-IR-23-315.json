@@ -1,0 +1,70 @@
+{
+  "id": "FG-IR-23-315",
+  "title": "FortiOS & FortiProxy - Improper authorization for HA requests",
+  "summary": "An improper privilege management vulnerability [CWE-269] in a FortiOS & FortiProxy HA cluster may allow an authenticated attacker to perform elevated actions via crafted HTTP or HTTPS requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-315",
+      "cve": "CVE-2023-44250",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: equal 7.2.5, fixed in [7.2.6, 7.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.2.5"
+                  },
+                  "fixed_in": [
+                    "7.2.6",
+                    "7.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.4.0, less equal 7.4.1, fixed in [7.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.1"
+                  },
+                  "fixed_in": [
+                    "7.4.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy: greater equal 7.4.0, less equal 7.4.1, fixed in [7.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.1"
+                  },
+                  "fixed_in": [
+                    "7.4.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-269"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2024-01-09T00:00:00Z",
+  "updated": "2024-01-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-315"
+}
+

@@ -1,0 +1,67 @@
+{
+  "id": "FG-IR-23-219",
+  "title": "FortiVoice - Path traversal vulnerability in administrative interface",
+  "summary": "An improper limitation of a pathname to a restricted directory ('path traversal') vulnerability [CWE-22] in FortiVoice may allow an authenticated attacker to read arbitrary files from the system via sending crafted HTTP or HTTPS requests",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-219",
+      "cve": "CVE-2023-37932",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiVoice: greater equal 6.0.0, less equal 6.0.12, fixed in [6.4.8, 7.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.12"
+                  },
+                  "fixed_in": [
+                    "6.4.8",
+                    "7.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiVoice: greater equal 6.4.0, less equal 6.4.7, fixed in [6.4.8, 7.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.7"
+                  },
+                  "fixed_in": [
+                    "6.4.8",
+                    "7.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiVoice: equal 7.0.0, fixed in [7.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.0.0"
+                  },
+                  "fixed_in": [
+                    "7.0.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-22"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2024-01-09T00:00:00Z",
+  "updated": "2024-01-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-219"
+}
+

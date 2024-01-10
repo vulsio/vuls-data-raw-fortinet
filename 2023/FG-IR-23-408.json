@@ -1,0 +1,80 @@
+{
+  "id": "FG-IR-23-408",
+  "title": "FortiPortal - Insufficient Access Control over API endpoints",
+  "summary": "An Authorization Bypass Through User-Controlled Key vulnerability [CWE-639] affecting FortiPortal may allow a remote authenticated user with at least read-only permissions to access to other organization endpoints via crafted GET requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-408",
+      "cve": "CVE-2023-48783",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiPortal: greater equal 5.3.0, less equal 5.3.8, fixed in [7.0.7, 7.2.2]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.3.0",
+                    "le": "5.3.8"
+                  },
+                  "fixed_in": [
+                    "7.0.7",
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiPortal: greater equal 6.0.0, less equal 6.0.14, fixed in [7.0.7, 7.2.2]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.14"
+                  },
+                  "fixed_in": [
+                    "7.0.7",
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiPortal: greater equal 7.0.0, less equal 7.0.6, fixed in [7.0.7, 7.2.2]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.6"
+                  },
+                  "fixed_in": [
+                    "7.0.7",
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiPortal: greater equal 7.2.0, less equal 7.2.1, fixed in [7.2.2]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.1"
+                  },
+                  "fixed_in": [
+                    "7.2.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.9,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N/E:P/RL:X/RC:R"
+          },
+          "cwe": [
+            "CWE-639"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2024-01-09T00:00:00Z",
+  "updated": "2024-01-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-408"
+}
+

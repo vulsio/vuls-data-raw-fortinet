@@ -1,0 +1,44 @@
+{
+  "id": "FG-IR-23-226",
+  "title": "FortiPAM - Lack of rate control to protect against DoS attacks",
+  "summary": "An allocation of resources without limits or throttling vulnerability [CWE-770] in FortiPAM may allow an authenticated attacker to perform a denial of service attack via sending crafted HTTP or HTTPS requests at a high frequency.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-226",
+      "cve": "CVE-2023-37934",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiPAM: greater equal 1.0.0, less equal 1.0.3, fixed in [1.1.0]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.0.0",
+                    "le": "1.0.3"
+                  },
+                  "fixed_in": [
+                    "1.1.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-770"
+          ],
+          "impact": "Denial of service"
+        }
+      ]
+    }
+  ],
+  "published": "2024-01-09T00:00:00Z",
+  "updated": "2024-01-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-226"
+}
+

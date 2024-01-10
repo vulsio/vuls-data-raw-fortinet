@@ -1,0 +1,25 @@
+{
+  "id": "FG-IR-23-490",
+  "title": "OpenSSH Terrapin attack (CVE-2023-48795)",
+  "summary": "CVE-2023-48795 The SSH transport protocol with certain OpenSSH extensions, found in OpenSSH before 9.6 and other products, allows remote attackers to bypass integrity checks such that some packets are omitted (from the extension negotiation message), and a client and server may consequently end up with a connection for which some security features have been downgraded or disabled, aka a Terrapin attack. This occurs because the SSH Binary Packet Protocol (BPP), implemented by these extensions, mishandles the handshake phase and mishandles use of sequence numbers. For example, there is an effective attack against SSH's use of ChaCha20-Poly1305 (and CBC with Encrypt-then-MAC). The bypass occurs in chacha20-poly1305@openssh.com and (if CBC is used) the -etm@openssh.com MAC algorithms.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-490",
+      "cve": "CVE-2023-48795",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 5.3,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N/E:P/RL:O/RC:C"
+          },
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2024-01-09T00:00:00Z",
+  "updated": "2024-01-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-490"
+}
+
