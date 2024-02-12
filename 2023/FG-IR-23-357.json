@@ -1,0 +1,92 @@
+{
+  "id": "FG-IR-23-357",
+  "title": "FortiClientEMS - Improper privilege management for site super administrator",
+  "summary": "An improper privilege management vulnerability [CWE-269] in FortiClientEMS graphical administrative interface may allow an Site administrator with Super Admin privileges to perform global administrative operations affecting other sites via crafted HTTP or HTTPS requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-357",
+      "cve": "CVE-2023-45581",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClientEMS: greater equal 6.2.0, less equal 6.2.9, fixed in [7.0.11, 7.2.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.9"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "7.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiClientEMS: greater equal 6.4.0, less equal 6.4.9, fixed in [7.0.11, 7.2.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.9"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "7.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiClientEMS: greater equal 7.0.0, less equal 7.0.4, fixed in [7.0.11, 7.2.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.4"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "7.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiClientEMS: greater equal 7.0.6, less equal 7.0.10, fixed in [7.0.11, 7.2.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.6",
+                    "le": "7.0.10"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "7.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiClientEMS: greater equal 7.2.0, less equal 7.2.2, fixed in [7.2.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.2"
+                  },
+                  "fixed_in": [
+                    "7.2.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.9,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:U"
+          },
+          "cwe": [
+            "CWE-269"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2024-02-08T00:00:00Z",
+  "updated": "2024-02-08T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-357"
+}
+

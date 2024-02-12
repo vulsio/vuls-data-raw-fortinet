@@ -1,0 +1,68 @@
+{
+  "id": "FG-IR-23-301",
+  "title": "FortiOS - Fortilink lack of certificate validation",
+  "summary": "An improper certificate validation vulnerability [CWE-295] in FortiOS may allow an unauthenticated attacker in a Man-in-the-Middle position to decipher and alter the FortiLink communication channel between the FortiOS device and a FortiSwitch instance.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-301",
+      "cve": "CVE-2023-47537",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.14, fixed in [7.2.7, 7.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.14"
+                  },
+                  "fixed_in": [
+                    "7.2.7",
+                    "7.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less equal 7.2.6, fixed in [7.2.7, 7.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.6"
+                  },
+                  "fixed_in": [
+                    "7.2.7",
+                    "7.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.4.0, less equal 7.4.1, fixed in [7.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.1"
+                  },
+                  "fixed_in": [
+                    "7.4.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.4,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N/E:U/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-295"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2024-02-08T00:00:00Z",
+  "updated": "2024-02-08T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-301"
+}
+
