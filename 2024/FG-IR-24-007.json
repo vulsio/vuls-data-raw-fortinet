@@ -1,0 +1,56 @@
+{
+  "id": "FG-IR-24-007",
+  "title": "Pervasive SQL injection in DAS component",
+  "summary": "An improper neutralization of special elements used in an SQL Command ('SQL Injection') vulnerability [CWE-89] in FortiClientEMS may allow an unauthenticated attacker to execute unauthorized code or commands via specifically crafted requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-007",
+      "cve": "CVE-2023-48788",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClientEMS: greater equal 7.0.1, less equal 7.0.10, fixed in [7.0.11, 7.2.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.1",
+                    "le": "7.0.10"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "7.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiClientEMS: greater equal 7.2.0, less equal 7.2.2, fixed in [7.2.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.2"
+                  },
+                  "fixed_in": [
+                    "7.2.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-89"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2024-03-12T00:00:00Z",
+  "updated": "2024-03-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-007"
+}
+

@@ -1,0 +1,92 @@
+{
+  "id": "FG-IR-23-390",
+  "title": "FortiClientEMS - CSV injection in log download feature",
+  "summary": "An improper neutralization of formula elements in a CSV File vulnerability [CWE-1236] in FortiClientEMS may allow a remote and unauthenticated attacker to execute arbitrary commands on the admin workstation via creating malicious log entries with crafted requests to the server.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-390",
+      "cve": "CVE-2023-47534",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClientEMS: greater equal 6.0.0, less equal 6.0.8, fixed in [7.0.11, 7.2.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.8"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "7.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiClientEMS: greater equal 6.2.0, less equal 6.2.9, fixed in [7.0.11, 7.2.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.9"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "7.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiClientEMS: greater equal 6.4.0, less equal 6.4.9, fixed in [7.0.11, 7.2.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.9"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "7.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiClientEMS: greater equal 7.0.0, less equal 7.0.10, fixed in [7.0.11, 7.2.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.10"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "7.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiClientEMS: greater equal 7.2.0, less equal 7.2.2, fixed in [7.2.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.2"
+                  },
+                  "fixed_in": [
+                    "7.2.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.7,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H/E:P/RL:U/RC:R"
+          },
+          "cwe": [
+            "CWE-1236"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2024-03-12T00:00:00Z",
+  "updated": "2024-03-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-390"
+}
+

@@ -1,0 +1,55 @@
+{
+  "id": "FG-IR-24-016",
+  "title": "FortiPortal - Improper Authorization in reports download",
+  "summary": "An improper authorization vulnerability [CWE-285] in FortiPortal reports may allow a user to download other organizations reports via modification in the request payload.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-016",
+      "cve": "CVE-2024-21761",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiPortal: greater equal 7.0.0, less equal 7.0.6, fixed in [7.0.7, 7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.6"
+                  },
+                  "fixed_in": [
+                    "7.0.7",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiPortal: equal 7.2.0, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.2.0"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.9,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-285"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2024-02-27T00:00:00Z",
+  "updated": "2024-03-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-016"
+}
+
