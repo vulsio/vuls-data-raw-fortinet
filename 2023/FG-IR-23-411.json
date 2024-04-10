@@ -1,0 +1,92 @@
+{
+  "id": "FG-IR-23-411",
+  "title": "FortiSandbox - Command injection impacting CLI command",
+  "summary": "An improper neutralization of special elements used in an OS Command ('OS Command Injection') vulnerability [CWE-78] in FortiSandbox may allow a privileged attacker with super-admin profile and CLI access to execute arbitrary code via CLI.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-411",
+      "cve": "CVE-2023-47540",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: greater equal 3.0.5, less equal 3.0.7, fixed in [4.2.7, 4.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.0.5",
+                    "le": "3.0.7"
+                  },
+                  "fixed_in": [
+                    "4.2.7",
+                    "4.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 3.2.0, less equal 3.2.4, fixed in [4.2.7, 4.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.2.0",
+                    "le": "3.2.4"
+                  },
+                  "fixed_in": [
+                    "4.2.7",
+                    "4.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.0.0, less equal 4.0.5, fixed in [4.2.7, 4.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "4.0.5"
+                  },
+                  "fixed_in": [
+                    "4.2.7",
+                    "4.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.2.0, less equal 4.2.6, fixed in [4.2.7, 4.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.2.0",
+                    "le": "4.2.6"
+                  },
+                  "fixed_in": [
+                    "4.2.7",
+                    "4.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.4.0, less equal 4.4.2, fixed in [4.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.4.0",
+                    "le": "4.4.2"
+                  },
+                  "fixed_in": [
+                    "4.4.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.5,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2024-04-09T00:00:00Z",
+  "updated": "2024-04-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-411"
+}
+

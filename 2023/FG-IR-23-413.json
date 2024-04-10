@@ -1,0 +1,80 @@
+{
+  "id": "FG-IR-23-413",
+  "title": "FortiOS - Format String in CLI command",
+  "summary": "A use of externally-controlled format string vulnerability [CWE-134] in FortiOS command line interface may allow a local privileged attacker with super-admin profile and CLI access to execute arbitrary code or commands via specially crafted requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-413",
+      "cve": "CVE-2023-48784",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 6.4.15, fixed in [7.2.8, 7.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.15"
+                  },
+                  "fixed_in": [
+                    "7.2.8",
+                    "7.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.15, fixed in [7.2.8, 7.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.15"
+                  },
+                  "fixed_in": [
+                    "7.2.8",
+                    "7.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less equal 7.2.7, fixed in [7.2.8, 7.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.7"
+                  },
+                  "fixed_in": [
+                    "7.2.8",
+                    "7.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.4.0, less equal 7.4.1, fixed in [7.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.1"
+                  },
+                  "fixed_in": [
+                    "7.4.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.1,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:X/RC:R"
+          },
+          "cwe": [
+            "CWE-134"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2024-04-09T00:00:00Z",
+  "updated": "2024-04-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-413"
+}
+

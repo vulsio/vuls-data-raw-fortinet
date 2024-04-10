@@ -1,0 +1,70 @@
+{
+  "id": "FG-IR-23-454",
+  "title": "FortiSandbox -  Arbitrary file delete on endpoint",
+  "summary": "An improper limitation of a pathname to a restricted directory ('Path Traversal') vulnerability [CWE-22] in FortiSandbox may allow an authenticated attacker with at least read-only permission to delete arbitrary files via crafted HTTP requests.",
+  "description": "None",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-454",
+      "cve": "CVE-2024-23671",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: greater equal 4.0.0, less equal 4.0.4, fixed in [4.0.5, 4.2.7, 4.4.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "4.0.4"
+                  },
+                  "fixed_in": [
+                    "4.0.5",
+                    "4.2.7",
+                    "4.4.4"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.2.0, less equal 4.2.6, fixed in [4.2.7, 4.4.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.2.0",
+                    "le": "4.2.6"
+                  },
+                  "fixed_in": [
+                    "4.2.7",
+                    "4.4.4"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.4.0, less equal 4.4.3, fixed in [4.4.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.4.0",
+                    "le": "4.4.3"
+                  },
+                  "fixed_in": [
+                    "4.4.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.9,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-22"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2024-04-09T00:00:00Z",
+  "updated": "2024-04-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-454"
+}
+

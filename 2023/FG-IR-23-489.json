@@ -1,0 +1,127 @@
+{
+  "id": "FG-IR-23-489",
+  "title": "FortiSandbox - OS command injection on endpoint",
+  "summary": "Multiple improper neutralization of special elements used in an OS Command vulnerabilities [CWE-78] in FortiSandbox may allow an authenticated attacker with at least read-only permission to execute unauthorized commands via crafted requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-489",
+      "cve": "CVE-2024-21755",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: greater equal 4.0.0, less equal 4.0.4, fixed in [4.0.5, 4.2.7, 4.4.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "4.0.4"
+                  },
+                  "fixed_in": [
+                    "4.0.5",
+                    "4.2.7",
+                    "4.4.4"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.2.0, less equal 4.2.6, fixed in [4.2.7, 4.4.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.2.0",
+                    "le": "4.2.6"
+                  },
+                  "fixed_in": [
+                    "4.2.7",
+                    "4.4.4"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.4.0, less equal 4.4.3, fixed in [4.4.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.4.0",
+                    "le": "4.4.3"
+                  },
+                  "fixed_in": [
+                    "4.4.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-23-489",
+      "cve": "CVE-2024-21756",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: greater equal 4.0.0, less equal 4.0.4, fixed in [4.0.5, 4.2.7, 4.4.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "4.0.4"
+                  },
+                  "fixed_in": [
+                    "4.0.5",
+                    "4.2.7",
+                    "4.4.4"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.2.0, less equal 4.2.6, fixed in [4.2.7, 4.4.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.2.0",
+                    "le": "4.2.6"
+                  },
+                  "fixed_in": [
+                    "4.2.7",
+                    "4.4.4"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.4.0, less equal 4.4.3, fixed in [4.4.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.4.0",
+                    "le": "4.4.3"
+                  },
+                  "fixed_in": [
+                    "4.4.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2024-04-09T00:00:00Z",
+  "updated": "2024-04-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-489"
+}
+

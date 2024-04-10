@@ -1,0 +1,101 @@
+{
+  "id": "FG-IR-23-345",
+  "title": "FortiClientMac - Lack of configuration file validation",
+  "summary": "An external control of file name or path vulnerability [CWE-73] in FortiClientMac's installer may allow a local attacker to execute arbitrary code or commands via writing a malicious configuration file in /tmp before starting the installation process.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-345",
+      "cve": "CVE-2023-45588",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for MacOS: greater equal 7.0.6, less equal 7.0.10, fixed in [7.0.11, 7.2.4]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "ge": "7.0.6",
+                    "le": "7.0.10"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "7.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOS: greater equal 7.2.0, less equal 7.2.3, fixed in [7.2.4]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.3"
+                  },
+                  "fixed_in": [
+                    "7.2.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.8,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H/E:P/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-73"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-23-345",
+      "cve": "CVE-2024-31492",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for MacOS: greater equal 7.0.6, less equal 7.0.10, fixed in [7.0.11, 7.2.4]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "ge": "7.0.6",
+                    "le": "7.0.10"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "7.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOS: greater equal 7.2.0, less equal 7.2.3, fixed in [7.2.4]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.3"
+                  },
+                  "fixed_in": [
+                    "7.2.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.8,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:C/C:H/I:H/A:H/E:P/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-73"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2024-04-09T00:00:00Z",
+  "updated": "2024-04-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-345"
+}
+

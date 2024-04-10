@@ -1,0 +1,67 @@
+{
+  "id": "FG-IR-23-087",
+  "title": "[FortiClient Linux] Remote Code Execution due to dangerous nodejs configuration",
+  "summary": "An Improper Control of Generation of Code ('Code Injection') vulnerability [CWE-94] in FortiClientLinux may allow##an unauthenticated attacker to execute arbitrary code via tricking a FortiClientLinux user into visiting a malicious website.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-087",
+      "cve": "CVE-2023-45590",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Linux: greater equal 7.0.3, less equal 7.0.4, fixed in [7.0.11, 7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:linux:*:*",
+                  "affected": {
+                    "ge": "7.0.3",
+                    "le": "7.0.4"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Linux: greater equal 7.0.6, less equal 7.0.10, fixed in [7.0.11, 7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:linux:*:*",
+                  "affected": {
+                    "ge": "7.0.6",
+                    "le": "7.0.10"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Linux: equal 7.2.0, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:linux:*:*",
+                  "affected": {
+                    "eq": "7.2.0"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.4,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H/E:F/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-94"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2024-04-09T00:00:00Z",
+  "updated": "2024-04-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-087"
+}
+

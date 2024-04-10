@@ -1,0 +1,128 @@
+{
+  "id": "FG-IR-24-060",
+  "title": "FortiSandbox - Arbitrary file read on endpoint",
+  "summary": "An improper limitation of a pathname to a restricted directory ('Path Traversal') vulnerability |CWE-22] in FortiSandbox may allow an authenticated attacker with at least read-only permission to read arbitrary files via crafted http requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-060",
+      "cve": "CVE-2024-31487",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: greater equal 2.4.0, less equal 2.4.1, fixed in [4.2.7, 4.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.4.0",
+                    "le": "2.4.1"
+                  },
+                  "fixed_in": [
+                    "4.2.7",
+                    "4.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 2.5.0, less equal 2.5.2, fixed in [4.2.7, 4.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.5.0",
+                    "le": "2.5.2"
+                  },
+                  "fixed_in": [
+                    "4.2.7",
+                    "4.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 3.0.0, less equal 3.0.7, fixed in [4.2.7, 4.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.0.0",
+                    "le": "3.0.7"
+                  },
+                  "fixed_in": [
+                    "4.2.7",
+                    "4.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 3.1.0, less equal 3.1.5, fixed in [4.2.7, 4.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.1.0",
+                    "le": "3.1.5"
+                  },
+                  "fixed_in": [
+                    "4.2.7",
+                    "4.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 3.2.0, less equal 3.2.4, fixed in [4.2.7, 4.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.2.0",
+                    "le": "3.2.4"
+                  },
+                  "fixed_in": [
+                    "4.2.7",
+                    "4.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.0.0, less equal 4.0.5, fixed in [4.2.7, 4.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "4.0.5"
+                  },
+                  "fixed_in": [
+                    "4.2.7",
+                    "4.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.2.0, less equal 4.2.6, fixed in [4.2.7, 4.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.2.0",
+                    "le": "4.2.6"
+                  },
+                  "fixed_in": [
+                    "4.2.7",
+                    "4.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.4.0, less equal 4.4.4, fixed in [4.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.4.0",
+                    "le": "4.4.4"
+                  },
+                  "fixed_in": [
+                    "4.4.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.8,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:L/A:N/E:F/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-22"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2024-04-09T00:00:00Z",
+  "updated": "2024-04-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-060"
+}
+

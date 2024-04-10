@@ -1,0 +1,69 @@
+{
+  "id": "FG-IR-23-419",
+  "title": "FortiManager - Code Injection via Jinja Template",
+  "summary": "An improper neutralization of special elements used in a template engine [CWE-1336] vulnerability in FortiManager provisioning templates may allow a local authenticated attacker with at least read-only permissions to execute arbitrary code via specially crafted templates.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-419",
+      "cve": "CVE-2023-47542",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 7.0.0, less equal 7.0.10, fixed in [7.0.11, 7.2.5, 7.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.10"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "7.2.5",
+                    "7.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.2.0, less equal 7.2.4, fixed in [7.2.5, 7.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.4"
+                  },
+                  "fixed_in": [
+                    "7.2.5",
+                    "7.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.4.0, less equal 7.4.1, fixed in [7.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.1"
+                  },
+                  "fixed_in": [
+                    "7.4.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.3,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-1336"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2024-04-09T00:00:00Z",
+  "updated": "2024-04-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-419"
+}
+
