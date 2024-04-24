@@ -28,7 +28,7 @@
                   "description": "FortiOS: greater than 7.0.0, less than 7.0.12, fixed in [7.0.12, 7.2.5, 7.4.0]",
                   "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
                   "affected": {
-                    "gt": "7.0.0",
+                    "ge": "7.0.0",
                     "lt": "7.0.12"
                   },
                   "fixed_in": [
@@ -41,7 +41,7 @@
                   "description": "FortiOS: greater than 7.2.0, less than 7.2.5, fixed in [7.2.5, 7.4.0]",
                   "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
                   "affected": {
-                    "gt": "7.2.0",
+                    "ge": "7.2.0",
                     "lt": "7.2.5"
                   },
                   "fixed_in": [
