@@ -37,15 +37,13 @@
                   ]
                 },
                 {
-                  "description": "FortiOS: greater equal 7.4.0, less equal 7.4.2, fixed in [7.0.14, 7.2.7, 7.4.3]",
+                  "description": "FortiOS: greater equal 7.4.0, less equal 7.4.2, fixed in [7.4.3]",
                   "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
                   "affected": {
                     "ge": "7.4.0",
                     "le": "7.4.2"
                   },
                   "fixed_in": [
-                    "7.0.14",
-                    "7.2.7",
                     "7.4.3"
                   ]
                 }
