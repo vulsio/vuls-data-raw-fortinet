@@ -12,9 +12,10 @@
             {
               "nodes": [
                 {
-                  "description": "FortiOS: less than 7.0.8, fixed in [7.0.8, 7.2.4]",
+                  "description": "FortiOS: greater equal 7.0.0, less than 7.0.8, fixed in [7.0.8, 7.2.4]",
                   "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
                   "affected": {
+                    "ge": "7.0.0",
                     "lt": "7.0.8"
                   },
                   "fixed_in": [
