@@ -26,44 +26,38 @@
                   ]
                 },
                 {
-                  "description": "FortiOS: greater equal 6.4.0, less than 6.4.11, fixed in [6.2.13, 6.4.11, 7.0.9, 7.2.3]",
+                  "description": "FortiOS: greater equal 6.4.0, less than 6.4.11, fixed in [6.4.11, 7.0.9, 7.2.3]",
                   "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
                   "affected": {
                     "ge": "6.4.0",
                     "lt": "6.4.11"
                   },
                   "fixed_in": [
-                    "6.2.13",
                     "6.4.11",
                     "7.0.9",
                     "7.2.3"
                   ]
                 },
                 {
-                  "description": "FortiOS: greater equal 7.0.0, less than 7.0.9, fixed in [6.2.13, 6.4.11, 7.0.9, 7.2.3]",
+                  "description": "FortiOS: greater equal 7.0.0, less than 7.0.9, fixed in [7.0.9, 7.2.3]",
                   "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
                   "affected": {
                     "ge": "7.0.0",
                     "lt": "7.0.9"
                   },
                   "fixed_in": [
-                    "6.2.13",
-                    "6.4.11",
                     "7.0.9",
                     "7.2.3"
                   ]
                 },
                 {
-                  "description": "FortiOS: greater equal 7.2.0, less than 7.2.3, fixed in [6.2.13, 6.4.11, 7.0.9, 7.2.3]",
+                  "description": "FortiOS: greater equal 7.2.0, less than 7.2.3, fixed in [7.2.3]",
                   "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
                   "affected": {
                     "ge": "7.2.0",
                     "lt": "7.2.3"
                   },
                   "fixed_in": [
-                    "6.2.13",
-                    "6.4.11",
-                    "7.0.9",
                     "7.2.3"
                   ]
                 }

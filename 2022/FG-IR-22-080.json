@@ -12,14 +12,14 @@
             {
               "nodes": [
                 {
-                  "description": "FortiOS: less equal 7.0.7, fixed in [7.2.1, 7.0.8]",
+                  "description": "FortiOS: less equal 7.0.7, fixed in [7.0.8, 7.2.1]",
                   "cpe": "cpe:2.3:a:fortinet:fortios:*:*:*:*:*:*:*:*",
                   "affected": {
                     "le": "7.0.7"
                   },
                   "fixed_in": [
-                    "7.2.1",
-                    "7.0.8"
+                    "7.0.8",
+                    "7.2.1"
                   ]
                 },
                 {
