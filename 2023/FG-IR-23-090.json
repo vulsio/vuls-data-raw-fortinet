@@ -13,7 +13,7 @@
               "nodes": [
                 {
                   "description": "IPS Engine: less equal 6.158, fixed in [6.0159]",
-                  "cpe": "cpe:2.3:a:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "cpe": "cpe:2.3:a:fortinet:fortios_ips_engine:*:*:*:*:*:*:*:*",
                   "affected": {
                     "le": "6.158"
                   },
@@ -39,7 +39,7 @@
               "nodes": [
                 {
                   "description": "IPS Engine: less equal 7.165, fixed in [7.0.166]",
-                  "cpe": "cpe:2.3:a:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "cpe": "cpe:2.3:a:fortinet:fortios_ips_engine:*:*:*:*:*:*:*:*",
                   "affected": {
                     "le": "7.165"
                   },
@@ -65,7 +65,7 @@
               "nodes": [
                 {
                   "description": "IPS Engine: less equal 7.312, fixed in [7.0313]",
-                  "cpe": "cpe:2.3:a:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "cpe": "cpe:2.3:a:fortinet:fortios_ips_engine:*:*:*:*:*:*:*:*",
                   "affected": {
                     "le": "7.312"
                   },
