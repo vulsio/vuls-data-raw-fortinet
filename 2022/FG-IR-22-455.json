@@ -27,43 +27,28 @@
             {
               "nodes": [
                 {
-                  "description": "FortiProxy:",
+                  "description": "FortiProxy: greater equal 7.2.0, less equal 7.2.1, fixed in [7.2.2]",
                   "cpe": "cpe:2.3:a:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
                   "affected": {
-                    "eq": "",
-                    "gt": "",
-                    "ge": "",
-                    "lt": "",
-                    "le": ""
-                  }
-                }
-              ],
-              "children": {
-                "nodes": [
-                  {
-                    "description": "FortiProxy:",
-                    "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
-                    "affected": {
-                      "eq": "",
-                      "gt": "",
-                      "ge": "",
-                      "lt": "",
-                      "le": ""
-                    }
-                  }
-                ],
-                "children": {
-                  "nodes": [
-                    {
-                      "description": "FortiProxy:",
-                      "cpe": "cpe:2.3:h:fortinet:fortiproxy-:-:*:*:*:*:*:*:*",
-                      "affected": {
-                        "eq": "NA"
-                      }
-                    }
+                    "ge": "7.2.0",
+                    "le": "7.2.1"
+                  },
+                  "fixed_in": [
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.0.0, less equal 7.0.17, fixed in [7.2.2]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.17"
+                  },
+                  "fixed_in": [
+                    "7.2.2"
                   ]
                 }
-              }
+              ]
             }
           ],
           "cvssv3": {

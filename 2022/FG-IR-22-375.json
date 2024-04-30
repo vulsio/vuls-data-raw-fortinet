@@ -40,43 +40,77 @@
             {
               "nodes": [
                 {
-                  "description": "FortiProxy:",
+                  "description": "FortiProxy: greater equal 7.2.0, less equal 7.2.3, fixed in [7.2.4]",
                   "cpe": "cpe:2.3:a:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
                   "affected": {
-                    "eq": "",
-                    "gt": "",
-                    "ge": "",
-                    "lt": "",
-                    "le": ""
-                  }
-                }
-              ],
-              "children": {
-                "nodes": [
-                  {
-                    "description": "FortiProxy:",
-                    "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
-                    "affected": {
-                      "eq": "",
-                      "gt": "",
-                      "ge": "",
-                      "lt": "",
-                      "le": ""
-                    }
-                  }
-                ],
-                "children": {
-                  "nodes": [
-                    {
-                      "description": "FortiProxy:",
-                      "cpe": "cpe:2.3:h:fortinet:fortiproxy-:-:*:*:*:*:*:*:*",
-                      "affected": {
-                        "eq": "NA"
-                      }
-                    }
+                    "ge": "7.2.0",
+                    "le": "7.2.3"
+                  },
+                  "fixed_in": [
+                    "7.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.0.0, less equal 7.0.9, fixed in [7.0.10, 7.2.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.9"
+                  },
+                  "fixed_in": [
+                    "7.0.10",
+                    "7.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 2.0.0, less equal 2.0.14, fixed in [7.0.10, 7.2.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.0.0",
+                    "le": "2.0.14"
+                  },
+                  "fixed_in": [
+                    "7.0.10",
+                    "7.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 1.2.0, less equal 1.2.13, fixed in [7.0.10, 7.2.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.2.0",
+                    "le": "1.2.13"
+                  },
+                  "fixed_in": [
+                    "7.0.10",
+                    "7.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 1.1.0, less equal 1.1.6, fixed in [7.0.10, 7.2.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.1.0",
+                    "le": "1.1.6"
+                  },
+                  "fixed_in": [
+                    "7.0.10",
+                    "7.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 1.0.0, less equal 1.0.7, fixed in [7.0.10, 7.2.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.0.0",
+                    "le": "1.0.7"
+                  },
+                  "fixed_in": [
+                    "7.0.10",
+                    "7.2.4"
                   ]
                 }
-              }
+              ]
             },
             {
               "nodes": [
