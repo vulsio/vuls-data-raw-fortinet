@@ -28,7 +28,7 @@
               "nodes": [
                 {
                   "description": "FortiProxy: greater equal 7.2.0, less equal 7.2.1, fixed in [7.2.2]",
-                  "cpe": "cpe:2.3:a:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
                   "affected": {
                     "ge": "7.2.0",
                     "le": "7.2.1"
@@ -39,7 +39,7 @@
                 },
                 {
                   "description": "FortiProxy: greater equal 7.0.0, less equal 7.0.17, fixed in [7.2.2]",
-                  "cpe": "cpe:2.3:a:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
                   "affected": {
                     "ge": "7.0.0",
                     "le": "7.0.17"
