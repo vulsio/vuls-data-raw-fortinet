@@ -1,0 +1,49 @@
+{
+  "id": "FG-IR-23-195",
+  "title": "Double free with double usage of json_object_put",
+  "summary": "A double free vulnerability [CWE-415] in FortiOS may allow a privileged attacker to execute unauthorized code or commands via crafted HTTP or HTTPs requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-195",
+      "cve": "CVE-2023-44247",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.2.0, less equal 6.2.16",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.16"
+                  }
+                },
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 6.4.15",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.15"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.5,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:F/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-415"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2024-05-14T00:00:00Z",
+  "updated": "2024-05-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-195"
+}
+

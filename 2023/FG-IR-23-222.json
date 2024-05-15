@@ -1,0 +1,344 @@
+{
+  "id": "FG-IR-23-222",
+  "title": "Multiple improper input validation and authorization vulnerabilities",
+  "summary": "Several improper input validation [CWE-20] and improper authorization vulnerabilities [CWE-285] affecting FortiWebManager may allow an authenticated attacker with at least read-only permission to execute unauthorized actions via HTTP requests or CLI.",
+  "description": "None",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-222",
+      "cve": "CVE-2024-23667",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb Manager: equal 6.0.2, fixed in [6.2.5, 6.3.1, 7.0.5, 7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.0.2"
+                  },
+                  "fixed_in": [
+                    "6.2.5",
+                    "6.3.1",
+                    "7.0.5",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiWeb Manager: greater equal 6.2.3, less equal 6.2.4, fixed in [6.2.5, 6.3.1, 7.0.5, 7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.3",
+                    "le": "6.2.4"
+                  },
+                  "fixed_in": [
+                    "6.2.5",
+                    "6.3.1",
+                    "7.0.5",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiWeb Manager: equal 6.3.0, fixed in [6.3.1, 7.0.5, 7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.3.0"
+                  },
+                  "fixed_in": [
+                    "6.3.1",
+                    "7.0.5",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiWeb Manager: greater equal 7.0.0, less equal 7.0.4, fixed in [7.0.5, 7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.4"
+                  },
+                  "fixed_in": [
+                    "7.0.5",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiWeb Manager: equal 7.2.0, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.2.0"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-20"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-23-222",
+      "cve": "CVE-2024-23668",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb Manager: equal 6.0.2, fixed in [6.2.5, 6.3.1, 7.0.5, 7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.0.2"
+                  },
+                  "fixed_in": [
+                    "6.2.5",
+                    "6.3.1",
+                    "7.0.5",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiWeb Manager: greater equal 6.2.3, less equal 6.2.4, fixed in [6.2.5, 6.3.1, 7.0.5, 7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.3",
+                    "le": "6.2.4"
+                  },
+                  "fixed_in": [
+                    "6.2.5",
+                    "6.3.1",
+                    "7.0.5",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiWeb Manager: equal 6.3.0, fixed in [6.3.1, 7.0.5, 7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.3.0"
+                  },
+                  "fixed_in": [
+                    "6.3.1",
+                    "7.0.5",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiWeb Manager: greater equal 7.0.0, less equal 7.0.4, fixed in [7.0.5, 7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.4"
+                  },
+                  "fixed_in": [
+                    "7.0.5",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiWeb Manager: equal 7.2.0, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.2.0"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-20"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-23-222",
+      "cve": "CVE-2024-23669",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb Manager: equal 6.0.2, fixed in [6.2.5, 6.3.1, 7.0.5, 7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.0.2"
+                  },
+                  "fixed_in": [
+                    "6.2.5",
+                    "6.3.1",
+                    "7.0.5",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiWeb Manager: greater equal 6.2.3, less equal 6.2.4, fixed in [6.2.5, 6.3.1, 7.0.5, 7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.3",
+                    "le": "6.2.4"
+                  },
+                  "fixed_in": [
+                    "6.2.5",
+                    "6.3.1",
+                    "7.0.5",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiWeb Manager: equal 6.3.0, fixed in [6.3.1, 7.0.5, 7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.3.0"
+                  },
+                  "fixed_in": [
+                    "6.3.1",
+                    "7.0.5",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiWeb Manager: greater equal 7.0.0, less equal 7.0.4, fixed in [7.0.5, 7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.4"
+                  },
+                  "fixed_in": [
+                    "7.0.5",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiWeb Manager: equal 7.2.0, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.2.0"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-20"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-23-222",
+      "cve": "CVE-2024-23670",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb Manager: equal 6.0.2, fixed in [6.2.5, 6.3.1, 7.0.5, 7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.0.2"
+                  },
+                  "fixed_in": [
+                    "6.2.5",
+                    "6.3.1",
+                    "7.0.5",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiWeb Manager: greater equal 6.2.3, less equal 6.2.4, fixed in [6.2.5, 6.3.1, 7.0.5, 7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.3",
+                    "le": "6.2.4"
+                  },
+                  "fixed_in": [
+                    "6.2.5",
+                    "6.3.1",
+                    "7.0.5",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiWeb Manager: equal 6.3.0, fixed in [6.3.1, 7.0.5, 7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.3.0"
+                  },
+                  "fixed_in": [
+                    "6.3.1",
+                    "7.0.5",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiWeb Manager: greater equal 7.0.0, less equal 7.0.4, fixed in [7.0.5, 7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.4"
+                  },
+                  "fixed_in": [
+                    "7.0.5",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiWeb Manager: equal 7.2.0, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiweb_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.2.0"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-20"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2024-05-14T00:00:00Z",
+  "updated": "2024-05-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-222"
+}
+

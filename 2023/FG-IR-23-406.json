@@ -1,0 +1,44 @@
+{
+  "id": "FG-IR-23-406",
+  "title": "Client-side enforcement of server-side security related to customer reports features",
+  "summary": "Client-side enforcement of server-side security vulnerability [CWE-602] in FortiPortal may allow an authenticated attacker with a customer account to access other customers information via crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-406",
+      "cve": "CVE-2023-48789",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiPortal: greater equal 6.0.0, less equal 6.0.14, fixed in [6.0.15]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.14"
+                  },
+                  "fixed_in": [
+                    "6.0.15"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:P/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-602"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2024-05-14T00:00:00Z",
+  "updated": "2024-05-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-406"
+}
+

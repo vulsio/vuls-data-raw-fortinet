@@ -1,0 +1,68 @@
+{
+  "id": "FG-IR-23-282",
+  "title": "IDOR over SIP configuration file",
+  "summary": "An authorization bypass through user-controlled key vulnerability [CWE-639] in FortiVoiceEntreprise may allow an authenticated attacker to read the SIP configuration of other users via crafted HTTP or HTTPS requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-282",
+      "cve": "CVE-2023-40720",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiVoice Enterprise: greater equal 6.0.0, less equal 6.0.12, fixed in [6.4.9, 7.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.12"
+                  },
+                  "fixed_in": [
+                    "6.4.9",
+                    "7.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiVoice Enterprise: greater equal 6.4.0, less equal 6.4.8, fixed in [6.4.9, 7.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.8"
+                  },
+                  "fixed_in": [
+                    "6.4.9",
+                    "7.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiVoice Enterprise: greater equal 7.0.0, less equal 7.0.1, fixed in [7.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.1"
+                  },
+                  "fixed_in": [
+                    "7.0.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.7,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:L/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-639"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2024-05-14T00:00:00Z",
+  "updated": "2024-05-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-282"
+}
+

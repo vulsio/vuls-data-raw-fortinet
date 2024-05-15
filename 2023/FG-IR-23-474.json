@@ -1,0 +1,93 @@
+{
+  "id": "FG-IR-23-474",
+  "title": "Unauthorized ADOM operations",
+  "summary": "Multiple improper authorization vulnerabilities [CWE-285] in FortiWeb may allow an authenticated attacker to perform unauthorized ADOM operations via crafted requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-474",
+      "cve": "CVE-2024-23665",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: greater equal 6.3.0, less equal 6.3.23, fixed in [7.2.8, 7.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.3.0",
+                    "le": "6.3.23"
+                  },
+                  "fixed_in": [
+                    "7.2.8",
+                    "7.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 6.4.0, less equal 6.4.3, fixed in [7.2.8, 7.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.3"
+                  },
+                  "fixed_in": [
+                    "7.2.8",
+                    "7.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.0.0, less equal 7.0.10, fixed in [7.2.8, 7.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.10"
+                  },
+                  "fixed_in": [
+                    "7.2.8",
+                    "7.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.2.0, less equal 7.2.7, fixed in [7.2.8, 7.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.7"
+                  },
+                  "fixed_in": [
+                    "7.2.8",
+                    "7.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.4.0, less equal 7.4.2, fixed in [7.2.8, 7.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.2"
+                  },
+                  "fixed_in": [
+                    "7.2.8",
+                    "7.4.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.6,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:L/A:N/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-285"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2024-05-14T00:00:00Z",
+  "updated": "2024-05-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-474"
+}
+

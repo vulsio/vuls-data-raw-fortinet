@@ -1,0 +1,67 @@
+{
+  "id": "FG-IR-23-465",
+  "title": "FortiAuthenticator - Open Redirect on /portal/disclaimer",
+  "summary": "A URL redirection to untrusted site ('Open Redirect') (CWE-601) vulnerability in FortiAuthenticator may allow an attacker to redirect users to an arbitrary website via a crafted URL.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-465",
+      "cve": "CVE-2024-23664",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAuthenticator: greater equal 6.4.0, less equal 6.4.9, fixed in [6.5.4, 6.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.9"
+                  },
+                  "fixed_in": [
+                    "6.5.4",
+                    "6.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiAuthenticator: greater equal 6.5.0, less equal 6.5.3, fixed in [6.5.4, 6.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.5.0",
+                    "le": "6.5.3"
+                  },
+                  "fixed_in": [
+                    "6.5.4",
+                    "6.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiAuthenticator: equal 6.6.0, fixed in [6.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.6.0"
+                  },
+                  "fixed_in": [
+                    "6.6.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.8,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:L/A:N/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-601"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2024-05-14T00:00:00Z",
+  "updated": "2024-05-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-465"
+}
+
