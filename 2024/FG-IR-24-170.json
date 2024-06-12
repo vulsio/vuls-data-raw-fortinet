@@ -1,0 +1,65 @@
+{
+  "id": "FG-IR-24-170",
+  "title": "TunnelVision - CVE-2024-3661",
+  "summary": "Fortinet is aware of the recent publication of the TunnelVision vulnerability (CVE-2024-3661).The research [1] identified a technique to bypass the use of protected VPN tunnels when clients connect via untrusted network, such as rogue Wi-Fi network. This attack may allow an attacker controlled DHCP server on the same network as the targeted user to reroute VPN traffic by setting more specific routes than VPN's on target’s routing table. Note that this technique does not allow decrypting HTTPS traffic but rather allows to redirect the traffic through attacker controlled channels before the traffic is encrypted by the VPN.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-170",
+      "cve": "CVE-2024-3661",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Windows: equal ANY",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "eq": "ANY"
+                  }
+                },
+                {
+                  "description": "FortiClient for MacOS: equal ANY",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "eq": "ANY"
+                  }
+                },
+                {
+                  "description": "FortiClient for Linux: equal ANY",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:linux:*:*",
+                  "affected": {
+                    "eq": "ANY"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.7,
+            "vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L/E:P/RL:X/RC:X"
+          },
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "TunnelVision - CVE-2024-3661",
+      "url": "https://fortiguard.fortinet.com/psirt/FG-IR-24-170"
+    },
+    {
+      "description": "TunnelVision by Leviathan Security Group",
+      "url": "TunnelVision by Leviathan Security Group"
+    },
+    {
+      "description": "[1] https://www.leviathansecurity.com/blog/tunnelvision",
+      "url": "[1] https://www.leviathansecurity.com/blog/tunnelvision"
+    }
+  ],
+  "published": "2024-06-11T00:00:00Z",
+  "updated": "2024-06-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-170"
+}
+

@@ -1,0 +1,113 @@
+{
+  "id": "FG-IR-23-460",
+  "title": "Multiple buffer overflows in diag npu command",
+  "summary": "Multiple stack-based buffer overflow vulnerabilities [CWE-121] in the command line interpreter of FortiOS may allow an authenticated attacker to execute unauthorized code or commands via specially crafted command line arguments.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-460",
+      "cve": "CVE-2024-23110",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.18, fixed in [6.2.16, 6.4.15, 7.0.14, 7.2.7, 7.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.18"
+                  },
+                  "fixed_in": [
+                    "6.2.16",
+                    "6.4.15",
+                    "7.0.14",
+                    "7.2.7",
+                    "7.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.2.0, less equal 6.2.15, fixed in [6.2.16, 6.4.15, 7.0.14, 7.2.7, 7.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.15"
+                  },
+                  "fixed_in": [
+                    "6.2.16",
+                    "6.4.15",
+                    "7.0.14",
+                    "7.2.7",
+                    "7.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 6.4.14, fixed in [6.4.15, 7.0.14, 7.2.7, 7.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.14"
+                  },
+                  "fixed_in": [
+                    "6.4.15",
+                    "7.0.14",
+                    "7.2.7",
+                    "7.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.13, fixed in [7.0.14, 7.2.7, 7.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.13"
+                  },
+                  "fixed_in": [
+                    "7.0.14",
+                    "7.2.7",
+                    "7.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less equal 7.2.6, fixed in [7.2.7, 7.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.6"
+                  },
+                  "fixed_in": [
+                    "7.2.7",
+                    "7.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.4.0, less equal 7.4.2, fixed in [7.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.2"
+                  },
+                  "fixed_in": [
+                    "7.4.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.4,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-121"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2024-06-11T00:00:00Z",
+  "updated": "2024-06-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-460"
+}
+

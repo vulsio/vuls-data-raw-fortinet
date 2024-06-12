@@ -1,0 +1,55 @@
+{
+  "id": "FG-IR-24-128",
+  "title": "Blind SQL Injection",
+  "summary": "An improper neutralization of special elements used in a SQL Command [CWE-89] in FortiPortal may allow a priviledged user to obtain unauthorized information via the report download functionality.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-128",
+      "cve": "CVE-2024-31495",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiPortal: greater equal 7.0.0, less equal 7.0.6, fixed in [7.0.7, 7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.6"
+                  },
+                  "fixed_in": [
+                    "7.0.7",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiPortal: equal 7.2.0, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.2.0"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.9,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-89"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2024-06-11T00:00:00Z",
+  "updated": "2024-06-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-128"
+}
+
