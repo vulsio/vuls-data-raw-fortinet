@@ -1,0 +1,43 @@
+{
+  "id": "FG-IR-24-258",
+  "title": "OpenSSH regreSSHion Attack (CVE-2024-6387)",
+  "summary": "CVE-2024-6387A signal handler race condition was found in OpenSSH's server (sshd), where a client does not authenticate within LoginGraceTime seconds (120 by default, 600 in old OpenSSH versions), then sshd's SIGALRM handler is called asynchronously. However, this signal handler calls various functions that are not async-signal-safe, for example, syslog(). This could lead to remote code execution with root privileges.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-258",
+      "cve": "CVE-2024-6387",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 8.1,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:X/RL:X/RC:X"
+          },
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "OpenSSH regreSSHion Attack (CVE-2024-6387)",
+      "url": "https://fortiguard.fortinet.com/psirt/FG-IR-24-258"
+    },
+    {
+      "description": "https://www.qualys.com/2024/07/01/cve-2024-6387/regresshion.txt ",
+      "url": "https://www.qualys.com/2024/07/01/cve-2024-6387/regresshion.txt "
+    },
+    {
+      "description": "https://www.openssh.com/txt/release-9.8",
+      "url": "https://www.openssh.com/txt/release-9.8"
+    },
+    {
+      "description": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-6387",
+      "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-6387"
+    }
+  ],
+  "published": "2024-07-09T00:00:00Z",
+  "updated": "2024-07-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-258"
+}
+

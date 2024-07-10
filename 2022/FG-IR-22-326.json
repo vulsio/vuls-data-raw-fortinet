@@ -1,0 +1,77 @@
+{
+  "id": "FG-IR-22-326",
+  "title": "[FortiWeb] Lack of client-side certificate validation when establishing secure connections",
+  "summary": "An improper certificate validation vulnerability [CWE-295] in FortiWeb may allow a remote and unauthenticated attacker in a Man-in-the-Middle position to decipher and/or tamper with the communication channel between the device and different endpoints used to fetch data for Web Application Firewall (WAF).",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-326",
+      "cve": "CVE-2024-33509",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: greater equal 6.3.0, less equal 6.3.23, fixed in [7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.3.0",
+                    "le": "6.3.23"
+                  },
+                  "fixed_in": [
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 6.4.0, less equal 6.4.3, fixed in [7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.3"
+                  },
+                  "fixed_in": [
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.0.0, less equal 7.0.10, fixed in [7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.10"
+                  },
+                  "fixed_in": [
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.2.0, less equal 7.2.1, fixed in [7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.1"
+                  },
+                  "fixed_in": [
+                    "7.2.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.4,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N/E:U/RL:O/RC:R"
+          },
+          "cwe": [
+            "CWE-295"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2024-07-09T00:00:00Z",
+  "updated": "2024-07-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-326"
+}
+

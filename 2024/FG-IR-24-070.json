@@ -1,0 +1,43 @@
+{
+  "id": "FG-IR-24-070",
+  "title": "FortiAIOps - Cross-site request forgery",
+  "summary": "Multiple cross-site request forgery (CSRF) vulnerabilities [CWE-352] in FortiAIOps may allow an unauthenticated remote attacker to perform arbitrary actions on behalf of an authenticated user via tricking the victim to execute malicious GET requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-070",
+      "cve": "CVE-2024-27783",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAIOps: equal 2.0.0, fixed in [2.0.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiaiops:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "2.0.0"
+                  },
+                  "fixed_in": [
+                    "2.0.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:L/A:L/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-352"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2024-07-09T00:00:00Z",
+  "updated": "2024-07-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-070"
+}
+

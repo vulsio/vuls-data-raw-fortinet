@@ -1,0 +1,43 @@
+{
+  "id": "FG-IR-24-069",
+  "title": "FortiAIOps - Improper Session Management",
+  "summary": "Multiple insufficient session expiration vulnerabilities [CWE-613] in FortiAIOps may allow an attacker to re-use stolen old session tokens to perform unauthorized operations via crafted requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-069",
+      "cve": "CVE-2024-27782",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAIOps: equal 2.0.0, fixed in [2.0.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiaiops:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "2.0.0"
+                  },
+                  "fixed_in": [
+                    "2.0.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.7,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-613"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2024-07-09T00:00:00Z",
+  "updated": "2024-07-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-069"
+}
+

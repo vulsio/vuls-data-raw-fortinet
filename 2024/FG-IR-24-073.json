@@ -1,0 +1,43 @@
+{
+  "id": "FG-IR-24-073",
+  "title": "FortiAIOps  - CSV Injection in export device inventory feature",
+  "summary": "An improper neutralization of formula elements in a CSV File vulnerability [CWE-1236] in FortiAIOps may allow a remote authenticated attacker to execute arbitrary commands on a client's workstation via poisoned CSV reports.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-073",
+      "cve": "CVE-2024-27785",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAIOps: equal 2.0.0, fixed in [2.0.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiaiops:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "2.0.0"
+                  },
+                  "fixed_in": [
+                    "2.0.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:C/C:N/I:L/A:L/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-1236"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2024-07-09T00:00:00Z",
+  "updated": "2024-07-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-073"
+}
+

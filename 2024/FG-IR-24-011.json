@@ -1,0 +1,55 @@
+{
+  "id": "FG-IR-24-011",
+  "title": "Insecure Direct Object Reference in policy API Endpoint",
+  "summary": "An authorization bypass through user-controlled key vulnerability [CWE-639] in Fortiportal organization interface may allow an authenticated attacker to view resources of other organizations via HTTP or HTTPS requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-011",
+      "cve": "CVE-2024-21759",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiPortal: greater equal 7.0.0, less equal 7.0.6, fixed in [7.0.7, 7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.6"
+                  },
+                  "fixed_in": [
+                    "7.0.7",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiPortal: equal 7.2.0, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.2.0"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.9,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-639"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2024-07-09T00:00:00Z",
+  "updated": "2024-07-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-011"
+}
+

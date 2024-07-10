@@ -1,0 +1,43 @@
+{
+  "id": "FG-IR-24-072",
+  "title": "FortiAIOps - Sensitive Information leak to an Unauthorized Actor",
+  "summary": "Multiple Exposure of sensitive information to an unauthorized actor vulnerabilities [CWE-200] may allow an authenticated attacker to retrieve sensitive information from the API endpoint or logs.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-072",
+      "cve": "CVE-2024-27784",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAIOps: equal 2.0.0, fixed in [2.0.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiaiops:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "2.0.0"
+                  },
+                  "fixed_in": [
+                    "2.0.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-200"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2024-07-09T00:00:00Z",
+  "updated": "2024-07-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-072"
+}
+
