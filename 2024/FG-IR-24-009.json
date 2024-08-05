@@ -1,14 +1,50 @@
 {
   "id": "FG-IR-24-009",
-  "title": "SMTP Smuggling",
+  "title": "FortiMail -  SMTP Smuggling",
   "summary": "Fortinet is aware of the new SMTP smuggling technique.By exploiting interpretation differences of the SMTP protocol for the end of data sequence, it is possible to send spoofed e-mails, while still passing SPF alignment checks.FortiMail may be susceptible to smuggling attacks if some measures are not put in place. We therefore recommend to adhere to the following indications in order to mitigate the potential risk associated to the smuggling attacks:- Enable DKIM (Domain Keys Identified Mail) to enhance e-mail authentication. Select \"None\" action under DKIM check in AntiSpam profile in order to block by default e-mail without DKIM signature.- Disable \"any-any\" traffic policy to restrict unauthorized access.- Modify the configuration settings in line with the recommended security practices (DMARC/DKIM/SPF, proper ACL policy, avoid open relay MTA).",
   "vulnerabilities": [
     {
       "id": "FG-IR-24-009",
-      "cve": "CVE-2024-26014",
       "definitions": [
         {
-          "configurations": [],
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiMail: greater equal 6.4.0, less equal 6.4.8",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.8"
+                  }
+                },
+                {
+                  "description": "FortiMail: greater equal 7.0.0, less equal 7.0.7",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.7"
+                  }
+                },
+                {
+                  "description": "FortiMail: greater equal 7.2.0, less equal 7.2.5",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.5"
+                  }
+                },
+                {
+                  "description": "FortiMail: greater equal 7.4.0, less equal 7.4.2",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.2"
+                  }
+                }
+              ]
+            }
+          ],
           "cvssv3": {
             "base_score": 4.9,
             "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:L/A:N/E:P/RL:W/RC:X"
@@ -20,7 +56,7 @@
   ],
   "references": [
     {
-      "description": "SMTP Smuggling",
+      "description": "FortiMail -  SMTP Smuggling",
       "url": "https://fortiguard.fortinet.com/psirt/FG-IR-24-009"
     },
     {
@@ -29,7 +65,7 @@
     }
   ],
   "published": "2024-04-09T00:00:00Z",
-  "updated": "2024-04-09T00:00:00Z",
+  "updated": "2024-04-16T00:00:00Z",
   "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-009"
 }
 
