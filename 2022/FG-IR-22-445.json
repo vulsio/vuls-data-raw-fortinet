@@ -1,0 +1,148 @@
+{
+  "id": "FG-IR-22-445",
+  "title": "GUI Console WebSockets do not terminate on logout",
+  "summary": "An insufficient session expiration vulnerability [CWE-613] in FortiOS, FortiProxy, FortiPAM & FortiSwitchManager GUI may allow attackers to re-use websessions after GUI logout, should they manage to acquire the required credentials.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-445",
+      "cve": "CVE-2022-45862",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 6.4.11, fixed in [7.2.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.11"
+                  },
+                  "fixed_in": [
+                    "7.2.6"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.15, fixed in [7.2.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.15"
+                  },
+                  "fixed_in": [
+                    "7.2.6"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less equal 7.2.5, fixed in [7.2.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.5"
+                  },
+                  "fixed_in": [
+                    "7.2.6"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiPAM: greater equal 1.0.0, less equal 1.0.3",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.0.0",
+                    "le": "1.0.3"
+                  }
+                },
+                {
+                  "description": "FortiPAM: greater equal 1.1.0, less equal 1.1.2",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.1.0",
+                    "le": "1.1.2"
+                  }
+                },
+                {
+                  "description": "FortiPAM: greater equal 1.2.0, less equal 1.2.0",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.2.0",
+                    "le": "1.2.0"
+                  }
+                },
+                {
+                  "description": "FortiPAM: greater equal 1.3.0, less equal 1.3.0",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.3.0",
+                    "le": "1.3.0"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy: greater equal 7.0.0, less equal 7.0.18",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.18"
+                  }
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.2.0, less equal 7.2.11",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.11"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitchManager: greater equal 7.0.0, less equal 7.0.2, fixed in [7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitchmanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.2"
+                  },
+                  "fixed_in": [
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiSwitchManager: greater equal 7.2.0, less equal 7.2.1, fixed in [7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitchmanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.1"
+                  },
+                  "fixed_in": [
+                    "7.2.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.5,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-613"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2024-08-13T00:00:00Z",
+  "updated": "2024-08-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-445"
+}
+

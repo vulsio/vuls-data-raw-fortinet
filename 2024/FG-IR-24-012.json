@@ -1,0 +1,82 @@
+{
+  "id": "FG-IR-24-012",
+  "title": "Real-time file system integrity checking write protection bypass",
+  "summary": "An improper access control vulnerability [CWE-284] in FortiOS may allow an attacker who has already successfully obtained write access to the underlying system (via another hypothetical exploit) to bypass the file integrity checking system.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-012",
+      "cve": "CVE-2024-36505",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.4.13, less equal 6.4.15, fixed in [7.0.15, 7.2.8, 7.4.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.13",
+                    "le": "6.4.15"
+                  },
+                  "fixed_in": [
+                    "7.0.15",
+                    "7.2.8",
+                    "7.4.4"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.12, less equal 7.0.14, fixed in [7.0.15, 7.2.8, 7.4.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.12",
+                    "le": "7.0.14"
+                  },
+                  "fixed_in": [
+                    "7.0.15",
+                    "7.2.8",
+                    "7.4.4"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.5, less equal 7.2.7, fixed in [7.2.8, 7.4.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.5",
+                    "le": "7.2.7"
+                  },
+                  "fixed_in": [
+                    "7.2.8",
+                    "7.4.4"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.4.0, less equal 7.4.3, fixed in [7.4.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.3"
+                  },
+                  "fixed_in": [
+                    "7.4.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.7,
+            "vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:N/E:P/RL:X/RC:R"
+          },
+          "cwe": [
+            "CWE-284"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2024-08-13T00:00:00Z",
+  "updated": "2024-08-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-012"
+}
+

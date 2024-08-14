@@ -1,0 +1,39 @@
+{
+  "id": "FG-IR-24-255",
+  "title": "RADIUS Protocol CVE-2024-3596",
+  "summary": "A fundamental design flaw within the RADIUS protocol has been proven to be exploitable, compromising the integrity in the RADIUS Access-Request process. The attack allows a malicious user to modify packets in a way that would be indistinguishable to a RADIUS client or server. To be successful, the attacker must have the ability to inject themselves between the client and server.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-255",
+      "cve": "CVE-2024-3596",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 6,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:H/A:N/E:P/RL:W/RC:C"
+          },
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "RADIUS Protocol CVE-2024-3596",
+      "url": "https://fortiguard.fortinet.com/psirt/FG-IR-24-255"
+    },
+    {
+      "description": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-3596",
+      "url": "https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2024-3596"
+    },
+    {
+      "description": "https://www.blastradius.fail/",
+      "url": "https://www.blastradius.fail/"
+    }
+  ],
+  "published": "2024-08-13T00:00:00Z",
+  "updated": "2024-08-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-255"
+}
+

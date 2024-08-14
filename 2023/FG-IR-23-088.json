@@ -1,0 +1,103 @@
+{
+  "id": "FG-IR-23-088",
+  "title": "XSS vulnerability in communications triggered in playbooks",
+  "summary": "An improper neutralization of input during web page generation vulnerability [CWE-79] in FortiSOAR may allow a remote authenticated attacker to perform a stored cross site scripting (XSS) attack via the Communications module.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-088",
+      "cve": "CVE-2023-26211",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSOAR: greater equal 6.4.0, less equal 6.4.1, fixed in [7.3.3, 7.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.1"
+                  },
+                  "fixed_in": [
+                    "7.3.3",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR: greater equal 6.4.3, less equal 6.4.4, fixed in [7.3.3, 7.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.3",
+                    "le": "6.4.4"
+                  },
+                  "fixed_in": [
+                    "7.3.3",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR: greater equal 7.0.0, less equal 7.0.3, fixed in [7.3.3, 7.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.3"
+                  },
+                  "fixed_in": [
+                    "7.3.3",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR: greater equal 7.2.0, less equal 7.2.2, fixed in [7.3.3, 7.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.2"
+                  },
+                  "fixed_in": [
+                    "7.3.3",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR: greater equal 7.3.0, less equal 7.3.2, fixed in [7.3.3, 7.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.3.0",
+                    "le": "7.3.2"
+                  },
+                  "fixed_in": [
+                    "7.3.3",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR: equal 7.4.0, fixed in [7.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.4,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:U/C:H/I:H/A:H/E:P/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-79"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2024-08-13T00:00:00Z",
+  "updated": "2024-08-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-088"
+}
+
