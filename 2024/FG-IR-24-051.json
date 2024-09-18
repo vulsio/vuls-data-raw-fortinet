@@ -1,0 +1,91 @@
+{
+  "id": "FG-IR-24-051",
+  "title": "Sensitive files disclosure in diagnostic logs download",
+  "summary": "An exposure of sensitive Information to an unauthorized actor vulnerability [CWE-200] in FortiSandbox may allow an authenticated attacker with at least read-only permission to read sensitive files via HTTP get requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-051",
+      "cve": "CVE-2024-31490",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: equal 3.1.5, fixed in [4.2.7, 4.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "3.1.5"
+                  },
+                  "fixed_in": [
+                    "4.2.7",
+                    "4.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 3.2.2, less equal 3.2.4, fixed in [4.2.7, 4.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.2.2",
+                    "le": "3.2.4"
+                  },
+                  "fixed_in": [
+                    "4.2.7",
+                    "4.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.0.0, less equal 4.0.5, fixed in [4.2.7, 4.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "4.0.5"
+                  },
+                  "fixed_in": [
+                    "4.2.7",
+                    "4.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.2.0, less equal 4.2.6, fixed in [4.2.7, 4.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.2.0",
+                    "le": "4.2.6"
+                  },
+                  "fixed_in": [
+                    "4.2.7",
+                    "4.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.4.0, less equal 4.4.4, fixed in [4.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.4.0",
+                    "le": "4.4.4"
+                  },
+                  "fixed_in": [
+                    "4.4.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-200"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2024-09-10T00:00:00Z",
+  "updated": "2024-09-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-051"
+}
+

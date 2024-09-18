@@ -1,0 +1,80 @@
+{
+  "id": "FG-IR-24-048",
+  "title": "Inadequate user validation and no brute force protection on change password requests",
+  "summary": "An improper authorization vulnerability [CWE-285] in FortiSOAR change password endpoint may allow an authenticated attacker to perform a brute force attack on users and administrators password via crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-048",
+      "cve": "CVE-2024-45327",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSOAR: greater equal 7.0.0, less equal 7.0.3, fixed in [7.3.3, 7.4.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.3"
+                  },
+                  "fixed_in": [
+                    "7.3.3",
+                    "7.4.4"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR: greater equal 7.2.0, less equal 7.2.2, fixed in [7.3.3, 7.4.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.2"
+                  },
+                  "fixed_in": [
+                    "7.3.3",
+                    "7.4.4"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR: greater equal 7.3.0, less equal 7.3.2, fixed in [7.3.3, 7.4.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.3.0",
+                    "le": "7.3.2"
+                  },
+                  "fixed_in": [
+                    "7.3.3",
+                    "7.4.4"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR: greater equal 7.4.0, less equal 7.4.3, fixed in [7.4.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.3"
+                  },
+                  "fixed_in": [
+                    "7.4.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.1,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-285"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2024-09-10T00:00:00Z",
+  "updated": "2024-09-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-048"
+}
+

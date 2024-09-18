@@ -1,0 +1,378 @@
+{
+  "id": "FG-IR-22-230",
+  "title": "FortiClient(All) - Lack of client-side certificate validation using SAML SSO",
+  "summary": "An improper certificate validation vulnerability [CWE-295] in FortiClientWindows, FortiClientMac, FortiClientLinux, FortiClientAndroid and FortiClientiOS SAML SSO feature may allow an unauthenticated attacker to man-in-the-middle the communication between the FortiClient and both the service provider and the identity provider.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-230",
+      "cve": "CVE-2022-45856",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Linux: greater equal 6.4.0, less equal 6.4.9, fixed in [7.2.5]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:linux:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.9"
+                  },
+                  "fixed_in": [
+                    "7.2.5"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Linux: greater equal 7.0.0, less equal 7.0.13, fixed in [7.2.5]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:linux:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.13"
+                  },
+                  "fixed_in": [
+                    "7.2.5"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Linux: greater equal 7.2.0, less equal 7.2.4, fixed in [7.2.5]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:linux:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.4"
+                  },
+                  "fixed_in": [
+                    "7.2.5"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for MacOS: greater equal 6.4.0, less equal 6.4.10, fixed in [7.2.5]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.10"
+                  },
+                  "fixed_in": [
+                    "7.2.5"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOS: greater equal 7.0.0, less equal 7.0.13, fixed in [7.2.5]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.13"
+                  },
+                  "fixed_in": [
+                    "7.2.5"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOS: greater equal 7.2.0, less equal 7.2.4, fixed in [7.2.5]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.4"
+                  },
+                  "fixed_in": [
+                    "7.2.5"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Windows: greater equal 6.4.0, less equal 6.4.10, fixed in [7.0.8]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.10"
+                  },
+                  "fixed_in": [
+                    "7.0.8"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: greater equal 7.0.0, less equal 7.0.7, fixed in [7.0.8]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.7"
+                  },
+                  "fixed_in": [
+                    "7.0.8"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Android: greater equal 5.0.0, less equal 5.0.3, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:android:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.3"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Android: greater equal 5.2.0, less equal 5.2.8, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:android:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.8"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Android: greater equal 5.4.0, less equal 5.4.2, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:android:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.2"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Android: greater equal 5.6.0, less equal 5.6.0, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:android:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.0"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Android: greater equal 6.0.0, less equal 6.0.0, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:android:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.0"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Android: greater equal 6.4.1, less equal 6.4.1, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:android:*:*",
+                  "affected": {
+                    "ge": "6.4.1",
+                    "le": "6.4.1"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Android: greater equal 6.4.4, less equal 6.4.4, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:android:*:*",
+                  "affected": {
+                    "ge": "6.4.4",
+                    "le": "6.4.4"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Android: greater equal 6.4.6, less equal 6.4.6, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:android:*:*",
+                  "affected": {
+                    "ge": "6.4.6",
+                    "le": "6.4.6"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Android: greater equal 7.0.0, less equal 7.0.0, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:android:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.0"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Android: greater equal 7.0.2, less equal 7.0.3, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:android:*:*",
+                  "affected": {
+                    "ge": "7.0.2",
+                    "le": "7.0.3"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Android: greater equal 7.0.6, less equal 7.0.7, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:android:*:*",
+                  "affected": {
+                    "ge": "7.0.6",
+                    "le": "7.0.7"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Android: equal 7.2.0, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:android:*:*",
+                  "affected": {
+                    "eq": "7.2.0"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for iOS: greater equal 2.0.0, less equal 2.0.1, fixed in [7.0.7]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:ios:*:*",
+                  "affected": {
+                    "ge": "2.0.0",
+                    "le": "2.0.1"
+                  },
+                  "fixed_in": [
+                    "7.0.7"
+                  ]
+                },
+                {
+                  "description": "FortiClient for iOS: greater equal 4.0.0, less equal 4.0.2, fixed in [7.0.7]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:ios:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "4.0.2"
+                  },
+                  "fixed_in": [
+                    "7.0.7"
+                  ]
+                },
+                {
+                  "description": "FortiClient for iOS: greater equal 5.0.0, less equal 5.0.3, fixed in [7.0.7]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:ios:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.3"
+                  },
+                  "fixed_in": [
+                    "7.0.7"
+                  ]
+                },
+                {
+                  "description": "FortiClient for iOS: greater equal 5.2.0, less equal 5.2.3, fixed in [7.0.7]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:ios:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.3"
+                  },
+                  "fixed_in": [
+                    "7.0.7"
+                  ]
+                },
+                {
+                  "description": "FortiClient for iOS: greater equal 5.4.0, less equal 5.4.4, fixed in [7.0.7]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:ios:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.4"
+                  },
+                  "fixed_in": [
+                    "7.0.7"
+                  ]
+                },
+                {
+                  "description": "FortiClient for iOS: greater equal 5.6.0, less equal 5.6.1, fixed in [7.0.7]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:ios:*:*",
+                  "affected": {
+                    "ge": "5.6.0",
+                    "le": "5.6.1"
+                  },
+                  "fixed_in": [
+                    "7.0.7"
+                  ]
+                },
+                {
+                  "description": "FortiClient for iOS: greater equal 5.6.5, less equal 5.6.6, fixed in [7.0.7]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:ios:*:*",
+                  "affected": {
+                    "ge": "5.6.5",
+                    "le": "5.6.6"
+                  },
+                  "fixed_in": [
+                    "7.0.7"
+                  ]
+                },
+                {
+                  "description": "FortiClient for iOS: greater equal 6.0.0, less equal 6.0.1, fixed in [7.0.7]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:ios:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.1"
+                  },
+                  "fixed_in": [
+                    "7.0.7"
+                  ]
+                },
+                {
+                  "description": "FortiClient for iOS: greater equal 7.0.0, less equal 7.0.1, fixed in [7.0.7]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:ios:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.1"
+                  },
+                  "fixed_in": [
+                    "7.0.7"
+                  ]
+                },
+                {
+                  "description": "FortiClient for iOS: greater equal 7.0.3, less equal 7.0.6, fixed in [7.0.7]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:ios:*:*",
+                  "affected": {
+                    "ge": "7.0.3",
+                    "le": "7.0.6"
+                  },
+                  "fixed_in": [
+                    "7.0.7"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.6,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:N/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-295"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2024-09-10T00:00:00Z",
+  "updated": "2024-09-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-230"
+}
+

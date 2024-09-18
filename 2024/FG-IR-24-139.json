@@ -1,0 +1,81 @@
+{
+  "id": "FG-IR-24-139",
+  "title": "Unencrypted keychain permanent password",
+  "summary": "A cleartext storage of sensitive information in memory vulnerability [CWE-316] affecting FortiClient VPN iOS may allow an unauthenticated attacker that has physical access to a jailbroken device to obtain cleartext passwords via keychain dump.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-139",
+      "cve": "CVE-2024-35282",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for iOS: greater equal 6.0.0, less equal 6.0.5",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:ios:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.5"
+                  }
+                },
+                {
+                  "description": "FortiClient for iOS: greater equal 6.2.1, less equal 6.2.4",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:ios:*:*",
+                  "affected": {
+                    "ge": "6.2.1",
+                    "le": "6.2.4"
+                  }
+                },
+                {
+                  "description": "FortiClient for iOS: greater equal 6.4.0, less equal 6.4.6",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:ios:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.6"
+                  }
+                },
+                {
+                  "description": "FortiClient for iOS: greater equal 7.0.0, less equal 7.0.1",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:ios:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.1"
+                  }
+                },
+                {
+                  "description": "FortiClient for iOS: greater equal 7.0.3, less equal 7.0.9",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:ios:*:*",
+                  "affected": {
+                    "ge": "7.0.3",
+                    "le": "7.0.9"
+                  }
+                },
+                {
+                  "description": "FortiClient for iOS: greater equal 7.2.0, less equal 7.2.5",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:ios:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.5"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4,
+            "vector": "CVSS:3.1/AV:P/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N/E:F/RL:X/RC:R"
+          },
+          "cwe": [
+            "CWE-316"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2024-09-10T00:00:00Z",
+  "updated": "2024-09-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-139"
+}
+

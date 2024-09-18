@@ -1,0 +1,110 @@
+{
+  "id": "FG-IR-22-256",
+  "title": "Cookie security policy bypass",
+  "summary": "An improperly implemented security check for standard vulnerability [CWE-358] in FortiADC Web Application Firewall (WAF) when cookie security policy is enabled may allow an attacker, under specific conditions, to retrieve the initial encrypted and signed cookie protected by the feature",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-256",
+      "cve": "CVE-2024-36511",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiADC: greater equal 6.0.0, less equal 6.0.4, fixed in [7.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.4"
+                  },
+                  "fixed_in": [
+                    "7.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 6.1.0, less equal 6.1.6, fixed in [7.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.1.0",
+                    "le": "6.1.6"
+                  },
+                  "fixed_in": [
+                    "7.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 6.2.0, less equal 6.2.6, fixed in [7.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.6"
+                  },
+                  "fixed_in": [
+                    "7.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 7.0.0, less equal 7.0.5, fixed in [7.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.5"
+                  },
+                  "fixed_in": [
+                    "7.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 7.1.0, less equal 7.1.4, fixed in [7.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.1.0",
+                    "le": "7.1.4"
+                  },
+                  "fixed_in": [
+                    "7.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 7.2.0, less equal 7.2.7, fixed in [7.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.7"
+                  },
+                  "fixed_in": [
+                    "7.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 7.4.0, less equal 7.4.4, fixed in [7.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.4"
+                  },
+                  "fixed_in": [
+                    "7.4.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.4,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N/E:P/RL:U/RC:R"
+          },
+          "cwe": [
+            "CWE-358"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2024-09-10T00:00:00Z",
+  "updated": "2024-09-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-256"
+}
+

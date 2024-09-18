@@ -1,0 +1,109 @@
+{
+  "id": "FG-IR-22-282",
+  "title": "FortiClient - Lack of client-side certificate validation in ZTNA service",
+  "summary": "An improper certificate validation vulnerability [CWE-295] in FortiClientWindows, FortiClientLinux and FortiClientMac may allow a remote and unauthenticated attacker to perform a Man-in-the-Middle attack on the communication channel between the FortiGate and the FortiClient during the ZTNA tunnel creation",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-22-282",
+      "cve": "CVE-2024-31489",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Linux: greater equal 7.0.0, less equal 7.0.11, fixed in [7.0.12, 7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:linux:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.11"
+                  },
+                  "fixed_in": [
+                    "7.0.12",
+                    "7.2.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Linux: equal 7.2.0, fixed in [7.2.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:linux:*:*",
+                  "affected": {
+                    "eq": "7.2.0"
+                  },
+                  "fixed_in": [
+                    "7.2.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for MacOS: greater equal 7.0.0, less equal 7.0.11, fixed in [7.0.12, 7.2.5]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.11"
+                  },
+                  "fixed_in": [
+                    "7.0.12",
+                    "7.2.5"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOS: greater equal 7.2.0, less equal 7.2.4, fixed in [7.2.5]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.4"
+                  },
+                  "fixed_in": [
+                    "7.2.5"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Windows: greater equal 7.0.0, less equal 7.0.11, fixed in [7.0.12, 7.2.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.11"
+                  },
+                  "fixed_in": [
+                    "7.0.12",
+                    "7.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: greater equal 7.2.0, less equal 7.2.2, fixed in [7.2.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.2"
+                  },
+                  "fixed_in": [
+                    "7.2.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.4,
+            "vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:N/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-295"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2024-09-10T00:00:00Z",
+  "updated": "2024-09-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-22-282"
+}
+

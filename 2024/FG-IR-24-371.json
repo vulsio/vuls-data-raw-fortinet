@@ -1,0 +1,55 @@
+{
+  "id": "FG-IR-24-371",
+  "title": "access to backend information and logs via RestAPI on shared environments",
+  "summary": "An improper access control vulnerability [CWE-284] in FortiEDR Manager API may allow in a shared environment context an authenticated admin with REST API permissions in his profile and restricted to a specific organization to access backend logs that include information related to other organizations.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-371",
+      "cve": "CVE-2024-45323",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiEDR Manager: greater equal 6.0.1, less equal 6.0.1, fixed in [6.2.2]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiedr_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.1",
+                    "le": "6.0.1"
+                  },
+                  "fixed_in": [
+                    "6.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiEDR Manager: greater equal 6.2.0, less equal 6.2.1, fixed in [6.2.2]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiedr_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.1"
+                  },
+                  "fixed_in": [
+                    "6.2.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:P/RL:X/RC:R"
+          },
+          "cwe": [
+            "CWE-284"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2024-09-10T00:00:00Z",
+  "updated": "2024-09-17T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-371"
+}
+

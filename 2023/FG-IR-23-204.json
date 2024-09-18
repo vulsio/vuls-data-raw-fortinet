@@ -1,0 +1,179 @@
+{
+  "id": "FG-IR-23-204",
+  "title": "IDOR on download logs feature",
+  "summary": "An authorization bypass through user-controlled key [CWE-639] vulnerability in FortiAnalyzer & FortiManager may allow a remote attacker with low privileges to read sensitive data via a crafted HTTP request.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-204",
+      "cve": "CVE-2023-44254",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: greater equal 6.2.0, less equal 6.2.12, fixed in [7.2.5, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.12"
+                  },
+                  "fixed_in": [
+                    "7.2.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 6.4.0, less equal 6.4.14, fixed in [7.2.5, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.14"
+                  },
+                  "fixed_in": [
+                    "7.2.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 7.0.0, less equal 7.0.12, fixed in [7.2.5, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.12"
+                  },
+                  "fixed_in": [
+                    "7.2.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 7.2.0, less equal 7.2.4, fixed in [7.2.5, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.4"
+                  },
+                  "fixed_in": [
+                    "7.2.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: equal 7.4.0, fixed in [7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer-BigData: greater equal 7.2.0, less equal 7.2.5, fixed in [7.2.6, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer-bigdata:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.5"
+                  },
+                  "fixed_in": [
+                    "7.2.6",
+                    "7.4.0"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 6.2.0, less equal 6.2.12, fixed in [7.2.5, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.12"
+                  },
+                  "fixed_in": [
+                    "7.2.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 6.4.0, less equal 6.4.14, fixed in [7.2.5, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.14"
+                  },
+                  "fixed_in": [
+                    "7.2.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.0.0, less equal 7.0.12, fixed in [7.2.5, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.12"
+                  },
+                  "fixed_in": [
+                    "7.2.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.2.0, less equal 7.2.4, fixed in [7.2.5, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.4"
+                  },
+                  "fixed_in": [
+                    "7.2.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: equal 7.4.0, fixed in [7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.7,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:C/C:L/I:N/A:N/E:P/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-639"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "IDOR on download logs feature",
+      "url": "https://fortiguard.fortinet.com/psirt/FG-IR-23-204"
+    },
+    {
+      "description": "https://github.com/orangecertcc/security-research/security/advisories/GHSA-3xr4-2rgh-m245",
+      "url": "https://github.com/orangecertcc/security-research/security/advisories/GHSA-3xr4-2rgh-m245"
+    }
+  ],
+  "published": "2024-09-10T00:00:00Z",
+  "updated": "2024-09-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-204"
+}
+
