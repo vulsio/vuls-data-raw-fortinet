@@ -1,0 +1,32 @@
+{
+  "id": "FG-IR-24-205",
+  "title": "Online Installer DLL Hijacking",
+  "summary": "An untrusted search path vulnerability [CWE-426] in FortiClient Windows may allow an attacker to run arbitrary code via DLL hijacking and social engineering.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-205",
+      "cve": "CVE-2024-36507",
+      "definitions": [
+        {
+          "configurations": [
+            {},
+            {},
+            {}
+          ],
+          "cvssv3": {
+            "base_score": 6.7,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:W/RC:C"
+          },
+          "cwe": [
+            "CWE-426"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2024-11-12T00:00:00Z",
+  "updated": "2024-11-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-205"
+}
+

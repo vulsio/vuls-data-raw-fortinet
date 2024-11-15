@@ -1,0 +1,91 @@
+{
+  "id": "FG-IR-24-180",
+  "title": "Exposure of password hashes to read-only admin",
+  "summary": "An exposure of sensitive system information to an unauthorized control sphere vulnerability [CWE-497] in FortiWeb may allow an authenticated attacker to access the encrypted passwords of other administrators via the \"Log Access Event\" logs page.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-180",
+      "cve": "CVE-2024-36509",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: greater equal 6.3.0, less equal 6.3.23, fixed in [7.4.4, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.3.0",
+                    "le": "6.3.23"
+                  },
+                  "fixed_in": [
+                    "7.4.4",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.0.0, less equal 7.0.10, fixed in [7.4.4, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.10"
+                  },
+                  "fixed_in": [
+                    "7.4.4",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.2.0, less equal 7.2.10, fixed in [7.4.4, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.10"
+                  },
+                  "fixed_in": [
+                    "7.4.4",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.4.0, less equal 7.4.3, fixed in [7.4.4, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.3"
+                  },
+                  "fixed_in": [
+                    "7.4.4",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: equal 7.6.0, fixed in [7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.6.0"
+                  },
+                  "fixed_in": [
+                    "7.6.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.8,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:U/C:N/I:H/A:N/E:P/RL:U/RC:R"
+          },
+          "cwe": [
+            "CWE-497"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2024-11-12T00:00:00Z",
+  "updated": "2024-11-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-180"
+}
+
