@@ -1,0 +1,123 @@
+{
+  "id": "FG-IR-23-278",
+  "title": "Credentials can be dumped from memory",
+  "summary": "A Cleartext Storage of Sensitive Information vulnerability [CWE-312] in FortiClient Windows may permit a local authenticated user to retrieve VPN password via memory dump, due to JavaScript's garbage collector",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-278",
+      "cve": "CVE-2024-50570",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Linux: greater equal 7.0.0, less equal 7.0.13, fixed in [7.0.14, 7.2.8, 7.4.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:linux:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.13"
+                  },
+                  "fixed_in": [
+                    "7.0.14",
+                    "7.2.8",
+                    "7.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Linux: greater equal 7.2.0, less equal 7.2.7, fixed in [7.2.8, 7.4.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:linux:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.7"
+                  },
+                  "fixed_in": [
+                    "7.2.8",
+                    "7.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Linux: greater equal 7.4.0, less equal 7.4.2, fixed in [7.4.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:linux:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.2"
+                  },
+                  "fixed_in": [
+                    "7.4.3"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Windows: greater equal 7.0.0, less equal 7.0.13, fixed in [7.0.14, 7.2.7, 7.4.2]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.13"
+                  },
+                  "fixed_in": [
+                    "7.0.14",
+                    "7.2.7",
+                    "7.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: greater equal 7.2.0, less equal 7.2.6, fixed in [7.2.7, 7.4.2]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.6"
+                  },
+                  "fixed_in": [
+                    "7.2.7",
+                    "7.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: greater equal 7.4.0, less equal 7.4.1, fixed in [7.4.2]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.1"
+                  },
+                  "fixed_in": [
+                    "7.4.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.9,
+            "vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:R/S:C/C:H/I:N/A:N/E:F/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-312"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "Credentials can be dumped from memory",
+      "url": "https://fortiguard.fortinet.com/psirt/FG-IR-23-278"
+    },
+    {
+      "description": "https://docs.fortinet.com/document/forticlient/7.4.1/xml-reference-guide/56173",
+      "url": "https://docs.fortinet.com/document/forticlient/7.4.1/xml-reference-guide/56173"
+    },
+    {
+      "description": "https://docs.fortinet.com/document/forticlient/7.4.1/ems-administration-guide/682498/remote-access",
+      "url": "https://docs.fortinet.com/document/forticlient/7.4.1/ems-administration-guide/682498/remote-access"
+    }
+  ],
+  "published": "2024-12-18T00:00:00Z",
+  "updated": "2024-12-18T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-278"
+}
+

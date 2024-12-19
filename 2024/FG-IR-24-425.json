@@ -1,0 +1,137 @@
+{
+  "id": "FG-IR-24-425",
+  "title": "OS command injection",
+  "summary": "An Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability [CWE-78] in FortiManager may allow an authenticated remote attacker to execute unauthorized code via FGFM crafted requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-425",
+      "cve": "CVE-2024-48889",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 6.4.10, less equal 6.4.14, fixed in [6.4.15, 7.0.13, 7.2.8, 7.4.5, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.10",
+                    "le": "6.4.14"
+                  },
+                  "fixed_in": [
+                    "6.4.15",
+                    "7.0.13",
+                    "7.2.8",
+                    "7.4.5",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.0.5, less equal 7.0.12, fixed in [7.0.13, 7.2.8, 7.4.5, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.5",
+                    "le": "7.0.12"
+                  },
+                  "fixed_in": [
+                    "7.0.13",
+                    "7.2.8",
+                    "7.4.5",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.2.3, less equal 7.2.7, fixed in [7.2.8, 7.4.5, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.3",
+                    "le": "7.2.7"
+                  },
+                  "fixed_in": [
+                    "7.2.8",
+                    "7.4.5",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.4.0, less equal 7.4.4, fixed in [7.4.5, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.4"
+                  },
+                  "fixed_in": [
+                    "7.4.5",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: equal 7.6.0, fixed in [7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.6.0"
+                  },
+                  "fixed_in": [
+                    "7.6.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager Cloud: greater equal 7.0.1, less equal 7.0.12, fixed in [7.0.13, 7.2.8, 7.4.5]",
+                  "cpe": "cpe:2.3:a:fortinet:fortimanager_cloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.1",
+                    "le": "7.0.12"
+                  },
+                  "fixed_in": [
+                    "7.0.13",
+                    "7.2.8",
+                    "7.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiManager Cloud: greater equal 7.2.1, less equal 7.2.7, fixed in [7.2.8, 7.4.5]",
+                  "cpe": "cpe:2.3:a:fortinet:fortimanager_cloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.1",
+                    "le": "7.2.7"
+                  },
+                  "fixed_in": [
+                    "7.2.8",
+                    "7.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiManager Cloud: greater equal 7.4.1, less equal 7.4.4, fixed in [7.4.5]",
+                  "cpe": "cpe:2.3:a:fortinet:fortimanager_cloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.1",
+                    "le": "7.4.4"
+                  },
+                  "fixed_in": [
+                    "7.4.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:H/RL:U/RC:X"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2024-12-18T00:00:00Z",
+  "updated": "2024-12-18T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-425"
+}
+

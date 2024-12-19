@@ -1,0 +1,56 @@
+{
+  "id": "FG-IR-23-144",
+  "title": "[FortiWLM] Unauthenticated limited file read vulnerability",
+  "summary": "A relative path traversal [CWE-23] in FortiWLM may allow a remote unauthenticated attacker to read sensitive files.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-144",
+      "cve": "CVE-2023-34990",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWLM: greater equal 8.5.0, less equal 8.5.4, fixed in [8.5.5, 8.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlm:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.5.0",
+                    "le": "8.5.4"
+                  },
+                  "fixed_in": [
+                    "8.5.5",
+                    "8.6.6"
+                  ]
+                },
+                {
+                  "description": "FortiWLM: greater equal 8.6.0, less equal 8.6.5, fixed in [8.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiwlm:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.6.0",
+                    "le": "8.6.5"
+                  },
+                  "fixed_in": [
+                    "8.6.6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-23"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2024-12-18T00:00:00Z",
+  "updated": "2024-12-18T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-144"
+}
+
