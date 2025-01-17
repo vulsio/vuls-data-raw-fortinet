@@ -1,0 +1,80 @@
+{
+  "id": "FG-IR-23-476",
+  "title": "EMS console login under brute force attack does not get locked",
+  "summary": "An improper restriction of excessive authentication attempts [CWE-307] in FortiClientEMS may allow an unauthenticated attacker to try a brute force attack against the FortiClientEMS console via crafted HTTP or HTTPS requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-476",
+      "cve": "CVE-2024-23106",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClientEMS: greater equal 6.2.0, less equal 6.2.9, fixed in [7.0.11, 7.2.5]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.9"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "7.2.5"
+                  ]
+                },
+                {
+                  "description": "FortiClientEMS: greater equal 6.4.0, less equal 6.4.9, fixed in [7.0.11, 7.2.5]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.9"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "7.2.5"
+                  ]
+                },
+                {
+                  "description": "FortiClientEMS: greater equal 7.0.0, less equal 7.0.10, fixed in [7.0.11, 7.2.5]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.10"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "7.2.5"
+                  ]
+                },
+                {
+                  "description": "FortiClientEMS: greater equal 7.2.0, less equal 7.2.3, fixed in [7.2.5]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.3"
+                  },
+                  "fixed_in": [
+                    "7.2.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.7,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-307"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2025-01-14T00:00:00Z",
+  "updated": "2025-01-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-476"
+}
+

@@ -1,0 +1,55 @@
+{
+  "id": "FG-IR-24-326",
+  "title": "Exposure of sensitive information in RADIUS Accounting-Request",
+  "summary": "An insertion of sensitive information into sent data vulnerability [CWE-201] in FortiOS may allow an attacker in a man-in-the-middle position to retrieve the RADIUS accounting server shared secret via intercepting accounting-requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-326",
+      "cve": "CVE-2024-46665",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 7.4.0, less equal 7.4.4, fixed in [7.4.5, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.4"
+                  },
+                  "fixed_in": [
+                    "7.4.5",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 7.6.0, fixed in [7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.6.0"
+                  },
+                  "fixed_in": [
+                    "7.6.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.5,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-201"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2025-01-14T00:00:00Z",
+  "updated": "2025-01-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-326"
+}
+

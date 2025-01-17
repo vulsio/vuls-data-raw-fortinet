@@ -1,0 +1,71 @@
+{
+  "id": "FG-IR-24-535",
+  "title": "Authentication bypass in Node.js websocket module",
+  "summary": "An Authentication Bypass Using an Alternate Path or Channel vulnerability [CWE-288] affecting FortiOS and FortiProxy may allow a remote attacker to gain super-admin privileges via crafted requests to Node.js websocket module.Please note that reports show this is being exploited in the wild.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-535",
+      "cve": "CVE-2024-55591",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.16, fixed in [7.0.17]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.16"
+                  },
+                  "fixed_in": [
+                    "7.0.17"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy: greater equal 7.0.0, less equal 7.0.19, fixed in [7.0.20, 7.2.13]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.19"
+                  },
+                  "fixed_in": [
+                    "7.0.20",
+                    "7.2.13"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.2.0, less equal 7.2.12, fixed in [7.2.13]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.12"
+                  },
+                  "fixed_in": [
+                    "7.2.13"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:H/RL:W/RC:C"
+          },
+          "cwe": [
+            "CWE-288"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-01-15T00:00:00Z",
+  "updated": "2025-01-15T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-535"
+}
+

@@ -1,0 +1,68 @@
+{
+  "id": "FG-IR-24-097",
+  "title": "Arbitrary file deletion in administrative interface",
+  "summary": "A relative path traversal vulnerability [CWE-23] in FortiManager administrative interface may allow a privileged attacker to delete files from the underlying filesystem via crafted HTTP or HTTPs requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-097",
+      "cve": "CVE-2024-32115",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 7.0.0, less equal 7.0.13, fixed in [7.2.6, 7.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.13"
+                  },
+                  "fixed_in": [
+                    "7.2.6",
+                    "7.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.2.0, less equal 7.2.5, fixed in [7.2.6, 7.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.5"
+                  },
+                  "fixed_in": [
+                    "7.2.6",
+                    "7.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.4.0, less equal 7.4.2, fixed in [7.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.2"
+                  },
+                  "fixed_in": [
+                    "7.4.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-23"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-01-14T00:00:00Z",
+  "updated": "2025-01-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-097"
+}
+

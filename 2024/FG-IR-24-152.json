@@ -1,0 +1,135 @@
+{
+  "id": "FG-IR-24-152",
+  "title": "Arbitrary file write on GUI",
+  "summary": "A relative path traversal vulnerability [CWE-23] in FortiManager & FortiAnalyzer may allow a privileged attacker with super-admin profile and CLI access to write files on the underlying system via crafted HTTP or HTTPS requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-152",
+      "cve": "CVE-2024-36512",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: greater equal 6.2.10, less equal 6.2.13, fixed in [7.0.13, 7.2.6, 7.4.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.10",
+                    "le": "6.2.13"
+                  },
+                  "fixed_in": [
+                    "7.0.13",
+                    "7.2.6",
+                    "7.4.4"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 7.0.2, less equal 7.0.12, fixed in [7.0.13, 7.2.6, 7.4.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.2",
+                    "le": "7.0.12"
+                  },
+                  "fixed_in": [
+                    "7.0.13",
+                    "7.2.6",
+                    "7.4.4"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 7.2.0, less equal 7.2.5, fixed in [7.2.6, 7.4.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.5"
+                  },
+                  "fixed_in": [
+                    "7.2.6",
+                    "7.4.4"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 7.4.0, less equal 7.4.3, fixed in [7.4.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.3"
+                  },
+                  "fixed_in": [
+                    "7.4.4"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 6.2.10, less equal 6.2.13, fixed in [7.0.13, 7.2.6, 7.4.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.10",
+                    "le": "6.2.13"
+                  },
+                  "fixed_in": [
+                    "7.0.13",
+                    "7.2.6",
+                    "7.4.4"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.0.2, less equal 7.0.12, fixed in [7.0.13, 7.2.6, 7.4.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.2",
+                    "le": "7.0.12"
+                  },
+                  "fixed_in": [
+                    "7.0.13",
+                    "7.2.6",
+                    "7.4.4"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.2.0, less equal 7.2.5, fixed in [7.2.6, 7.4.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.5"
+                  },
+                  "fixed_in": [
+                    "7.2.6",
+                    "7.4.4"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.4.0, less equal 7.4.3, fixed in [7.4.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.3"
+                  },
+                  "fixed_in": [
+                    "7.4.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-23"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-01-14T00:00:00Z",
+  "updated": "2025-01-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-152"
+}
+

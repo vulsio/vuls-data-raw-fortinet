@@ -1,0 +1,112 @@
+{
+  "id": "FG-IR-23-260",
+  "title": "Hardcoded Session Secret Leading to Unauthenticated Remote Code Execution",
+  "summary": "A use of hard-coded cryptographic key vulnerability [CWE-321] in FortiSwitch may allow a remote unauthenticated attacker in posession of the key to execute unauthorized code via crafted cryptographic requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-260",
+      "cve": "CVE-2023-37936",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch: greater equal 6.0.0, less equal 6.0.7, fixed in [6.2.8, 6.4.14, 7.0.8, 7.2.6, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.7"
+                  },
+                  "fixed_in": [
+                    "6.2.8",
+                    "6.4.14",
+                    "7.0.8",
+                    "7.2.6",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSwitch: greater equal 6.2.0, less equal 6.2.7, fixed in [6.2.8, 6.4.14, 7.0.8, 7.2.6, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.7"
+                  },
+                  "fixed_in": [
+                    "6.2.8",
+                    "6.4.14",
+                    "7.0.8",
+                    "7.2.6",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSwitch: greater equal 6.4.0, less equal 6.4.13, fixed in [6.4.14, 7.0.8, 7.2.6, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.13"
+                  },
+                  "fixed_in": [
+                    "6.4.14",
+                    "7.0.8",
+                    "7.2.6",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSwitch: greater equal 7.0.0, less equal 7.0.7, fixed in [7.0.8, 7.2.6, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.7"
+                  },
+                  "fixed_in": [
+                    "7.0.8",
+                    "7.2.6",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSwitch: greater equal 7.2.0, less equal 7.2.5, fixed in [7.2.6, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.5"
+                  },
+                  "fixed_in": [
+                    "7.2.6",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSwitch: equal 7.4.0, fixed in [7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-321"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-01-14T00:00:00Z",
+  "updated": "2025-01-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-260"
+}
+

@@ -1,0 +1,80 @@
+{
+  "id": "FG-IR-24-239",
+  "title": "Admin Account Persistence after Deletion",
+  "summary": "An operation on a resource after expiration or release vulnerability [CWE-672] in FortiManager may allow a Fortigate admin account that is deleted through FortiManager to still be able to login to the FortiGate via valid credentials.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-239",
+      "cve": "CVE-2024-47571",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: equal 6.4.12, fixed in [6.4.13, 7.0.9, 7.2.4, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "6.4.12"
+                  },
+                  "fixed_in": [
+                    "6.4.13",
+                    "7.0.9",
+                    "7.2.4",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.0.7, less equal 7.0.8, fixed in [7.0.9, 7.2.4, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.7",
+                    "le": "7.0.8"
+                  },
+                  "fixed_in": [
+                    "7.0.9",
+                    "7.2.4",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: equal 7.2.3, fixed in [7.2.4, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.2.3"
+                  },
+                  "fixed_in": [
+                    "7.2.4",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiManager: equal 7.4.0, fixed in [7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.9,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-672"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2025-01-14T00:00:00Z",
+  "updated": "2025-01-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-239"
+}
+

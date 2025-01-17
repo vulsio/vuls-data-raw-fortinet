@@ -1,0 +1,68 @@
+{
+  "id": "FG-IR-23-220",
+  "title": "Blind SQL injection vulnerability",
+  "summary": "An improper neutralization of special elements used in an sql command ('sql injection') vulnerability [CWE-88] in FortiVoice Entreprise may allow an authenticated attacker to perform a blind sql injection attack via sending crafted HTTP or HTTPS requests",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-220",
+      "cve": "CVE-2023-37931",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiVoice Enterprise: greater equal 6.0.0, less equal 6.0.12, fixed in [6.4.9, 7.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.12"
+                  },
+                  "fixed_in": [
+                    "6.4.9",
+                    "7.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiVoice Enterprise: greater equal 6.4.0, less equal 6.4.8, fixed in [6.4.9, 7.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.8"
+                  },
+                  "fixed_in": [
+                    "6.4.9",
+                    "7.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiVoice Enterprise: greater equal 7.0.0, less equal 7.0.1, fixed in [7.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.1"
+                  },
+                  "fixed_in": [
+                    "7.0.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-88"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-01-14T00:00:00Z",
+  "updated": "2025-01-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-220"
+}
+

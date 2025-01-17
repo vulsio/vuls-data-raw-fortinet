@@ -1,0 +1,154 @@
+{
+  "id": "FG-IR-24-164",
+  "title": "Denial of Service in TLS-SYSLOG handler",
+  "summary": "An allocation of resources without limits or throttling [CWE-770] in FortiSIEM TLS-SYSLOG may allow an attacker to deny valid TLS traffic via consuming all allotted connections.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-164",
+      "cve": "CVE-2024-46667",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSIEM: greater equal 5.3.0, less equal 5.3.3, fixed in [7.1.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.3.0",
+                    "le": "5.3.3"
+                  },
+                  "fixed_in": [
+                    "7.1.6"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 5.4.0, less equal 5.4.0, fixed in [7.1.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.0"
+                  },
+                  "fixed_in": [
+                    "7.1.6"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.1.0, less equal 6.1.2, fixed in [7.1.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.1.0",
+                    "le": "6.1.2"
+                  },
+                  "fixed_in": [
+                    "7.1.6"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.2.0, less equal 6.2.1, fixed in [7.1.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.1"
+                  },
+                  "fixed_in": [
+                    "7.1.6"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.3.0, less equal 6.3.3, fixed in [7.1.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.3.0",
+                    "le": "6.3.3"
+                  },
+                  "fixed_in": [
+                    "7.1.6"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.4.0, less equal 6.4.4, fixed in [7.1.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.4"
+                  },
+                  "fixed_in": [
+                    "7.1.6"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.5.0, less equal 6.5.3, fixed in [7.1.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.5.0",
+                    "le": "6.5.3"
+                  },
+                  "fixed_in": [
+                    "7.1.6"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.6.0, less equal 6.6.5, fixed in [7.1.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.6.0",
+                    "le": "6.6.5"
+                  },
+                  "fixed_in": [
+                    "7.1.6"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.7.0, less equal 6.7.9, fixed in [7.1.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.7.0",
+                    "le": "6.7.9"
+                  },
+                  "fixed_in": [
+                    "7.1.6"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 7.0.0, less equal 7.0.3, fixed in [7.1.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.3"
+                  },
+                  "fixed_in": [
+                    "7.1.6"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 7.1.0, less equal 7.1.5, fixed in [7.1.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.1.0",
+                    "le": "7.1.5"
+                  },
+                  "fixed_in": [
+                    "7.1.6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.9,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H/E:P/RL:W/RC:C"
+          },
+          "cwe": [
+            "CWE-770"
+          ],
+          "impact": "Denial of service"
+        }
+      ]
+    }
+  ],
+  "published": "2025-01-14T00:00:00Z",
+  "updated": "2025-01-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-164"
+}
+

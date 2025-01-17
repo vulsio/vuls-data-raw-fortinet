@@ -1,0 +1,81 @@
+{
+  "id": "FG-IR-24-417",
+  "title": "Blind SQL injection in Update/Create case component",
+  "summary": "An Improper Neutralization of Special Elements used in an SQL Command ('SQL Injection') vulnerability [CWE-89] in FortiSIEM Update/Create Case feature may allow an authenticated attacker to extract database information via crafted requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-417",
+      "cve": "CVE-2024-52969",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSIEM: greater equal 6.4.0, less equal 6.4.4",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.4"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.5.0, less equal 6.5.3",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.5.0",
+                    "le": "6.5.3"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.6.0, less equal 6.6.5",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.6.0",
+                    "le": "6.6.5"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.7.0, less equal 6.7.9",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.7.0",
+                    "le": "6.7.9"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: greater equal 7.0.0, less equal 7.0.3",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.3"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: greater equal 7.1.0, less equal 7.1.7",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.1.0",
+                    "le": "7.1.7"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.7,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:L/I:N/A:N/E:P/RL:X/RC:R"
+          },
+          "cwe": [
+            "CWE-89"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2025-01-14T00:00:00Z",
+  "updated": "2025-01-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-417"
+}
+

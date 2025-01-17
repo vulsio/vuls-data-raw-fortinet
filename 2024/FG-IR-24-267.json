@@ -1,0 +1,55 @@
+{
+  "id": "FG-IR-24-267",
+  "title": "Integer Overflow in ipsec ike",
+  "summary": "An Integer Overflow or Wraparound vulnerability [CWE-190] in FortiOS and FortiSASE FortiOS tenant IPsec IKE service may allow an authenticated attacker to crash the IPsec tunnel via crafted requests, resulting in potential denial of service.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-267",
+      "cve": "CVE-2024-46669",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less equal 7.2.10, fixed in [7.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.10"
+                  },
+                  "fixed_in": [
+                    "7.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.4.0, less equal 7.4.4, fixed in [7.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.4"
+                  },
+                  "fixed_in": [
+                    "7.4.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.2,
+            "vector": "CVSS:3.1/AV:A/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:L/E:P/RL:X/RC:R"
+          },
+          "cwe": [
+            "CWE-190"
+          ],
+          "impact": "Denial of service"
+        }
+      ]
+    }
+  ],
+  "published": "2025-01-14T00:00:00Z",
+  "updated": "2025-01-15T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-267"
+}
+

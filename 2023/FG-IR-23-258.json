@@ -1,0 +1,112 @@
+{
+  "id": "FG-IR-23-258",
+  "title": "Restricted Shell Escape via Argument Injection",
+  "summary": "An improper neutralization of special elements used in an OS Command [CWE-78] in FortiSwitch may allow a local authenticated attacker to execute unauthorized code via FortiSwitch CLI.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-258",
+      "cve": "CVE-2023-37937",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch: greater equal 6.0.0, less equal 6.0.7, fixed in [6.2.8, 6.4.14, 7.0.8, 7.2.6, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.7"
+                  },
+                  "fixed_in": [
+                    "6.2.8",
+                    "6.4.14",
+                    "7.0.8",
+                    "7.2.6",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSwitch: greater equal 6.2.0, less equal 6.2.7, fixed in [6.2.8, 6.4.14, 7.0.8, 7.2.6, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.7"
+                  },
+                  "fixed_in": [
+                    "6.2.8",
+                    "6.4.14",
+                    "7.0.8",
+                    "7.2.6",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSwitch: greater equal 6.4.0, less equal 6.4.13, fixed in [6.4.14, 7.0.8, 7.2.6, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.13"
+                  },
+                  "fixed_in": [
+                    "6.4.14",
+                    "7.0.8",
+                    "7.2.6",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSwitch: greater equal 7.0.0, less equal 7.0.7, fixed in [7.0.8, 7.2.6, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.7"
+                  },
+                  "fixed_in": [
+                    "7.0.8",
+                    "7.2.6",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSwitch: greater equal 7.2.0, less equal 7.2.5, fixed in [7.2.6, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.5"
+                  },
+                  "fixed_in": [
+                    "7.2.6",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSwitch: equal 7.4.0, fixed in [7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.6,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-01-14T00:00:00Z",
+  "updated": "2025-01-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-258"
+}
+
