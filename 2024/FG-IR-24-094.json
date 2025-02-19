@@ -1,0 +1,160 @@
+{
+  "id": "FG-IR-24-094",
+  "title": "Use of Hard-coded Cryptographic Key to encrypt sensitive data",
+  "summary": "A use of hard-coded cryptographic key to encrypt sensitive data vulnerability [CWE-321] in FortiManager may allow an attacker with JSON API access permissions to decrypt some secrets even if the 'private-data-encryption' setting is enabled.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-094",
+      "cve": "CVE-2024-33504",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 6.4.0, less equal 6.4.15, fixed in [7.2.10, 7.4.6, 7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.15"
+                  },
+                  "fixed_in": [
+                    "7.2.10",
+                    "7.4.6",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.0.0, less equal 7.0.13, fixed in [7.2.10, 7.4.6, 7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.13"
+                  },
+                  "fixed_in": [
+                    "7.2.10",
+                    "7.4.6",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.2.0, less equal 7.2.9, fixed in [7.2.10, 7.4.6, 7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.9"
+                  },
+                  "fixed_in": [
+                    "7.2.10",
+                    "7.4.6",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.4.0, less equal 7.4.5, fixed in [7.2.10, 7.4.6, 7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.5"
+                  },
+                  "fixed_in": [
+                    "7.2.10",
+                    "7.4.6",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.6.0, less equal 7.6.1, fixed in [7.2.10, 7.4.6, 7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.1"
+                  },
+                  "fixed_in": [
+                    "7.2.10",
+                    "7.4.6",
+                    "7.6.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager Cloud: greater equal 6.4.1, less equal 6.4.7, fixed in [7.2.9, 7.4.6]",
+                  "cpe": "cpe:2.3:a:fortinet:fortimanager_cloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.1",
+                    "le": "6.4.7"
+                  },
+                  "fixed_in": [
+                    "7.2.9",
+                    "7.4.6"
+                  ]
+                },
+                {
+                  "description": "FortiManager Cloud: greater equal 7.0.1, less equal 7.0.13, fixed in [7.2.9, 7.4.6]",
+                  "cpe": "cpe:2.3:a:fortinet:fortimanager_cloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.1",
+                    "le": "7.0.13"
+                  },
+                  "fixed_in": [
+                    "7.2.9",
+                    "7.4.6"
+                  ]
+                },
+                {
+                  "description": "FortiManager Cloud: greater equal 7.2.1, less equal 7.2.8, fixed in [7.2.9, 7.4.6]",
+                  "cpe": "cpe:2.3:a:fortinet:fortimanager_cloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.1",
+                    "le": "7.2.8"
+                  },
+                  "fixed_in": [
+                    "7.2.9",
+                    "7.4.6"
+                  ]
+                },
+                {
+                  "description": "FortiManager Cloud: greater equal 7.4.1, less equal 7.4.5, fixed in [7.2.9, 7.4.6]",
+                  "cpe": "cpe:2.3:a:fortinet:fortimanager_cloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.1",
+                    "le": "7.4.5"
+                  },
+                  "fixed_in": [
+                    "7.2.9",
+                    "7.4.6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.9,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:L/I:N/A:N/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-321"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "Use of Hard-coded Cryptographic Key to encrypt sensitive data",
+      "url": "https://fortiguard.fortinet.com/psirt/FG-IR-24-094"
+    },
+    {
+      "description": "https://github.com/orangecertcc/security-research/security/advisories/GHSA-pgc3-m5p5-4vc3",
+      "url": "https://github.com/orangecertcc/security-research/security/advisories/GHSA-pgc3-m5p5-4vc3"
+    }
+  ],
+  "published": "2025-02-11T00:00:00Z",
+  "updated": "2025-02-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-094"
+}
+

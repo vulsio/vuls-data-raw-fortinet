@@ -1,0 +1,108 @@
+{
+  "id": "FG-IR-24-063",
+  "title": "Multiple Reflected and Stored Cross-Site Scripting",
+  "summary": "Multiple Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerabilities [CWE-79] in FortiSandbox may allow an authenticated attacker to perform cross-site scripting attack via crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-063",
+      "cve": "CVE-2024-27781",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: greater equal 3.0.0, less equal 3.0.7, fixed in [4.0.5, 4.2.7, 4.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.0.0",
+                    "le": "3.0.7"
+                  },
+                  "fixed_in": [
+                    "4.0.5",
+                    "4.2.7",
+                    "4.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 3.1.0, less equal 3.1.5, fixed in [4.0.5, 4.2.7, 4.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.1.0",
+                    "le": "3.1.5"
+                  },
+                  "fixed_in": [
+                    "4.0.5",
+                    "4.2.7",
+                    "4.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 3.2.0, less equal 3.2.4, fixed in [4.0.5, 4.2.7, 4.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.2.0",
+                    "le": "3.2.4"
+                  },
+                  "fixed_in": [
+                    "4.0.5",
+                    "4.2.7",
+                    "4.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.0.0, less equal 4.0.4, fixed in [4.0.5, 4.2.7, 4.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "4.0.4"
+                  },
+                  "fixed_in": [
+                    "4.0.5",
+                    "4.2.7",
+                    "4.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.2.0, less equal 4.2.6, fixed in [4.2.7, 4.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.2.0",
+                    "le": "4.2.6"
+                  },
+                  "fixed_in": [
+                    "4.2.7",
+                    "4.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.4.0, less equal 4.4.4, fixed in [4.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.4.0",
+                    "le": "4.4.4"
+                  },
+                  "fixed_in": [
+                    "4.4.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.9,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H/E:F/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-79"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-02-11T00:00:00Z",
+  "updated": "2025-02-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-063"
+}
+

@@ -1,0 +1,68 @@
+{
+  "id": "FG-IR-23-279",
+  "title": "Improper access control to FortiSslvpnNamedPipe",
+  "summary": "An Improper Access Control vulnerability [CWE-284] in FortiClient Windows may allow a local user to escalate their privileges via FortiSSLVPNd service pipe.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-279",
+      "cve": "CVE-2024-40586",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Windows: greater equal 7.0.0, less equal 7.0.13, fixed in [7.0.14, 7.2.7, 7.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.13"
+                  },
+                  "fixed_in": [
+                    "7.0.14",
+                    "7.2.7",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: greater equal 7.2.0, less equal 7.2.6, fixed in [7.2.7, 7.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.6"
+                  },
+                  "fixed_in": [
+                    "7.2.7",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: equal 7.4.0, fixed in [7.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.3,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-284"
+          ],
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2025-02-11T00:00:00Z",
+  "updated": "2025-02-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-279"
+}
+

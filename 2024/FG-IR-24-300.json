@@ -1,0 +1,68 @@
+{
+  "id": "FG-IR-24-300",
+  "title": "Improper Authentication in FortiMonitor Agent",
+  "summary": "An Improper Authentication vulnerability [CWE-287] for FortiClientMac may allow an unauthenticated attacker with local access to the MacOS device to login without a password as a standard user.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-300",
+      "cve": "CVE-2024-52968",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for MacOS: greater equal 7.0.11, less equal 7.0.12, fixed in [7.0.13, 7.2.5, 7.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "ge": "7.0.11",
+                    "le": "7.0.12"
+                  },
+                  "fixed_in": [
+                    "7.0.13",
+                    "7.2.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOS: greater equal 7.2.3, less equal 7.2.4, fixed in [7.2.5, 7.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "ge": "7.2.3",
+                    "le": "7.2.4"
+                  },
+                  "fixed_in": [
+                    "7.2.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOS: equal 7.4.0, fixed in [7.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.8,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:R"
+          },
+          "cwe": [
+            "CWE-287"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2025-02-11T00:00:00Z",
+  "updated": "2025-02-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-300"
+}
+

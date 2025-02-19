@@ -1,0 +1,57 @@
+{
+  "id": "FG-IR-23-324",
+  "title": "Reflected XSS (cross site scripting) in incident page",
+  "summary": "Multiple Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting') vulnerabilities [CWE-79] in FortiSIEM incident page may allow an authenticated attacker to perform a cross-site scripting attack via crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-324",
+      "cve": "CVE-2024-27780",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSIEM: greater equal 6.7.0, less equal 6.7.9",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.7.0",
+                    "le": "6.7.9"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: greater equal 7.0.0, less equal 7.0.3",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.3"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: greater equal 7.1.0, less equal 7.1.7",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.1.0",
+                    "le": "7.1.7"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:L/A:N/E:P/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-79"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-02-11T00:00:00Z",
+  "updated": "2025-02-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-324"
+}
+

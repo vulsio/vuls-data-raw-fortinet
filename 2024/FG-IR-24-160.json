@@ -1,0 +1,56 @@
+{
+  "id": "FG-IR-24-160",
+  "title": "Stack buffer overflow in fabric service",
+  "summary": "A stack-based buffer overflow [CWE-121] vulnerability in FortiOS CAPWAP control may allow a remote unauthenticated attacker to execute arbitrary code or commands via crafted UDP packets, provided the attacker were able to evade FortiOS stack protections and provided the fabric service is running on the exposed interface.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-160",
+      "cve": "CVE-2024-35279",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 7.2.4, less equal 7.2.8, fixed in [7.2.9, 7.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.4",
+                    "le": "7.2.8"
+                  },
+                  "fixed_in": [
+                    "7.2.9",
+                    "7.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.4.0, less equal 7.4.4, fixed in [7.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.4"
+                  },
+                  "fixed_in": [
+                    "7.4.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.7,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-121"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-02-11T00:00:00Z",
+  "updated": "2025-02-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-160"
+}
+
