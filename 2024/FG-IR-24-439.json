@@ -1,0 +1,79 @@
+{
+  "id": "FG-IR-24-439",
+  "title": "Directory Traversal Arbitrary File Write Vulnerability",
+  "summary": "An Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability [CWE-22] in FortiWeb API endpoint may allow an authenticated attacker with admin privileges to access and modify the filesystem.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-439",
+      "cve": "CVE-2024-55597",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: greater equal 7.0.0, less equal 7.0.10, fixed in [7.4.6, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.10"
+                  },
+                  "fixed_in": [
+                    "7.4.6",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.2.0, less equal 7.2.10, fixed in [7.4.6, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.10"
+                  },
+                  "fixed_in": [
+                    "7.4.6",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.4.0, less equal 7.4.5, fixed in [7.4.6, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.5"
+                  },
+                  "fixed_in": [
+                    "7.4.6",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: equal 7.6.0, fixed in [7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.6.0"
+                  },
+                  "fixed_in": [
+                    "7.6.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:H/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-22"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-03-11T00:00:00Z",
+  "updated": "2025-03-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-439"
+}
+

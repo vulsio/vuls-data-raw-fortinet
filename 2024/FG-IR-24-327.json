@@ -1,0 +1,124 @@
+{
+  "id": "FG-IR-24-327",
+  "title": "Use of hardcoded key used for remote backup server password encryption",
+  "summary": "A Use of Hard-coded Cryptographic Key vulnerability [CWE-321] in FortiSandbox may allow a privileged attacker with super-admin profile and CLI access to read sensitive data via CLI.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-327",
+      "cve": "CVE-2024-54027",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: greater equal 3.0.5, less equal 3.0.7, fixed in [4.0.6, 4.2.8, 4.4.7, 5.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.0.5",
+                    "le": "3.0.7"
+                  },
+                  "fixed_in": [
+                    "4.0.6",
+                    "4.2.8",
+                    "4.4.7",
+                    "5.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 3.1.0, less equal 3.1.5, fixed in [4.0.6, 4.2.8, 4.4.7, 5.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.1.0",
+                    "le": "3.1.5"
+                  },
+                  "fixed_in": [
+                    "4.0.6",
+                    "4.2.8",
+                    "4.4.7",
+                    "5.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 3.2.0, less equal 3.2.4, fixed in [4.0.6, 4.2.8, 4.4.7, 5.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.2.0",
+                    "le": "3.2.4"
+                  },
+                  "fixed_in": [
+                    "4.0.6",
+                    "4.2.8",
+                    "4.4.7",
+                    "5.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.0.0, less equal 4.0.5, fixed in [4.0.6, 4.2.8, 4.4.7, 5.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "4.0.5"
+                  },
+                  "fixed_in": [
+                    "4.0.6",
+                    "4.2.8",
+                    "4.4.7",
+                    "5.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.2.0, less equal 4.2.7, fixed in [4.2.8, 4.4.7, 5.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.2.0",
+                    "le": "4.2.7"
+                  },
+                  "fixed_in": [
+                    "4.2.8",
+                    "4.4.7",
+                    "5.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.4.0, less equal 4.4.6, fixed in [4.4.7, 5.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.4.0",
+                    "le": "4.4.6"
+                  },
+                  "fixed_in": [
+                    "4.4.7",
+                    "5.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: equal 5.0.0, fixed in [5.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.0.0"
+                  },
+                  "fixed_in": [
+                    "5.0.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.8,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-321"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2025-03-11T00:00:00Z",
+  "updated": "2025-03-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-327"
+}
+

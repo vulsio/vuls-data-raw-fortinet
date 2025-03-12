@@ -1,0 +1,77 @@
+{
+  "id": "FG-IR-24-110",
+  "title": "OS Command Injection in administrative interface",
+  "summary": "Multiple improper neutralization of special elements used in an OS Command vulnerabilities [CWE-78] in FortiSandbox may allow a privileged attacker to execute unauthorized commands via crafted requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-110",
+      "cve": "CVE-2024-54018",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: greater equal 3.2.0, less equal 3.2.4, fixed in [4.4.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.2.0",
+                    "le": "3.2.4"
+                  },
+                  "fixed_in": [
+                    "4.4.6"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.0.0, less equal 4.0.6, fixed in [4.4.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "4.0.6"
+                  },
+                  "fixed_in": [
+                    "4.4.6"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.2.0, less equal 4.2.8, fixed in [4.4.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.2.0",
+                    "le": "4.2.8"
+                  },
+                  "fixed_in": [
+                    "4.4.6"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.4.0, less equal 4.4.5, fixed in [4.4.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.4.0",
+                    "le": "4.4.5"
+                  },
+                  "fixed_in": [
+                    "4.4.6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.8,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-03-11T00:00:00Z",
+  "updated": "2025-03-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-110"
+}
+

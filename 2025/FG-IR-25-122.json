@@ -1,0 +1,39 @@
+{
+  "id": "FG-IR-25-122",
+  "title": "Pre-authentication Denial of Service attack in OpenSSH - CVE-2025-26466",
+  "summary": "CVE-2025-26466A flaw was found in the OpenSSH package. For each ping packet the SSH server receives, a pong packet is allocated in a memory buffer and stored in a queue of packages. It is only freed when the server/client key exchange has finished. A malicious client may keep sending such packages, leading to an uncontrolled increase in memory consumption on the server side. Consequently, the server may become unavailable, resulting in a denial of service attack.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-122",
+      "cve": "CVE-2025-26466",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 5.9,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:N/A:H/E:X/RL:X/RC:X"
+          },
+          "impact": "Denial of service"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "Pre-authentication Denial of Service attack in OpenSSH - CVE-2025-26466",
+      "url": "https://fortiguard.fortinet.com/psirt/FG-IR-25-122"
+    },
+    {
+      "description": "https://nvd.nist.gov/vuln/detail/CVE-2025-26466",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2025-26466"
+    },
+    {
+      "description": "https://www.qualys.com/2025/02/18/openssh-mitm-dos.txt",
+      "url": "https://www.qualys.com/2025/02/18/openssh-mitm-dos.txt"
+    }
+  ],
+  "published": "2025-03-11T00:00:00Z",
+  "updated": "2025-03-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-122"
+}
+

@@ -1,0 +1,44 @@
+{
+  "id": "FG-IR-24-261",
+  "title": "Incorrect authorization in GUI console",
+  "summary": "An incorrect authorization vulnerability [CWE-863] in FortiSandbox may allow a low priviledged administrator to execute elevated CLI commands via the GUI console menu.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-261",
+      "cve": "CVE-2024-45328",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: greater equal 4.4.0, less equal 4.4.6, fixed in [4.4.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.4.0",
+                    "le": "4.4.6"
+                  },
+                  "fixed_in": [
+                    "4.4.7"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.1,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:X/RC:R"
+          },
+          "cwe": [
+            "CWE-863"
+          ],
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2025-03-11T00:00:00Z",
+  "updated": "2025-03-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-261"
+}
+

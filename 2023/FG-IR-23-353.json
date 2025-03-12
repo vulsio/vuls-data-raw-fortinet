@@ -1,0 +1,96 @@
+{
+  "id": "FG-IR-23-353",
+  "title": "Cross Site Request Forgery in admin endpoint",
+  "summary": "A cross site request forgery vulnerability [CWE-352] in FortiNDR may allow a remote unauthenticated attacker to execute unauthorized actions via crafted HTTP GET requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-353",
+      "cve": "CVE-2023-48790",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiNDR: greater equal 1.5.0, less equal 1.5.3, fixed in [7.0.6, 7.1.2, 7.2.2, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortindr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.5.0",
+                    "le": "1.5.3"
+                  },
+                  "fixed_in": [
+                    "7.0.6",
+                    "7.1.2",
+                    "7.2.2",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiNDR: greater equal 7.0.0, less equal 7.0.5, fixed in [7.0.6, 7.1.2, 7.2.2, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortindr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.5"
+                  },
+                  "fixed_in": [
+                    "7.0.6",
+                    "7.1.2",
+                    "7.2.2",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiNDR: greater equal 7.1.0, less equal 7.1.1, fixed in [7.1.2, 7.2.2, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortindr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.1.0",
+                    "le": "7.1.1"
+                  },
+                  "fixed_in": [
+                    "7.1.2",
+                    "7.2.2",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiNDR: greater equal 7.2.0, less equal 7.2.1, fixed in [7.2.2, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortindr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.1"
+                  },
+                  "fixed_in": [
+                    "7.2.2",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiNDR: equal 7.4.0, fixed in [7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortindr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.1,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-352"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-03-11T00:00:00Z",
+  "updated": "2025-03-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-353"
+}
+

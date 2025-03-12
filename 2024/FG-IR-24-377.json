@@ -1,0 +1,129 @@
+{
+  "id": "FG-IR-24-377",
+  "title": "Incorrect authorization in incident page",
+  "summary": "An incorrect authorization vulnerability [CWE-863] in FortiSIEM may allow an authenticated attacker to perform unauthorized operations on incidents via crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-377",
+      "cve": "CVE-2024-55592",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSIEM: greater equal 5.3.0, less equal 5.3.3",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.3.0",
+                    "le": "5.3.3"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: greater equal 5.4.0, less equal 5.4.0",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.4.0",
+                    "le": "5.4.0"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.1.0, less equal 6.1.2",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.1.0",
+                    "le": "6.1.2"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.2.0, less equal 6.2.1",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.1"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.3.0, less equal 6.3.3",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.3.0",
+                    "le": "6.3.3"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.4.0, less equal 6.4.4",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.4"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.5.0, less equal 6.5.3",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.5.0",
+                    "le": "6.5.3"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.6.0, less equal 6.6.5",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.6.0",
+                    "le": "6.6.5"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.7.0, less equal 6.7.9",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.7.0",
+                    "le": "6.7.9"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: greater equal 7.0.0, less equal 7.0.3",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.3"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: greater equal 7.1.0, less equal 7.1.7",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.1.0",
+                    "le": "7.1.7"
+                  }
+                },
+                {
+                  "description": "FortiSIEM: greater equal 7.2.0, less equal 7.2.5",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.5"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:N/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-863"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2025-03-11T00:00:00Z",
+  "updated": "2025-03-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-377"
+}
+

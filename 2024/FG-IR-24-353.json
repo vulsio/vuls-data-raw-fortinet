@@ -1,0 +1,99 @@
+{
+  "id": "FG-IR-24-353",
+  "title": "error based SQLI on device del feature",
+  "summary": "An improper neutralization of special elements used in an SQL Command ('SQL Injection') vulnerability [CWE-89] in FortiSandbox may allow a privileged attacker to execute unauthorized code or commands via specifically crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-353",
+      "cve": "CVE-2024-54026",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: greater equal 3.0.0, less equal 3.0.7, fixed in [4.4.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.0.0",
+                    "le": "3.0.7"
+                  },
+                  "fixed_in": [
+                    "4.4.7"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 3.1.0, less equal 3.1.5, fixed in [4.4.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.1.0",
+                    "le": "3.1.5"
+                  },
+                  "fixed_in": [
+                    "4.4.7"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 3.2.0, less equal 3.2.4, fixed in [4.4.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.2.0",
+                    "le": "3.2.4"
+                  },
+                  "fixed_in": [
+                    "4.4.7"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.0.0, less equal 4.0.6, fixed in [4.4.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "4.0.6"
+                  },
+                  "fixed_in": [
+                    "4.4.7"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.2.0, less equal 4.2.8, fixed in [4.4.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.2.0",
+                    "le": "4.2.8"
+                  },
+                  "fixed_in": [
+                    "4.4.7"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.4.0, less equal 4.4.6, fixed in [4.4.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.4.0",
+                    "le": "4.4.6"
+                  },
+                  "fixed_in": [
+                    "4.4.7"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-89"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-03-11T00:00:00Z",
+  "updated": "2025-03-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-353"
+}
+

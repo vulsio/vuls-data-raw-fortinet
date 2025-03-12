@@ -1,0 +1,124 @@
+{
+  "id": "FG-IR-24-306",
+  "title": "Os command injection on vm download feature",
+  "summary": "An improper neutralization of special elements used in an OS Command vulnerability [CWE-78] in FortiSandbox may allow an authenticated attacker with at least read-only permission to execute unauthorized commands via crafted requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-306",
+      "cve": "CVE-2024-52961",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: greater equal 3.0.0, less equal 3.0.7, fixed in [4.0.6, 4.2.8, 4.4.7, 5.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.0.0",
+                    "le": "3.0.7"
+                  },
+                  "fixed_in": [
+                    "4.0.6",
+                    "4.2.8",
+                    "4.4.7",
+                    "5.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 3.1.0, less equal 3.1.5, fixed in [4.0.6, 4.2.8, 4.4.7, 5.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.1.0",
+                    "le": "3.1.5"
+                  },
+                  "fixed_in": [
+                    "4.0.6",
+                    "4.2.8",
+                    "4.4.7",
+                    "5.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 3.2.0, less equal 3.2.4, fixed in [4.0.6, 4.2.8, 4.4.7, 5.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.2.0",
+                    "le": "3.2.4"
+                  },
+                  "fixed_in": [
+                    "4.0.6",
+                    "4.2.8",
+                    "4.4.7",
+                    "5.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.0.0, less equal 4.0.5, fixed in [4.0.6, 4.2.8, 4.4.7, 5.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "4.0.5"
+                  },
+                  "fixed_in": [
+                    "4.0.6",
+                    "4.2.8",
+                    "4.4.7",
+                    "5.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.2.0, less equal 4.2.7, fixed in [4.2.8, 4.4.7, 5.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.2.0",
+                    "le": "4.2.7"
+                  },
+                  "fixed_in": [
+                    "4.2.8",
+                    "4.4.7",
+                    "5.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.4.0, less equal 4.4.6, fixed in [4.4.7, 5.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.4.0",
+                    "le": "4.4.6"
+                  },
+                  "fixed_in": [
+                    "4.4.7",
+                    "5.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: equal 5.0.0, fixed in [5.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.0.0"
+                  },
+                  "fixed_in": [
+                    "5.0.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 8.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-03-11T00:00:00Z",
+  "updated": "2025-03-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-306"
+}
+

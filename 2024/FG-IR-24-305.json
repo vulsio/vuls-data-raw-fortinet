@@ -1,0 +1,120 @@
+{
+  "id": "FG-IR-24-305",
+  "title": "Client-side enforcement of server-side security related to vm download feature",
+  "summary": "A client-side enforcement of server-side security vulnerability [CWE-602] in FortiSandbox may allow an authenticated attacker with at least read-only permission to execute unauthorized commands via crafted requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-305",
+      "cve": "CVE-2024-52960",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: greater equal 3.0.0, less equal 3.0.7, fixed in [4.2.8, 4.4.7, 5.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.0.0",
+                    "le": "3.0.7"
+                  },
+                  "fixed_in": [
+                    "4.2.8",
+                    "4.4.7",
+                    "5.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 3.1.0, less equal 3.1.5, fixed in [4.2.8, 4.4.7, 5.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.1.0",
+                    "le": "3.1.5"
+                  },
+                  "fixed_in": [
+                    "4.2.8",
+                    "4.4.7",
+                    "5.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 3.2.0, less equal 3.2.4, fixed in [4.2.8, 4.4.7, 5.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.2.0",
+                    "le": "3.2.4"
+                  },
+                  "fixed_in": [
+                    "4.2.8",
+                    "4.4.7",
+                    "5.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.0.0, less equal 4.0.6, fixed in [4.2.8, 4.4.7, 5.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "4.0.6"
+                  },
+                  "fixed_in": [
+                    "4.2.8",
+                    "4.4.7",
+                    "5.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.2.0, less equal 4.2.7, fixed in [4.2.8, 4.4.7, 5.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.2.0",
+                    "le": "4.2.7"
+                  },
+                  "fixed_in": [
+                    "4.2.8",
+                    "4.4.7",
+                    "5.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.4.0, less equal 4.4.6, fixed in [4.4.7, 5.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.4.0",
+                    "le": "4.4.6"
+                  },
+                  "fixed_in": [
+                    "4.4.7",
+                    "5.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: equal 5.0.0, fixed in [5.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "5.0.0"
+                  },
+                  "fixed_in": [
+                    "5.0.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N/E:F/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-602"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2025-03-11T00:00:00Z",
+  "updated": "2025-03-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-305"
+}
+

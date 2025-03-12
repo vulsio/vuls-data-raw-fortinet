@@ -1,0 +1,92 @@
+{
+  "id": "FG-IR-24-331",
+  "title": "Stack buffer overflow in CLI command",
+  "summary": "A stack-buffer overflow vulnerability [CWE-121] in FortiMail CLI may allow a privileged attacker to execute arbitrary code or commands via specifically crafted CLI commands.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-331",
+      "cve": "CVE-2024-46663",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiMail: greater equal 6.4.0, less equal 6.4.8, fixed in [7.4.4, 7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.8"
+                  },
+                  "fixed_in": [
+                    "7.4.4",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 7.0.0, less equal 7.0.8, fixed in [7.4.4, 7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.8"
+                  },
+                  "fixed_in": [
+                    "7.4.4",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 7.2.0, less equal 7.2.7, fixed in [7.4.4, 7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.7"
+                  },
+                  "fixed_in": [
+                    "7.4.4",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 7.4.0, less equal 7.4.3, fixed in [7.4.4, 7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.3"
+                  },
+                  "fixed_in": [
+                    "7.4.4",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 7.6.0, less equal 7.6.1, fixed in [7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.1"
+                  },
+                  "fixed_in": [
+                    "7.6.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.5,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-121"
+          ],
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2025-03-11T00:00:00Z",
+  "updated": "2025-03-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-331"
+}
+

@@ -1,0 +1,103 @@
+{
+  "id": "FG-IR-23-115",
+  "title": "Web application firewall rules bypass by using an empty filename",
+  "summary": "Two improper handling of syntactically invalid structure vulnerabilities [CWE-228] in FortiWeb may allow an unauthenticated attacker to bypass web firewall protections via HTTP/S crafted requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-115",
+      "cve": "CVE-2023-42784",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: greater equal 7.0.0, less equal 7.0.10",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.10"
+                  }
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.2.0, less equal 7.2.10",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.10"
+                  }
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.4.0, less equal 7.4.7",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.7"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.5,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L/E:F/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-228"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    },
+    {
+      "id": "FG-IR-23-115",
+      "cve": "CVE-2024-55594",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: greater equal 7.0.0, less equal 7.0.10",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.10"
+                  }
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.2.0, less equal 7.2.10",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.10"
+                  }
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.4.0, less equal 7.4.7",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.7"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.5,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:L/A:L/E:F/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-228"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-03-11T00:00:00Z",
+  "updated": "2025-03-11T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-115"
+}
+
