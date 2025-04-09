@@ -1,0 +1,97 @@
+{
+  "id": "FG-IR-24-435",
+  "title": "Unverified password change via set_password endpoint",
+  "summary": "An unverified password change vulnerability [CWE-620] in FortiSwitch GUI may allow a remote unauthenticated attacker to modify admin passwords via a specially crafted request.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-435",
+      "cve": "CVE-2024-48887",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch: greater equal 6.4.0, less equal 6.4.14, fixed in [6.4.15, 7.0.11, 7.2.9, 7.4.5, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.14"
+                  },
+                  "fixed_in": [
+                    "6.4.15",
+                    "7.0.11",
+                    "7.2.9",
+                    "7.4.5",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiSwitch: greater equal 7.0.0, less equal 7.0.10, fixed in [7.0.11, 7.2.9, 7.4.5, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.10"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "7.2.9",
+                    "7.4.5",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiSwitch: greater equal 7.2.0, less equal 7.2.8, fixed in [7.2.9, 7.4.5, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.8"
+                  },
+                  "fixed_in": [
+                    "7.2.9",
+                    "7.4.5",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiSwitch: greater equal 7.4.0, less equal 7.4.4, fixed in [7.4.5, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.4"
+                  },
+                  "fixed_in": [
+                    "7.4.5",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiSwitch: equal 7.6.0, fixed in [7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiswitch:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.6.0"
+                  },
+                  "fixed_in": [
+                    "7.6.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-620"
+          ],
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2025-04-08T00:00:00Z",
+  "updated": "2025-04-08T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-435"
+}
+

@@ -1,0 +1,112 @@
+{
+  "id": "FG-IR-23-165",
+  "title": "Use of uninitialized resource in SSLVPN websocket",
+  "summary": "Multiple potential issues, including the use of uninitialized ressources [CWE-908] and excessive iteration [CWE-834] in FortiOS & FortiProxy SSLVPN webmode may allow a VPN user to corrupt memory, potentially leading to code or commands execution via specifically crafted requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-165",
+      "cve": "CVE-2023-37930",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.4.7, less equal 6.4.14, fixed in [6.4.15, 7.0.13, 7.2.6, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.7",
+                    "le": "6.4.14"
+                  },
+                  "fixed_in": [
+                    "6.4.15",
+                    "7.0.13",
+                    "7.2.6",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.1, less equal 7.0.12, fixed in [7.0.13, 7.2.6, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.1",
+                    "le": "7.0.12"
+                  },
+                  "fixed_in": [
+                    "7.0.13",
+                    "7.2.6",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less equal 7.2.5, fixed in [7.2.6, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.5"
+                  },
+                  "fixed_in": [
+                    "7.2.6",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 7.4.0, fixed in [7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy: greater equal 7.0.0, less equal 7.0.12, fixed in [7.0.13, 7.2.7, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.12"
+                  },
+                  "fixed_in": [
+                    "7.0.13",
+                    "7.2.7",
+                    "7.4.0"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.2.0, less equal 7.2.6, fixed in [7.2.7, 7.4.0]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.6"
+                  },
+                  "fixed_in": [
+                    "7.2.7",
+                    "7.4.0"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.7,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-908",
+            "CWE-834"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-04-08T00:00:00Z",
+  "updated": "2025-04-08T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-165"
+}
+

@@ -1,0 +1,44 @@
+{
+  "id": "FG-IR-24-397",
+  "title": "OS command injection on diagnose feature (GUI)",
+  "summary": "An improper neutralization of special elements used in an OS command ('OS Command Injection') vulnerability [CWE-78] in FortiIsolator may allow a privileged attacker with super-admin profile and CLI access to execute unauthorized code via specifically crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-397",
+      "cve": "CVE-2024-54024",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiIsolator: greater equal 2.4.3, less equal 2.4.6, fixed in [2.4.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiisolator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.4.3",
+                    "le": "2.4.6"
+                  },
+                  "fixed_in": [
+                    "2.4.7"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2025-04-08T00:00:00Z",
+  "updated": "2025-04-08T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-397"
+}
+

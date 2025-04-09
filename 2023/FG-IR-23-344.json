@@ -1,0 +1,31 @@
+{
+  "id": "FG-IR-23-344",
+  "title": "EMS can send javascript code to client through messages",
+  "summary": "An improper neutralization of input during web page generation ('Cross-site Scripting') [CWE-79] vulnerability in FortiClient may allow the EMS administrator to send messages containing javascript code.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-344",
+      "cve": "CVE-2025-22855",
+      "definitions": [
+        {
+          "configurations": [
+            {},
+            {}
+          ],
+          "cvssv3": {
+            "base_score": 2.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:N/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-79"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-04-08T00:00:00Z",
+  "updated": "2025-04-08T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-344"
+}
+
