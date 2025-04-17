@@ -1,0 +1,79 @@
+{
+  "id": "FG-IR-24-216",
+  "title": "Hardcoded Encryption Key Used for Named Pipe Communication",
+  "summary": "A use of hard-coded cryptographic key (CWE-321) vulnerability in FortiClient Windows may allow a low-privileged user to decrypt interprocess communication via monitoring named pipe.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-216",
+      "cve": "CVE-2024-50564",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Windows: greater equal 6.4.0, less equal 6.4.10, fixed in [7.2.9, 7.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.10"
+                  },
+                  "fixed_in": [
+                    "7.2.9",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: greater equal 7.0.0, less equal 7.0.14, fixed in [7.2.9, 7.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.14"
+                  },
+                  "fixed_in": [
+                    "7.2.9",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: greater equal 7.2.0, less equal 7.2.8, fixed in [7.2.9, 7.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.8"
+                  },
+                  "fixed_in": [
+                    "7.2.9",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: equal 7.4.0, fixed in [7.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.2,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-321"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2025-01-14T00:00:00Z",
+  "updated": "2025-04-16T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-216"
+}
+

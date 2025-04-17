@@ -9,9 +9,45 @@
       "definitions": [
         {
           "configurations": [
-            {},
-            {},
-            {}
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Windows: greater equal 7.0.0, less equal 7.0.12, fixed in [7.0.13, 7.2.5, 7.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.12"
+                  },
+                  "fixed_in": [
+                    "7.0.13",
+                    "7.2.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: greater equal 7.2.0, less equal 7.2.4, fixed in [7.2.5, 7.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.4"
+                  },
+                  "fixed_in": [
+                    "7.2.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: equal 7.4.0, fixed in [7.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.1"
+                  ]
+                }
+              ]
+            }
           ],
           "cvssv3": {
             "base_score": 6.7,
