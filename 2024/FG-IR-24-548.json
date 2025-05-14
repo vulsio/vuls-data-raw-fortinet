@@ -1,0 +1,54 @@
+{
+  "id": "FG-IR-24-548",
+  "title": "Index of FCT installation directory publicly accessible",
+  "summary": "An Exposure of Sensitive System Information to an Unauthorized Control Sphere vulnerability [CWE-497] in FortiClientWindows may allow an unauthorized remote attacker to view application information via navigation to a hosted webpage, if Windows is configured to accept incoming connections to port 8053 (non-default setup)",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-548",
+      "cve": "CVE-2025-24473",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Windows: greater equal 7.2.0, less equal 7.2.1, fixed in [7.2.2]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.1"
+                  },
+                  "fixed_in": [
+                    "7.2.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.8,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:L/I:N/A:N/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-497"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "Index of FCT installation directory publicly accessible",
+      "url": "https://fortiguard.fortinet.com/psirt/FG-IR-24-548"
+    },
+    {
+      "description": "By default Windows will deny incoming requests on port 8053, normally making the information inaccessible to a remote user.  However, EDR solutions will nonetheless typically issue an alert.",
+      "url": "By default Windows will deny incoming requests on port 8053, normally making the information inaccessible to a remote user.  However, EDR solutions will nonetheless typically issue an alert."
+    }
+  ],
+  "published": "2025-05-13T00:00:00Z",
+  "updated": "2025-05-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-548"
+}
+

@@ -1,0 +1,68 @@
+{
+  "id": "FG-IR-24-025",
+  "title": "Code Execution due to Node.JS Environment Variable",
+  "summary": "An improper isolation or compartmentalization vulnerability [CWE-653] in FortiClient MacOS and FortiVoiceUC desktop application may allow an authenticated attacker to inject code via Electron environment variables.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-025",
+      "cve": "CVE-2024-35281",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for MacOS: greater equal 7.2.0, less equal 7.2.8, fixed in [7.2.9, 7.4.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.8"
+                  },
+                  "fixed_in": [
+                    "7.2.9",
+                    "7.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOS: greater equal 7.4.0, less equal 7.4.2, fixed in [7.4.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.2"
+                  },
+                  "fixed_in": [
+                    "7.4.3"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiVoice Cloud Unified Communications Desktop: greater equal 3.0.0, less equal 3.0.16",
+                  "cpe": "cpe:2.3:a:fortinet:fortivoice_cloud_unified_communications_desktop:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.0.0",
+                    "le": "3.0.16"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 2.3,
+            "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:N/I:L/A:N/E:P/RL:X/RC:R"
+          },
+          "cwe": [
+            "CWE-653"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-05-13T00:00:00Z",
+  "updated": "2025-05-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-025"
+}
+

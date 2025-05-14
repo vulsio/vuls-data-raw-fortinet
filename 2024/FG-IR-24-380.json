@@ -1,0 +1,67 @@
+{
+  "id": "FG-IR-24-380",
+  "title": "Insertion of sensitive information into system log",
+  "summary": "An insertion of sensitive information into log file vulnerability [CWE-532] in FortiPortal may allow an authenticated attacker with at least read-only admin permissions to view encrypted secrets via the FortiPortal System Log.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-380",
+      "cve": "CVE-2025-46777",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiPortal: greater equal 7.0.0, less equal 7.0.9, fixed in [7.0.10, 7.2.6, 7.4.2]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.9"
+                  },
+                  "fixed_in": [
+                    "7.0.10",
+                    "7.2.6",
+                    "7.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiPortal: greater equal 7.2.0, less equal 7.2.5, fixed in [7.2.6]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.5"
+                  },
+                  "fixed_in": [
+                    "7.2.6"
+                  ]
+                },
+                {
+                  "description": "FortiPortal: equal 7.4.0, fixed in [7.4.2]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 2.2,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-532"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2025-05-13T00:00:00Z",
+  "updated": "2025-05-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-380"
+}
+

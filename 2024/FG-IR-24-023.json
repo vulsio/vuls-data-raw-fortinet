@@ -1,0 +1,56 @@
+{
+  "id": "FG-IR-24-023",
+  "title": "Unauthorized modification of global threat feeds",
+  "summary": "A missing authorization [CWE-862] vulnerability in FortiManager may allow an authenticated attacker to overwrite global threat feeds via crafted update requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-023",
+      "cve": "CVE-2024-54020",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 7.0.0, less equal 7.0.7, fixed in [7.0.8, 7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.7"
+                  },
+                  "fixed_in": [
+                    "7.0.8",
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.2.0, less equal 7.2.1, fixed in [7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.1"
+                  },
+                  "fixed_in": [
+                    "7.2.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 2.1,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:N/I:L/A:N/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-862"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2025-05-13T00:00:00Z",
+  "updated": "2025-05-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-023"
+}
+
