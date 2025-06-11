@@ -1,0 +1,125 @@
+{
+  "id": "FG-IR-25-099",
+  "title": "Multiple OS command injection in Web Vulnerability Scanner",
+  "summary": "An Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability [CWE-78] in FortiADC may allow an authenticated attacker to execute unauthorized code via crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-099",
+      "cve": "CVE-2025-31104",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiADC: greater equal 6.1.0, less equal 6.1.6, fixed in [7.1.5, 7.2.8, 7.4.7, 7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.1.0",
+                    "le": "6.1.6"
+                  },
+                  "fixed_in": [
+                    "7.1.5",
+                    "7.2.8",
+                    "7.4.7",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 6.2.0, less equal 6.2.6, fixed in [7.1.5, 7.2.8, 7.4.7, 7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.6"
+                  },
+                  "fixed_in": [
+                    "7.1.5",
+                    "7.2.8",
+                    "7.4.7",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 7.0.0, less equal 7.0.6, fixed in [7.1.5, 7.2.8, 7.4.7, 7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.6"
+                  },
+                  "fixed_in": [
+                    "7.1.5",
+                    "7.2.8",
+                    "7.4.7",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 7.1.0, less equal 7.1.4, fixed in [7.1.5, 7.2.8, 7.4.7, 7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.1.0",
+                    "le": "7.1.4"
+                  },
+                  "fixed_in": [
+                    "7.1.5",
+                    "7.2.8",
+                    "7.4.7",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 7.2.0, less equal 7.2.7, fixed in [7.2.8, 7.4.7, 7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.7"
+                  },
+                  "fixed_in": [
+                    "7.2.8",
+                    "7.4.7",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 7.4.0, less equal 7.4.6, fixed in [7.4.7, 7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.6"
+                  },
+                  "fixed_in": [
+                    "7.4.7",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 7.6.0, less equal 7.6.1, fixed in [7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.1"
+                  },
+                  "fixed_in": [
+                    "7.6.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-06-10T00:00:00Z",
+  "updated": "2025-06-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-099"
+}
+

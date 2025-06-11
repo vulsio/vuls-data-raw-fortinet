@@ -1,0 +1,80 @@
+{
+  "id": "FG-IR-23-342",
+  "title": "Blind SSRF in API",
+  "summary": "A server-side request forgery vulnerability [CWE-918] in FortiClientEMS may allow an authenticated attacker to perform internal requests via crafted HTTP or HTTPS requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-342",
+      "cve": "CVE-2023-48786",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClientEMS: greater equal 6.4.0, less equal 6.4.9, fixed in [7.2.7, 7.4.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.9"
+                  },
+                  "fixed_in": [
+                    "7.2.7",
+                    "7.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiClientEMS: greater equal 7.0.0, less equal 7.0.13, fixed in [7.2.7, 7.4.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.13"
+                  },
+                  "fixed_in": [
+                    "7.2.7",
+                    "7.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiClientEMS: greater equal 7.2.0, less equal 7.2.6, fixed in [7.2.7, 7.4.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.6"
+                  },
+                  "fixed_in": [
+                    "7.2.7",
+                    "7.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiClientEMS: greater equal 7.4.0, less equal 7.4.1, fixed in [7.4.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.1"
+                  },
+                  "fixed_in": [
+                    "7.4.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-918"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-06-10T00:00:00Z",
+  "updated": "2025-06-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-342"
+}
+

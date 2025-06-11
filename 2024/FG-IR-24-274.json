@@ -1,0 +1,68 @@
+{
+  "id": "FG-IR-24-274",
+  "title": "Insufficient Access Control Over API Endpoints",
+  "summary": "An authorization bypass through user-controlled key vulnerability [CWE-639] in FortiPortal may allow an authenticated attacker to view unauthorized device information via key modification in API requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-274",
+      "cve": "CVE-2024-45329",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiPortal: greater equal 7.0.0, less equal 7.0.8, fixed in [7.0.9, 7.2.6, 7.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.8"
+                  },
+                  "fixed_in": [
+                    "7.0.9",
+                    "7.2.6",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiPortal: greater equal 7.2.0, less equal 7.2.5, fixed in [7.2.6, 7.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.5"
+                  },
+                  "fixed_in": [
+                    "7.2.6",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiPortal: equal 7.4.0, fixed in [7.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.9,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-639"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2025-06-10T00:00:00Z",
+  "updated": "2025-06-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-274"
+}
+

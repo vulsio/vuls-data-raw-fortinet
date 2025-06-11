@@ -1,0 +1,91 @@
+{
+  "id": "FG-IR-23-375",
+  "title": "Telemetry protocol authentication is based over VDOM and FCTUID",
+  "summary": "An improper authentication vulnerability [CWE-287] in FortiClientEMS telemetry protocol may allow an unauthenticated attacker with the knowledge of the targeted user's FCTUID and VDOM to perform operations such as uploading or tagging on behalf of the targeted user via specially crafted TCP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-23-375",
+      "cve": "CVE-2024-32119",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClientEMS: greater equal 6.2.0, less equal 6.2.9, fixed in [7.2.5, 7.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.9"
+                  },
+                  "fixed_in": [
+                    "7.2.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClientEMS: greater equal 6.4.0, less equal 6.4.9, fixed in [7.2.5, 7.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.9"
+                  },
+                  "fixed_in": [
+                    "7.2.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClientEMS: greater equal 7.0.0, less equal 7.0.13, fixed in [7.2.5, 7.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.13"
+                  },
+                  "fixed_in": [
+                    "7.2.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClientEMS: greater equal 7.2.0, less equal 7.2.4, fixed in [7.2.5, 7.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.4"
+                  },
+                  "fixed_in": [
+                    "7.2.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiClientEMS: equal 7.4.0, fixed in [7.4.1]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.6,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:L/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-287"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-06-10T00:00:00Z",
+  "updated": "2025-06-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-23-375"
+}
+
