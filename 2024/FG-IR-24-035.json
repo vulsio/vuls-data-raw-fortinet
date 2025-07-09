@@ -1,0 +1,150 @@
+{
+  "id": "FG-IR-24-035",
+  "title": "Session still active for deleted admin",
+  "summary": "An insufficient session expiration vulnerability [CWE-613] in FortiSandbox & FortiIsolator may allow a remote attacker in possession of an admin session cookie to keep using that admin's session even after the admin user was deleted.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-035",
+      "cve": "CVE-2024-27779",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiIsolator: greater equal 1.2.0, less equal 1.2.2, fixed in [2.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiisolator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.2.0",
+                    "le": "1.2.2"
+                  },
+                  "fixed_in": [
+                    "2.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiIsolator: greater equal 2.0.0, less equal 2.0.1, fixed in [2.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiisolator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.0.0",
+                    "le": "2.0.1"
+                  },
+                  "fixed_in": [
+                    "2.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiIsolator: greater equal 2.1.0, less equal 2.1.2, fixed in [2.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiisolator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.1.0",
+                    "le": "2.1.2"
+                  },
+                  "fixed_in": [
+                    "2.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiIsolator: greater equal 2.2.0, less equal 2.2.0, fixed in [2.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiisolator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.2.0",
+                    "le": "2.2.0"
+                  },
+                  "fixed_in": [
+                    "2.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiIsolator: greater equal 2.3.0, less equal 2.3.4, fixed in [2.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiisolator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.3.0",
+                    "le": "2.3.4"
+                  },
+                  "fixed_in": [
+                    "2.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiIsolator: greater equal 2.4.0, less equal 2.4.4, fixed in [2.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiisolator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.4.0",
+                    "le": "2.4.4"
+                  },
+                  "fixed_in": [
+                    "2.4.5"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: greater equal 3.2.0, less equal 3.2.4, fixed in [4.2.7, 4.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.2.0",
+                    "le": "3.2.4"
+                  },
+                  "fixed_in": [
+                    "4.2.7",
+                    "4.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.0.0, less equal 4.0.6, fixed in [4.2.7, 4.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "4.0.6"
+                  },
+                  "fixed_in": [
+                    "4.2.7",
+                    "4.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.2.0, less equal 4.2.6, fixed in [4.2.7, 4.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.2.0",
+                    "le": "4.2.6"
+                  },
+                  "fixed_in": [
+                    "4.2.7",
+                    "4.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.4.0, less equal 4.4.4, fixed in [4.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.4.0",
+                    "le": "4.4.4"
+                  },
+                  "fixed_in": [
+                    "4.4.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:L/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-613"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2025-07-08T00:00:00Z",
+  "updated": "2025-07-08T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-035"
+}
+
