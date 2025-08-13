@@ -2,7 +2,6 @@
   "id": "FG-IR-23-397",
   "title": "FortiOS & FortiProxy - CVE-2023-44487 - Rapid Reset HTTP/2 vulnerability",
   "summary": "The Fortinet Product Security team has evaluated the impact of the vulnerablity HTTP/2 Rapid Reset Attack, listed below: CVE-2023-44487: The HTTP/2 protocol allows a denial of service (server resource consumption) because request cancellation can reset many streams quickly. https://nvd.nist.gov/vuln/detail/CVE-2023-44487",
-  "description": "None",
   "vulnerabilities": [
     {
       "id": "FG-IR-23-397",

@@ -1,0 +1,163 @@
+{
+  "id": "FG-IR-24-042",
+  "title": "Weak authentication - FGFM protocol",
+  "summary": "An authentication bypass using an alternate path or channel [CWE-288] vulnerability in FortiOS, FortiProxy & FortiPAM may allow an unauthenticated attacker to seize control of a managed device via crafted FGFM requests, if the device is managed by a FortiManager, and if the attacker knows that FortiManager's serial number.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-042",
+      "cve": "CVE-2024-26009",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.0.0, less equal 6.0.18, fixed in [6.2.17, 6.4.16]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.18"
+                  },
+                  "fixed_in": [
+                    "6.2.17",
+                    "6.4.16"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.2.0, less equal 6.2.16, fixed in [6.2.17, 6.4.16]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.16"
+                  },
+                  "fixed_in": [
+                    "6.2.17",
+                    "6.4.16"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 6.4.15, fixed in [6.4.16]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.15"
+                  },
+                  "fixed_in": [
+                    "6.4.16"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiPAM: greater equal 1.0.0, less equal 1.0.3",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.0.0",
+                    "le": "1.0.3"
+                  }
+                },
+                {
+                  "description": "FortiPAM: greater equal 1.1.0, less equal 1.1.2",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.1.0",
+                    "le": "1.1.2"
+                  }
+                },
+                {
+                  "description": "FortiPAM: greater equal 1.2.0, less equal 1.2.0",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.2.0",
+                    "le": "1.2.0"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy: greater equal 7.0.0, less equal 7.0.15, fixed in [7.0.16, 7.2.9, 7.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.15"
+                  },
+                  "fixed_in": [
+                    "7.0.16",
+                    "7.2.9",
+                    "7.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.2.0, less equal 7.2.8, fixed in [7.2.9, 7.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.8"
+                  },
+                  "fixed_in": [
+                    "7.2.9",
+                    "7.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.4.0, less equal 7.4.2, fixed in [7.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.2"
+                  },
+                  "fixed_in": [
+                    "7.4.3"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch Manager: greater equal 7.0.0, less equal 7.0.3, fixed in [7.0.4, 7.2.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiswitch_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.3"
+                  },
+                  "fixed_in": [
+                    "7.0.4",
+                    "7.2.4"
+                  ]
+                },
+                {
+                  "description": "FortiSwitch Manager: greater equal 7.2.0, less equal 7.2.3, fixed in [7.2.4]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiswitch_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.3"
+                  },
+                  "fixed_in": [
+                    "7.2.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.9,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-288"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-08-12T00:00:00Z",
+  "updated": "2025-08-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-042"
+}
+

@@ -1,0 +1,79 @@
+{
+  "id": "FG-IR-24-421",
+  "title": "Path traversal in Solution Pack upload",
+  "summary": "A relative path traversal vulnerability [CWE-23] in FortiSOAR may allow an authenticated attacker to read arbitrary files via uploading a malicious solution pack.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-421",
+      "cve": "CVE-2024-48892",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSOAR: greater equal 7.3.0, less equal 7.3.3, fixed in [7.5.2, 7.6.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.3.0",
+                    "le": "7.3.3"
+                  },
+                  "fixed_in": [
+                    "7.5.2",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR: greater equal 7.4.0, less equal 7.4.5, fixed in [7.5.2, 7.6.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.5"
+                  },
+                  "fixed_in": [
+                    "7.5.2",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR: greater equal 7.5.0, less equal 7.5.1, fixed in [7.5.2, 7.6.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.5.0",
+                    "le": "7.5.1"
+                  },
+                  "fixed_in": [
+                    "7.5.2",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR: equal 7.6.0, fixed in [7.6.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.6.0"
+                  },
+                  "fixed_in": [
+                    "7.6.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.4,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:H/I:N/A:N/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-23"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2025-08-12T00:00:00Z",
+  "updated": "2025-08-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-421"
+}
+

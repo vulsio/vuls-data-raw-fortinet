@@ -2,7 +2,6 @@
   "id": "FG-IR-25-006",
   "title": "Privilege escalation in GUI websocket module",
   "summary": "An Improper Privilege Management vulnerability [CWE-269] affecting FortiOS, FortiProxy & FortiWeb may allow an authenticated attacker with at least read-only admin permissions to gain super-admin privileges via crafted requests to Node.js websocket module.",
-  "description": "None",
   "vulnerabilities": [
     {
       "id": "FG-IR-25-006",

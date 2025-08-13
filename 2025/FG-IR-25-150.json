@@ -1,0 +1,83 @@
+{
+  "id": "FG-IR-25-150",
+  "title": "Command injection in CLI",
+  "summary": "An improper neutralization of special elements used in an OS command ('OS Command Injection') vulnerability [CWE-78] in FortiWeb may allow an authenticated privileged attacker to execute unauthorized code or commands via crafted CLI commands",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-150",
+      "cve": "CVE-2025-27759",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: greater equal 7.0.0, less equal 7.0.10, fixed in [7.0.11, 7.2.11, 7.4.8, 7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.10"
+                  },
+                  "fixed_in": [
+                    "7.0.11",
+                    "7.2.11",
+                    "7.4.8",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.2.0, less equal 7.2.10, fixed in [7.2.11, 7.4.8, 7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.10"
+                  },
+                  "fixed_in": [
+                    "7.2.11",
+                    "7.4.8",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.4.0, less equal 7.4.7, fixed in [7.4.8, 7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.7"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.6.0, less equal 7.6.3, fixed in [7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.3"
+                  },
+                  "fixed_in": [
+                    "7.6.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.7,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:H/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2025-08-12T00:00:00Z",
+  "updated": "2025-08-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-150"
+}
+

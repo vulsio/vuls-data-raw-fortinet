@@ -1,0 +1,277 @@
+{
+  "id": "FG-IR-24-309",
+  "title": "Path traversal vulnerability in CLI",
+  "summary": "Multiple relative path traversal vulnerabilities [CWE-23] in FortiMail, FortiVoice, FortiRecorder, FortiCamera & FortiNDR may allow a privileged attacker to read files from the underlying filesystem via crafted CLI requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-309",
+      "cve": "CVE-2024-40588",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiCamera: greater equal 1.0.3, less equal 1.0.5, fixed in [2.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:forticamera:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.0.3",
+                    "le": "1.0.5"
+                  },
+                  "fixed_in": [
+                    "2.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiCamera: greater equal 1.1.0, less equal 1.1.5, fixed in [2.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:forticamera:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.1.0",
+                    "le": "1.1.5"
+                  },
+                  "fixed_in": [
+                    "2.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiCamera: equal 2.0.0, fixed in [2.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:forticamera:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "2.0.0"
+                  },
+                  "fixed_in": [
+                    "2.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiCamera: greater equal 2.1.0, less equal 2.1.4",
+                  "cpe": "cpe:2.3:o:fortinet:forticamera:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.1.0",
+                    "le": "2.1.4"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiMail: greater equal 6.4.0, less equal 6.4.8, fixed in [7.4.4, 7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.8"
+                  },
+                  "fixed_in": [
+                    "7.4.4",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 7.0.0, less equal 7.0.9, fixed in [7.4.4, 7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.9"
+                  },
+                  "fixed_in": [
+                    "7.4.4",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 7.2.0, less equal 7.2.8, fixed in [7.4.4, 7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.8"
+                  },
+                  "fixed_in": [
+                    "7.4.4",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 7.4.0, less equal 7.4.3, fixed in [7.4.4, 7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.3"
+                  },
+                  "fixed_in": [
+                    "7.4.4",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 7.6.0, less equal 7.6.1, fixed in [7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.1"
+                  },
+                  "fixed_in": [
+                    "7.6.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiNDR: greater equal 7.0.0, less equal 7.0.7, fixed in [7.4.7, 7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortindr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.7"
+                  },
+                  "fixed_in": [
+                    "7.4.7",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiNDR: greater equal 7.1.0, less equal 7.1.1, fixed in [7.4.7, 7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortindr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.1.0",
+                    "le": "7.1.1"
+                  },
+                  "fixed_in": [
+                    "7.4.7",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiNDR: greater equal 7.2.0, less equal 7.2.5, fixed in [7.4.7, 7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortindr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.5"
+                  },
+                  "fixed_in": [
+                    "7.4.7",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiNDR: greater equal 7.4.0, less equal 7.4.6, fixed in [7.4.7, 7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortindr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.6"
+                  },
+                  "fixed_in": [
+                    "7.4.7",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiNDR: greater equal 7.6.0, less equal 7.6.1, fixed in [7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortindr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.1"
+                  },
+                  "fixed_in": [
+                    "7.6.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiRecorder: greater equal 6.4.0, less equal 6.4.6, fixed in [7.0.5, 7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortirecorder:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.6"
+                  },
+                  "fixed_in": [
+                    "7.0.5",
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiRecorder: greater equal 7.0.0, less equal 7.0.4, fixed in [7.0.5, 7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortirecorder:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.4"
+                  },
+                  "fixed_in": [
+                    "7.0.5",
+                    "7.2.2"
+                  ]
+                },
+                {
+                  "description": "FortiRecorder: greater equal 7.2.0, less equal 7.2.1, fixed in [7.2.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortirecorder:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.1"
+                  },
+                  "fixed_in": [
+                    "7.2.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiVoice: greater equal 6.0.0, less equal 6.0.12, fixed in [6.4.10, 7.0.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.12"
+                  },
+                  "fixed_in": [
+                    "6.4.10",
+                    "7.0.5"
+                  ]
+                },
+                {
+                  "description": "FortiVoice: greater equal 6.4.0, less equal 6.4.9, fixed in [6.4.10, 7.0.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.9"
+                  },
+                  "fixed_in": [
+                    "6.4.10",
+                    "7.0.5"
+                  ]
+                },
+                {
+                  "description": "FortiVoice: greater equal 7.0.0, less equal 7.0.4, fixed in [7.0.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.4"
+                  },
+                  "fixed_in": [
+                    "7.0.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.2,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-23"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2025-08-12T00:00:00Z",
+  "updated": "2025-08-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-309"
+}
+

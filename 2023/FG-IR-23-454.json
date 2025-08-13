@@ -2,7 +2,6 @@
   "id": "FG-IR-23-454",
   "title": "FortiSandbox -  Arbitrary file delete on endpoint",
   "summary": "An improper limitation of a pathname to a restricted directory ('Path Traversal') vulnerability [CWE-22] in FortiSandbox may allow an authenticated attacker with at least read-only permission to delete arbitrary files via crafted HTTP requests.",
-  "description": "None",
   "vulnerabilities": [
     {
       "id": "FG-IR-23-454",

@@ -1,0 +1,56 @@
+{
+  "id": "FG-IR-25-253",
+  "title": "Command injection in CLI command",
+  "summary": "A improper neutralization of special elements used in an os command ('os command injection') vulnerability [CWE-78] in FortiWeb CLI may allow a privileged attacker to execute arbitrary code or command via crafted CLI commands.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-253",
+      "cve": "CVE-2025-47857",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: greater equal 7.4.1, less equal 7.4.8, fixed in [7.4.9, 7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.1",
+                    "le": "7.4.8"
+                  },
+                  "fixed_in": [
+                    "7.4.9",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.6.0, less equal 7.6.3, fixed in [7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.3"
+                  },
+                  "fixed_in": [
+                    "7.6.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.5,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-08-12T00:00:00Z",
+  "updated": "2025-08-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-253"
+}
+
