@@ -1,0 +1,110 @@
+{
+  "id": "FG-IR-24-344",
+  "title": "OS command injection in CLI",
+  "summary": "An improper neutralization of special elements used in an OS command ('OS Command Injection') vulnerability [CWE-78] in FortiDDoS-F CLI may allow a privileged attacker to execute unauthorized code or commands via crafted CLI requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-344",
+      "cve": "CVE-2024-45325",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiDDoS-F: greater equal 6.1.0, less equal 6.1.5, fixed in [7.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiddos-f:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.1.0",
+                    "le": "6.1.5"
+                  },
+                  "fixed_in": [
+                    "7.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiDDoS-F: greater equal 6.2.0, less equal 6.2.3, fixed in [7.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiddos-f:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.3"
+                  },
+                  "fixed_in": [
+                    "7.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiDDoS-F: greater equal 6.3.0, less equal 6.3.5, fixed in [7.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiddos-f:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.3.0",
+                    "le": "6.3.5"
+                  },
+                  "fixed_in": [
+                    "7.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiDDoS-F: greater equal 6.4.0, less equal 6.4.2, fixed in [7.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiddos-f:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.2"
+                  },
+                  "fixed_in": [
+                    "7.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiDDoS-F: greater equal 6.5.0, less equal 6.5.1, fixed in [7.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiddos-f:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.5.0",
+                    "le": "6.5.1"
+                  },
+                  "fixed_in": [
+                    "7.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiDDoS-F: greater equal 6.6.0, less equal 6.6.3, fixed in [7.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiddos-f:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.6.0",
+                    "le": "6.6.3"
+                  },
+                  "fixed_in": [
+                    "7.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiDDoS-F: greater equal 7.0.0, less equal 7.0.2, fixed in [7.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiddos-f:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.2"
+                  },
+                  "fixed_in": [
+                    "7.0.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.5,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:F/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-09-09T00:00:00Z",
+  "updated": "2025-09-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-344"
+}
+
