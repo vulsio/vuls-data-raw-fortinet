@@ -1,0 +1,56 @@
+{
+  "id": "FG-IR-25-037",
+  "title": "Code injection in login window",
+  "summary": "An Improper Control of Generation of Code ('Code Injection') vulnerability [CWE-94] in FortiClientMac may allow an unauthenticated attacker to execute arbitrary code on the victim's host via tricking the user into visiting a malicious website.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-037",
+      "cve": "CVE-2025-31365",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for MacOS: greater equal 7.2.1, less equal 7.2.8, fixed in [7.2.9, 7.4.4]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "ge": "7.2.1",
+                    "le": "7.2.8"
+                  },
+                  "fixed_in": [
+                    "7.2.9",
+                    "7.4.4"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOS: greater equal 7.4.0, less equal 7.4.3, fixed in [7.4.4]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.3"
+                  },
+                  "fixed_in": [
+                    "7.4.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.5,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:L/A:L/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-94"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-10-14T00:00:00Z",
+  "updated": "2025-10-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-037"
+}
+

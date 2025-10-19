@@ -1,0 +1,68 @@
+{
+  "id": "FG-IR-25-664",
+  "title": "Local Privilege Escalation in LaunchDaemon",
+  "summary": "An Incorrect Permission Assignment for Critical Resource vulnerability [CWE-732] in FortiClientMac may allow a local attacker to run arbitrary code or commands via LaunchDaemon hijacking.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-664",
+      "cve": "CVE-2025-57741",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for MacOS: greater equal 7.0.0, less equal 7.0.14, fixed in [7.2.12, 7.4.4]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.14"
+                  },
+                  "fixed_in": [
+                    "7.2.12",
+                    "7.4.4"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOS: greater equal 7.2.0, less equal 7.2.11, fixed in [7.2.12, 7.4.4]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.11"
+                  },
+                  "fixed_in": [
+                    "7.2.12",
+                    "7.4.4"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOS: greater equal 7.4.0, less equal 7.4.3, fixed in [7.4.4]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.3"
+                  },
+                  "fixed_in": [
+                    "7.4.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-732"
+          ],
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2025-10-14T00:00:00Z",
+  "updated": "2025-10-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-664"
+}
+

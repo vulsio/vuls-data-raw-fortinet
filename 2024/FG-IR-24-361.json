@@ -1,0 +1,317 @@
+{
+  "id": "FG-IR-24-361",
+  "title": "Restricted CLI command bypass",
+  "summary": "An Incorrect Provision of Specified Functionality vulnerability [CWE-684] in FortiOS may allow a local authenticated attacker to execute system commands via crafted CLI commands.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-361",
+      "cve": "CVE-2025-58325",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 6.4.16, fixed in [7.0.16, 7.2.11, 7.4.6, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.16"
+                  },
+                  "fixed_in": [
+                    "7.0.16",
+                    "7.2.11",
+                    "7.4.6",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.15, fixed in [7.0.16, 7.2.11, 7.4.6, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.15"
+                  },
+                  "fixed_in": [
+                    "7.0.16",
+                    "7.2.11",
+                    "7.4.6",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less equal 7.2.10, fixed in [7.2.11, 7.4.6, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.10"
+                  },
+                  "fixed_in": [
+                    "7.2.11",
+                    "7.4.6",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.4.0, less equal 7.4.5, fixed in [7.4.6, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.5"
+                  },
+                  "fixed_in": [
+                    "7.4.6",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 7.6.0, fixed in [7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.6.0"
+                  },
+                  "fixed_in": [
+                    "7.6.1"
+                  ]
+                }
+              ],
+              "children": {
+                "nodes": [
+                  {
+                    "description": "FortiGate: equal FortiGate 100E",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-100e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 101E",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-101e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 100F",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-100f:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 101F",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-101f:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 1100E",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-1100e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 1101E",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-1101e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 1800F",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-1800f:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 1801F",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-1801f:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 2200E",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-2200e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 2201E",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-2201e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 2600F",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-2600f:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 2601F",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-2601f:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 3300E",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-3300e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 3301E",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-3301e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 3400E",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-3400e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 3401E",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-3401e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 3500F",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-3500f:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 3501F",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-3501f:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 3600E",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-3600e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 3601E",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-3601e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 3800D",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-3800d:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 3960E",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-3960e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 3980E",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-3980e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 4200F",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-4200f:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 4201F",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-4201f:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 4400F",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-4400f:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 4401F",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-4401f:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 5001E",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-5001e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 6000F",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-6000f:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 7000E",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-7000e:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  },
+                  {
+                    "description": "FortiGate: equal FortiGate 7000F",
+                    "cpe": "cpe:2.3:h:fortinet:fortigate-7000f:-:*:*:*:*:*:*:*",
+                    "affected": {
+                      "eq": "NA"
+                    }
+                  }
+                ]
+              }
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.8,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:C/C:H/I:H/A:H/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-684"
+          ],
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2025-10-14T00:00:00Z",
+  "updated": "2025-10-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-361"
+}
+

@@ -1,0 +1,68 @@
+{
+  "id": "FG-IR-25-126",
+  "title": "Missing signature verification for FortiClient.app",
+  "summary": "An Improper Verification of Cryptographic Signature vulnerability [CWE-347] in FortiClient MacOS installer may allow a local user to escalate their privileges via FortiClient related executables.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-126",
+      "cve": "CVE-2025-46774",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for MacOS: greater equal 7.0.0, less equal 7.0.14, fixed in [7.2.10, 7.4.4]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.14"
+                  },
+                  "fixed_in": [
+                    "7.2.10",
+                    "7.4.4"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOS: greater equal 7.2.0, less equal 7.2.9, fixed in [7.2.10, 7.4.4]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.9"
+                  },
+                  "fixed_in": [
+                    "7.2.10",
+                    "7.4.4"
+                  ]
+                },
+                {
+                  "description": "FortiClient for MacOS: greater equal 7.4.0, less equal 7.4.2, fixed in [7.4.4]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:macos:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.2"
+                  },
+                  "fixed_in": [
+                    "7.4.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.8,
+            "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:C/C:H/I:H/A:H/E:P/RL:X/RC:R"
+          },
+          "cwe": [
+            "CWE-347"
+          ],
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2025-10-14T00:00:00Z",
+  "updated": "2025-10-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-126"
+}
+

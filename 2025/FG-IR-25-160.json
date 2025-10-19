@@ -1,0 +1,65 @@
+{
+  "id": "FG-IR-25-160",
+  "title": "Enrollment code on install saved in log",
+  "summary": "An Insertion of Sensitive Information into Log File [CWE-532] vulnerability in FortiDLP Windows Agent installer may allow an authenticated attacker to pollute the agent pool via re-using the enrollment code.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-160",
+      "cve": "CVE-2025-46752",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiDLP: greater equal 11.4.5, less equal 11.4.6",
+                  "cpe": "cpe:2.3:a:fortinet:fortidlp:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "11.4.5",
+                    "le": "11.4.6"
+                  }
+                },
+                {
+                  "description": "FortiDLP: greater equal 11.5.1, less equal 11.5.1",
+                  "cpe": "cpe:2.3:a:fortinet:fortidlp:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "11.5.1",
+                    "le": "11.5.1"
+                  }
+                },
+                {
+                  "description": "FortiDLP: greater equal 12.0.2, less equal 12.0.2",
+                  "cpe": "cpe:2.3:a:fortinet:fortidlp:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "12.0.2",
+                    "le": "12.0.2"
+                  }
+                },
+                {
+                  "description": "FortiDLP: greater equal 12.0.4, less equal 12.0.5",
+                  "cpe": "cpe:2.3:a:fortinet:fortidlp:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "12.0.4",
+                    "le": "12.0.5"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.2,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-532"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2025-10-14T00:00:00Z",
+  "updated": "2025-10-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-160"
+}
+

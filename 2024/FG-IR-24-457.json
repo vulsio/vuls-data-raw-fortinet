@@ -1,0 +1,131 @@
+{
+  "id": "FG-IR-24-457",
+  "title": "ZTNA Server Improper Certificate Validation",
+  "summary": "An Improper Validation of Certificate with Host Mismatch vulnerability [CWE-297] in FortiOS and FortiProxy ZTNA proxy may allow an unauthenticated attacker in a man-in-the middle position to intercept and tamper with connections to the ZTNA proxy",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-457",
+      "cve": "CVE-2025-25253",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.17, fixed in [7.4.9, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.17"
+                  },
+                  "fixed_in": [
+                    "7.4.9",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less equal 7.2.12, fixed in [7.4.9, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.12"
+                  },
+                  "fixed_in": [
+                    "7.4.9",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.4.0, less equal 7.4.8, fixed in [7.4.9, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.8"
+                  },
+                  "fixed_in": [
+                    "7.4.9",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.6.0, less equal 7.6.2, fixed in [7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.2"
+                  },
+                  "fixed_in": [
+                    "7.6.3"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy: greater equal 7.0.0, less equal 7.0.22, fixed in [7.4.9, 7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.22"
+                  },
+                  "fixed_in": [
+                    "7.4.9",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.2.0, less equal 7.2.15, fixed in [7.4.9, 7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.15"
+                  },
+                  "fixed_in": [
+                    "7.4.9",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.4.0, less equal 7.4.8, fixed in [7.4.9, 7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.8"
+                  },
+                  "fixed_in": [
+                    "7.4.9",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.6.0, less equal 7.6.1, fixed in [7.6.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.1"
+                  },
+                  "fixed_in": [
+                    "7.6.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.8,
+            "vector": "CVSS:3.1/AV:A/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:X/RC:R"
+          },
+          "cwe": [
+            "CWE-297"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2025-10-14T00:00:00Z",
+  "updated": "2025-10-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-457"
+}
+

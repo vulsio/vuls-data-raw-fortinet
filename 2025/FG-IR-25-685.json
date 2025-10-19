@@ -1,0 +1,68 @@
+{
+  "id": "FG-IR-25-685",
+  "title": "DLL hijacking in online installer",
+  "summary": "An Uncontrolled Search Path Element vulnerability [CWE-427] in FortiClient Windows may allow a local low privileged user to perform a DLL hijacking attack via placing a malicious DLL to the FortiClient Online Installer installation folder.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-685",
+      "cve": "CVE-2025-57716",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Windows: greater equal 7.0.0, less equal 7.0.14, fixed in [7.2.12, 7.4.4]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.14"
+                  },
+                  "fixed_in": [
+                    "7.2.12",
+                    "7.4.4"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: greater equal 7.2.0, less equal 7.2.11, fixed in [7.2.12, 7.4.4]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.11"
+                  },
+                  "fixed_in": [
+                    "7.2.12",
+                    "7.4.4"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: greater equal 7.4.0, less equal 7.4.3, fixed in [7.4.4]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.3"
+                  },
+                  "fixed_in": [
+                    "7.4.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6,
+            "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-427"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-10-14T00:00:00Z",
+  "updated": "2025-10-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-685"
+}
+

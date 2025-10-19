@@ -1,0 +1,80 @@
+{
+  "id": "FG-IR-24-412",
+  "title": "Privilege escalation in shell",
+  "summary": "An Improper Neutralization of Special Elements used in an OS Command ('OS Command Injection') vulnerability [CWE-78] in FortiSOAR may allow an attacker who has already obtained a non-login low privileged shell access to perform a local privilege escalation via crafted commands.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-412",
+      "cve": "CVE-2024-48891",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSOAR: greater equal 7.3.0, less equal 7.3.3, fixed in [7.5.2, 7.6.2]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.3.0",
+                    "le": "7.3.3"
+                  },
+                  "fixed_in": [
+                    "7.5.2",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR: greater equal 7.4.0, less equal 7.4.5, fixed in [7.5.2, 7.6.2]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.5"
+                  },
+                  "fixed_in": [
+                    "7.5.2",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR: greater equal 7.5.0, less equal 7.5.1, fixed in [7.5.2, 7.6.2]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.5.0",
+                    "le": "7.5.1"
+                  },
+                  "fixed_in": [
+                    "7.5.2",
+                    "7.6.2"
+                  ]
+                },
+                {
+                  "description": "FortiSOAR: greater equal 7.6.0, less equal 7.6.1, fixed in [7.6.2]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisoar:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.1"
+                  },
+                  "fixed_in": [
+                    "7.6.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.6,
+            "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2025-10-14T00:00:00Z",
+  "updated": "2025-10-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-412"
+}
+

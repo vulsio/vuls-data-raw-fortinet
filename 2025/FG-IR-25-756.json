@@ -1,0 +1,220 @@
+{
+  "id": "FG-IR-25-756",
+  "title": "Authenticated Heap Overflow in SSL-VPN bookmarks",
+  "summary": "An Heap-based Buffer Overflow vulnerability [CWE-122] in FortiOS, FortiPAM and FortiProxy RDP bookmark connection may allow an authenticated user to execute unauthorized code via crafted requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-756",
+      "cve": "CVE-2025-57740",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 6.4.16, fixed in [7.2.11, 7.4.8, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.16"
+                  },
+                  "fixed_in": [
+                    "7.2.11",
+                    "7.4.8",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.17, fixed in [7.2.11, 7.4.8, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.17"
+                  },
+                  "fixed_in": [
+                    "7.2.11",
+                    "7.4.8",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less equal 7.2.10, fixed in [7.2.11, 7.4.8, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.10"
+                  },
+                  "fixed_in": [
+                    "7.2.11",
+                    "7.4.8",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.4.0, less equal 7.4.7, fixed in [7.4.8, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.7"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.6.0, less equal 7.6.2, fixed in [7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.2"
+                  },
+                  "fixed_in": [
+                    "7.6.3"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiPAM: greater equal 1.0.0, less equal 1.0.3, fixed in [1.4.3, 1.5.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.0.0",
+                    "le": "1.0.3"
+                  },
+                  "fixed_in": [
+                    "1.4.3",
+                    "1.5.1"
+                  ]
+                },
+                {
+                  "description": "FortiPAM: greater equal 1.1.0, less equal 1.1.2, fixed in [1.4.3, 1.5.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.1.0",
+                    "le": "1.1.2"
+                  },
+                  "fixed_in": [
+                    "1.4.3",
+                    "1.5.1"
+                  ]
+                },
+                {
+                  "description": "FortiPAM: greater equal 1.2.0, less equal 1.2.0, fixed in [1.4.3, 1.5.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.2.0",
+                    "le": "1.2.0"
+                  },
+                  "fixed_in": [
+                    "1.4.3",
+                    "1.5.1"
+                  ]
+                },
+                {
+                  "description": "FortiPAM: greater equal 1.3.0, less equal 1.3.1, fixed in [1.4.3, 1.5.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.3.0",
+                    "le": "1.3.1"
+                  },
+                  "fixed_in": [
+                    "1.4.3",
+                    "1.5.1"
+                  ]
+                },
+                {
+                  "description": "FortiPAM: greater equal 1.4.0, less equal 1.4.2, fixed in [1.4.3, 1.5.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.4.0",
+                    "le": "1.4.2"
+                  },
+                  "fixed_in": [
+                    "1.4.3",
+                    "1.5.1"
+                  ]
+                },
+                {
+                  "description": "FortiPAM: equal 1.5.0, fixed in [1.5.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "1.5.0"
+                  },
+                  "fixed_in": [
+                    "1.5.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy: greater equal 7.0.0, less equal 7.0.22, fixed in [7.4.4, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.22"
+                  },
+                  "fixed_in": [
+                    "7.4.4",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.2.0, less equal 7.2.15, fixed in [7.4.4, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.15"
+                  },
+                  "fixed_in": [
+                    "7.4.4",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.4.0, less equal 7.4.3, fixed in [7.4.4, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.3"
+                  },
+                  "fixed_in": [
+                    "7.4.4",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.6.0, less equal 7.6.2, fixed in [7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.2"
+                  },
+                  "fixed_in": [
+                    "7.6.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.7,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:L/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-122"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-10-14T00:00:00Z",
+  "updated": "2025-10-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-756"
+}
+

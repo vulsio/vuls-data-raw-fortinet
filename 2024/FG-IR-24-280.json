@@ -1,0 +1,132 @@
+{
+  "id": "FG-IR-24-280",
+  "title": "Stored XSS in parser tester",
+  "summary": "An improper neutralization of input during web page generation vulnerability [CWE-79] in FortiSIEM may allow an authenticated attacker to perform a stored cross site scripting (XSS) attack via crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-280",
+      "cve": "CVE-2025-58324",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSIEM: greater equal 6.2.0, less equal 6.2.1, fixed in [7.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.1"
+                  },
+                  "fixed_in": [
+                    "7.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.3.0, less equal 6.3.3, fixed in [7.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.3.0",
+                    "le": "6.3.3"
+                  },
+                  "fixed_in": [
+                    "7.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.4.0, less equal 6.4.4, fixed in [7.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.4"
+                  },
+                  "fixed_in": [
+                    "7.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.5.0, less equal 6.5.3, fixed in [7.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.5.0",
+                    "le": "6.5.3"
+                  },
+                  "fixed_in": [
+                    "7.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.6.0, less equal 6.6.5, fixed in [7.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.6.0",
+                    "le": "6.6.5"
+                  },
+                  "fixed_in": [
+                    "7.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.7.0, less equal 6.7.10, fixed in [7.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.7.0",
+                    "le": "6.7.10"
+                  },
+                  "fixed_in": [
+                    "7.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 7.0.0, less equal 7.0.4, fixed in [7.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.4"
+                  },
+                  "fixed_in": [
+                    "7.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 7.1.0, less equal 7.1.8, fixed in [7.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.1.0",
+                    "le": "7.1.8"
+                  },
+                  "fixed_in": [
+                    "7.2.3"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 7.2.0, less equal 7.2.2, fixed in [7.2.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.2"
+                  },
+                  "fixed_in": [
+                    "7.2.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.1,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:R/S:U/C:H/I:H/A:H/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-79"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-10-14T00:00:00Z",
+  "updated": "2025-10-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-280"
+}
+

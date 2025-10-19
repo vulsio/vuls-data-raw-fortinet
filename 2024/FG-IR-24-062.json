@@ -1,0 +1,56 @@
+{
+  "id": "FG-IR-24-062",
+  "title": "Improper session handling during authentication",
+  "summary": "An insufficient session expiration vulnerability [CWE-613] and an incorrect authorization vulnerability [CWE-863] in the FortiIsolator authentication mechanism may allow a remote unauthenticated attacker to deauthenticate logged in admins via a crafted cookie and a remote authenticated read-only attacker to gain write privilege via a crafted cookie.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-062",
+      "cve": "CVE-2024-33507",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiIsolator: greater equal 2.3.0, less equal 2.3.4, fixed in [2.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiisolator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.3.0",
+                    "le": "2.3.4"
+                  },
+                  "fixed_in": [
+                    "2.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiIsolator: greater equal 2.4.0, less equal 2.4.4, fixed in [2.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiisolator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.4.0",
+                    "le": "2.4.4"
+                  },
+                  "fixed_in": [
+                    "2.4.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:H/A:H/E:P/RL:X/RC:X"
+          },
+          "cwe": [
+            "CWE-613",
+            "CWE-863"
+          ],
+          "impact": "Denial of service"
+        }
+      ]
+    }
+  ],
+  "published": "2025-10-14T00:00:00Z",
+  "updated": "2025-10-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-062"
+}
+

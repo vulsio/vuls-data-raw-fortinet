@@ -1,0 +1,136 @@
+{
+  "id": "FG-IR-24-452",
+  "title": "Insertion of Sensitive 2FA Information in logs and debug command",
+  "summary": "An Insertion of Sensitive Information into Log File vulnerability [CWE-532] in FortiOS may allow an attacker with at least read-only privileges to retrieve sensitive 2FA-related information via observing logs or via diagnose command.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-452",
+      "cve": "CVE-2025-31514",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 6.4.16, fixed in [7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.16"
+                  },
+                  "fixed_in": [
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.17, fixed in [7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.17"
+                  },
+                  "fixed_in": [
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less equal 7.2.12, fixed in [7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.12"
+                  },
+                  "fixed_in": [
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.4.0, less equal 7.4.9, fixed in [7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.9"
+                  },
+                  "fixed_in": [
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.6.0, less equal 7.6.3, fixed in [7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.3"
+                  },
+                  "fixed_in": [
+                    "7.6.4"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy: greater equal 7.0.0, less equal 7.0.22, fixed in [7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.22"
+                  },
+                  "fixed_in": [
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.2.0, less equal 7.2.15, fixed in [7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.15"
+                  },
+                  "fixed_in": [
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.4.0, less equal 7.4.11, fixed in [7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.11"
+                  },
+                  "fixed_in": [
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.6.0, less equal 7.6.3, fixed in [7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.3"
+                  },
+                  "fixed_in": [
+                    "7.6.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 2.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-532"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2025-10-14T00:00:00Z",
+  "updated": "2025-10-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-452"
+}
+

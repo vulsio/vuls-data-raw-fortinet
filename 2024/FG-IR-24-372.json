@@ -1,0 +1,92 @@
+{
+  "id": "FG-IR-24-372",
+  "title": "Domain fronting protection bypass in explicit web proxy",
+  "summary": "An Improperly Implemented Security Check for Standard vulnerability [CWE-358] in FortiOS and FortiProxy explicit web proxy may allow an authenticated proxy user to bypass the domain fronting protection feature via crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-24-372",
+      "cve": "CVE-2025-25255",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 7.6.0, less equal 7.6.3, fixed in [7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.3"
+                  },
+                  "fixed_in": [
+                    "7.6.4"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy: greater equal 7.0.1, less equal 7.0.21, fixed in [7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.1",
+                    "le": "7.0.21"
+                  },
+                  "fixed_in": [
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.2.0, less equal 7.2.15, fixed in [7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.15"
+                  },
+                  "fixed_in": [
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.4.0, less equal 7.4.11, fixed in [7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.11"
+                  },
+                  "fixed_in": [
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.6.0, less equal 7.6.3, fixed in [7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.3"
+                  },
+                  "fixed_in": [
+                    "7.6.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.9,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:N/I:L/A:N/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-358"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2025-10-14T00:00:00Z",
+  "updated": "2025-10-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-24-372"
+}
+

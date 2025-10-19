@@ -1,0 +1,92 @@
+{
+  "id": "FG-IR-25-653",
+  "title": "Multiple Unchecked Return Value leading to Null Pointer Dereference",
+  "summary": "An Unchecked Return Value vulnerability [CWE-252] in FortiOS API may allow an authenticated user to cause a Null Pointer Dereference, crashing the http daemon via a specialy crafted request.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-653",
+      "cve": "CVE-2025-58903",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 6.4.16, fixed in [7.4.9, 7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.16"
+                  },
+                  "fixed_in": [
+                    "7.4.9",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.17, fixed in [7.4.9, 7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.17"
+                  },
+                  "fixed_in": [
+                    "7.4.9",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less equal 7.2.12, fixed in [7.4.9, 7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.12"
+                  },
+                  "fixed_in": [
+                    "7.4.9",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.4.0, less equal 7.4.8, fixed in [7.4.9, 7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.8"
+                  },
+                  "fixed_in": [
+                    "7.4.9",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.6.0, less equal 7.6.3, fixed in [7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.3"
+                  },
+                  "fixed_in": [
+                    "7.6.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 2.5,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:N/A:L/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-252"
+          ],
+          "impact": "Denial of service"
+        }
+      ]
+    }
+  ],
+  "published": "2025-10-14T00:00:00Z",
+  "updated": "2025-10-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-653"
+}
+

@@ -1,0 +1,83 @@
+{
+  "id": "FG-IR-25-198",
+  "title": "Race condion in FortiCloud SSO SAML authentication",
+  "summary": "A concurrent execution using shared resource with improper synchronization ('Race Condition') vulnerability [CWE-362] in FortiAnalyzer may allow an attacker to attempt to win a race condition to bypass the FortiCloud SSO authorization via crafted FortiCloud SSO requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-198",
+      "cve": "CVE-2025-54973",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: greater equal 7.0.9, less equal 7.0.13, fixed in [7.0.14, 7.2.11, 7.4.7, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.9",
+                    "le": "7.0.13"
+                  },
+                  "fixed_in": [
+                    "7.0.14",
+                    "7.2.11",
+                    "7.4.7",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 7.2.0, less equal 7.2.10, fixed in [7.2.11, 7.4.7, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.10"
+                  },
+                  "fixed_in": [
+                    "7.2.11",
+                    "7.4.7",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 7.4.0, less equal 7.4.6, fixed in [7.4.7, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.6"
+                  },
+                  "fixed_in": [
+                    "7.4.7",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 7.6.0, less equal 7.6.2, fixed in [7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.2"
+                  },
+                  "fixed_in": [
+                    "7.6.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.3,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:N/I:H/A:N/E:X/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-362"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2025-10-14T00:00:00Z",
+  "updated": "2025-10-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-198"
+}
+

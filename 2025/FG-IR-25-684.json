@@ -1,0 +1,116 @@
+{
+  "id": "FG-IR-25-684",
+  "title": "Improper autorization over static files",
+  "summary": "An improper authorization vulnerability [CWE-285] in FortiOS & FortiProxy may allow an authenticated attacker to access static files of others VDOMs via crafted HTTP or HTTPS requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-684",
+      "cve": "CVE-2025-54822",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.11, fixed in [7.2.9, 7.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.11"
+                  },
+                  "fixed_in": [
+                    "7.2.9",
+                    "7.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less equal 7.2.8, fixed in [7.2.9, 7.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.8"
+                  },
+                  "fixed_in": [
+                    "7.2.9",
+                    "7.4.2"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.4.0, less equal 7.4.1, fixed in [7.4.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.1"
+                  },
+                  "fixed_in": [
+                    "7.4.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy: greater equal 2.0.0, less equal 2.0.14, fixed in [7.4.9]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "2.0.0",
+                    "le": "2.0.14"
+                  },
+                  "fixed_in": [
+                    "7.4.9"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.0.0, less equal 7.0.22, fixed in [7.4.9]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.22"
+                  },
+                  "fixed_in": [
+                    "7.4.9"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.2.0, less equal 7.2.15, fixed in [7.4.9]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.15"
+                  },
+                  "fixed_in": [
+                    "7.4.9"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.4.0, less equal 7.4.8, fixed in [7.4.9]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.8"
+                  },
+                  "fixed_in": [
+                    "7.4.9"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-285"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2025-10-14T00:00:00Z",
+  "updated": "2025-10-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-684"
+}
+

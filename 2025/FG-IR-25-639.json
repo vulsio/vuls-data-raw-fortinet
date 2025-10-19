@@ -1,0 +1,113 @@
+{
+  "id": "FG-IR-25-639",
+  "title": "Private Personal Information Collection by Debug Bundle",
+  "summary": "An Exposure of Private Personal Information ('Privacy Violation') vulnerability [CWE-359] in FortiDLP may allow an authenticated windows administrator to collect current user's email information",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-639",
+      "cve": "CVE-2025-53950",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiDLP: greater equal 10.3.1, less equal 10.3.1",
+                  "cpe": "cpe:2.3:a:fortinet:fortidlp:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "10.3.1",
+                    "le": "10.3.1"
+                  }
+                },
+                {
+                  "description": "FortiDLP: greater equal 10.4.0, less equal 10.4.0",
+                  "cpe": "cpe:2.3:a:fortinet:fortidlp:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "10.4.0",
+                    "le": "10.4.0"
+                  }
+                },
+                {
+                  "description": "FortiDLP: greater equal 10.5.1, less equal 10.5.1",
+                  "cpe": "cpe:2.3:a:fortinet:fortidlp:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "10.5.1",
+                    "le": "10.5.1"
+                  }
+                },
+                {
+                  "description": "FortiDLP: greater equal 11.0.1, less equal 11.0.1",
+                  "cpe": "cpe:2.3:a:fortinet:fortidlp:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "11.0.1",
+                    "le": "11.0.1"
+                  }
+                },
+                {
+                  "description": "FortiDLP: greater equal 11.1.1, less equal 11.1.2",
+                  "cpe": "cpe:2.3:a:fortinet:fortidlp:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "11.1.1",
+                    "le": "11.1.2"
+                  }
+                },
+                {
+                  "description": "FortiDLP: greater equal 11.2.0, less equal 11.2.0",
+                  "cpe": "cpe:2.3:a:fortinet:fortidlp:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "11.2.0",
+                    "le": "11.2.0"
+                  }
+                },
+                {
+                  "description": "FortiDLP: greater equal 11.2.3, less equal 11.2.3",
+                  "cpe": "cpe:2.3:a:fortinet:fortidlp:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "11.2.3",
+                    "le": "11.2.3"
+                  }
+                },
+                {
+                  "description": "FortiDLP: greater equal 11.3.2, less equal 11.3.4",
+                  "cpe": "cpe:2.3:a:fortinet:fortidlp:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "11.3.2",
+                    "le": "11.3.4"
+                  }
+                },
+                {
+                  "description": "FortiDLP: greater equal 11.4.2, less equal 11.4.6",
+                  "cpe": "cpe:2.3:a:fortinet:fortidlp:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "11.4.2",
+                    "le": "11.4.6"
+                  }
+                },
+                {
+                  "description": "FortiDLP: greater equal 11.5.1, less equal 11.5.1",
+                  "cpe": "cpe:2.3:a:fortinet:fortidlp:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "11.5.1",
+                    "le": "11.5.1"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.1,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:C/C:H/I:N/A:N/E:F/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-359"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2025-10-14T00:00:00Z",
+  "updated": "2025-10-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-639"
+}
+

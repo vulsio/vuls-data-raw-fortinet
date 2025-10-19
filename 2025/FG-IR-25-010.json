@@ -1,0 +1,118 @@
+{
+  "id": "FG-IR-25-010",
+  "title": "Weak authentication in WAD/GUI",
+  "summary": "A Weak authentication vulnerability [CWE 1390] in FortiPAM and FortiSwitch Manager WAD/GUI may allow an attacker to bypass the authentication process via a brute-force attack.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-010",
+      "cve": "CVE-2025-49201",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiPAM: greater equal 1.0.0, less equal 1.0.3, fixed in [1.4.3, 1.5.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.0.0",
+                    "le": "1.0.3"
+                  },
+                  "fixed_in": [
+                    "1.4.3",
+                    "1.5.1"
+                  ]
+                },
+                {
+                  "description": "FortiPAM: greater equal 1.1.0, less equal 1.1.2, fixed in [1.4.3, 1.5.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.1.0",
+                    "le": "1.1.2"
+                  },
+                  "fixed_in": [
+                    "1.4.3",
+                    "1.5.1"
+                  ]
+                },
+                {
+                  "description": "FortiPAM: greater equal 1.2.0, less equal 1.2.0, fixed in [1.4.3, 1.5.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.2.0",
+                    "le": "1.2.0"
+                  },
+                  "fixed_in": [
+                    "1.4.3",
+                    "1.5.1"
+                  ]
+                },
+                {
+                  "description": "FortiPAM: greater equal 1.3.0, less equal 1.3.1, fixed in [1.4.3, 1.5.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.3.0",
+                    "le": "1.3.1"
+                  },
+                  "fixed_in": [
+                    "1.4.3",
+                    "1.5.1"
+                  ]
+                },
+                {
+                  "description": "FortiPAM: greater equal 1.4.0, less equal 1.4.2, fixed in [1.4.3, 1.5.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.4.0",
+                    "le": "1.4.2"
+                  },
+                  "fixed_in": [
+                    "1.4.3",
+                    "1.5.1"
+                  ]
+                },
+                {
+                  "description": "FortiPAM: equal 1.5.0, fixed in [1.5.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "1.5.0"
+                  },
+                  "fixed_in": [
+                    "1.5.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch Manager: greater equal 7.2.0, less equal 7.2.4, fixed in [7.2.5]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiswitch_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.4"
+                  },
+                  "fixed_in": [
+                    "7.2.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.4,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:U/RC:R"
+          },
+          "cwe": [
+            "CWE-1390"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-10-14T00:00:00Z",
+  "updated": "2025-10-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-010"
+}
+
