@@ -1,0 +1,98 @@
+{
+  "id": "FG-IR-25-910",
+  "title": "Path confusion vulnerability in GUI",
+  "summary": "A relative path traversal vulnerability [CWE-23] in FortiWeb may allow an unauthenticated attacker to execute administrative commands on the system via crafted HTTP or HTTPS requests.Fortinet has observed this to be exploited in the wild",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-910",
+      "cve": "CVE-2025-64446",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: greater equal 7.0.0, less equal 7.0.11, fixed in [7.0.12, 7.2.12, 7.4.10, 7.6.5, 8.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.11"
+                  },
+                  "fixed_in": [
+                    "7.0.12",
+                    "7.2.12",
+                    "7.4.10",
+                    "7.6.5",
+                    "8.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.2.0, less equal 7.2.11, fixed in [7.2.12, 7.4.10, 7.6.5, 8.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.11"
+                  },
+                  "fixed_in": [
+                    "7.2.12",
+                    "7.4.10",
+                    "7.6.5",
+                    "8.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.4.0, less equal 7.4.9, fixed in [7.4.10, 7.6.5, 8.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.9"
+                  },
+                  "fixed_in": [
+                    "7.4.10",
+                    "7.6.5",
+                    "8.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.6.0, less equal 7.6.4, fixed in [7.6.5, 8.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.4"
+                  },
+                  "fixed_in": [
+                    "7.6.5",
+                    "8.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 8.0.0, less equal 8.0.1, fixed in [8.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.0.1"
+                  },
+                  "fixed_in": [
+                    "8.0.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-23"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2025-11-14T00:00:00Z",
+  "updated": "2025-11-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-910"
+}
+
