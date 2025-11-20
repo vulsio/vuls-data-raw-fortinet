@@ -1,0 +1,56 @@
+{
+  "id": "FG-IR-25-125",
+  "title": "Buffer Overflow via fortips driver",
+  "summary": "A Heap-based Buffer Overflow vulnerability [CWE-122] in FortiClient Windows may allow an authenticated local IPSec user to execute arbitrary code or commands via \"fortips_74.sys\" driver. The attacker would need to bypass the Windows heap integrity protections.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-125",
+      "cve": "CVE-2025-46373",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Windows: greater equal 7.2.0, less equal 7.2.8, fixed in [7.2.9, 7.4.4]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.8"
+                  },
+                  "fixed_in": [
+                    "7.2.9",
+                    "7.4.4"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: greater equal 7.4.0, less equal 7.4.3, fixed in [7.4.4]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.3"
+                  },
+                  "fixed_in": [
+                    "7.4.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.1,
+            "vector": "CVSS:3.1/AV:L/AC:H/PR:L/UI:N/S:C/C:H/I:H/A:H/E:P/RL:X/RC:R"
+          },
+          "cwe": [
+            "CWE-122"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-11-18T00:00:00Z",
+  "updated": "2025-11-18T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-125"
+}
+

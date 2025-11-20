@@ -1,0 +1,80 @@
+{
+  "id": "FG-IR-25-251",
+  "title": "Authenticated CLI Commands Buffer Overflow",
+  "summary": "A buffer overflow vulnerability [CWE-120] in FortiExtender json_cli may allow an authenticated user to execute arbitrary code or commands via crafted CLI commands.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-251",
+      "cve": "CVE-2025-46776",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiExtender: greater equal 7.0.0, less equal 7.0.5, fixed in [7.4.8, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiextender:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.5"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiExtender: greater equal 7.2.0, less equal 7.2.5, fixed in [7.4.8, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiextender:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.5"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiExtender: greater equal 7.4.0, less equal 7.4.6, fixed in [7.4.8, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiextender:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.6"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiExtender: greater equal 7.6.0, less equal 7.6.1, fixed in [7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiextender:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.1"
+                  },
+                  "fixed_in": [
+                    "7.6.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.3,
+            "vector": "CVSS:3.1/AV:L/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:F/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-120"
+          ],
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2025-11-18T00:00:00Z",
+  "updated": "2025-11-18T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-251"
+}
+

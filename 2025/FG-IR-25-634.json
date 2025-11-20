@@ -1,0 +1,80 @@
+{
+  "id": "FG-IR-25-634",
+  "title": "CRLF Header Injection in webmail user GUI",
+  "summary": "A CRLF Header Injection vulnerability [CWE-93] in FortiMail user GUI may allow an attacker to inject headers in the response via convincing a user to click on a specifically crafted link",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-634",
+      "cve": "CVE-2025-54972",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiMail: greater equal 7.0.0, less equal 7.0.9, fixed in [7.4.6, 7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.9"
+                  },
+                  "fixed_in": [
+                    "7.4.6",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 7.2.0, less equal 7.2.8, fixed in [7.4.6, 7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.8"
+                  },
+                  "fixed_in": [
+                    "7.4.6",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 7.4.0, less equal 7.4.5, fixed in [7.4.6, 7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.5"
+                  },
+                  "fixed_in": [
+                    "7.4.6",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 7.6.0, less equal 7.6.3, fixed in [7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.3"
+                  },
+                  "fixed_in": [
+                    "7.6.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.9,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-93"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2025-11-18T00:00:00Z",
+  "updated": "2025-11-18T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-634"
+}
+

@@ -1,0 +1,109 @@
+{
+  "id": "FG-IR-25-789",
+  "title": "Cleartext credentials in diagnose output",
+  "summary": "A Cleartext Storage of Sensitive Information in Memory vulnerability [CWE-316] in FortiPAM may allow an authenticated attacker with read-write admin privileges to the CLI to obtain other administrators' credentials via diagnose commands.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-789",
+      "cve": "CVE-2025-61713",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiPAM: greater equal 1.0.0, less equal 1.0.3, fixed in [1.6.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.0.0",
+                    "le": "1.0.3"
+                  },
+                  "fixed_in": [
+                    "1.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiPAM: greater equal 1.1.0, less equal 1.1.2, fixed in [1.6.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.1.0",
+                    "le": "1.1.2"
+                  },
+                  "fixed_in": [
+                    "1.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiPAM: greater equal 1.2.0, less equal 1.2.0, fixed in [1.6.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.2.0",
+                    "le": "1.2.0"
+                  },
+                  "fixed_in": [
+                    "1.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiPAM: greater equal 1.3.0, less equal 1.3.1, fixed in [1.6.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.3.0",
+                    "le": "1.3.1"
+                  },
+                  "fixed_in": [
+                    "1.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiPAM: greater equal 1.4.0, less equal 1.4.3, fixed in [1.6.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.4.0",
+                    "le": "1.4.3"
+                  },
+                  "fixed_in": [
+                    "1.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiPAM: greater equal 1.5.0, less equal 1.5.1, fixed in [1.6.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.5.0",
+                    "le": "1.5.1"
+                  },
+                  "fixed_in": [
+                    "1.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiPAM: equal 1.6.0, fixed in [1.6.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "1.6.0"
+                  },
+                  "fixed_in": [
+                    "1.6.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.8,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:R/S:U/C:H/I:N/A:N/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-316"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2025-11-18T00:00:00Z",
+  "updated": "2025-11-18T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-789"
+}
+

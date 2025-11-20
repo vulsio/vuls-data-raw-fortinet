@@ -1,0 +1,80 @@
+{
+  "id": "FG-IR-25-259",
+  "title": "Credential leakage through debug commands",
+  "summary": "An insufficiently protected credentials vulnerability [CWE-522] in FortiExtender may allow an authenticated user to obtain administrator credentials via debug log commands.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-259",
+      "cve": "CVE-2025-46775",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiExtender: greater equal 7.0.0, less equal 7.0.5, fixed in [7.4.8, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiextender:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.5"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiExtender: greater equal 7.2.0, less equal 7.2.5, fixed in [7.4.8, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiextender:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.5"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiExtender: greater equal 7.4.0, less equal 7.4.6, fixed in [7.4.8, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiextender:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.6"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiExtender: greater equal 7.6.0, less equal 7.6.1, fixed in [7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiextender:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.1"
+                  },
+                  "fixed_in": [
+                    "7.6.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.2,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-522"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2025-11-18T00:00:00Z",
+  "updated": "2025-11-18T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-259"
+}
+

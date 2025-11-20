@@ -1,0 +1,120 @@
+{
+  "id": "FG-IR-25-225",
+  "title": "Out-of-bounds write in multiple endpoints",
+  "summary": "An Out-of-bounds Write vulnerability [CWE-787] in FortiADC may allow an authenticated attacker to execute arbitrary code via specially crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-225",
+      "cve": "CVE-2025-48839",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiADC: greater equal 6.2.0, less equal 6.2.6, fixed in [7.4.8, 7.6.3, 8.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.6"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.3",
+                    "8.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 7.0.0, less equal 7.0.6, fixed in [7.4.8, 7.6.3, 8.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.6"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.3",
+                    "8.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 7.1.0, less equal 7.1.5, fixed in [7.4.8, 7.6.3, 8.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.1.0",
+                    "le": "7.1.5"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.3",
+                    "8.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 7.2.0, less equal 7.2.8, fixed in [7.4.8, 7.6.3, 8.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.8"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.3",
+                    "8.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 7.4.0, less equal 7.4.7, fixed in [7.4.8, 7.6.3, 8.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.7"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.3",
+                    "8.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 7.6.0, less equal 7.6.2, fixed in [7.6.3, 8.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.2"
+                  },
+                  "fixed_in": [
+                    "7.6.3",
+                    "8.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: equal 8.0.0, fixed in [8.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "8.0.0"
+                  },
+                  "fixed_in": [
+                    "8.0.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.3,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-787"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-11-18T00:00:00Z",
+  "updated": "2025-11-18T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-225"
+}
+

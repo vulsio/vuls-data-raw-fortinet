@@ -1,0 +1,97 @@
+{
+  "id": "FG-IR-25-686",
+  "title": "Invocation of Process Using Visible Sensitive Information in FortiADC",
+  "summary": "An Exposure of Sensitive Information to an Unauthorized Actor vulnerability [CWE-200] in FortiADC Logs may allow an admin with read-only permission to get the external resources password via the logs of the product.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-686",
+      "cve": "CVE-2025-54971",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiADC: greater equal 6.2.0, less equal 6.2.6, fixed in [7.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.6"
+                  },
+                  "fixed_in": [
+                    "7.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 7.0.0, less equal 7.0.6, fixed in [7.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.6"
+                  },
+                  "fixed_in": [
+                    "7.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 7.1.0, less equal 7.1.5, fixed in [7.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.1.0",
+                    "le": "7.1.5"
+                  },
+                  "fixed_in": [
+                    "7.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 7.2.0, less equal 7.2.8, fixed in [7.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.8"
+                  },
+                  "fixed_in": [
+                    "7.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiADC: equal 7.4.0, fixed in [7.4.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.9,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-200"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "Invocation of Process Using Visible Sensitive Information in FortiADC",
+      "url": "https://fortiguard.fortinet.com/psirt/FG-IR-25-686"
+    },
+    {
+      "description": "https://docs.fortinet.com/document/fortiadc/7.4.3/handbook/721548/ip-address-connector",
+      "url": "https://docs.fortinet.com/document/fortiadc/7.4.3/handbook/721548/ip-address-connector"
+    }
+  ],
+  "published": "2025-11-18T00:00:00Z",
+  "updated": "2025-11-18T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-686"
+}
+

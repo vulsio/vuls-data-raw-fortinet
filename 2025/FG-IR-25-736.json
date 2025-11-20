@@ -1,0 +1,89 @@
+{
+  "id": "FG-IR-25-736",
+  "title": "XSS in default error page",
+  "summary": "An Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS) vulnerability [CWE-80] in FortiADC virtual server's default error page may allow an unauthenticated attacker to execute malicious code via crafted URL.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-736",
+      "cve": "CVE-2025-58412",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiADC: greater equal 7.2.0, less equal 7.2.8, fixed in [7.6.4, 8.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.8"
+                  },
+                  "fixed_in": [
+                    "7.6.4",
+                    "8.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 7.4.0, less equal 7.4.9, fixed in [7.6.4, 8.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.9"
+                  },
+                  "fixed_in": [
+                    "7.6.4",
+                    "8.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: greater equal 7.6.0, less equal 7.6.3, fixed in [7.6.4, 8.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.3"
+                  },
+                  "fixed_in": [
+                    "7.6.4",
+                    "8.0.1"
+                  ]
+                },
+                {
+                  "description": "FortiADC: equal 8.0.0, fixed in [8.0.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiadc:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "8.0.0"
+                  },
+                  "fixed_in": [
+                    "8.0.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.2,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:C/C:L/I:L/A:N/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-80"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "XSS in default error page",
+      "url": "https://fortiguard.fortinet.com/psirt/FG-IR-25-736"
+    },
+    {
+      "description": "https://docs.fortinet.com/document/fortiadc/7.4.8/handbook/496707/configuring-error-pages",
+      "url": "https://docs.fortinet.com/document/fortiadc/7.4.8/handbook/496707/configuring-error-pages"
+    }
+  ],
+  "published": "2025-11-18T00:00:00Z",
+  "updated": "2025-11-18T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-736"
+}
+
