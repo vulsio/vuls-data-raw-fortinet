@@ -1,0 +1,80 @@
+{
+  "id": "FG-IR-25-739",
+  "title": "Multiple authenticated OS Command Injections via API",
+  "summary": "An OS command injection vulnerabtility [CWE-78] in FortiExtender API may allow an authenticated attacker to execute unauthorized code or commands via a specific HTTP request.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-739",
+      "cve": "CVE-2025-64153",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiExtender: greater equal 7.0.0, less equal 7.0.5, fixed in [7.4.8, 7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiextender:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.5"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiExtender: greater equal 7.2.0, less equal 7.2.5, fixed in [7.4.8, 7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiextender:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.5"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiExtender: greater equal 7.4.0, less equal 7.4.7, fixed in [7.4.8, 7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiextender:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.7"
+                  },
+                  "fixed_in": [
+                    "7.4.8",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiExtender: greater equal 7.6.0, less equal 7.6.3, fixed in [7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiextender:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.3"
+                  },
+                  "fixed_in": [
+                    "7.6.4"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.7,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2025-12-09T00:00:00Z",
+  "updated": "2025-12-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-739"
+}
+

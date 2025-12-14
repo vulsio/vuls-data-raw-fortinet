@@ -1,0 +1,77 @@
+{
+  "id": "FG-IR-25-616",
+  "title": "Read-only admin could obtain admin configuration secrets",
+  "summary": "An improper access control vulnerability [CWE-284] in FortiAuthenticator Web UI may allow an authenticated attacker with at least read-only admin permission to obtain the credentials of other administrators' messaging services via crafted requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-616",
+      "cve": "CVE-2025-59923",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAuthenticator: greater equal 6.3.0, less equal 6.3.4, fixed in [6.6.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.3.0",
+                    "le": "6.3.4"
+                  },
+                  "fixed_in": [
+                    "6.6.7"
+                  ]
+                },
+                {
+                  "description": "FortiAuthenticator: greater equal 6.4.0, less equal 6.4.10, fixed in [6.6.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.10"
+                  },
+                  "fixed_in": [
+                    "6.6.7"
+                  ]
+                },
+                {
+                  "description": "FortiAuthenticator: greater equal 6.5.0, less equal 6.5.6, fixed in [6.6.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.5.0",
+                    "le": "6.5.6"
+                  },
+                  "fixed_in": [
+                    "6.6.7"
+                  ]
+                },
+                {
+                  "description": "FortiAuthenticator: greater equal 6.6.0, less equal 6.6.6, fixed in [6.6.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.6.0",
+                    "le": "6.6.6"
+                  },
+                  "fixed_in": [
+                    "6.6.7"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 2.6,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-284"
+          ],
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2025-12-09T00:00:00Z",
+  "updated": "2025-12-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-616"
+}
+

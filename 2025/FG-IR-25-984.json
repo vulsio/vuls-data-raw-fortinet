@@ -1,0 +1,98 @@
+{
+  "id": "FG-IR-25-984",
+  "title": "Capacity to use password hashes instead of password for authentication",
+  "summary": "A use of password hash instead of password for authentication vulnerability [CWE-836] in FortiWeb may allow an unauthenticated attacker to use the hash in place of the password to authenticate via crafted HTTP/HTTPS requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-984",
+      "cve": "CVE-2025-64471",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiWeb: greater equal 7.0.0, less equal 7.0.11, fixed in [7.0.12, 7.2.12, 7.4.11, 7.6.6, 8.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.11"
+                  },
+                  "fixed_in": [
+                    "7.0.12",
+                    "7.2.12",
+                    "7.4.11",
+                    "7.6.6",
+                    "8.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.2.0, less equal 7.2.11, fixed in [7.2.12, 7.4.11, 7.6.6, 8.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.11"
+                  },
+                  "fixed_in": [
+                    "7.2.12",
+                    "7.4.11",
+                    "7.6.6",
+                    "8.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.4.0, less equal 7.4.10, fixed in [7.4.11, 7.6.6, 8.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.10"
+                  },
+                  "fixed_in": [
+                    "7.4.11",
+                    "7.6.6",
+                    "8.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 7.6.0, less equal 7.6.5, fixed in [7.6.6, 8.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.5"
+                  },
+                  "fixed_in": [
+                    "7.6.6",
+                    "8.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiWeb: greater equal 8.0.0, less equal 8.0.1, fixed in [8.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiweb:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.0.1"
+                  },
+                  "fixed_in": [
+                    "8.0.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4.4,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:N/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-836"
+          ],
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2025-12-09T00:00:00Z",
+  "updated": "2025-12-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-984"
+}
+

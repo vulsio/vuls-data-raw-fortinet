@@ -1,0 +1,44 @@
+{
+  "id": "FG-IR-25-032",
+  "title": "Incorrect authorization in multi-vdom environment",
+  "summary": "An Incorrect Authorization vulnerability [CWE-863] in FortiPortal may allow an authenticated attacker to reboot a shared FortiGate device via crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-032",
+      "cve": "CVE-2025-54838",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiPortal: greater equal 7.4.0, less equal 7.4.5, fixed in [7.4.6]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.5"
+                  },
+                  "fixed_in": [
+                    "7.4.6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.4,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:C/C:N/I:N/A:H/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-863"
+          ],
+          "impact": "Denial of service"
+        }
+      ]
+    }
+  ],
+  "published": "2025-12-09T00:00:00Z",
+  "updated": "2025-12-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-032"
+}
+
