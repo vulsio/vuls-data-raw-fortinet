@@ -1,0 +1,77 @@
+{
+  "id": "FG-IR-25-783",
+  "title": "SSRF in GUI console",
+  "summary": "A Server-Side Request Forgery (SSRF) vulnerability [CWE-918] in FortiSandbox may allow an authenticated attacker to proxy internal requests limited to plaintext endpoints only via crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-783",
+      "cve": "CVE-2025-67685",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: greater equal 4.0.0, less equal 4.0.6, fixed in [5.0.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.0.0",
+                    "le": "4.0.6"
+                  },
+                  "fixed_in": [
+                    "5.0.5"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.2.0, less equal 4.2.8, fixed in [5.0.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.2.0",
+                    "le": "4.2.8"
+                  },
+                  "fixed_in": [
+                    "5.0.5"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 4.4.0, less equal 4.4.8, fixed in [5.0.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.4.0",
+                    "le": "4.4.8"
+                  },
+                  "fixed_in": [
+                    "5.0.5"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 5.0.0, less equal 5.0.4, fixed in [5.0.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.4"
+                  },
+                  "fixed_in": [
+                    "5.0.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 3.4,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:L/I:L/A:N/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-918"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2026-01-13T00:00:00Z",
+  "updated": "2026-01-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-783"
+}
+

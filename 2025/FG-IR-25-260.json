@@ -1,0 +1,56 @@
+{
+  "id": "FG-IR-25-260",
+  "title": "Unauthenticated access to local configuration",
+  "summary": "An exposure of sensitive information to an unauthorized actor [CWE-200] vulnerability in FortiFone Web Portal page may allow an unauthenticated attacker to obtain the device configuration via crafted HTTP or HTTPS requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-260",
+      "cve": "CVE-2025-47855",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiFone: greater equal 3.0.13, less equal 3.0.23, fixed in [3.0.24, 7.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortifone:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "3.0.13",
+                    "le": "3.0.23"
+                  },
+                  "fixed_in": [
+                    "3.0.24",
+                    "7.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiFone: greater equal 7.0.0, less equal 7.0.1, fixed in [7.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortifone:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.1"
+                  },
+                  "fixed_in": [
+                    "7.0.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:X/RC:C"
+          },
+          "cwe": [
+            "CWE-200"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2026-01-13T00:00:00Z",
+  "updated": "2026-01-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-260"
+}
+

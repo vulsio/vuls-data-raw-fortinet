@@ -1,0 +1,149 @@
+{
+  "id": "FG-IR-25-084",
+  "title": "Heap-based buffer overflow in cw_acd daemon",
+  "summary": "A heap-based buffer overflow vulnerability [CWE-122] in FortiOS and FortiSwitchManager cw_acd daemon may allow a remote unauthenticated attacker to execute arbitrary code or commands via specifically crafted requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-084",
+      "cve": "CVE-2025-25249",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less equal 6.4.16, fixed in [6.4.17, 7.0.18, 7.2.12, 7.4.9, 7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.16"
+                  },
+                  "fixed_in": [
+                    "6.4.17",
+                    "7.0.18",
+                    "7.2.12",
+                    "7.4.9",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.17, fixed in [7.0.18, 7.2.12, 7.4.9, 7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.17"
+                  },
+                  "fixed_in": [
+                    "7.0.18",
+                    "7.2.12",
+                    "7.4.9",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less equal 7.2.11, fixed in [7.2.12, 7.4.9, 7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.11"
+                  },
+                  "fixed_in": [
+                    "7.2.12",
+                    "7.4.9",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.4.0, less equal 7.4.8, fixed in [7.4.9, 7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.8"
+                  },
+                  "fixed_in": [
+                    "7.4.9",
+                    "7.6.4"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.6.0, less equal 7.6.3, fixed in [7.6.4]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.3"
+                  },
+                  "fixed_in": [
+                    "7.6.4"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSASE: equal 25.1.a.2, fixed in [25.2.c]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisase:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "25.1.a.2"
+                  },
+                  "fixed_in": [
+                    "25.2.c"
+                  ]
+                },
+                {
+                  "description": "FortiSASE: equal 25.2.b, fixed in [25.2.c]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisase:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "25.2.b"
+                  },
+                  "fixed_in": [
+                    "25.2.c"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSwitch Manager: greater equal 7.0.0, less equal 7.0.5, fixed in [7.0.6, 7.2.7]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiswitch_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.5"
+                  },
+                  "fixed_in": [
+                    "7.0.6",
+                    "7.2.7"
+                  ]
+                },
+                {
+                  "description": "FortiSwitch Manager: greater equal 7.2.0, less equal 7.2.6, fixed in [7.2.7]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiswitch_manager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.6"
+                  },
+                  "fixed_in": [
+                    "7.2.7"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.4,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:W/RC:C"
+          },
+          "cwe": [
+            "CWE-122"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2026-01-13T00:00:00Z",
+  "updated": "2026-01-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-084"
+}
+

@@ -1,0 +1,110 @@
+{
+  "id": "FG-IR-25-772",
+  "title": "Unauthenticated remote command injection",
+  "summary": "An improper neutralization of special elements used in an OS command ('OS Command Injection') vulnerability [CWE-78] in FortiSIEM may allow an unauthenticated attacker to execute unauthorized code or commands via crafted TCP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-772",
+      "cve": "CVE-2025-64155",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSIEM: greater equal 6.7.0, less equal 6.7.10, fixed in [7.1.9, 7.2.7, 7.3.5, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.7.0",
+                    "le": "6.7.10"
+                  },
+                  "fixed_in": [
+                    "7.1.9",
+                    "7.2.7",
+                    "7.3.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 7.0.0, less equal 7.0.4, fixed in [7.1.9, 7.2.7, 7.3.5, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.4"
+                  },
+                  "fixed_in": [
+                    "7.1.9",
+                    "7.2.7",
+                    "7.3.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 7.1.0, less equal 7.1.8, fixed in [7.1.9, 7.2.7, 7.3.5, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.1.0",
+                    "le": "7.1.8"
+                  },
+                  "fixed_in": [
+                    "7.1.9",
+                    "7.2.7",
+                    "7.3.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 7.2.0, less equal 7.2.6, fixed in [7.2.7, 7.3.5, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.6"
+                  },
+                  "fixed_in": [
+                    "7.2.7",
+                    "7.3.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 7.3.0, less equal 7.3.4, fixed in [7.3.5, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.3.0",
+                    "le": "7.3.4"
+                  },
+                  "fixed_in": [
+                    "7.3.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: equal 7.4.0, fixed in [7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.4,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:H/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2026-01-13T00:00:00Z",
+  "updated": "2026-01-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-772"
+}
+
