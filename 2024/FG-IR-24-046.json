@@ -272,7 +272,7 @@
               "nodes": [
                 {
                   "description": "FortiVoice Enterprise: greater equal 6.0.0, less equal 6.0.12, fixed in [6.4.9, 7.0.3]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "ge": "6.0.0",
                     "le": "6.0.12"
@@ -284,7 +284,7 @@
                 },
                 {
                   "description": "FortiVoice Enterprise: greater equal 6.4.0, less equal 6.4.8, fixed in [6.4.9, 7.0.3]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "ge": "6.4.0",
                     "le": "6.4.8"
@@ -296,7 +296,7 @@
                 },
                 {
                   "description": "FortiVoice Enterprise: greater equal 7.0.0, less equal 7.0.2, fixed in [6.4.9, 7.0.3]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "ge": "7.0.0",
                     "le": "7.0.2"
@@ -626,7 +626,7 @@
               "nodes": [
                 {
                   "description": "FortiVoice Enterprise: greater equal 6.0.0, less equal 6.0.12, fixed in [6.4.9, 7.0.3]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "ge": "6.0.0",
                     "le": "6.0.12"
@@ -638,7 +638,7 @@
                 },
                 {
                   "description": "FortiVoice Enterprise: greater equal 6.4.0, less equal 6.4.8, fixed in [6.4.9, 7.0.3]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "ge": "6.4.0",
                     "le": "6.4.8"
@@ -650,7 +650,7 @@
                 },
                 {
                   "description": "FortiVoice Enterprise: greater equal 7.0.0, less equal 7.0.2, fixed in [6.4.9, 7.0.3]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "ge": "7.0.0",
                     "le": "7.0.2"

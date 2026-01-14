@@ -219,7 +219,7 @@
               "nodes": [
                 {
                   "description": "FortiVoice Enterprise:",
-                  "cpe": "cpe:2.3:a:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:a:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "",
                     "gt": "",
@@ -233,7 +233,7 @@
                 "nodes": [
                   {
                     "description": "FortiVoice Enterprise:",
-                    "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                    "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                     "affected": {
                       "eq": "",
                       "gt": "",
@@ -247,7 +247,7 @@
                   "nodes": [
                     {
                       "description": "FortiVoice Enterprise:",
-                      "cpe": "cpe:2.3:h:fortinet:fortivoice-:-:*:*:*:entreprise:*:*:*",
+                      "cpe": "cpe:2.3:h:fortinet:fortivoice-:-:*:*:*:enterprise:*:*:*",
                       "affected": {
                         "eq": "NA"
                       }

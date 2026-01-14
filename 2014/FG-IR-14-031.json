@@ -167,7 +167,7 @@
               "nodes": [
                 {
                   "description": "FortiVoice Enterprise: equal ANY",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "ANY"
                   }
