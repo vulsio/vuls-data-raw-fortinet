@@ -1057,7 +1057,7 @@
               "nodes": [
                 {
                   "description": "FortiVoice Enterprise: equal 5.0.5, fixed in [5.0.6, 5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.0.5"
                   },
@@ -1068,7 +1068,7 @@
                 },
                 {
                   "description": "FortiVoice Enterprise: equal 5.3.3, fixed in [5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.3.3"
                   },
@@ -2860,7 +2860,7 @@
               "nodes": [
                 {
                   "description": "FortiVoice Enterprise: equal 5.0.5, fixed in [5.0.6, 5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.0.5"
                   },
@@ -2871,7 +2871,7 @@
                 },
                 {
                   "description": "FortiVoice Enterprise: equal 5.3.3, fixed in [5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.3.3"
                   },
@@ -4677,7 +4677,7 @@
               "nodes": [
                 {
                   "description": "FortiVoice Enterprise: equal 5.0.5, fixed in [5.0.6, 5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.0.5"
                   },
@@ -4688,7 +4688,7 @@
                 },
                 {
                   "description": "FortiVoice Enterprise: equal 5.3.3, fixed in [5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.3.3"
                   },
@@ -6400,7 +6400,7 @@
               "nodes": [
                 {
                   "description": "FortiVoice Enterprise: equal 5.0.5, fixed in [5.0.6, 5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.0.5"
                   },
@@ -6411,7 +6411,7 @@
                 },
                 {
                   "description": "FortiVoice Enterprise: equal 5.3.3, fixed in [5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.3.3"
                   },
@@ -8217,7 +8217,7 @@
               "nodes": [
                 {
                   "description": "FortiVoice Enterprise: equal 5.0.5, fixed in [5.0.6, 5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.0.5"
                   },
@@ -8228,7 +8228,7 @@
                 },
                 {
                   "description": "FortiVoice Enterprise: equal 5.3.3, fixed in [5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.3.3"
                   },
@@ -10034,7 +10034,7 @@
               "nodes": [
                 {
                   "description": "FortiVoice Enterprise: equal 5.0.5, fixed in [5.0.6, 5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.0.5"
                   },
@@ -10045,7 +10045,7 @@
                 },
                 {
                   "description": "FortiVoice Enterprise: equal 5.3.3, fixed in [5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.3.3"
                   },
@@ -11837,7 +11837,7 @@
               "nodes": [
                 {
                   "description": "FortiVoice Enterprise: equal 5.0.5, fixed in [5.0.6, 5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.0.5"
                   },
@@ -11848,7 +11848,7 @@
                 },
                 {
                   "description": "FortiVoice Enterprise: equal 5.3.3, fixed in [5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.3.3"
                   },
@@ -13654,7 +13654,7 @@
               "nodes": [
                 {
                   "description": "FortiVoice Enterprise: equal 5.0.5, fixed in [5.0.6, 5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.0.5"
                   },
@@ -13665,7 +13665,7 @@
                 },
                 {
                   "description": "FortiVoice Enterprise: equal 5.3.3, fixed in [5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.3.3"
                   },
@@ -15471,7 +15471,7 @@
               "nodes": [
                 {
                   "description": "FortiVoice Enterprise: equal 5.0.5, fixed in [5.0.6, 5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.0.5"
                   },
@@ -15482,7 +15482,7 @@
                 },
                 {
                   "description": "FortiVoice Enterprise: equal 5.3.3, fixed in [5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.3.3"
                   },
@@ -17288,7 +17288,7 @@
               "nodes": [
                 {
                   "description": "FortiVoice Enterprise: equal 5.0.5, fixed in [5.0.6, 5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.0.5"
                   },
@@ -17299,7 +17299,7 @@
                 },
                 {
                   "description": "FortiVoice Enterprise: equal 5.3.3, fixed in [5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.3.3"
                   },
@@ -19077,7 +19077,7 @@
               "nodes": [
                 {
                   "description": "FortiVoice Enterprise: equal 5.0.5, fixed in [5.0.6, 5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.0.5"
                   },
@@ -19088,7 +19088,7 @@
                 },
                 {
                   "description": "FortiVoice Enterprise: equal 5.3.3, fixed in [5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.3.3"
                   },
@@ -20894,7 +20894,7 @@
               "nodes": [
                 {
                   "description": "FortiVoice Enterprise: equal 5.0.5, fixed in [5.0.6, 5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.0.5"
                   },
@@ -20905,7 +20905,7 @@
                 },
                 {
                   "description": "FortiVoice Enterprise: equal 5.3.3, fixed in [5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.3.3"
                   },
@@ -22683,7 +22683,7 @@
               "nodes": [
                 {
                   "description": "FortiVoice Enterprise: equal 5.0.5, fixed in [5.0.6, 5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.0.5"
                   },
@@ -22694,7 +22694,7 @@
                 },
                 {
                   "description": "FortiVoice Enterprise: equal 5.3.3, fixed in [5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.3.3"
                   },
@@ -24472,7 +24472,7 @@
               "nodes": [
                 {
                   "description": "FortiVoice Enterprise: equal 5.0.5, fixed in [5.0.6, 5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.0.5"
                   },
@@ -24483,7 +24483,7 @@
                 },
                 {
                   "description": "FortiVoice Enterprise: equal 5.3.3, fixed in [5.3.4]",
-                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:entreprise:*:*:*",
+                  "cpe": "cpe:2.3:o:fortinet:fortivoice:*:*:*:*:enterprise:*:*:*",
                   "affected": {
                     "eq": "5.3.3"
                   },
