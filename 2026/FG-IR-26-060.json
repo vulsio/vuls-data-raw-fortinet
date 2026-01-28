@@ -1,0 +1,252 @@
+{
+  "id": "FG-IR-26-060",
+  "title": "Administrative FortiCloud SSO authentication bypass",
+  "summary": "An Authentication Bypass Using an Alternate Path or Channel vulnerability [CWE-288] in FortiOS, FortiManager, FortiAnalyzer may allow an attacker with a FortiCloud account and a registered device to log into other devices registered to other accounts, if FortiCloud SSO authentication is enabled on those devices.Please note that the FortiCloud SSO login feature is not enabled in default factory settings. However, when an administrator registers the device to FortiCare from the device's GUI, unless the administrator disables the toggle switch \"Allow administrative login using FortiCloud SSO\" in the registration page, FortiCloud SSO login is enabled upon registration. This vulnerability was found being exploited in the wild by two malicious FortiCloud accounts, which were locked out on 2026-01-22. In order to protect its customers from further exploit, Fortinet disabled FortiCloud SSO on FortiCloud side on 2026-01-26. It was re-enabled on 2026-01-27 and no longer supports login from devices running vulnerable versions. Consequently, customers must upgrade to the latest versions listed below for the FortiCloud SSO authentication to function.The following products are under investigation: FortiWeb, FortiSwitch Manager",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-060",
+      "cve": "CVE-2026-24858",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAnalyzer: greater equal 7.0.0, less equal 7.0.15, fixed in [7.0.16, 7.2.12, 7.4.10, 7.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.15"
+                  },
+                  "fixed_in": [
+                    "7.0.16",
+                    "7.2.12",
+                    "7.4.10",
+                    "7.6.6"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 7.2.0, less equal 7.2.11, fixed in [7.2.12, 7.4.10, 7.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.11"
+                  },
+                  "fixed_in": [
+                    "7.2.12",
+                    "7.4.10",
+                    "7.6.6"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 7.4.0, less equal 7.4.9, fixed in [7.4.10, 7.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.9"
+                  },
+                  "fixed_in": [
+                    "7.4.10",
+                    "7.6.6"
+                  ]
+                },
+                {
+                  "description": "FortiAnalyzer: greater equal 7.6.0, less equal 7.6.5, fixed in [7.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortianalyzer:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.5"
+                  },
+                  "fixed_in": [
+                    "7.6.6"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiManager: greater equal 7.0.0, less equal 7.0.15, fixed in [7.0.16, 7.2.13, 7.4.10, 7.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.15"
+                  },
+                  "fixed_in": [
+                    "7.0.16",
+                    "7.2.13",
+                    "7.4.10",
+                    "7.6.6"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.2.0, less equal 7.2.11, fixed in [7.2.13, 7.4.10, 7.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.11"
+                  },
+                  "fixed_in": [
+                    "7.2.13",
+                    "7.4.10",
+                    "7.6.6"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.4.0, less equal 7.4.9, fixed in [7.4.10, 7.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.9"
+                  },
+                  "fixed_in": [
+                    "7.4.10",
+                    "7.6.6"
+                  ]
+                },
+                {
+                  "description": "FortiManager: greater equal 7.6.0, less equal 7.6.5, fixed in [7.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimanager:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.5"
+                  },
+                  "fixed_in": [
+                    "7.6.6"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.18, fixed in [7.0.19, 7.2.13, 7.4.11, 7.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.18"
+                  },
+                  "fixed_in": [
+                    "7.0.19",
+                    "7.2.13",
+                    "7.4.11",
+                    "7.6.6"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less equal 7.2.12, fixed in [7.2.13, 7.4.11, 7.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.12"
+                  },
+                  "fixed_in": [
+                    "7.2.13",
+                    "7.4.11",
+                    "7.6.6"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.4.0, less equal 7.4.10, fixed in [7.4.11, 7.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.10"
+                  },
+                  "fixed_in": [
+                    "7.4.11",
+                    "7.6.6"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.6.0, less equal 7.6.5, fixed in [7.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.5"
+                  },
+                  "fixed_in": [
+                    "7.6.6"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy: greater equal 7.0.0, less equal 7.0.22, fixed in [7.4.13, 7.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.22"
+                  },
+                  "fixed_in": [
+                    "7.4.13",
+                    "7.6.6"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.2.0, less equal 7.2.15, fixed in [7.4.13, 7.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.15"
+                  },
+                  "fixed_in": [
+                    "7.4.13",
+                    "7.6.6"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.4.0, less equal 7.4.12, fixed in [7.4.13, 7.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.12"
+                  },
+                  "fixed_in": [
+                    "7.4.13",
+                    "7.6.6"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.6.0, less equal 7.6.4, fixed in [7.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.4"
+                  },
+                  "fixed_in": [
+                    "7.6.6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.4,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:H/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-288"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "Administrative FortiCloud SSO authentication bypass",
+      "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-060"
+    },
+    {
+      "description": "https://www.fortinet.com/blog/psirt-blogs/analysis-of-sso-abuse-on-fortios",
+      "url": "https://www.fortinet.com/blog/psirt-blogs/analysis-of-sso-abuse-on-fortios"
+    }
+  ],
+  "published": "2026-01-27T00:00:00Z",
+  "updated": "2026-01-27T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-060"
+}
+
