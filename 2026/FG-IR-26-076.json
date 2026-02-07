@@ -8,7 +8,72 @@
       "cve": "CVE-2025-15467",
       "definitions": [
         {
-          "configurations": [],
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiNAC-F: greater equal 7.4.0, less equal 7.4.2, fixed in [7.4.3, 7.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortinac-f:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.2"
+                  },
+                  "fixed_in": [
+                    "7.4.3",
+                    "7.6.6"
+                  ]
+                },
+                {
+                  "description": "FortiNAC-F: greater equal 7.6.0, less equal 7.6.5, fixed in [7.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortinac-f:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.5"
+                  },
+                  "fixed_in": [
+                    "7.6.6"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiPortal: greater equal 7.0.0, less equal 7.0.13, fixed in [7.4.9]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.13"
+                  },
+                  "fixed_in": [
+                    "7.4.9"
+                  ]
+                },
+                {
+                  "description": "FortiPortal: greater equal 7.2.0, less equal 7.2.8, fixed in [7.4.9]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.8"
+                  },
+                  "fixed_in": [
+                    "7.4.9"
+                  ]
+                },
+                {
+                  "description": "FortiPortal: greater equal 7.4.0, less equal 7.4.8, fixed in [7.4.9]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.8"
+                  },
+                  "fixed_in": [
+                    "7.4.9"
+                  ]
+                }
+              ]
+            }
+          ],
           "cvssv3": {
             "base_score": 9.8,
             "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:X/RL:X/RC:X"
