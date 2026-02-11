@@ -1,0 +1,68 @@
+{
+  "id": "FG-IR-25-661",
+  "title": "Arbitrary XML file write in FCConfig",
+  "summary": "An Improper Link Resolution Before File Access vulnerability [CWE-59] in FortiClient Windows may allow a local low-privilege attacker to perform an arbitrary file write with elevated permissions via crafted named pipe messages.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-661",
+      "cve": "CVE-2025-62676",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Windows: greater equal 7.0.0, less equal 7.0.14, fixed in [7.2.13, 7.4.5]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.14"
+                  },
+                  "fixed_in": [
+                    "7.2.13",
+                    "7.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: greater equal 7.2.0, less equal 7.2.12, fixed in [7.2.13, 7.4.5]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.12"
+                  },
+                  "fixed_in": [
+                    "7.2.13",
+                    "7.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: greater equal 7.4.0, less equal 7.4.4, fixed in [7.4.5]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.4"
+                  },
+                  "fixed_in": [
+                    "7.4.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.4,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:H/A:H/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-59"
+          ],
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2026-02-10T00:00:00Z",
+  "updated": "2026-02-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-661"
+}
+

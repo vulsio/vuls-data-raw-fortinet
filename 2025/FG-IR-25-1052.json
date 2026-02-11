@@ -1,0 +1,44 @@
+{
+  "id": "FG-IR-25-1052",
+  "title": "LDAP authentication bypass in Agentless VPN and FSSO",
+  "summary": "An Authentication Bypass by Primary Weakness vulnerability [CWE-305] in FortiOS fnbamd may allow an unauthenticated attacker to bypass LDAP authentication of Agentless VPN or FSSO policy, under specific LDAP server configuration.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-1052",
+      "cve": "CVE-2026-22153",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 7.6.0, less equal 7.6.4, fixed in [7.6.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.4"
+                  },
+                  "fixed_in": [
+                    "7.6.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.5,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-305"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2026-02-10T00:00:00Z",
+  "updated": "2026-02-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-1052"
+}
+

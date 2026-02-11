@@ -1,0 +1,91 @@
+{
+  "id": "FG-IR-25-667",
+  "title": "Request smuggling attack in FortiOS GUI",
+  "summary": "An HTTP request smuggling vulnerability [CWE-444] in FortiOS may allow an unauthenticated attacker to smuggle an unlogged http request through the firewall policies via a specially crafted header",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-667",
+      "cve": "CVE-2025-55018",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.4.3, less equal 6.4.16, fixed in [7.4.10, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.3",
+                    "le": "6.4.16"
+                  },
+                  "fixed_in": [
+                    "7.4.10",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less equal 7.0.19, fixed in [7.4.10, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "le": "7.0.19"
+                  },
+                  "fixed_in": [
+                    "7.4.10",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less equal 7.2.13, fixed in [7.4.10, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.13"
+                  },
+                  "fixed_in": [
+                    "7.4.10",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.4.0, less equal 7.4.9, fixed in [7.4.10, 7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.9"
+                  },
+                  "fixed_in": [
+                    "7.4.10",
+                    "7.6.1"
+                  ]
+                },
+                {
+                  "description": "FortiOS: equal 7.6.0, fixed in [7.6.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.6.0"
+                  },
+                  "fixed_in": [
+                    "7.6.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:N/I:L/A:N/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-444"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2026-02-10T00:00:00Z",
+  "updated": "2026-02-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-667"
+}
+

@@ -1,0 +1,77 @@
+{
+  "id": "FG-IR-25-528",
+  "title": "Missing authorization on CSV user import",
+  "summary": "A missing authorization vulnerability [CWE-862] in FortiAuthenticator may allow a read-only user to make modification to local users via a file upload to an unprotected endpoint.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-25-528",
+      "cve": "CVE-2026-21743",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAuthenticator: greater equal 6.3.0, less equal 6.3.5, fixed in [6.6.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.3.0",
+                    "le": "6.3.5"
+                  },
+                  "fixed_in": [
+                    "6.6.7"
+                  ]
+                },
+                {
+                  "description": "FortiAuthenticator: greater equal 6.4.0, less equal 6.4.11, fixed in [6.6.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "le": "6.4.11"
+                  },
+                  "fixed_in": [
+                    "6.6.7"
+                  ]
+                },
+                {
+                  "description": "FortiAuthenticator: greater equal 6.5.0, less equal 6.5.7, fixed in [6.6.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.5.0",
+                    "le": "6.5.7"
+                  },
+                  "fixed_in": [
+                    "6.6.7"
+                  ]
+                },
+                {
+                  "description": "FortiAuthenticator: greater equal 6.6.0, less equal 6.6.6, fixed in [6.6.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.6.0",
+                    "le": "6.6.6"
+                  },
+                  "fixed_in": [
+                    "6.6.7"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.8,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:P/RL:U/RC:C"
+          },
+          "cwe": [
+            "CWE-862"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2026-02-10T00:00:00Z",
+  "updated": "2026-02-10T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-25-528"
+}
+
