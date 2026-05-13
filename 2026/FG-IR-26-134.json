@@ -1,0 +1,92 @@
+{
+  "id": "FG-IR-26-134",
+  "title": "User controlled SQL commands",
+  "summary": "An improper neutralization of special elements used in an SQL command ('SQL injection') vulnerability [CWE-89] in FortiNDR may allow an authenticated attacker to execute arbitrary SQL commands on selected databases and tables via specifically crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-134",
+      "cve": "CVE-2026-25088",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiNDR: greater equal 7.0.0, less than 7.1.0, fixed in [7.4.10, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortindr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "lt": "7.1.0"
+                  },
+                  "fixed_in": [
+                    "7.4.10",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiNDR: greater equal 7.1.0, less than 7.2.0, fixed in [7.4.10, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortindr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.1.0",
+                    "lt": "7.2.0"
+                  },
+                  "fixed_in": [
+                    "7.4.10",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiNDR: greater equal 7.2.0, less than 7.3.0, fixed in [7.4.10, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortindr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "lt": "7.3.0"
+                  },
+                  "fixed_in": [
+                    "7.4.10",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiNDR: greater equal 7.4.0, less equal 7.4.9, fixed in [7.4.10, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortindr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.9"
+                  },
+                  "fixed_in": [
+                    "7.4.10",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiNDR: greater equal 7.6.0, less equal 7.6.2, fixed in [7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortindr:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.2"
+                  },
+                  "fixed_in": [
+                    "7.6.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:L/A:N/E:P/RL:O/RC:X"
+          },
+          "cwe": [
+            "CWE-89"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2026-05-12T00:00:00Z",
+  "updated": "2026-05-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-134"
+}
+

@@ -1,0 +1,83 @@
+{
+  "id": "FG-IR-26-128",
+  "title": "Improper access control on API endpoints",
+  "summary": "An Improper Access Control vulnerability [CWE-284] in FortiAuthenticator may allow an unauthenticated attacker to execute unauthorized code or commands via crafted requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-128",
+      "cve": "CVE-2026-44277",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAuthenticator: greater equal 6.5.0, less equal 6.5.6, fixed in [6.5.7, 6.6.9, 8.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.5.0",
+                    "le": "6.5.6"
+                  },
+                  "fixed_in": [
+                    "6.5.7",
+                    "6.6.9",
+                    "8.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiAuthenticator: greater equal 6.6.0, less equal 6.6.8, fixed in [6.5.7, 6.6.9, 8.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.6.0",
+                    "le": "6.6.8"
+                  },
+                  "fixed_in": [
+                    "6.5.7",
+                    "6.6.9",
+                    "8.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiAuthenticator: equal 8.0.0, fixed in [6.5.7, 6.6.9, 8.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "8.0.0"
+                  },
+                  "fixed_in": [
+                    "6.5.7",
+                    "6.6.9",
+                    "8.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiAuthenticator: equal 8.0.2, fixed in [6.5.7, 6.6.9, 8.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "8.0.2"
+                  },
+                  "fixed_in": [
+                    "6.5.7",
+                    "6.6.9",
+                    "8.0.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-284"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2026-05-12T00:00:00Z",
+  "updated": "2026-05-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-128"
+}
+

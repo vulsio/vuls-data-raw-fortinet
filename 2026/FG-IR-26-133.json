@@ -1,0 +1,107 @@
+{
+  "id": "FG-IR-26-133",
+  "title": "OS command injection in CLI",
+  "summary": "An OS command injection vulnerabtility [CWE-78] in FortiAP and FortiAP-W2 cli may allow an authenticated attacker to execute unauthorized code or commands via a specifically crafted cli command.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-133",
+      "cve": "CVE-2025-53870",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP: greater equal 6.4.0, less than 6.5.0, fixed in [7.4.6, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "lt": "6.5.0"
+                  },
+                  "fixed_in": [
+                    "7.4.6",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiAP: greater equal 7.2.0, less than 7.3.0, fixed in [7.4.6, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "lt": "7.3.0"
+                  },
+                  "fixed_in": [
+                    "7.4.6",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiAP: greater equal 7.4.0, less equal 7.4.5, fixed in [7.4.6, 7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.5"
+                  },
+                  "fixed_in": [
+                    "7.4.6",
+                    "7.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiAP: greater equal 7.6.0, less equal 7.6.2, fixed in [7.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.2"
+                  },
+                  "fixed_in": [
+                    "7.6.3"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiAP-W2: greater equal 7.2.0, less equal 7.2.5, fixed in [7.2.6, 7.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-w2:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.5"
+                  },
+                  "fixed_in": [
+                    "7.2.6",
+                    "7.4.5"
+                  ]
+                },
+                {
+                  "description": "FortiAP-W2: greater equal 7.4.0, less equal 7.4.4, fixed in [7.4.5]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiap-w2:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.4"
+                  },
+                  "fixed_in": [
+                    "7.4.5"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.5,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "published": "2026-05-12T00:00:00Z",
+  "updated": "2026-05-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-133"
+}
+

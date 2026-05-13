@@ -1,0 +1,172 @@
+{
+  "id": "FG-IR-26-136",
+  "title": "Incorrect global authorization",
+  "summary": "A missing authorization vulnerability [CWE-862] in FortiSandbox, FortiSandbox Cloud and FortiSandbox PaaS WEB UI may allow an unauthenticated attacker to execute unauthorized code or commands via HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-136",
+      "cve": "CVE-2026-26083",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: greater equal 4.4.0, less equal 4.4.8, fixed in [4.4.9, 5.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.4.0",
+                    "le": "4.4.8"
+                  },
+                  "fixed_in": [
+                    "4.4.9",
+                    "5.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 5.0.0, less equal 5.0.1, fixed in [4.4.9, 5.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.1"
+                  },
+                  "fixed_in": [
+                    "4.4.9",
+                    "5.0.2"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox Cloud: greater equal 5.0.2, less equal 5.0.5, fixed in [5.0.6]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisandbox_cloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.2",
+                    "le": "5.0.5"
+                  },
+                  "fixed_in": [
+                    "5.0.6"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox Cloud: greater equal 23.0.0, less than 24.0.0",
+                  "cpe": "cpe:2.3:a:fortinet:fortisandbox_cloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "23.0.0",
+                    "lt": "24.0.0"
+                  }
+                },
+                {
+                  "description": "FortiSandbox Cloud: greater equal 24.0.0, less than 25.0.0",
+                  "cpe": "cpe:2.3:a:fortinet:fortisandbox_cloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "24.0.0",
+                    "lt": "25.0.0"
+                  }
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox PaaS: greater equal 4.4.5, less equal 4.4.8, fixed in [4.4.9, 5.0.2]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisandbox_paas:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.4.5",
+                    "le": "4.4.8"
+                  },
+                  "fixed_in": [
+                    "4.4.9",
+                    "5.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox PaaS: greater equal 5.0.0, less equal 5.0.1, fixed in [4.4.9, 5.0.2]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisandbox_paas:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.1"
+                  },
+                  "fixed_in": [
+                    "4.4.9",
+                    "5.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox PaaS: greater equal 21.3.0, less than 21.4.0",
+                  "cpe": "cpe:2.3:a:fortinet:fortisandbox_paas:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "21.3.0",
+                    "lt": "21.4.0"
+                  }
+                },
+                {
+                  "description": "FortiSandbox PaaS: greater equal 21.4.0, less than 21.5.0",
+                  "cpe": "cpe:2.3:a:fortinet:fortisandbox_paas:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "21.4.0",
+                    "lt": "21.5.0"
+                  }
+                },
+                {
+                  "description": "FortiSandbox PaaS: greater equal 22.1.0, less than 22.2.0",
+                  "cpe": "cpe:2.3:a:fortinet:fortisandbox_paas:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "22.1.0",
+                    "lt": "22.2.0"
+                  }
+                },
+                {
+                  "description": "FortiSandbox PaaS: greater equal 22.2.0, less than 22.3.0",
+                  "cpe": "cpe:2.3:a:fortinet:fortisandbox_paas:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "22.2.0",
+                    "lt": "22.3.0"
+                  }
+                },
+                {
+                  "description": "FortiSandbox PaaS: greater equal 23.1.0, less than 23.2.0",
+                  "cpe": "cpe:2.3:a:fortinet:fortisandbox_paas:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "23.1.0",
+                    "lt": "23.2.0"
+                  }
+                },
+                {
+                  "description": "FortiSandbox PaaS: greater equal 23.3.0, less than 23.4.0",
+                  "cpe": "cpe:2.3:a:fortinet:fortisandbox_paas:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "23.3.0",
+                    "lt": "23.4.0"
+                  }
+                },
+                {
+                  "description": "FortiSandbox PaaS: greater equal 23.4.0, less than 23.5.0",
+                  "cpe": "cpe:2.3:a:fortinet:fortisandbox_paas:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "23.4.0",
+                    "lt": "23.5.0"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-862"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2026-05-12T00:00:00Z",
+  "updated": "2026-05-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-136"
+}
+

@@ -1,0 +1,73 @@
+{
+  "id": "FG-IR-26-138",
+  "title": "Arbitrary log file read in administrative interface",
+  "summary": "An Improper Neutralization of Argument Delimiters in a Command ('Argument Injection') vulnerability [CWE-88] in FortiDeceptor WEB UI may allow an authenticated attacker with at least read-only admin permission to read log files via HTTP crafted requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-138",
+      "cve": "CVE-2026-25690",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiDeceptor: greater equal 5.0.0, less than 5.1.0",
+                  "cpe": "cpe:2.3:o:fortinet:fortideceptor:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "lt": "5.1.0"
+                  }
+                },
+                {
+                  "description": "FortiDeceptor: greater equal 5.1.0, less than 5.2.0",
+                  "cpe": "cpe:2.3:o:fortinet:fortideceptor:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.1.0",
+                    "lt": "5.2.0"
+                  }
+                },
+                {
+                  "description": "FortiDeceptor: greater equal 5.2.0, less equal 5.2.1",
+                  "cpe": "cpe:2.3:o:fortinet:fortideceptor:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.1"
+                  }
+                },
+                {
+                  "description": "FortiDeceptor: greater equal 5.3.0, less equal 5.3.3",
+                  "cpe": "cpe:2.3:o:fortinet:fortideceptor:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.3.0",
+                    "le": "5.3.3"
+                  }
+                },
+                {
+                  "description": "FortiDeceptor: greater equal 6.0.0, less equal 6.0.2",
+                  "cpe": "cpe:2.3:o:fortinet:fortideceptor:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.0.0",
+                    "le": "6.0.2"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 4,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:L/I:N/A:N/E:F/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-88"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2026-05-12T00:00:00Z",
+  "updated": "2026-05-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-138"
+}
+

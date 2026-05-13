@@ -1,0 +1,57 @@
+{
+  "id": "FG-IR-26-130",
+  "title": "OTP Disclosure via Exported TokenContentProvider",
+  "summary": "An improper export of Android application components [CWE-926] in FortiTokenAndroid may allow other applications on the device to read the OTP code via an exported Content Provider URI.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-130",
+      "cve": "CVE-2026-44279",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiTokenAndroid: greater equal 5.2.0, less equal 5.2.2",
+                  "cpe": "cpe:2.3:a:fortinet:fortitoken_mobile:*:*:*:*:*:android:*:*",
+                  "affected": {
+                    "ge": "5.2.0",
+                    "le": "5.2.2"
+                  }
+                },
+                {
+                  "description": "FortiTokenAndroid: greater equal 6.1.0, less equal 6.1.2",
+                  "cpe": "cpe:2.3:a:fortinet:fortitoken_mobile:*:*:*:*:*:android:*:*",
+                  "affected": {
+                    "ge": "6.1.0",
+                    "le": "6.1.2"
+                  }
+                },
+                {
+                  "description": "FortiTokenAndroid: greater equal 6.2.0, less equal 6.2.0",
+                  "cpe": "cpe:2.3:a:fortinet:fortitoken_mobile:*:*:*:*:*:android:*:*",
+                  "affected": {
+                    "ge": "6.2.0",
+                    "le": "6.2.0"
+                  }
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-926"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2026-05-12T00:00:00Z",
+  "updated": "2026-05-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-130"
+}
+

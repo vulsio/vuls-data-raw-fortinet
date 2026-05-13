@@ -1,0 +1,55 @@
+{
+  "id": "FG-IR-26-129",
+  "title": "Hardcoded Encryption Key Used for VPN Saved Passwords",
+  "summary": "A Missing Authorization [CWE-862] in FortiClient Windows may allow an authenticated local attacker to decrypt a currently logged in users VPN password via use of an unprotected DLL function.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-129",
+      "cve": "CVE-2026-44278",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClient for Windows: greater equal 7.2.0, less equal 7.2.14, fixed in [7.4.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.14"
+                  },
+                  "fixed_in": [
+                    "7.4.3"
+                  ]
+                },
+                {
+                  "description": "FortiClient for Windows: greater equal 7.4.0, less equal 7.4.2, fixed in [7.4.3]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient:*:*:*:*:*:windows:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.2"
+                  },
+                  "fixed_in": [
+                    "7.4.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 2.1,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:H/UI:N/S:U/C:L/I:N/A:N/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-862"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2026-05-12T00:00:00Z",
+  "updated": "2026-05-12T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-129"
+}
+
