@@ -1,0 +1,35 @@
+{
+  "id": "FG-IR-26-139",
+  "title": "Linux Kernel Vulnerability copy.fail - CVE-2026-31431",
+  "summary": "CVE-2026-31431In the Linux kernel, the following vulnerability has been resolved: crypto: algif_aead - Revert to operating out-of-place This mostly reverts commit 72548b093ee3 except for the copying of the associated data. There is no benefit in operating in-place in algif_aead since the source and destination come from different mappings. Get rid of all the complexity added for in-place operation and just copy the AD directly.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-139",
+      "cve": "CVE-2026-31431",
+      "definitions": [
+        {
+          "configurations": [],
+          "cvssv3": {
+            "base_score": 7.8,
+            "vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H/E:X/RL:X/RC:X"
+          },
+          "impact": "Escalation of privilege"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "Linux Kernel Vulnerability copy.fail - CVE-2026-31431",
+      "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-139"
+    },
+    {
+      "description": "https://nvd.nist.gov/vuln/detail/CVE-2026-31431",
+      "url": "https://nvd.nist.gov/vuln/detail/CVE-2026-31431"
+    }
+  ],
+  "published": "2026-05-13T00:00:00Z",
+  "updated": "2026-05-13T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-139"
+}
+
