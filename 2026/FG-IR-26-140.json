@@ -1,0 +1,68 @@
+{
+  "id": "FG-IR-26-140",
+  "title": "Improper access control in API endpoints",
+  "summary": "An improper access control vulnerability [CWE-284] in FortiPortal API endpoints may allow a remote privileged attacker with organization user role to obtain sensitive network configuration data via crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-140",
+      "cve": "CVE-2026-49938",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiPortal: greater equal 7.0.0, less than 7.2.0, fixed in [7.2.9, 7.4.8]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "lt": "7.2.0"
+                  },
+                  "fixed_in": [
+                    "7.2.9",
+                    "7.4.8"
+                  ]
+                },
+                {
+                  "description": "FortiPortal: greater equal 7.2.0, less equal 7.2.8, fixed in [7.2.9, 7.4.8]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.8"
+                  },
+                  "fixed_in": [
+                    "7.2.9",
+                    "7.4.8"
+                  ]
+                },
+                {
+                  "description": "FortiPortal: greater equal 7.4.0, less equal 7.4.7, fixed in [7.4.8]",
+                  "cpe": "cpe:2.3:a:fortinet:fortiportal:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.7"
+                  },
+                  "fixed_in": [
+                    "7.4.8"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.2,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-284"
+          ],
+          "impact": "Improper access control"
+        }
+      ]
+    }
+  ],
+  "published": "2026-06-09T00:00:00Z",
+  "updated": "2026-06-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-140"
+}
+

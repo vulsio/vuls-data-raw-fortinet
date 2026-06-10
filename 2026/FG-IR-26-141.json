@@ -1,0 +1,86 @@
+{
+  "id": "FG-IR-26-141",
+  "title": "Second-Order OS Command Injection via JSON Input on start vnc feature",
+  "summary": "An improper neutralization of special elements used in an OS command vulnerability [CWE-78] in FortiSandbox, FortiSandbox Cloud and FortiSandbox PaaS WEB UI may allow an unauthenticated attacker to execute unauthorized commands via specifically crafted HTTP requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-141",
+      "cve": "CVE-2026-25089",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: greater equal 4.4.0, less equal 4.4.8, fixed in [4.4.9, 5.0.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.4.0",
+                    "le": "4.4.8"
+                  },
+                  "fixed_in": [
+                    "4.4.9",
+                    "5.0.6"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 5.0.0, less equal 5.0.5, fixed in [5.0.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.5"
+                  },
+                  "fixed_in": [
+                    "5.0.6"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox Cloud: greater equal 5.0.4, less equal 5.0.5, fixed in [5.0.6]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisandbox_cloud:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.4",
+                    "le": "5.0.5"
+                  },
+                  "fixed_in": [
+                    "5.0.6"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox PaaS: greater equal 5.0.4, less equal 5.0.5, fixed in [5.0.6]",
+                  "cpe": "cpe:2.3:a:fortinet:fortisandbox_paas:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.4",
+                    "le": "5.0.5"
+                  },
+                  "fixed_in": [
+                    "5.0.6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.1,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:F/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-78"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2026-06-09T00:00:00Z",
+  "updated": "2026-06-09T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-141"
+}
+
