@@ -1,0 +1,56 @@
+{
+  "id": "FG-IR-26-145",
+  "title": "Unauthenticated VNC access exposed on all interfaces",
+  "summary": "An Exposure of Resource to Wrong Sphere vulnerability [CWE-668] in FortiSanbox may allow an unauthenticated attacker to access the VNC server of VMs performing scanning via network requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-145",
+      "cve": "CVE-2026-59835",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSandbox: greater equal 4.4.3, less equal 4.4.8, fixed in [4.4.9, 5.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "4.4.3",
+                    "le": "4.4.8"
+                  },
+                  "fixed_in": [
+                    "4.4.9",
+                    "5.0.3"
+                  ]
+                },
+                {
+                  "description": "FortiSandbox: greater equal 5.0.0, less equal 5.0.2, fixed in [5.0.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisandbox:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "5.0.0",
+                    "le": "5.0.2"
+                  },
+                  "fixed_in": [
+                    "5.0.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7.7,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:L/A:L/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-668"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2026-07-14T00:00:00Z",
+  "updated": "2026-07-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-145"
+}
+

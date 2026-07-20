@@ -1,0 +1,133 @@
+{
+  "id": "FG-IR-26-149",
+  "title": "Cross-Site Scripting in Domain parameter",
+  "summary": "An Improper Neutralization of Script-Related HTML Tags in a Web Page (Basic XSS) vulnerability [CWE-80] in FortiSIEM may allow a privileged administrator to execute unauthorized commands via crafted requests.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-149",
+      "cve": "CVE-2026-59838",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiSIEM: greater equal 6.4.0, less than 6.5.0, fixed in [7.2.7, 7.3.5, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "lt": "6.5.0"
+                  },
+                  "fixed_in": [
+                    "7.2.7",
+                    "7.3.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.5.0, less than 6.6.0, fixed in [7.2.7, 7.3.5, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.5.0",
+                    "lt": "6.6.0"
+                  },
+                  "fixed_in": [
+                    "7.2.7",
+                    "7.3.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 6.6.0, less than 6.7.0, fixed in [7.2.7, 7.3.5, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.6.0",
+                    "lt": "6.7.0"
+                  },
+                  "fixed_in": [
+                    "7.2.7",
+                    "7.3.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 7.0.0, less than 7.1.0, fixed in [7.2.7, 7.3.5, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "lt": "7.1.0"
+                  },
+                  "fixed_in": [
+                    "7.2.7",
+                    "7.3.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 7.1.0, less than 7.2.0, fixed in [7.2.7, 7.3.5, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.1.0",
+                    "lt": "7.2.0"
+                  },
+                  "fixed_in": [
+                    "7.2.7",
+                    "7.3.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 7.2.0, less equal 7.2.6, fixed in [7.2.7, 7.3.5, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.6"
+                  },
+                  "fixed_in": [
+                    "7.2.7",
+                    "7.3.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: greater equal 7.3.0, less equal 7.3.4, fixed in [7.3.5, 7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.3.0",
+                    "le": "7.3.4"
+                  },
+                  "fixed_in": [
+                    "7.3.5",
+                    "7.4.1"
+                  ]
+                },
+                {
+                  "description": "FortiSIEM: equal 7.4.0, fixed in [7.4.1]",
+                  "cpe": "cpe:2.3:o:fortinet:fortisiem:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "7.4.0"
+                  },
+                  "fixed_in": [
+                    "7.4.1"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5.3,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:L/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-80"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2026-07-14T00:00:00Z",
+  "updated": "2026-07-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-149"
+}
+

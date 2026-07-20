@@ -1,0 +1,263 @@
+{
+  "id": "FG-IR-26-151",
+  "title": "Path traversal in CLI command allows deletion of root file system",
+  "summary": "An Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability [CWE-22] in FortiOS, FortiPAM, FortiProxy and FortiSwitch Manager may allow a privileged authenticated attacker with physical access to the device to delete the file system via crafted CLI commands.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-151",
+      "cve": "CVE-2026-59839",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiOS: greater equal 6.4.0, less than 6.5.0, fixed in [7.4.10, 7.6.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.4.0",
+                    "lt": "6.5.0"
+                  },
+                  "fixed_in": [
+                    "7.4.10",
+                    "7.6.7"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.0.0, less than 7.1.0, fixed in [7.4.10, 7.6.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "lt": "7.1.0"
+                  },
+                  "fixed_in": [
+                    "7.4.10",
+                    "7.6.7"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.2.0, less than 7.3.0, fixed in [7.4.10, 7.6.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "lt": "7.3.0"
+                  },
+                  "fixed_in": [
+                    "7.4.10",
+                    "7.6.7"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.4.0, less equal 7.4.9, fixed in [7.4.10, 7.6.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.9"
+                  },
+                  "fixed_in": [
+                    "7.4.10",
+                    "7.6.7"
+                  ]
+                },
+                {
+                  "description": "FortiOS: greater equal 7.6.0, less equal 7.6.6, fixed in [7.6.7]",
+                  "cpe": "cpe:2.3:o:fortinet:fortios:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.6"
+                  },
+                  "fixed_in": [
+                    "7.6.7"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiPAM: greater equal 1.0.0, less than 1.1.0, fixed in [1.7.3, 1.8.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.0.0",
+                    "lt": "1.1.0"
+                  },
+                  "fixed_in": [
+                    "1.7.3",
+                    "1.8.1"
+                  ]
+                },
+                {
+                  "description": "FortiPAM: greater equal 1.1.0, less than 1.2.0, fixed in [1.7.3, 1.8.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.1.0",
+                    "lt": "1.2.0"
+                  },
+                  "fixed_in": [
+                    "1.7.3",
+                    "1.8.1"
+                  ]
+                },
+                {
+                  "description": "FortiPAM: greater equal 1.2.0, less than 1.3.0, fixed in [1.7.3, 1.8.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.2.0",
+                    "lt": "1.3.0"
+                  },
+                  "fixed_in": [
+                    "1.7.3",
+                    "1.8.1"
+                  ]
+                },
+                {
+                  "description": "FortiPAM: greater equal 1.3.0, less than 1.4.0, fixed in [1.7.3, 1.8.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.3.0",
+                    "lt": "1.4.0"
+                  },
+                  "fixed_in": [
+                    "1.7.3",
+                    "1.8.1"
+                  ]
+                },
+                {
+                  "description": "FortiPAM: greater equal 1.4.0, less than 1.5.0, fixed in [1.7.3, 1.8.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.4.0",
+                    "lt": "1.5.0"
+                  },
+                  "fixed_in": [
+                    "1.7.3",
+                    "1.8.1"
+                  ]
+                },
+                {
+                  "description": "FortiPAM: greater equal 1.5.0, less than 1.6.0, fixed in [1.7.3, 1.8.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.5.0",
+                    "lt": "1.6.0"
+                  },
+                  "fixed_in": [
+                    "1.7.3",
+                    "1.8.1"
+                  ]
+                },
+                {
+                  "description": "FortiPAM: greater equal 1.6.0, less than 1.7.0, fixed in [1.7.3, 1.8.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.6.0",
+                    "lt": "1.7.0"
+                  },
+                  "fixed_in": [
+                    "1.7.3",
+                    "1.8.1"
+                  ]
+                },
+                {
+                  "description": "FortiPAM: greater equal 1.7.0, less equal 1.7.2, fixed in [1.7.3, 1.8.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "1.7.0",
+                    "le": "1.7.2"
+                  },
+                  "fixed_in": [
+                    "1.7.3",
+                    "1.8.1"
+                  ]
+                },
+                {
+                  "description": "FortiPAM: equal 1.8.0, fixed in [1.8.1]",
+                  "cpe": "cpe:2.3:a:fortinet:fortipam:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "eq": "1.8.0"
+                  },
+                  "fixed_in": [
+                    "1.8.1"
+                  ]
+                }
+              ]
+            },
+            {
+              "nodes": [
+                {
+                  "description": "FortiProxy: greater equal 7.0.0, less than 7.1.0, fixed in [7.4.14, 7.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.0.0",
+                    "lt": "7.1.0"
+                  },
+                  "fixed_in": [
+                    "7.4.14",
+                    "7.6.6"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.2.0, less than 7.3.0, fixed in [7.4.14, 7.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "lt": "7.3.0"
+                  },
+                  "fixed_in": [
+                    "7.4.14",
+                    "7.6.6"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.4.0, less equal 7.4.13, fixed in [7.4.14, 7.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.13"
+                  },
+                  "fixed_in": [
+                    "7.4.14",
+                    "7.6.6"
+                  ]
+                },
+                {
+                  "description": "FortiProxy: greater equal 7.6.0, less equal 7.6.5, fixed in [7.6.6]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiproxy:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.5"
+                  },
+                  "fixed_in": [
+                    "7.6.6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 5,
+            "vector": "CVSS:3.1/AV:P/AC:L/PR:H/UI:N/S:U/C:N/I:H/A:H/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-22"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "references": [
+    {
+      "description": "Path traversal in CLI command allows deletion of root file system",
+      "url": "https://fortiguard.fortinet.com/psirt/FG-IR-26-151"
+    },
+    {
+      "description": "Fortinet is pleased to thank The UK's National Cyber Security Centre (NCSC) for reporting this vulnerability under responsible disclosure. ",
+      "url": "Fortinet is pleased to thank The UK's National Cyber Security Centre (NCSC) for reporting this vulnerability under responsible disclosure. "
+    }
+  ],
+  "published": "2026-07-14T00:00:00Z",
+  "updated": "2026-07-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-151"
+}
+

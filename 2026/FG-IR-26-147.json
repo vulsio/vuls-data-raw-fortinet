@@ -1,0 +1,66 @@
+{
+  "id": "FG-IR-26-147",
+  "title": "Missed certificate verification in AD Connector communication with FortiClient EMS",
+  "summary": "An Improper Certificate Validation vulnerability [CWE-295] in FortiClient EMS may allow a remote unauthenticated attacker to impersonate an AD Connector via a valid API Key.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-147",
+      "cve": "CVE-2026-59836",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiClientEMS: greater equal 7.2.0, less than 7.3.0, fixed in [7.4.6]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "lt": "7.3.0"
+                  },
+                  "fixed_in": [
+                    "7.4.6"
+                  ]
+                },
+                {
+                  "description": "FortiClientEMS: greater equal 7.4.0, less equal 7.4.1, fixed in [7.4.6]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.1"
+                  },
+                  "fixed_in": [
+                    "7.4.6"
+                  ]
+                },
+                {
+                  "description": "FortiClientEMS: greater equal 7.4.3, less equal 7.4.5, fixed in [7.4.6]",
+                  "cpe": "cpe:2.3:a:fortinet:forticlient_enterprise_management_server:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.3",
+                    "le": "7.4.5"
+                  },
+                  "fixed_in": [
+                    "7.4.6"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 6.7,
+            "vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-295"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2026-07-14T00:00:00Z",
+  "updated": "2026-07-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-147"
+}
+

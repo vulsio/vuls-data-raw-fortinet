@@ -1,0 +1,56 @@
+{
+  "id": "FG-IR-26-146",
+  "title": "Out of bounds read in GUI",
+  "summary": "An out of bounds read [CWE-125] vulnerability in FortiAuthenticator may allow a remote unauthenticated attacker to retrieve sensitive information via a specially crafted request.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-146",
+      "cve": "CVE-2025-53379",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiAuthenticator: greater equal 6.5.0, less equal 6.5.7, fixed in [6.5.8, 6.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.5.0",
+                    "le": "6.5.7"
+                  },
+                  "fixed_in": [
+                    "6.5.8",
+                    "6.6.3"
+                  ]
+                },
+                {
+                  "description": "FortiAuthenticator: greater equal 6.6.0, less equal 6.6.2, fixed in [6.6.3]",
+                  "cpe": "cpe:2.3:o:fortinet:fortiauthenticator:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "6.6.0",
+                    "le": "6.6.2"
+                  },
+                  "fixed_in": [
+                    "6.6.3"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 7,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:N/A:N/E:F/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-125"
+          ],
+          "impact": "Information disclosure"
+        }
+      ]
+    }
+  ],
+  "published": "2026-07-14T00:00:00Z",
+  "updated": "2026-07-14T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-146"
+}
+
