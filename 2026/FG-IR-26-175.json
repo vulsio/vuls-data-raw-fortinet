@@ -1,0 +1,83 @@
+{
+  "id": "FG-IR-26-175",
+  "title": "Improper limitation of a pathname to a restricted directory",
+  "summary": "An Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') [CWE-22] and Improper Neutralization of NULL Byte or NULL Character [CWE-158] vulnerability may allow an unauthenticated attacker to write arbitrary files on the underlying system via crafted HTTP or HTTPS requests.This has been reported to be exploited in the wild, customers are urged to apply the workaround below.",
+  "vulnerabilities": [
+    {
+      "id": "FG-IR-26-175",
+      "cve": "CVE-2026-104286",
+      "definitions": [
+        {
+          "configurations": [
+            {
+              "nodes": [
+                {
+                  "description": "FortiMail: greater equal 7.2.0, less equal 7.2.9, fixed in [7.4.9, 7.6.7, 8.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.2.0",
+                    "le": "7.2.9"
+                  },
+                  "fixed_in": [
+                    "7.4.9",
+                    "7.6.7",
+                    "8.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 7.4.0, less equal 7.4.8, fixed in [7.4.9, 7.6.7, 8.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.4.0",
+                    "le": "7.4.8"
+                  },
+                  "fixed_in": [
+                    "7.4.9",
+                    "7.6.7",
+                    "8.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 7.6.0, less equal 7.6.6, fixed in [7.6.7, 8.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "7.6.0",
+                    "le": "7.6.6"
+                  },
+                  "fixed_in": [
+                    "7.6.7",
+                    "8.0.2"
+                  ]
+                },
+                {
+                  "description": "FortiMail: greater equal 8.0.0, less equal 8.0.1, fixed in [8.0.2]",
+                  "cpe": "cpe:2.3:o:fortinet:fortimail:*:*:*:*:*:*:*:*",
+                  "affected": {
+                    "ge": "8.0.0",
+                    "le": "8.0.1"
+                  },
+                  "fixed_in": [
+                    "8.0.2"
+                  ]
+                }
+              ]
+            }
+          ],
+          "cvssv3": {
+            "base_score": 9.8,
+            "vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H/E:P/RL:O/RC:C"
+          },
+          "cwe": [
+            "CWE-22",
+            "CWE-158"
+          ],
+          "impact": "Execute unauthorized code or commands"
+        }
+      ]
+    }
+  ],
+  "published": "2026-10-05T00:00:00Z",
+  "updated": "2026-10-05T00:00:00Z",
+  "advisory_url": "https://www.fortiguard.com/psirt/FG-IR-26-175"
+}
+
